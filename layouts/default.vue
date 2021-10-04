@@ -11,9 +11,7 @@
       </v-container>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <Nuxt />
     </v-main>
     <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
@@ -23,6 +21,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
+      <div class="d-flex justify-between">
+        <div></div>
+        <div></div>
+      </div>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -30,6 +32,12 @@
 
 <script>
 export default {
+  props: {
+    fluid: {
+      type: Boolean,
+      default: true,
+    },
+  },
   data() {
     return {
       clipped: false,

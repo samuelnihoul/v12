@@ -3,7 +3,11 @@
     <v-hover>
       <template v-slot:default="{ hover }">
         <div>
-          <v-img src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg">
+          <v-img
+            src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
+            lazy-src="/logo.png"
+            height="300"
+          >
             <v-badge
               inline
               content="$10.00 USD/TONNE"
@@ -12,7 +16,9 @@
             ></v-badge>
             <v-fade-transition>
               <v-overlay v-if="hover" absolute color="#000">
-                <v-btn>See more info</v-btn>
+                <v-btn :to="{ name: 'projects-id', params: { id: 1 } }"
+                  >See more info</v-btn
+                >
               </v-overlay>
             </v-fade-transition>
           </v-img>
@@ -27,9 +33,9 @@
       never forget!
     </v-card-text>
     <v-card-actions>
-      <div class="d-flex align-center">
+      <div class="d-flex align-center w-100">
         <div class="col-md-3">
-          <v-text-field class="my-input" outlined></v-text-field>
+          <v-text-field class="my-input" outlined value="1"></v-text-field>
         </div>
         <div class="col-md-9">
           <v-btn block color="primary">Acheter</v-btn>
