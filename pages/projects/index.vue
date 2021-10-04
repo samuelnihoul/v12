@@ -15,15 +15,17 @@
             fix it. Take your first step with our environmental footprint
             calculator.
           </h3>
+          <a
+            v-show="isMobile"
+            href="https://footprint.wwf.org.uk/#/"
+            target="_blank"
+            class="primary--text"
+            >WWF UK CARBON FOORPRINT CALCULATOR</a
+          >
         </div>
-        <div class="col">
+        <div class="col" v-show="!isMobile">
           <div class="d-md-flex justify-end">
-            <v-card class="black-card">
-              <div class="content">
-                <v-icon class="ticon">mdi-pencil-ruler</v-icon>
-                <p class="text">WWF UK CARBON FOORPRINT CALCULATOR</p>
-              </div>
-            </v-card>
+            <card-black></card-black>
           </div>
         </div>
       </div>
@@ -35,48 +37,19 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  computed: {
+    isMobile() {
+      return ['xs', 'sm'].includes(this.$vuetify.breakpoint.name)
+    },
+  },
+})
 </script>
 
 <style scoped lang="scss">
-.black-card {
-  $side: 370px;
-  padding: 2%;
-  background: #000;
-  height: $side;
-  width: $side;
-  * {
-    color: #fff;
-  }
-
-  &:hover {
-    cursor: pointer;
-    background: var(--primary);
-    * {
-      color: #000;
-      font-weight: bold;
-    }
-  }
-
-  .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .ticon {
-      font-size: 3.5rem;
-    }
-    .text {
-      margin-top: 20px;
-    }
-  }
-}
-
 .calculator {
   .title {
-    font-size: 2.5rem !important;
+    font-size: 2.2rem !important;
     line-height: 50px;
   }
 

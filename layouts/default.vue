@@ -21,11 +21,26 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
-      <div class="d-flex justify-between">
-        <div></div>
-        <div></div>
+      <div class="w-100 d-flex flex-column flex-md-row align-center">
+        <div>
+          <img src="/logo.png" alt="" height="160px" />
+        </div>
+        <v-spacer></v-spacer>
+        <div>
+          <v-btn icon>
+            <v-icon x-large>mdi-facebook</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon x-large>mdi-twitter</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon x-large>mdi-instagram</v-icon>
+          </v-btn>
+        </div>
       </div>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <div class="w-100 d-flex justify-center mt-3">
+        <span>&copy; {{ new Date().getFullYear() }}</span>
+      </div>
     </v-footer>
   </v-app>
 </template>
