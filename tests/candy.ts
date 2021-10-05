@@ -61,8 +61,8 @@ describe("candy-test-suite", () => {
         const machine = await program.account.candyMachine.fetch(candyMachine);
         assert.equal(machine.data.uuid, init.candyMachineUuid);
         assert.ok(machine.wallet.equals(myWallet.publicKey));
-        assert.ok(machine.itemsRedeemed.eq(new anchor.BN(0)));
-        assert.ok(machine.data.itemsAvailable.eq(new anchor.BN(5)));
+        assert.ok(machine.itemsRedeemedByLevel[0].eq(new anchor.BN(0)));
+        assert.ok(machine.data.itemsByLevel[0].itemsAvailable.eq(new anchor.BN(5)));
 
         const config = await program.account.config.fetch(init.config.publicKey);
         assert.equal(config.data.sellerFeeBasisPoints, new anchor.BN(500));
@@ -72,8 +72,8 @@ describe("candy-test-suite", () => {
         const res = await mintNft(provider, program, candyMachine, init.config.publicKey, payer, myWallet.publicKey);
 
         const machine2 = await program.account.candyMachine.fetch(candyMachine);
-        assert.ok(machine2.itemsRedeemed.eq(new anchor.BN(1)));
-        assert.ok(machine2.data.itemsAvailable.eq(new anchor.BN(5)));
+        assert.ok(machine2.itemsRedeemedByLevel[0].eq(new anchor.BN(1)));
+        assert.ok(machine2.data.itemsByLevel[0].itemsAvailable.eq(new anchor.BN(5)));
 
         let tokens = await getOwnedTokenAccounts(provider.connection, payer.publicKey);
         assert.equal(tokens.length, 1);
@@ -98,7 +98,7 @@ describe("candy-test-suite", () => {
         const machine = await program.account.candyMachine.fetch(candyMachine);
         assert.equal(machine.data.uuid, init.candyMachineUuid);
         assert.ok(machine.wallet.equals(myWallet.publicKey));
-        assert.ok(machine.itemsRedeemed.eq(new anchor.BN(0)));
+        assert.ok(machine.itemsRedeemedByLevel[0].eq(new anchor.BN(0)));
 
         await updateCandyMachine(program, candyMachine, myWallet, null, 0);
 
@@ -108,7 +108,7 @@ describe("candy-test-suite", () => {
         const metadata = await getMetadataAddress(mint.publicKey);
         const masterEdition = await getMasterEditionAddress(mint.publicKey);
 
-        const tx = await program.rpc.mintOne({
+        const tx = await program.rpc.mintOne(new anchor.BN(10), {
             accounts: {
                 config: init.config.publicKey,
                 candyMachine: candyMachine,
@@ -129,7 +129,7 @@ describe("candy-test-suite", () => {
         });
 
         const machine2 = await program.account.candyMachine.fetch(candyMachine);
-        assert.ok(machine2.itemsRedeemed.eq(new anchor.BN(1)));
+        assert.ok(machine2.itemsRedeemedByLevel[0].eq(new anchor.BN(1)));
 
         let tokens = await getOwnedTokenAccounts(provider.connection, payer.publicKey);
         assert.equal(tokens.length, 1);

@@ -104,11 +104,11 @@ export async function getOwnedTokenAccounts(
 //
 
 //
-export async function getInitializeConfigTx(program: anchor.Program, myWallet: web3.Keypair, lines: number) {
+export async function initializeConfig(program: anchor.Program, myWallet: web3.Keypair, lines: number, accountSize: number, accountLamports: number) {
     const config = await anchor.web3.Keypair.generate();
     const uuid = anchor.web3.Keypair.generate().publicKey.toBase58().slice(0, 6);
 
-    let tx = await program.instruction.initializeConfig(
+    await program.rpc.initializeConfig(
         {
             uuid: uuid,
             maxNumberOfLines: new anchor.BN(lines),
@@ -129,33 +129,48 @@ export async function getInitializeConfigTx(program: anchor.Program, myWallet: w
                 rent: anchor.web3.SYSVAR_RENT_PUBKEY,
             },
             signers: [myWallet, config],
+            instructions: [
+                anchor.web3.SystemProgram.createAccount({
+                    fromPubkey: myWallet.publicKey,
+                    newAccountPubkey: config.publicKey,
+                    space: accountSize,
+                    lamports: accountLamports,
+                    programId: program.programId,
+                }),
+            ],
         }
-    ) as TransactionInstruction;
+    );
 
     return {
         uuid,
         config,
-        tx
     }
 };
 
-export async function addConfigLines(program: anchor.Program, myWallet: web3.Keypair, lines: number, config: web3.Keypair): Promise<TransactionInstruction> {
+export async function addConfigLines(program: anchor.Program, myWallet: web3.Keypair, start: number, lines: number, config: web3.Keypair): Promise<string> {
     const firstVec = [];
     for (let i = 0; i < lines; i++) {
         firstVec.push({
-            uri: `www.aol.com/${i}`,
+            uri: `www.aol.com/${start + i}`,
             isMutable: true,
-            name: `Sample ${i}`
+            name: `Sample ${start + i}`
         });
     }
 
-    const tx1 = await program.instruction.addConfigLines(0, firstVec, {
+    // const tx1 = await program.instruction.addConfigLines(start, firstVec, {
+    //     accounts: {
+    //         config: config.publicKey,
+    //         authority: myWallet.publicKey,
+    //     },
+    //     signers: [myWallet],
+    // }) as TransactionInstruction;
+    const tx1 = await program.rpc.addConfigLines(start, firstVec, {
         accounts: {
             config: config.publicKey,
             authority: myWallet.publicKey,
         },
-        signers: [myWallet],
-    }) as TransactionInstruction;
+        signers: [myWallet]
+    })
     return tx1;
 };
 
@@ -183,25 +198,47 @@ export async function getCandyMachine(config: anchor.web3.PublicKey, uuid: strin
     );
 };
 
+export type Level = {
+    price: anchor.BN,
+    itemsAvailable: anchor.BN
+}
 
-export async function initializeCandyMachine(provider: anchor.Provider, program: anchor.Program, myWallet: web3.Keypair, items: number) {
-    const initConfig = await getInitializeConfigTx(program, myWallet, items);
+export async function initializeCandyMachine(provider: anchor.Provider, program: anchor.Program, myWallet: web3.Keypair, itemsSetup: number | Array<Level>) {
+
+    let itemsCount = 0;
+    let itemsByLevel: Array<Level> = [];
+    if (typeof itemsSetup == "number") {
+        // create a single level with all quantity
+        itemsCount = itemsSetup;
+        itemsByLevel.push({
+            price: new anchor.BN(0), // price is minimal bought offset
+            itemsAvailable: new anchor.BN(itemsCount),
+        })
+    } else {
+        itemsSetup.forEach(e => { itemsCount = itemsCount + e.itemsAvailable.toNumber() });
+        itemsByLevel = itemsSetup;
+    }
+
+    const accountSize = configArrayStart + 4 + itemsCount * configLineSize + 4 + Math.ceil(itemsCount / 8);
+    const accountLamports = await provider.connection.getMinimumBalanceForRentExemption(accountSize);
+
+    const initConfig = await initializeConfig(program, myWallet, itemsCount, accountSize, accountLamports);
     const { config } = initConfig;
-
-    const addLinesTx = await addConfigLines(program, myWallet, items, config);
 
     const candyMachineUuid = anchor.web3.Keypair.generate().publicKey.toBase58().slice(0, 6);
     const [candyMachine, bump] = await getCandyMachine(config.publicKey, candyMachineUuid, program.programId);
 
-    const accountSize = configArrayStart + 4 + items * configLineSize + 4 + 2;
-    const accountLamports = await provider.connection.getMinimumBalanceForRentExemption(accountSize);
+
+    for (let idx = 0; idx < itemsCount; idx += 10) {
+        let count = Math.min(10, itemsCount - idx);
+        const addLinesTx = await addConfigLines(program, myWallet, idx, count, config);
+    }
 
     await program.rpc.initializeCandyMachine(
         bump,
         {
             uuid: candyMachineUuid,
-            price: new anchor.BN(0.05 * web3.LAMPORTS_PER_SOL),
-            itemsAvailable: new anchor.BN(items),
+            itemsByLevel: itemsByLevel,
             goLiveDate: null,
         },
         {
@@ -214,18 +251,7 @@ export async function initializeCandyMachine(provider: anchor.Provider, program:
                 systemProgram: anchor.web3.SystemProgram.programId,
                 rent: anchor.web3.SYSVAR_RENT_PUBKEY,
             },
-            signers: [myWallet, config],
-            instructions: [
-                anchor.web3.SystemProgram.createAccount({
-                    fromPubkey: myWallet.publicKey,
-                    newAccountPubkey: config.publicKey,
-                    space: accountSize,
-                    lamports: accountLamports,
-                    programId: program.programId,
-                }),
-                initConfig.tx, // initializeConfig
-                addLinesTx, // addConfigLines
-            ],
+            signers: [myWallet],
         }
     );
 
@@ -268,7 +294,7 @@ export async function mintNft(provider: anchor.Provider, program: anchor.Program
     const metadata = await getMetadataAddress(mint.publicKey);
     const masterEdition = await getMasterEditionAddress(mint.publicKey);
 
-    const tx = await program.rpc.mintNft({
+    const tx = await program.rpc.mintNft(new anchor.BN(5000), {
         accounts: {
             config: configAddress,
             candyMachine: candyMachineAddress,

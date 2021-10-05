@@ -1,13 +1,15 @@
 [programs.localnet]
 h = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+harmonia = "HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"
+candy_machine = "CANHaiDd6HPK3ykgunmXFNZMrZ4KbZgEidY5US2L8CTw"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
 cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/solana/localnet.json"
 
 [scripts]
-test = "mocha --require ts-node/register ./tests/*.ts --timeout 300000"
+test = "mocha --require ts-node/register ./tests/nft.ts --timeout 300000"
 

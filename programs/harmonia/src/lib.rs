@@ -114,19 +114,7 @@ pub mod harmonia {
             clock: ctx.accounts.clock.clone(),
         };
         let cpi_ctx = CpiContext::new(cpi_program, cpi_accounts);
-        candy_machine::cpi::mint_one(cpi_ctx)?;
-
-        // msg!("Ready to ping");
-        // let cpi_program2 = ctx.accounts.candy_program.to_account_info();
-        // let cpi_accounts2 = Ping {
-        //     candy_machine: ProgramAccount::try_from(cpi_program2.key, &ctx.accounts.candy_machine).unwrap(),
-        //     //candy_machine: ctx.accounts.candy_machine.try_from(),
-        //     // authority: ctx.accounts.seller.clone(),
-        // };
-        // let cpi_ctx = CpiContext::new(cpi_program2, cpi_accounts2);
-        // candy_machine::cpi::ping(cpi_ctx, 2)?;
-
-        // msg!("==== end ping");
+        candy_machine::cpi::mint_one(cpi_ctx, amount)?;
 
         Ok(())
     }
