@@ -21,6 +21,10 @@ describe("harmonia-test-suite", () => {
 
     const program = getHarmoniaProgram(provider);
 
+    const projectDescription = "The proposed project activity is to treat the manure and wastewater from swine farms of Muyuan Foods Co.,Ltd., in Nanyang City, Henan Province (hereafter refer to as Muyuan) which consists fourteen subsidiary swine farms.";
+    const projectPicture = "https://live.staticflickr.com/4133/4841550483_72190f5368_b.jpg";
+
+
     console.log(`Connecting to ${provider.connection["_rpcEndpoint"]}`);
 
     before('Print info', async () => {
@@ -40,7 +44,7 @@ describe("harmonia-test-suite", () => {
 
     it('Create a project (500 offsets / 2000 lamports each offset)', async () => {
 
-        const tx = await program.rpc.create(new anchor.BN(500), new anchor.BN(2000), "AmazingSolarFarm", {
+        const tx = await program.rpc.create(new anchor.BN(500), new anchor.BN(2000), "AmazingSolarFarm", projectDescription, projectPicture, {
             accounts: {
                 project: projectAccount.publicKey,
                 seller: sellerAccount.publicKey,
@@ -55,6 +59,8 @@ describe("harmonia-test-suite", () => {
         assert.equal(account.availableOffset.toNumber(), 500);
         assert.equal(account.totalOffset.toNumber(), 500);
         assert.equal(account.offsetPrice.toNumber(), 2000);
+        assert.equal(account.description, projectDescription);
+        assert.equal(account.pictureUrl, projectPicture);
     });
 
 
@@ -92,7 +98,7 @@ describe("harmonia-test-suite", () => {
 
 
 
-    it('Not a real test. Just check some ai call', async () => {
+    it('Not a real test. Just check some api call', async () => {
 
         let connection = provider.connection;
         let programId = program.programId as web3.PublicKey;

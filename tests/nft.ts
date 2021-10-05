@@ -25,6 +25,10 @@ describe("nft-test-suite", () => {
     const candyProgram = getCandyProgram(provider);
     const candyProgramId: web3.PublicKey = candyProgram.programId;
 
+    const projectDescription = "The proposed project activity is to treat the manure and wastewater from swine farms of Muyuan Foods Co.,Ltd., in Nanyang City, Henan Province (hereafter refer to as Muyuan) which consists fourteen subsidiary swine farms.";
+    const projectPicture = "https://live.staticflickr.com/4133/4841550483_72190f5368_b.jpg";
+
+
     console.log(`Connecting to ${provider.connection["_rpcEndpoint"]}`);
 
     let config: web3.Keypair = null;
@@ -40,7 +44,7 @@ describe("nft-test-suite", () => {
 
     it('Create a project + candymachine', async () => {
 
-        await harmoniaProgram.rpc.create(new anchor.BN(500), new anchor.BN(2000), "AmazingSolarFarm", {
+        await harmoniaProgram.rpc.create(new anchor.BN(500), new anchor.BN(2000), "AmazingSolarFarm", projectDescription, projectPicture, {
             accounts: {
                 project: projectAccount.publicKey,
                 seller: sellerAccount.publicKey,
@@ -101,20 +105,6 @@ describe("nft-test-suite", () => {
 
     it('Buy and mint', async () => {
 
-        // const [candyMachine, bump] = await getCandyMachine(config.publicKey, candyMachineUuid, candyProgramId);
-        // const tx = await harmoniaProgram.rpc.buyAndMint(new anchor.BN(150), {
-        //     accounts: {
-        //         project: projectAccount.publicKey,
-        //         buyer: buyerAccount.publicKey,
-        //         seller: sellerAccount.publicKey,
-        //         systemProgram: anchor.web3.SystemProgram.programId,
-        //         candyProgram: candyProgram.programId,
-        //         config: config.publicKey,
-        //         candyMachine: candyMachine,
-        //     },
-        //     signers: [buyerAccount],
-        // });
-        
         const [candyMachine, bump] = await getCandyMachine(config.publicKey, candyMachineUuid, candyProgramId);
         machineState = await candyProgram.account.candyMachine.fetch(candyMachine);
         assert.ok(machineState.itemsRedeemed.eq(new anchor.BN(1)));
@@ -154,7 +144,7 @@ describe("nft-test-suite", () => {
 
         let tokens = await getOwnedTokenAccounts(provider.connection, buyerAccount.publicKey);
         assert.equal(tokens.length, 2);
-        assert.equal(mint.publicKey.toBase58(), tokens[1].accountInfo.mint);
+        assert.ok((mint.publicKey.toBase58() == tokens[0].accountInfo.mint) || (mint.publicKey.toBase58() == tokens[1].accountInfo.mint));
 
     });
 

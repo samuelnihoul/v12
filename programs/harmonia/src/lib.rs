@@ -4,9 +4,15 @@ use anchor_lang::solana_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, msg, program::invoke,
     program_error::ProgramError, pubkey::Pubkey, system_instruction, system_program,
 };
-use candy_machine::{CandyMachine, Config};
+use candy_machine;
 
 declare_id!("HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc");
+
+
+
+pub const MAX_NAME_LENGTH: usize = 32;
+pub const MAX_DESCRIPTION_LENGTH: usize = 1500;
+pub const MAX_URI_LENGTH: usize = 200;
 
 pub struct BuyData<'info> {
     pub buyer: AccountInfo<'info>,
@@ -45,11 +51,11 @@ pub fn buy_offset(project: &mut Account<Project>, amount: u64, data: &BuyData) -
 #[program]
 pub mod harmonia {
 
-    use candy_machine::{MintOne, Ping};
+    use candy_machine::{MintOne};
 
     use super::*;
 
-    pub fn create(ctx: Context<Create>, offsets: u64, price: u64, name: String) -> ProgramResult {
+    pub fn create(ctx: Context<Create>, offsets: u64, price: u64, name: String, description: String, picture: String) -> ProgramResult {
         msg!("Creating project");
         let project = &mut ctx.accounts.project;
         project.authority = *ctx.accounts.seller.key;
@@ -57,6 +63,8 @@ pub mod harmonia {
         project.total_offset = offsets;
         project.offset_price = price;
         project.name = name;
+        project.description = description;
+        project.picture_url = picture;
 
         Ok(())
     }
@@ -191,10 +199,12 @@ pub struct Project {
     pub total_offset: u64,
     pub offset_price: u64,
     pub name: String,
+    pub description: String,
+    pub picture_url: String,
 }
 
 impl Project {
-    pub const LEN: usize = 32 + 8 + 8 + 8 + 100 + (8);
+    pub const LEN: usize = 32 + 8 + 8 + 8 + MAX_NAME_LENGTH + MAX_DESCRIPTION_LENGTH + MAX_URI_LENGTH + (8);
 }
 
 #[error]
