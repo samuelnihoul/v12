@@ -14,8 +14,9 @@ export default Vue.extend({})
 
 <style scoped lang="scss">
 .little-card {
-  height: 50px;
-  width: 50px;
+  $side: 60px;
+  height: $side;
+  width: $side;
   display: flex;
   justify-content: center;
   align-items: center;
