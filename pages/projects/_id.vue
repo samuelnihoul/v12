@@ -11,10 +11,11 @@
         <h1 class="white--text">Ici on a le titre du projet</h1>
       </v-parallax>
     </section>
+
     <section>
       <div class="row">
-        <div class="col-md-4">
-          <div class="row">
+        <div class="col-md-2 col-lg-3">
+          <div class="d-flex flex-md-column flex-lg-row">
             <div class="col">
               <h4>GS ID</h4>
               <p>11256</p>
@@ -25,32 +26,32 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <div class="product-box">
             <h4>PRODUCT</h4>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-4">
                 <v-icon>mdi-cube</v-icon>
                 <p>NONE</p>
               </div>
-              <div class="col-md-4">
+              <div class="col-4">
                 <v-icon color="primary">mdi-pound</v-icon>
                 <p>ISSUED</p>
               </div>
-              <div class="col-md-4">
+              <div class="col-4">
                 <v-icon color="primary">mdi-pound</v-icon>
                 <p>RETIRED</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-5">
           <div class="row">
             <div class="col-md-4">
               <h4>PLANNED SDG IMPACTS</h4>
               <div class="row mt-5">
                 <div
-                  class="col-md-5 d-flex justify-center"
+                  class="col-4 col-md-6 d-flex justify-center"
                   v-for="i in 3"
                   :key="i"
                 >
@@ -58,12 +59,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex flex-column align-center">
+            <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>PROJECT TYPE</h4>
               <v-icon class="myicon">mdi-weather-sunny</v-icon>
               <p>Geothermal</p>
             </div>
-            <div class="col-md-4 d-flex flex-column align-center">
+            <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>STATUS</h4>
               <v-icon class="myicon">mdi-weather-sunny</v-icon>
               <p>Listed</p>
@@ -107,7 +108,10 @@
     </section>
     <section>
       <h2 class="section-title">CERTIFICATION DOCUMENTS</h2>
-      <v-btn color="primary" outlined x-large
+      <a v-if="$vuetify.breakpoint.name == 'xs'"
+        >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</a
+      >
+      <v-btn color="primary" outlined x-large v-else
         >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</v-btn
       >
     </section>
@@ -133,7 +137,7 @@ export default defineComponent({
   margin-bottom: 20px;
 }
 .product-box {
-  .col-md-4 {
+  .col-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
