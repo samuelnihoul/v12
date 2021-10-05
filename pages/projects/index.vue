@@ -30,6 +30,20 @@
         </div>
       </div>
       <grid-projects></grid-projects>
+      <section class="mt-6">
+        <h3 class="section-title">FEATURE YOUR PROJECT</h3>
+        <p class="mt-md-10 mb-10">
+          If you have an eligible Gold Standard project that you would like to
+          include on this page, please read our
+          <a href="#">Terms & Conditions>></a>, fill in this
+          <a href="#">project profile template>></a> and provide it to
+          <a href="#"> Make An Impact>></a> along with at least three
+          high-resolution images and your logo. If you would like to sell
+          credits through our Project Marketplace, please email
+          <a href="#">Make An Impact>></a>
+          for more details.
+        </p>
+      </section>
     </v-container>
   </div>
 </template>
@@ -40,6 +54,7 @@ import Vue from 'vue'
 export default Vue.extend({
   computed: {
     isMobile() {
+      // @ts-ignore
       return ['xs', 'sm'].includes(this.$vuetify.breakpoint.name)
     },
   },
