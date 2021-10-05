@@ -1,7 +1,6 @@
 pub mod utils;
 
 use {
-    crate::utils::{assert_initialized, assert_owned_by},
     anchor_lang::{
         prelude::*, solana_program::system_program, AnchorDeserialize, AnchorSerialize,
         Discriminator, Key,
@@ -45,7 +44,7 @@ pub struct MintAccounts<'b, 'info> {
     pub clock: &'b Sysvar<'info, Clock>,
 }
 
-fn mint<'b, 'info>(ctx: MintAccounts<'b, 'info>) -> ProgramResult {
+fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> ProgramResult {
     let candy_machine = ctx.candy_machine;
     let config = ctx.config;
     let clock = ctx.clock;
@@ -69,37 +68,40 @@ fn mint<'b, 'info>(ctx: MintAccounts<'b, 'info>) -> ProgramResult {
         }
     }
 
-    if candy_machine.items_redeemed >= candy_machine.data.items_available {
+    let mut nft_level = None;
+    for i in 0..candy_machine.data.items_by_level.len() {
+        msg!(
+            "offsets_amount:{}, price:{}",
+            offsets_amount,
+            candy_machine.data.items_by_level[i].price
+        );
+        if offsets_amount >= candy_machine.data.items_by_level[i].price {
+            if candy_machine.items_redeemed_by_level[i]
+                < candy_machine.data.items_by_level[i].items_available
+            {
+                // found one nft > amount threshold
+                nft_level = Some(i);
+                msg!("found at {}", i);
+                break;
+            }
+        }
+    }
+
+    if nft_level.is_none() {
         return Err(ErrorCode::CandyMachineEmpty.into());
     }
 
-    if ctx.payer.lamports() < candy_machine.data.price {
-        return Err(ErrorCode::NotEnoughSOL.into());
-    }
-
-    invoke(
-        &system_instruction::transfer(
-            &ctx.payer.key,
-            ctx.wallet.key,
-            candy_machine.data.price,
-        ),
-        &[
-            ctx.payer.clone(),
-            ctx.wallet.clone(),
-            ctx.system_program.clone(),
-        ],
-    )?;
-
-    candy_machine.items_redeemed = candy_machine
-        .items_redeemed
-        .checked_add(1)
-        .ok_or(ErrorCode::NumericalOverflowError)?;
+    // No lamport transfert
+    // NFT are given against some co2 offset
+    candy_machine.items_redeemed_by_level[nft_level.unwrap()] = candy_machine
+        .items_redeemed_by_level[nft_level.unwrap()]
+    .checked_add(1)
+    .ok_or(ErrorCode::NumericalOverflowError)?;
 
     // Skip metadata / masteredition call on localnet
-    // Flag localnet with go_live_date = 1 ?!??
+    // Flag localnet with go_live_date = 0 ?!??
 
     if !localtest {
-
         let config_line = get_config_line(
             &config.to_account_info(),
             candy_machine.items_redeemed as usize,
@@ -210,9 +212,9 @@ fn mint<'b, 'info>(ctx: MintAccounts<'b, 'info>) -> ProgramResult {
             ],
             &[&authority_seeds],
         )?;
-     }
+    }
 
-     Ok(())
+    Ok(())
 }
 
 #[program]
@@ -220,8 +222,10 @@ pub mod candy_machine {
 
     use super::*;
 
-    pub fn mint_nft<'info>(ctx: Context<'_, '_, '_, 'info, MintNFT<'info>>) -> ProgramResult {
-
+    pub fn mint_nft<'info>(
+        ctx: Context<'_, '_, '_, 'info, MintNFT<'info>>,
+        offsets_amount: u64,
+    ) -> ProgramResult {
         let context = MintAccounts {
             candy_machine: &mut ctx.accounts.candy_machine,
             config: &ctx.accounts.config,
@@ -239,7 +243,7 @@ pub mod candy_machine {
             clock: &ctx.accounts.clock,
         };
 
-        mint(context)?;
+        mint(offsets_amount, context)?;
 
         Ok(())
     }
@@ -251,9 +255,10 @@ pub mod candy_machine {
     ) -> ProgramResult {
         let candy_machine = &mut ctx.accounts.candy_machine;
 
-        if let Some(p) = price {
-            candy_machine.data.price = p;
-        }
+        // TODO
+        // if let Some(p) = price {
+        //     candy_machine.data.price = p;
+        // }
 
         if let Some(go_l) = go_live_date {
             msg!("Go live date changed to {}", go_l);
@@ -262,9 +267,22 @@ pub mod candy_machine {
         Ok(())
     }
 
-    pub fn mint_one<'info>(ctx: Context<'_, '_, '_, 'info, MintOne<'info>>) -> ProgramResult {
+    pub fn mint_one<'info>(
+        ctx: Context<'_, '_, '_, 'info, MintOne<'info>>,
+        offsets_amount: u64,
+    ) -> ProgramResult {
 
-        msg!("========> Create Mint account <========");
+        let candy_machine = &ctx.accounts.candy_machine;
+
+        // If offset amount less than min price, return without minting
+        if offsets_amount
+            < candy_machine.data.items_by_level[candy_machine.data.items_by_level.len() - 1].price
+        {
+            return Ok(());
+        }
+
+        
+        msg!("Create Mint account");
         invoke(
             &system_instruction::create_account(
                 ctx.accounts.payer.key,
@@ -276,7 +294,7 @@ pub mod candy_machine {
             &[ctx.accounts.payer.clone(), ctx.accounts.mint.clone()],
         )?;
 
-        msg!("========> Initialize Mint <========");
+        msg!("Initialize Mint");
         invoke(
             &spl_token::instruction::initialize_mint(
                 &spl_token::id(),
@@ -292,7 +310,7 @@ pub mod candy_machine {
             ],
         )?;
 
-        msg!("========> Create associated token <========");
+        msg!("Create associated token");
         invoke(
             &spl_associated_token_account::create_associated_token_account(
                 &ctx.accounts.payer.key,
@@ -327,7 +345,6 @@ pub mod candy_machine {
             ],
         )?;
 
-
         let context = MintAccounts {
             candy_machine: &mut ctx.accounts.candy_machine,
             config: &ctx.accounts.config,
@@ -345,7 +362,7 @@ pub mod candy_machine {
             clock: &ctx.accounts.clock,
         };
 
-        mint(context)?;
+        mint(offsets_amount, context)?;
 
         Ok(())
     }
@@ -501,24 +518,15 @@ pub mod candy_machine {
         candy_machine.authority = *ctx.accounts.authority.key;
         candy_machine.config = ctx.accounts.config.key();
         candy_machine.bump = bump;
-        if ctx.remaining_accounts.len() > 0 {
-            let token_mint_info = &ctx.remaining_accounts[0];
-            let _token_mint: Mint = assert_initialized(&token_mint_info)?;
-            let token_account: spl_token::state::Account =
-                assert_initialized(&ctx.accounts.wallet)?;
+        candy_machine.items_redeemed_by_level = vec![0; candy_machine.data.items_by_level.len()];
 
-            assert_owned_by(&token_mint_info, &spl_token::id())?;
-            assert_owned_by(&ctx.accounts.wallet, &spl_token::id())?;
-
-            if token_account.mint != *token_mint_info.key {
-                return Err(ErrorCode::MintMismatch.into());
-            }
-
-            candy_machine.token_mint = Some(*token_mint_info.key);
+        let mut total_items = 0;
+        for i in &candy_machine.data.items_by_level {
+            total_items = total_items + i.items_available;
         }
 
         if get_config_count(&ctx.accounts.config.to_account_info().data.borrow())?
-            < candy_machine.data.items_available as usize
+            < total_items as usize
         {
             return Err(ErrorCode::ConfigLineMismatch.into());
         }
@@ -535,7 +543,7 @@ pub mod candy_machine {
 #[derive(Accounts)]
 #[instruction(bump: u8, data: CandyMachineData)]
 pub struct InitializeCandyMachine<'info> {
-    #[account(init, seeds=[PREFIX.as_bytes(), config.key().as_ref(), data.uuid.as_bytes()], payer=payer, bump=bump, space=8+32+32+33+32+64+64+64+200)]
+    #[account(init, seeds=[PREFIX.as_bytes(), config.key().as_ref(), data.uuid.as_bytes()], payer=payer, bump=bump, space=CANDY_MACHINE_SIZE)]
     candy_machine: ProgramAccount<'info, CandyMachine>,
     #[account(constraint= wallet.owner == &spl_token::id() || (wallet.data_is_empty() && wallet.lamports() > 0) )]
     wallet: AccountInfo<'info>,
@@ -668,20 +676,30 @@ pub struct Ping<'info> {
 pub struct CandyMachine {
     pub authority: Pubkey,
     pub wallet: Pubkey,
-    pub token_mint: Option<Pubkey>,
     pub config: Pubkey,
     pub data: CandyMachineData,
     pub items_redeemed: u64,
+    pub items_redeemed_by_level: Vec<u64>,
     pub bump: u8,
 }
 
 #[derive(AnchorSerialize, AnchorDeserialize, Clone, Default)]
 pub struct CandyMachineData {
     pub uuid: String,
-    pub price: u64,
-    pub items_available: u64,
+    pub items_by_level: Vec<Level>,
     pub go_live_date: Option<i64>,
 }
+
+#[derive(AnchorSerialize, AnchorDeserialize, Clone, Default)]
+pub struct Level {
+    pub price: u64,
+    pub items_available: u64,
+}
+
+pub const MAX_LEVELS: usize = 9;
+pub const CANDY_MACHINE_SIZE: usize =
+    8 + 32 + 32 + 32 + 8 + 1 + 6 + MAX_LEVELS * (8) + MAX_LEVELS * (8 + 8) + 8 + 200;
+// pub const CANDY_MACHINE_SIZE: usize = 8+32+32+33+32+64+64+64+200;
 
 pub const CONFIG_ARRAY_START: usize = 32 + // authority
 4 + 6 + // uuid + u32 len
@@ -707,10 +725,8 @@ pub struct Config {
 #[derive(AnchorSerialize, AnchorDeserialize, Clone, Default)]
 pub struct ConfigData {
     pub uuid: String,
-    /// The symbol for the asset
-    pub symbol: String,
-    /// Royalty basis points that goes to creators in secondary sales (0-10000)
-    pub seller_fee_basis_points: u16,
+    pub symbol: String,               // The symbol for the asset
+    pub seller_fee_basis_points: u16, // Royalty basis points that goes to creators in secondary sales (0-10000)
     pub creators: Vec<Creator>,
     pub max_supply: u64,
     pub is_mutable: bool,
@@ -755,8 +771,7 @@ pub struct ConfigLine {
 pub struct Creator {
     pub address: Pubkey,
     pub verified: bool,
-    // In percentages, NOT basis points ;) Watch out!
-    pub share: u8,
+    pub share: u8, // In percentages, NOT basis points ;) Watch out!
 }
 
 #[error]
