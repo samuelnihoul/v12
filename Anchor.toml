@@ -11,5 +11,5 @@ cluster = "localnet"
 wallet = "~/.config/solana/localnet.json"
 
 [scripts]
-test = "mocha --require ts-node/register ./tests/nft.ts --timeout 300000"
+test = "mocha --require ts-node/register ./tests/*.ts --timeout 300000"
 
