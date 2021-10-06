@@ -2,7 +2,7 @@
   <v-app dark>
     <v-app-bar fixed app>
       <v-container class="d-flex align-center">
-        <img src="/logo.png" alt="" height="80px" />
+        <img src="/logo.png" alt="" height="80px" @click="$router.push('/')" />
         <!-- <v-img src="/logo.png" width="30" height="25" contain></v-img> -->
         <v-spacer />
         <v-btn icon @click.stop="rightDrawer = !rightDrawer">

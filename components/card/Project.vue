@@ -1,5 +1,5 @@
 <template>
-  <v-card class="project-card">
+  <v-card class="project-card" :elevation="elevation">
     <v-hover>
       <template v-slot:default="{ hover }">
         <div>
@@ -32,7 +32,7 @@
       Travel to the best outdoor experience on planet Earth. A vacation you will
       never forget!
     </v-card-text>
-    <v-card-actions>
+    <v-card-actions v-if="!presentation">
       <div class="d-flex align-center w-100">
         <div class="col-md-3">
           <v-text-field class="my-input" outlined value="1"></v-text-field>
@@ -49,6 +49,16 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+  props: {
+    elevation: {
+      type: Number,
+      default: 0,
+    },
+    presentation: {
+      type: Boolean,
+      default: false,
+    },
+  },
   setup() {
     return {}
   },
