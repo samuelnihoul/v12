@@ -70,24 +70,7 @@
         <div class="offset-md-2 col-md-8">
           <div class="row">
             <div class="col-md-4" v-for="i in 3" :key="'tt-' + i">
-              <v-hover v-slot="{ hover }">
-                <v-card :elevation="hover ? 2 : 0">
-                  <div class="text-center px-xl-4 pb-5">
-                    <v-img
-                      height="150"
-                      src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
-                    ></v-img>
-                    <h2>Lorem ipsum dolor sit amet consectetur</h2>
-                    <p class="mt-4">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus est nam quisquam voluptas sint nostrum facilis
-                      minima praesentium voluptatem totam necessitatibus
-                      sapiente, deserunt sit voluptatibus illum qui id ipsum
-                      molestias?
-                    </p>
-                  </div>
-                </v-card>
-              </v-hover>
+              <card-home></card-home>
             </div>
           </div>
         </div>
@@ -132,31 +115,7 @@
       <div class="offset-md-2 col-md-8">
         <div class="row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
-            <v-hover v-slot="{ hover }">
-              <v-card :elevation="hover ? 2 : 0" class="customer-card">
-                <v-icon color="primary" class="customer-icon"
-                  >mdi-format-quote-open</v-icon
-                >
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptates corrupti hic asperiores at consectetur, aperiam
-                </p>
-                <div class="d-flex">
-                  <div>
-                    <v-avatar class="mr-3">
-                      <img
-                        src="https://cdn.vuetifyjs.com/images/john.jpg"
-                        alt="John"
-                      />
-                    </v-avatar>
-                  </div>
-                  <div>
-                    <h4>JOHN DOE</h4>
-                    <p>Responsable</p>
-                  </div>
-                </div>
-              </v-card>
-            </v-hover>
+            <card-customer></card-customer>
           </div>
         </div>
       </div>
@@ -203,13 +162,6 @@ export default defineComponent({
   p {
     font-size: 1.2em;
     margin: 30px 0;
-  }
-}
-
-.customer-card {
-  padding: 10px;
-  .customer-icon {
-    font-size: 3.5em;
   }
 }
 </style>
