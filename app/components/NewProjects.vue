@@ -20,23 +20,30 @@ export default Vue.extend({
           prevEl: '.my-button-prev',
         },
       }
-      if (['xs', 'sm'].includes(this.device)) {
-        opts.slidesPerView = 1
-      }
+
+      // @ts-ignore
+      // if (['xs', 'sm'].includes(this.$vuetify.breakpoint.name)) {
+      //   opts.slidesPerView = 1
+      // }
 
       return opts
     },
-    device() {
-      // @ts-ignore
-      return this.$vuetify.breakpoint.name
-    },
   },
+  // watch: {
+  //   options: {
+  //     handler(val) {
+  //       this.key++
+  //       console.log('ok')
+  //     },
+  //     deep: true,
+  //   },
+  // },
 })
 </script>
 
 <style scoped lang="scss">
 .my-slide {
-  overflow-y: hidden;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 480px;
 }
 </style>

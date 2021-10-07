@@ -97,7 +97,7 @@
     <section>
       <h2 class="my-title">Nos derniers projets</h2>
       <div class="offset-md-2 col-md-10">
-        <div class="mb-5">
+        <div>
           <new-projects></new-projects>
         </div>
         <div class="w-100 d-flex justify-space-between align-center">

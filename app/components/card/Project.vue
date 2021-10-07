@@ -28,10 +28,10 @@
     <v-card-title class="primary--text">
       Adavikanda, Kuruwita Division Mini Hydro Power Project
     </v-card-title>
-    <v-card-text>
+    <div style="padding: 0 16px">
       Travel to the best outdoor experience on planet Earth. A vacation you will
       never forget!
-    </v-card-text>
+    </div>
     <v-card-actions v-if="!presentation">
       <div class="d-flex align-center w-100">
         <div class="col-md-3">
@@ -67,7 +67,7 @@ export default defineComponent({
 
 <style lang="scss">
 .project-card {
-  max-width: 100vw;
+  padding-bottom: 15px;
   .my-input {
     .v-messages,
     .v-text-field__details {
