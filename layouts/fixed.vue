@@ -1,6 +1,6 @@
 <template>
   <v-app dark app>
-    <v-app-bar fixed app>
+    <v-app-bar elevate-on-scroll app>
       <v-container class="d-flex align-center">
         <img src="/logo.png" alt="" height="80px" @click="$router.push('/')" />
         <!-- <v-img src="/logo.png" width="30" height="25" contain></v-img> -->
@@ -78,3 +78,7 @@ export default {
   },
 }
 </script>
+
+
+<style lang="scss" scoped>
+</style>

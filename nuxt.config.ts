@@ -1,3 +1,4 @@
+// @ts-ignore
 import colors from 'vuetify/es5/util/colors'
 
 export default {
@@ -18,7 +19,7 @@ export default {
   css: ['~/assets/styles.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/owl-carousel.ts', ssr: false }],
+  plugins: [{ src: '~/plugins/swiper.ts', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -57,7 +58,7 @@ export default {
       themes: {
         light: {
           primary: '#d4ac34',
-          secondary: '#2D2D2D',
+          secondary: '#333333',
           accent: colors.grey.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,

@@ -1,6 +1,6 @@
 :root {
   --primary: #d4ac34;
-  --secondary: #2d2d2d;
+  --secondary: #333333;
 }
 
 .w-100 {
@@ -49,4 +49,17 @@ section {
 
 .v-text-field--outlined fieldset {
   border-color: #fff !important;
+}
+
+.v-main {
+  padding-top: 0 !important;
+}
+
+.v-app-bar--hide-shadow {
+  // background: linear-gradient(transparent 70%, transparent) !important;
+
+  background: transparent !important;
+  * {
+    color: #fff !important;
+  }
 }

@@ -67,6 +67,7 @@ export default defineComponent({
 
 <style lang="scss">
 .project-card {
+  max-width: 100vw;
   .my-input {
     .v-messages,
     .v-text-field__details {
