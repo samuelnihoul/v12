@@ -1,6 +1,5 @@
 
 .anchor
-.cache
 .DS_Store
 target
 **/*.rs.bk
