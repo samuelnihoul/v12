@@ -1,7 +1,9 @@
 
 .anchor
+.cache
 .DS_Store
 target
 **/*.rs.bk
 node_modules
+app/node_modules
 app/node_modules
