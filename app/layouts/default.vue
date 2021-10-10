@@ -1,8 +1,8 @@
 <template>
-  <v-app dark app>
+  <v-app dark>
     <v-app-bar fixed app>
       <v-container class="d-flex align-center">
-        <img src="/logo.png" alt="" height="80px" @click="$router.push('/')" />
+        <img src="/logo.png" alt="" height="80px" />
         <!-- <v-img src="/logo.png" width="30" height="25" contain></v-img> -->
         <v-spacer />
         <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -10,7 +10,7 @@
         </v-btn>
       </v-container>
     </v-app-bar>
-    <v-main app>
+    <v-main>
       <Nuxt />
     </v-main>
     <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
