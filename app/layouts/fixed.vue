@@ -26,6 +26,9 @@
           <img src="/logo.png" alt="" height="160px" />
         </div>
         <v-spacer></v-spacer>
+        {{/*unsure on the syntax here */}}
+        <div><v-link about-us>About us</v-link><br><v-link contact-us>Contact Us</v-link></div>
+        <v-spacer></v-spacer>
         <div>
           <v-btn icon>
             <v-icon x-large>mdi-facebook</v-icon>
