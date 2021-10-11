@@ -1,9 +1,9 @@
 {
   "name": "24",
   "symbol": "",
-  "image": "image.png",
+  "image": "0.png",
   "properties": {
-    "files": [{ "uri": "24.png", "type": "image/png" }],
+    "files": [{ "uri": "0.png", "type": "image/png" }],
     "category": "image",
     "creators": [
       {
