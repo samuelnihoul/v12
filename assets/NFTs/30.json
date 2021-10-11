@@ -9,11 +9,6 @@
   },
   "description": "",
   "seller_fee_basis_points": 500,
-  "attributes": [
-    { "trait_type": "background", "value": "blue" },
-    { "trait_type": "eyes", "value": "star-eyes" },
-    { "trait_type": "mouth", "value": "triangle-mouth" },
-    { "trait_type": "face", "value": "teal-face" }
-  ],
-  "collection": {}
+  "attributes": [{ "trait_type": "base", "value": "puffin" }],
+  "collection": "1 - The Hackaton"
 }
