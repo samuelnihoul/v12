@@ -523,6 +523,7 @@ pub mod candy_machine {
         let mut total_items = 0;
         for i in &candy_machine.data.items_by_level {
             total_items = total_items + i.items_available;
+            msg!("{} items available at price {}", i.items_available, i.price);
         }
 
         if get_config_count(&ctx.accounts.config.to_account_info().data.borrow())?
