@@ -49,16 +49,19 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent<any>({
   computed: {
     isMobile() {
-      // @ts-ignore
-      return ['xs', 'sm'].includes(this.$vuetify.breakpoint.name)
+      if (this.$vuetify) {
+        return ["xs", "sm"].includes(this.$vuetify.breakpoint.name);
+      }
+
+      return null;
     },
   },
-})
+});
 </script>
 
 <style scoped lang="scss">

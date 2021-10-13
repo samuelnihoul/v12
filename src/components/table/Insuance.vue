@@ -7,26 +7,26 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   data() {
     return {
       headers: [
         {
-          text: 'Vintage',
-          value: 'calories',
+          text: "Vintage",
+          value: "calories",
           sortable: true,
         },
-        { text: 'Quantity', value: 'fat', sortable: true },
-        { text: 'Product', value: 'carbs' },
-        { text: 'Insuance Dates', value: 'protein', sortable: true },
-        { text: 'Actions', value: 'iron' },
+        { text: "Quantity", value: "fat", sortable: true },
+        { text: "Product", value: "carbs" },
+        { text: "Insuance Dates", value: "protein", sortable: true },
+        { text: "Actions", value: "iron" },
       ],
       items: [],
-    }
+    };
   },
-})
+});
 </script>
 
 <style scoped>
