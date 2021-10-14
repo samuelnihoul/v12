@@ -29,7 +29,13 @@ const router = createRouter({
       component: RouterLayout,
 
       // All child components will be applied with corresponding layout component
-      children: routes,
+      children: routes.map(route  => {
+        if ((route.path as string).endsWith("?")) {
+          route.path = route.path.slice(0, -1)
+          return route;
+        }
+        return route;
+      }),
     },
   ],
 });
