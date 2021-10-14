@@ -1,9 +1,10 @@
 <template>
-  <v-data-table :headers="headers" :items="items" :items-per-page="5">
+  <h1>ok</h1>
+  <!-- <v-data-table :headers="headers" :items="items" :items-per-page="5">
     <template #no-data>
       <h5>There are no credits.</h5>
     </template>
-  </v-data-table>
+  </v-data-table> -->
 </template>
 
 <script lang="ts">
