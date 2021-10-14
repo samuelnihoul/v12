@@ -1,8 +1,7 @@
 <template>
   <div>
-    <v-img :src="require('@/assets/images/crabs.jpg')" height="500">
-      {{/*this needs to be aligned bottom of the img*/}}
-      <h1>About Us</h1></v-img
+    <q-img :src="require('@/assets/images/crabs.jpg')" height="500">
+      <h1>About Us</h1></q-img
     >
 
     <div class="container">
@@ -31,13 +30,7 @@
     </div>
   </div>
 </template>
-<script>
-import { defineComponent } from "vue";
 
-export default defineComponent({
-  setup() {},
-});
-</script>
 <style scoped>
 .container {
   display: flex;
@@ -50,7 +43,7 @@ h1 {
   color: white;
   font-size: 10em;
 }
-v-img {
+q-img {
   align-items: bottom;
   display: flex;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-img :src="require('@/assets/images/tucan.jpg')" height="500">
-      <h1>About Us</h1></v-img
+    <q-img :src="require('@/assets/images/tucan.jpg')" height="500">
+      <h1>About Us</h1></q-img
     >
     <h2>Contact Details</h2>
     <div class="container">
@@ -44,7 +44,7 @@ h1 {
   color: white;
   font-size: 10em;
 }
-v-img {
+q-img {
   align-items: bottom;
   display: flex;
 }

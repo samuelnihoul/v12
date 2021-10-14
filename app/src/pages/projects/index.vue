@@ -51,12 +51,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-export default defineComponent<any>({
+export default defineComponent({
   computed: {
     isMobile() {
-      if (this.$vuetify) {
-        return ["xs", "sm"].includes(this.$vuetify.breakpoint.name);
-      }
+      // if (this.$vuetify) {
+      //   return ["xs", "sm"].includes(this.$vuetify.breakpoint.name);
+      // }
 
       return null;
     },

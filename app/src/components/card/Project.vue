@@ -1,48 +1,45 @@
 <template>
-  <v-card class="project-card" :elevation="elevation">
-    <v-hover>
-      <template v-slot:default="{ hover }">
-        <div>
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
-            lazy-src="/logo.png"
-            height="300"
-          >
-            <v-badge
-              inline
-              content="$10.00 USD/TONNE"
-              class="price"
-              color="#000"
-            ></v-badge>
-            <v-fade-transition>
-              <v-overlay v-if="hover" absolute color="#000">
-                <v-btn :to="{ name: 'projects-id', params: { id: 1 } }"
-                  >See more info</v-btn
-                >
-              </v-overlay>
-            </v-fade-transition>
-          </v-img>
-        </div>
-      </template>
-    </v-hover>
-    <v-card-title class="primary--text">
+  <q-card class="project-card" :elevation="elevation">
+    <div>
+      <q-img
+        src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
+        lazy-src="/logo.png"
+        height="300"
+      >
+        <v-badge
+          inline
+          content="$10.00 USD/TONNE"
+          class="price"
+          color="#000"
+        ></v-badge>
+        <v-fade-transition>
+          <v-overlay absolute color="#000">
+            <q-btn :to="{ name: 'projects-id', params: { id: 1 } }"
+              >See more info</q-btn
+            >
+          </v-overlay>
+        </v-fade-transition>
+      </q-img>
+    </div>
+
+    <q-card-title class="primary--text">
       Adavikanda, Kuruwita Division Mini Hydro Power Project
-    </v-card-title>
+    </q-card-title>
     <div style="padding: 0 16px">
       Travel to the best outdoor experience on planet Earth. A vacation you will
       never forget!
     </div>
-    <v-card-actions v-if="!presentation">
+    <q-card-actions v-if="!presentation">
       <div class="d-flex align-center w-100">
         <div class="col-md-3">
           <v-text-field class="my-input" outlined value="1"></v-text-field>
         </div>
         <div class="col-md-9">
-          <v-btn block color="primary">Acheter</v-btn>
+          <q-btn block color="primary">Acheter</q-btn>
         </div>
       </div>
-    </v-card-actions>
-  </v-card>
+    </q-card-actions>
+  </q-card>
 </template>
 
 <script lang="ts">

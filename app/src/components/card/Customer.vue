@@ -1,26 +1,23 @@
 <template>
-  <v-hover v-slot="{ hover }">
-    <v-card :elevation="hover ? 2 : 0" class="customer-card">
-      <v-icon color="primary" class="customer-icon"
-        >mdi-format-quote-open</v-icon
-      >
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-        corrupti hic asperiores at consectetur, aperiam
-      </p>
-      <div class="d-flex">
-        <div>
-          <v-avatar class="mr-3">
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
-          </v-avatar>
-        </div>
-        <div>
-          <h4>JOHN DOE</h4>
-          <p>Responsable</p>
-        </div>
+  <q-card class="customer-card">
+    <q-icon color="primary" class="customer-icon" name="format_quote"></q-icon>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
+      corrupti hic asperiores at consectetur, aperiam
+    </p>
+    <div class="d-flex align-items-center mb-2">
+      <div>
+        <q-avatar class="ml-0 mr-3">
+          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+        </q-avatar>
       </div>
-    </v-card>
-  </v-hover>
+      <div>
+        <h5 class="m-0">JOHN DOE</h5>
+
+        <p class="mb-0">Responsable</p>
+      </div>
+    </div>
+  </q-card>
 </template>
 
 <script lang="ts">

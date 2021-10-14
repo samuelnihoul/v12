@@ -1,5 +1,5 @@
 <template>
-  <v-img
+  <q-img
     :src="require('~/assets/images/back.jpg')"
     height="500"
     width="100%"
@@ -15,7 +15,7 @@
         rather than simply carbon neutral and offset more than your footprint.
       </h3>
     </div>
-  </v-img>
+  </q-img>
 </template>
 
 <script lang="ts">

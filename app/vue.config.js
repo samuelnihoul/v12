@@ -4,8 +4,9 @@ const VueAutoRoutingPlugin = require('vue-auto-routing/lib/webpack-plugin')
 
 module.exports = {
   transpileDependencies: [
-    'vuetify'
+    'quasar'
   ],
+
   configureWebpack: {
     plugins: [
       new VueAutoRoutingPlugin({
@@ -16,5 +17,12 @@ module.exports = {
         importPrefix: '@/pages/'
       })
     ]
+  },
+
+  pluginOptions: {
+    quasar: {
+      importStrategy: 'kebab',
+      rtlSupport: false
+    }
   }
 }

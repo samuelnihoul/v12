@@ -27,7 +27,7 @@
 import { computed, defineComponent, ref, useContext } from "vue";
 
 export default defineComponent({
-  setup(_) {
+  setup() {
     const { app } = useContext();
 
     // console.log(vuetify.breakpoint.name)

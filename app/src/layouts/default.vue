@@ -1,60 +1,60 @@
 <template>
-  <v-app dark app>
-    <v-app-bar fixed app>
+  <div>
+    <!-- <v-app-bar fixed app>
       <v-container class="d-flex align-center">
         <img src="/logo.png" alt="" height="80px" @click="$router.push('/')" />
-        <!-- <v-img src="/logo.png" width="30" height="25" contain></v-img> -->
         <v-spacer />
-        <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-          <v-icon>mdi-menu</v-icon>
-        </v-btn>
+        <q-btn icon @click.stop="rightDrawer = !rightDrawer">
+          <q-icon>mdi-menu</q-icon>
+        </q-btn>
       </v-container>
-    </v-app-bar>
-    <v-main app>
+    </v-app-bar> -->
+    <main>
       <router-view />
-    </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
+    </main>
+    <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-item @click="right = !right">
           <v-list-item-title>Panier</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
+    </v-navigation-drawer> -->
+    <footer>
       <div class="w-100 d-flex flex-column flex-md-row align-center">
         <div>
           <img src="/logo.png" alt="" height="160px" />
         </div>
-        <v-spacer></v-spacer>
+        <!-- <v-spacer></v-spacer> -->
         <div>
-          <v-btn icon>
-            <v-icon x-large>mdi-facebook</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon x-large>mdi-twitter</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon x-large>mdi-instagram</v-icon>
-          </v-btn>
+          <q-btn>
+            <q-icon x-large>mdi-facebook</q-icon>
+          </q-btn>
+          <q-btn icon>
+            <q-icon x-large>mdi-twitter</q-icon>
+          </q-btn>
+          <q-btn icon>
+            <q-icon x-large>mdi-instagram</q-icon>
+          </q-btn>
         </div>
       </div>
       <div class="w-100 d-flex justify-center mt-3">
         <span>&copy; {{ new Date().getFullYear() }}</span>
       </div>
-    </v-footer>
-  </v-app>
+    </footer>
+  </div>
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent, reactive, toRefs } from "vue";
+export default defineComponent({
   props: {
     fluid: {
       type: Boolean,
       default: true,
     },
   },
-  data() {
-    return {
+  setup() {
+    const data = reactive({
       clipped: false,
       drawer: false,
       fixed: false,
@@ -73,8 +73,11 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Vuetify.js",
+    });
+
+    return {
+      ...toRefs(data),
     };
   },
-};
+});
 </script>

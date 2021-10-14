@@ -1,14 +1,14 @@
 <template>
-  <v-card
+  <q-card
     class="black-card"
     href="https://footprint.wwf.org.uk/#/"
     target="_blank"
   >
     <div class="content">
-      <v-icon class="ticon">mdi-pencil-ruler</v-icon>
+      <q-icon class="ticon">mdi-pencil-ruler</q-icon>
       <p class="text">WWF UK CARBON FOORPRINT CALCULATOR</p>
     </div>
-  </v-card>
+  </q-card>
 </template>
 
 <script lang="ts">

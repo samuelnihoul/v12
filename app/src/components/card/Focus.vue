@@ -1,13 +1,14 @@
 <template>
-  <v-hover v-slot="{ hover }">
-    <v-card :elevation="hover ? 2 : 0">
-      <div class="text-center px-xl-4 pb-5">
-        <v-img height="150" :src="image" contain></v-img>
-        <h2 v-text="title"></h2>
-        <p class="mt-4" v-text="body"></p>
-      </div>
-    </v-card>
-  </v-hover>
+  <q-card>
+    <div class="text-center px-xl-4 pb-5">
+      <div
+        class="image"
+        :style="{ backgroundImage: 'url(' + image + ')' }"
+      ></div>
+      <h4 v-text="title" class="mb-3"></h4>
+      <p class="" v-text="body"></p>
+    </div>
+  </q-card>
 </template>
 
 <script lang="ts">
@@ -19,4 +20,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.image {
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 </style>

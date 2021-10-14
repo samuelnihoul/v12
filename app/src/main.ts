@@ -2,14 +2,13 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import vuetify from "./plugins/vuetify";
+import { Quasar } from 'quasar'
+import quasarUserOptions from './quasar-user-options'
 import "./assets/styles.scss";
-import { loadFonts } from "./plugins/webfontloader";
+import "@/styles/bootstrap-grid.css"
+// loadFonts();
 
-loadFonts();
-
-createApp(App)
+createApp(App).use(Quasar, quasarUserOptions)
   .use(router)
   .use(store)
-  .use(vuetify)
   .mount("#app");

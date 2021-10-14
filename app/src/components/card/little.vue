@@ -1,8 +1,8 @@
 <template>
   <v-badge overlap content="2">
-    <v-card class="little-card">
-      <v-icon>mdi-weather-sunny</v-icon>
-    </v-card>
+    <q-card class="little-card">
+      <q-icon>mdi-weather-sunny</q-icon>
+    </q-card>
   </v-badge>
 </template>
 

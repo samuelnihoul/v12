@@ -22,13 +22,13 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             ratione facere nam optio obcaecati autem dolorem possimus eligendi
           </p>
-          <my-input
+          <!-- <my-input
             placeholder="Recherche par numéro de projet, industrie ou bénéfices"
           >
             <template #prepend>
-              <v-menu offset-y>
+              <q-menu offset-y>
                 <template v-slot:activator="{ on, attrs }">
-                  <v-btn
+                  <q-btn
                     large
                     text
                     dark
@@ -37,33 +37,32 @@
                     style="border-right: 1px solid"
                   >
                     Afrique
-                    <v-icon> mdi-chevron-down </v-icon>
-                    <!-- <v-icon v-else>mdi-chevron-up</v-icon> -->
-                  </v-btn>
+                    <q-icon> mdi-chevron-down </q-icon>
+                  </q-btn>
                 </template>
-                <v-list>
-                  <v-list-item
+                <q-list>
+                  <q-list-item
                     v-for="(item, index) in ['name', 'label', 'router-link']"
                     :key="index"
                   >
-                    <v-list-item-title>{{ item }}</v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu>
+                    <q-list-item-title>{{ item }}</q-list-item-title>
+                  </q-list-item>
+                </q-list>
+              </q-menu>
             </template>
             <template #append>
-              <v-btn color="primary" rounded large>JE RECHERCHE</v-btn>
+              <q-btn color="primary" rounded large>JE RECHERCHE</q-btn>
             </template>
-          </my-input>
+          </my-input> -->
         </div>
       </div>
     </section>
     <section>
       <h2 class="my-title">Notre objectif</h2>
 
-      <div class="row">
+      <div class="my-row">
         <div class="offset-md-2 col-md-8">
-          <div class="row">
+          <div class="my-row">
             <div class="col-md-4" v-for="(f, i) in focus" :key="'tt-' + i">
               <card-focus
                 :image="f.image"
@@ -79,15 +78,14 @@
       <div class="offset-md-2 col-md-8">
         <h2 class="my-title">Ces partenaires nous font confiance</h2>
         <div class="w-100 d-flex mb-3">
-          <v-hover v-slot="{ hover }" v-for="i in 5" :key="'zzz' + i">
-            <v-card
-              :elevation="hover ? 2 : 0"
-              class="w-20 d-flex justify-center align-center"
-              style="height: 150px"
-            >
-              <h2>SGBCI</h2>
-            </v-card>
-          </v-hover>
+          <q-card
+            v-for="i in 5"
+            :key="'zzz' + i"
+            class="w-20 d-flex justify-center align-center"
+            style="height: 150px"
+          >
+            <h3>SGBCI</h3>
+          </q-card>
         </div>
         <div class="d-flex justify-end">
           <a href="#">Voir tous les partenaires ></a>
@@ -101,16 +99,16 @@
           <new-projects></new-projects>
         </div>
         <div class="w-100 d-flex justify-space-between align-center">
-          <v-btn color="primary" rounded large :to="{ name: 'projects' }"
-            >Tous les projets</v-btn
+          <q-btn color="primary" rounded large :to="{ name: 'projects' }"
+            >Tous les projets</q-btn
           >
           <div>
-            <v-btn outlined icon class="my-button-prev"
-              ><v-icon>mdi-arrow-left </v-icon></v-btn
-            >
-            <v-btn icon outlined class="my-button-next"
-              ><v-icon>mdi-arrow-right</v-icon></v-btn
-            >
+            <q-btn round class="my-button-prev"
+              ><q-icon name="arrow_back"> </q-icon
+            ></q-btn>
+            <q-btn round class="my-button-next"
+              ><q-icon name="east"></q-icon
+            ></q-btn>
           </div>
         </div>
       </div>
@@ -118,7 +116,7 @@
     <section>
       <h2 class="my-title">Nos clients vous le dise</h2>
       <div class="offset-md-2 col-md-8">
-        <div class="row">
+        <div class="my-row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
             <card-customer></card-customer>
           </div>
@@ -130,18 +128,18 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MyInput from "@/components/my-input.vue";
+// import MyInput from "@/components/my-input.vue";
 import CardCustomer from "@/components/card/Customer.vue";
 import CardFocus from "@/components/card/Focus.vue";
 import NewProjects from "@/components/NewProjects.vue";
 export default defineComponent({
   components: {
-    MyInput,
+    // MyInput,
     CardCustomer,
     NewProjects,
     CardFocus,
   },
-  layout: "fixed",
+  // layout: "fixed",
   data() {
     return {
       focus: [

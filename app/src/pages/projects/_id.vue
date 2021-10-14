@@ -13,7 +13,7 @@
     </section>
 
     <section>
-      <div class="row">
+      <div class="my-row">
         <div class="col-md-2 col-lg-3">
           <div class="d-flex flex-md-column flex-lg-row">
             <div class="col">
@@ -29,27 +29,27 @@
         <div class="col-md-4 col-lg-4">
           <div class="product-box">
             <h4>PRODUCT</h4>
-            <div class="row">
+            <div class="my-row">
               <div class="col-4">
-                <v-icon>mdi-cube</v-icon>
+                <q-icon>mdi-cube</q-icon>
                 <p>NONE</p>
               </div>
               <div class="col-4">
-                <v-icon color="primary">mdi-pound</v-icon>
+                <q-icon color="primary">mdi-pound</q-icon>
                 <p>ISSUED</p>
               </div>
               <div class="col-4">
-                <v-icon color="primary">mdi-pound</v-icon>
+                <q-icon color="primary">mdi-pound</q-icon>
                 <p>RETIRED</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-5">
-          <div class="row">
+          <div class="my-row">
             <div class="col-md-4">
               <h4>PLANNED SDG IMPACTS</h4>
-              <div class="row mt-5">
+              <div class="my-row mt-5">
                 <div
                   class="col-4 col-md-6 d-flex justify-center"
                   v-for="i in 3"
@@ -61,18 +61,18 @@
             </div>
             <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>PROJECT TYPE</h4>
-              <v-icon class="myicon">mdi-weather-sunny</v-icon>
+              <q-icon class="myicon">mdi-weather-sunny</q-icon>
               <p>Geothermal</p>
             </div>
             <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>STATUS</h4>
-              <v-icon class="myicon">mdi-weather-sunny</v-icon>
+              <q-icon class="myicon">mdi-weather-sunny</q-icon>
               <p>Listed</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="my-row">
         <div class="col-md-8">
           <table-project-infos></table-project-infos>
         </div>
@@ -111,8 +111,8 @@
       <a v-if="$vuetify.breakpoint.name == 'xs'"
         >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</a
       >
-      <v-btn color="primary" outlined x-large v-else
-        >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</v-btn
+      <q-btn color="primary" outlined x-large v-else
+        >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</q-btn
       >
     </section>
     <section>
@@ -122,13 +122,7 @@
   </v-container>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
 
-export default defineComponent({
-  setup() {},
-});
-</script>
 
 <style scoped lang="scss">
 .myicon {
@@ -144,7 +138,7 @@ export default defineComponent({
     justify-content: center;
   }
 
-  .v-icon {
+  .q-icon {
     font-size: 2em;
     margin-bottom: 5px;
     margin-top: 5px;
