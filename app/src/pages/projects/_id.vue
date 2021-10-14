@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-5">
+  <div class="mx-auto col-md-10 pt-4">
     <section>
       <q-parallax
         :height="250"
@@ -123,7 +123,18 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-export default defineComponent({});
+import TableInsuance from "@/components/table/Insuance.vue";
+import CardLittle from "@/components/card/little.vue";
+import TableRetirements from "@/components/table/retirements.vue";
+import TableProjectInfos from "@/components/table/ProjectInfos.vue";
+export default defineComponent({
+  components: {
+    TableInsuance,
+    TableRetirements,
+    TableProjectInfos,
+    CardLittle,
+  },
+});
 </script>
 
 

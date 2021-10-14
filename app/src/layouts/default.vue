@@ -66,14 +66,14 @@
             <img src="/logo.png" alt="" height="160px" />
           </div>
           <div>
-            <v-link about-us>About us</v-link><br /><v-link contact-us
+            <!-- <v-link about-us>About us</v-link><br /><v-link contact-us
               >Contact Us</v-link
-            >
+            > -->
           </div>
           <q-space />
           <div>
             <q-btn icon="mdi-facebook" round> </q-btn>
-            <q-btn icon="mdi-twitter" round class="mx-md-4"> </q-btn>
+            <q-btn icon="mdi-twitter" round class="mx-md-5"> </q-btn>
             <q-btn icon="mdi-instagram" round> </q-btn>
           </div>
         </div>

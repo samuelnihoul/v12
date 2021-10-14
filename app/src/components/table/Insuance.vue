@@ -1,9 +1,9 @@
 <template>
-  <v-data-table :headers="headers" :items="items" :items-per-page="5">
+  <q-table :columns="columns" :rows="items" row-key="name">
     <template #no-data>
       <h5>There are no issuances.</h5>
     </template>
-  </v-data-table>
+  </q-table>
 </template>
 
 <script lang="ts">
@@ -12,16 +12,27 @@ import { defineComponent } from "vue";
 export default defineComponent({
   data() {
     return {
-      headers: [
+      columns: [
         {
-          text: "Vintage",
-          value: "calories",
+          label: "Vintage",
+          name: "calories",
+          field: "calories",
           sortable: true,
         },
-        { text: "Quantity", value: "fat", sortable: true },
-        { text: "Product", value: "carbs" },
-        { text: "Insuance Dates", value: "protein", sortable: true },
-        { text: "Actions", value: "iron" },
+        {
+          label: "Quantity",
+          name: "fat",
+          field: "fat",
+          sortable: true,
+        },
+        { label: "Product", name: "carbs", field: "carbs" },
+        {
+          label: "Insuance Dates",
+          name: "protein",
+          field: "protein",
+          sortable: true,
+        },
+        { label: "Actions", name: "iron", field: "iron" },
       ],
       items: [],
     };
