@@ -1,19 +1,16 @@
 <template>
-  <q-img
-    :src="require('~/assets/images/back.jpg')"
-    height="500"
-    width="100%"
-    class="d-flex align-center"
-  >
-    <div class="content">
-      <h2 class="t1">OFFSET</h2>
-      <h2 class="font-weight-medium font-italic">your emissions</h2>
-      <h3 class="font-weight-regular mt-8">
-        After reducing your climate impact, offsetting is an effective way to
-        reduce emissions globally and create sustainable development benefits
-        for communities around the world. And why not aim high? Go Climate+
-        rather than simply carbon neutral and offset more than your footprint.
-      </h3>
+  <q-img src="@/assets/images/back.jpg" style="height: 500px" width="100%">
+    <div class="content d-flex align-items-center">
+      <div class="my-content">
+        <h2 class="t1">OFFSET</h2>
+        <h2 class="font-weight-medium font-italic">your emissions</h2>
+        <p class="text-h5 font-weight-regular mt-8">
+          After reducing your climate impact, offsetting is an effective way to
+          reduce emissions globally and create sustainable development benefits
+          for communities around the world. And why not aim high? Go Climate+
+          rather than simply carbon neutral and offset more than your footprint.
+        </p>
+      </div>
     </div>
   </q-img>
 </template>
@@ -25,7 +22,7 @@ export default defineComponent({});
 </script>
 
 <style scoped lang="scss">
-.content {
+.my-content {
   color: #fff;
   width: 70%;
   margin: 0 auto;
@@ -36,5 +33,10 @@ export default defineComponent({});
   .text {
     margin-top: 30px;
   }
+}
+
+.content {
+  height: 100%;
+  width: 100%;
 }
 </style>

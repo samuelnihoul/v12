@@ -1,6 +1,10 @@
 <template>
   <q-card class="customer-card">
-    <q-icon color="primary" class="customer-icon" name="format_quote"></q-icon>
+    <q-icon
+      color="primary"
+      class="customer-icon"
+      name="mdi-format-quote-open"
+    ></q-icon>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
       corrupti hic asperiores at consectetur, aperiam

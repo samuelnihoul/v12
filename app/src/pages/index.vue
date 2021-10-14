@@ -61,7 +61,7 @@
       <h2 class="my-title">Notre objectif</h2>
 
       <div class="my-row">
-        <div class="offset-md-2 col-md-8">
+        <div class="offset-md-1 col-md-10">
           <div class="my-row">
             <div class="col-md-4" v-for="(f, i) in focus" :key="'tt-' + i">
               <card-focus
@@ -75,7 +75,7 @@
       </div>
     </section>
     <section>
-      <div class="offset-md-2 col-md-8">
+      <div class="offset-md-1 col-md-10">
         <h2 class="my-title">Ces partenaires nous font confiance</h2>
         <div class="w-100 d-flex mb-3">
           <q-card
@@ -94,28 +94,31 @@
     </section>
     <section>
       <h2 class="my-title">Nos derniers projets</h2>
-      <div class="offset-md-2 col-md-10">
+      <div class="offset-md-1 col-md-10">
         <div>
           <new-projects></new-projects>
         </div>
-        <div class="w-100 d-flex justify-space-between align-center">
+        <div class="w-100 d-flex justify-content-between align-items-center">
           <q-btn color="primary" rounded large :to="{ name: 'projects' }"
             >Tous les projets</q-btn
           >
           <div>
-            <q-btn round class="my-button-prev"
-              ><q-icon name="arrow_back"> </q-icon
+            <q-btn
+              round
+              class="my-button-prev mr-2"
+              icon="mdi-arrow-left"
             ></q-btn>
-            <q-btn round class="my-button-next"
-              ><q-icon name="east"></q-icon
-            ></q-btn>
+            <!-- <q-btn round class="my-button-next" -->
+            <!-- > -->
+            <q-btn round icon="mdi-arrow-right"></q-btn>
+            <!-- </q-btn> -->
           </div>
         </div>
       </div>
     </section>
     <section>
       <h2 class="my-title">Nos clients vous le dise</h2>
-      <div class="offset-md-2 col-md-8">
+      <div class="offset-md-1 col-md-10">
         <div class="my-row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
             <card-customer></card-customer>

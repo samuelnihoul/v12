@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-img :src="require('@/assets/images/tucan.jpg')" height="500">
+    <q-img src="@/assets/images/tucan.jpg" height="500">
       <h1>About Us</h1></q-img
     >
     <h2>Contact Details</h2>

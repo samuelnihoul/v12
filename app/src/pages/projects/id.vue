@@ -1,15 +1,14 @@
 <template>
-  <v-container class="pt-5">
+  <div class="container pt-5">
     <section>
-      <v-parallax
-        height="250"
+      <q-parallax
+        :height="250"
         width="100%"
         class="d-flex align-center pl-8"
         src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
-        lazy-src="/logo.png"
       >
         <h1 class="white--text">Ici on a le titre du projet</h1>
-      </v-parallax>
+      </q-parallax>
     </section>
 
     <section>
@@ -31,15 +30,15 @@
             <h4>PRODUCT</h4>
             <div class="my-row">
               <div class="col-4">
-                <q-icon>mdi-cube</q-icon>
+                <q-icon name="mdi-cube"></q-icon>
                 <p>NONE</p>
               </div>
               <div class="col-4">
-                <q-icon color="primary">mdi-pound</q-icon>
+                <q-icon color="primary" name="mdi-pound"></q-icon>
                 <p>ISSUED</p>
               </div>
               <div class="col-4">
-                <q-icon color="primary">mdi-pound</q-icon>
+                <q-icon color="primary" name="mdi-pound"></q-icon>
                 <p>RETIRED</p>
               </div>
             </div>
@@ -61,12 +60,12 @@
             </div>
             <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>PROJECT TYPE</h4>
-              <q-icon class="myicon">mdi-weather-sunny</q-icon>
+              <q-icon class="myicon" name="mdi-weather-sunny"></q-icon>
               <p>Geothermal</p>
             </div>
             <div class="col-6 col-md-4 d-flex flex-column align-center">
               <h4>STATUS</h4>
-              <q-icon class="myicon">mdi-weather-sunny</q-icon>
+              <q-icon class="myicon" name="mdi-weather-sunny"></q-icon>
               <p>Listed</p>
             </div>
           </div>
@@ -108,20 +107,24 @@
     </section>
     <section>
       <h2 class="section-title">CERTIFICATION DOCUMENTS</h2>
-      <a v-if="$vuetify.breakpoint.name == 'xs'"
+      <!-- <a v-if="$vuetify.breakpoint.name == 'xs'"
         >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</a
       >
       <q-btn color="primary" outlined x-large v-else
         >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</q-btn
-      >
+      > -->
     </section>
     <section>
       <h2 class="section-title">RETIREMENTS</h2>
       <table-retirements></table-retirements>
     </section>
-  </v-container>
+  </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({});
+</script>
 
 
 <style scoped lang="scss">

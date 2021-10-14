@@ -3,7 +3,7 @@
     <section>
       <jumbotron></jumbotron>
     </section>
-    <v-container>
+    <div class="mx-auto col-md-10">
       <div class="d-flex align-center mb-8">
         <div class="col-md-5 calculator">
           <h2 class="title primary--text">
@@ -29,10 +29,12 @@
           </div>
         </div>
       </div>
-      <grid-projects></grid-projects>
+      <section class="mt-4">
+        <grid-projects></grid-projects>
+      </section>
       <section class="mt-6">
         <h3 class="section-title">FEATURE YOUR PROJECT</h3>
-        <p class="mt-md-10 mb-10">
+        <p class="mt-md-10 mb-10 text-body1">
           If you have an eligible Gold Standard project that you would like to
           include on this page, please read our
           <a href="#">Terms & Conditions>></a>, fill in this
@@ -44,14 +46,21 @@
           for more details.
         </p>
       </section>
-    </v-container>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import Jumbotron from "@/components/Jumbotron.vue";
+import CardBlack from "@/components/card//black.vue";
+import GridProjects from "@/components/grid/Projects.vue";
 export default defineComponent({
+  components: {
+    Jumbotron,
+    CardBlack,
+    GridProjects,
+  },
   computed: {
     isMobile() {
       // if (this.$vuetify) {

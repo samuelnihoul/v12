@@ -1,9 +1,9 @@
 <template>
-  <v-badge overlap content="2">
+  <q-badge label="2">
     <q-card class="little-card">
       <q-icon>mdi-weather-sunny</q-icon>
     </q-card>
-  </v-badge>
+  </q-badge>
 </template>
 
 <script lang="ts">

@@ -5,7 +5,7 @@
     target="_blank"
   >
     <div class="content">
-      <q-icon class="ticon">mdi-pencil-ruler</q-icon>
+      <q-icon class="ticon" name="mdi-pencil-ruler"></q-icon>
       <p class="text">WWF UK CARBON FOORPRINT CALCULATOR</p>
     </div>
   </q-card>

@@ -1,5 +1,3 @@
-import { reactive } from 'vue';
-import { reactive } from 'vue';
 <template>
   <div>
     <navbar>
@@ -31,17 +29,11 @@ import { reactive } from 'vue';
             >Contact Us</v-link
           >
         </div>
-        <v-spacer></v-spacer>
+        <q-space />
         <div>
-          <q-btn icon>
-            <q-icon x-large>mdi-facebook</q-icon>
-          </q-btn>
-          <q-btn icon>
-            <q-icon x-large>mdi-twitter</q-icon>
-          </q-btn>
-          <q-btn icon>
-            <q-icon x-large>mdi-instagram</q-icon>
-          </q-btn>
+          <q-btn icon="md-facebook"> </q-btn>
+          <q-btn icon="mdi-twitter"> </q-btn>
+          <q-btn icon="mdi-instagram"> </q-btn>
         </div>
       </div>
       <div class="w-100 d-flex justify-center mt-3">
