@@ -1,7 +1,8 @@
 <template>
   <q-card class="project-card">
-    <q-img
-      src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
+    <!-- this can should be dynamic--><q-img
+      src="https://source.unsplash.com/random/900x600"
+      
       height="300"
     >
       <q-badge
@@ -21,7 +22,7 @@
 
     <q-card-section>
       <div class="text-h6">
-        Adavikanda, Kuruwita Division Mini Hydro Power Project
+        This is test project #[dynamic number]
       </div>
       <div class="text-subtitle2">
         Travel to the best outdoor experience on planet Earth. A vacation you
@@ -35,7 +36,7 @@
     </q-card-actions> -->
     <q-card-actions>
       <div class="d-flex justify-content-between align-items-center">
-        <q-input outlined value="1" dense />
+        <q-input outlined value="1" type="number" dense />
         <q-btn color="primary">Acheter</q-btn>
       </div>
     </q-card-actions>
