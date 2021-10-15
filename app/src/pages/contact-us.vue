@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-img src="@/assets/images/tucan.jpg" height="500">
-      <h1>About Us</h1></q-img
+      <h1>Contact Us</h1></q-img
     >
     <h2>Contact Details</h2>
     <div class="container">
@@ -24,7 +24,11 @@
     </div>
   </div>
 </template>
-
+<script>
+import {useWallet }from "@solana/wallet-adapter-vue" 
+const wallet = useWallet()
+export default wallet
+</script>
 <style scoped>
 .container {
   display: flex;
