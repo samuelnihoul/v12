@@ -204,6 +204,31 @@ export default function DenseTable() {
   } else {
     return (
       <div>
+        <br />
+        <div>
+          <div>
+            <h2>{value}</h2>
+            <input
+              placeholder="name"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+            <input
+              placeholder="number"
+              //@ts-ignore
+              onChange={(e) => setNumber(e.target.value)}
+            />
+            <input
+              placeholder="amount"
+              //@ts-ignore
+              onChange={(e) => setPrice(e.target.value)}
+            />
+            <button onClick={() => create(name, number, price)}>
+              Create New Project
+            </button>
+          </div>
+        </div>
+        <br />
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
@@ -255,29 +280,6 @@ export default function DenseTable() {
             </TableBody>
           </Table>
         </TableContainer>
-        <div>
-          <div>
-            <h2>{value}</h2>
-            <input
-              placeholder="name"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-            />
-            <input
-              placeholder="number"
-              //@ts-ignore
-              onChange={(e) => setNumber(e.target.value)}
-            />
-            <input
-              placeholder="amount"
-              //@ts-ignore
-              onChange={(e) => setPrice(e.target.value)}
-            />
-            <button onClick={() => create(name, number, price)}>
-              Create New Project
-            </button>
-          </div>
-        </div>
       </div>
     );
   }
