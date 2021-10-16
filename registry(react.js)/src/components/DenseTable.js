@@ -98,7 +98,7 @@ export default function DenseTable() {
         address: p.publicKey.toString(),
         owner: p.account.authority.toString(),
         description: p.account.description,
-        image: p.account.pictureURL,
+        image: p.account.pictureUrl,
       });
       console.log(p.account.availableOffset.toString());
       console.log(p.account.authority.toString());
@@ -241,7 +241,9 @@ export default function DenseTable() {
                   </TableCell>
 
                   <TableCell align="right">{row.description}</TableCell>
-                  <TableCell align="right">{row.image}</TableCell>
+                  <TableCell align="right">
+                    <img src={row.image} />
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
