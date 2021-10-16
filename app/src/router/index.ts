@@ -8,17 +8,6 @@ const RouterLayout = createRouterLayout((layout) => {
   return import("@/layouts/" + layout + ".vue");
 });
 
-// const routes: Array<RouteRecordRaw> = [
-//   {
-//     path: "/",
-//     name: "Home",
-//     component: Home,
-//   },
-// ];
-
-console.log(routes);
-
-
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
@@ -29,9 +18,9 @@ const router = createRouter({
       component: RouterLayout,
 
       // All child components will be applied with corresponding layout component
-      children: routes.map(route  => {
+      children: routes.map((route) => {
         if ((route.path as string).endsWith("?")) {
-          route.path = route.path.slice(0, -1)
+          route.path = route.path.slice(0, -1);
           return route;
         }
         return route;

@@ -7,3 +7,9 @@ export interface IProject {
   image: string;
   description: string;
 }
+
+export interface IBuyDto {
+  offsets: number;
+  buyerPk: string;
+  wallet: any;
+}
