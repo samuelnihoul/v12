@@ -208,9 +208,9 @@ export default function DenseTable() {
               <TableRow>
                 <TableCell align="right">Project Name</TableCell>
                 <TableCell align="right">CO2e Available (T)</TableCell>
-                <TableCell align="right">CO2e Sold (T)</TableCell>
-                <TableCell align="right">Price(g)</TableCell>
-                <TableCell align="right">owner</TableCell>
+                <TableCell align="right">Price (lamports)</TableCell>
+                <TableCell align="right">Account</TableCell>
+                <TableCell align="right">Owner</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
