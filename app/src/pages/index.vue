@@ -11,11 +11,12 @@
           align-center
           offset-md-2
           col-md-8
+        
         "
-        style="min-height: 600px"
+        style="min-height: 600px "
       >
         <div>
-          <h1 class="mx-md-10">
+          <h1 class="mx-md-10" >
             Lorem ipsum, dolor sit amet, cectetur adipisicing elit
           </h1>
           <p>
@@ -190,6 +191,7 @@ export default defineComponent({
   p,
   h1 {
     text-shadow: 1px 1px 2px #000;
+    color:white;
   }
   h1 {
     font-size: 3.2em;
