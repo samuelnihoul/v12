@@ -7,15 +7,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+// import { initWallet, useWallet } from "@solana/wallet-adapter-vue";
+// import { getPhantomWallet, WalletName } from "@solana/wallet-adapter-wallets";
+import { defineComponent, onBeforeMount } from "vue";
 
 export default defineComponent({
   name: "App",
+  setup() {
+    onBeforeMount(() => {
+      console.log("baam");
 
-  data() {
-    return {
-      //
-    };
+      // const wallets = [getPhantomWallet()];
+      // initWallet({ wallets, autoConnect: true });
+      // const { select } = useWallet();
+
+      // select(WalletName.Phantom);
+    });
   },
 });
 </script>

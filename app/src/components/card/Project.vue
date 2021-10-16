@@ -20,7 +20,7 @@
     </q-img>
 
     <q-card-section>
-      <div class="text-h6" v-text="item.name"></div>
+      <div class="text-h6" v-text="item.name + ' (' + item.number + ')'"></div>
       <div class="text-subtitle2" v-text="item.description"></div>
     </q-card-section>
 
@@ -29,9 +29,23 @@
       <q-btn flat>Action 2</q-btn>
     </q-card-actions> -->
     <q-card-actions>
-      <div class="d-flex justify-content-between align-items-center">
-        <q-input outlined value="1" type="number" dense />
-        <q-btn color="primary">Acheter</q-btn>
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <q-btn color="primary" class="full-width">{{ label }}</q-btn>
+        <q-popup-edit v-model="label">
+          <h6 class="mb-1 text-center" v-text="item.name"></h6>
+          <q-input
+            label="Quantité demandée"
+            type="number"
+            :max="+item.number"
+            v-model="value"
+          />
+          <div class="my-4">
+            <q-input v-model="buyerPk" label="Votre adresse public" />
+          </div>
+          <q-btn @click="buy" color="black" class="full-width"
+            >Lancer la transaction</q-btn
+          >
+        </q-popup-edit>
       </div>
     </q-card-actions>
     <!-- <q-card-actions v-if="!presentation">
@@ -46,8 +60,11 @@
 </template>
 
 <script lang="ts">
-import { IProject } from "@/IProject";
-import { defineComponent, PropType } from "vue";
+import { IBuyDto, IProject } from "@/IProject";
+import { defineComponent, inject, PropType, ref } from "vue";
+import { useWallet, initWallet } from "@solana/wallet-adapter-vue";
+import { getPhantomWallet, WalletName } from "@solana/wallet-adapter-wallets";
+import { AxiosInstance } from "axios";
 
 export default defineComponent({
   props: {
@@ -65,7 +82,30 @@ export default defineComponent({
     },
   },
   setup() {
-    return {};
+    const axios = inject("axios") as AxiosInstance;
+
+    const label = ref("Acheter");
+    const buyerPk = ref("");
+    const value = ref(1);
+
+    async function buy() {
+      const { wallet } = useWallet();
+
+      const dto: IBuyDto = {
+        offsets: value.value,
+        buyerPk: buyerPk.value,
+        wallet: JSON.stringify(wallet.value),
+      };
+
+      try {
+        const { data } = await axios.post("/buy", dto);
+        console.log("success", data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    return { value, buy, label, buyerPk };
   },
 });
 </script>

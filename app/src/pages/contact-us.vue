@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-img src="@/assets/images/tucan.jpg" height="500">
-      <h1>Contact Us {{wallet.publicKey}}</h1></q-img
+      <h1>Contact Us {{ wallet.publicKey }}</h1></q-img
     >
     <q-btn @click="test">test</q-btn>
     <h2>Contact Details</h2>
@@ -29,22 +29,24 @@
 
 
 <script lang="ts" setup>
-import {defineComponent} from "vue"
-import {useWallet, initWallet }from "@solana/wallet-adapter-vue"
-import { getPhantomWallet, WalletName } from '@solana/wallet-adapter-wallets';
+import { defineComponent } from "vue";
+import { useWallet, initWallet } from "@solana/wallet-adapter-vue";
+import { getPhantomWallet, WalletName } from "@solana/wallet-adapter-wallets";
 
 // Initialise the wallet store once.
-const wallets = [getPhantomWallet()]
+const wallets = [getPhantomWallet()];
 initWallet({ wallets, autoConnect: true });
 
-const { wallet, select, connect, disconnect, connected, sendTransaction } = useWallet();
-select(WalletName.Phantom)
+const { wallet, select, connect, disconnect, connected, sendTransaction } =
+  useWallet();
+select(WalletName.Phantom);
 
 function test() {
-  console.log(wallet);
-  console.log(JSON.stringify(wallet));
-}
+  console.log("é");
 
+  // console.log(wallet);
+  // console.log(JSON.stringify(wallet));
+}
 </script>
 
 
