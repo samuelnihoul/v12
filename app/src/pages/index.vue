@@ -17,10 +17,11 @@
       >
         <div>
           <h1 class="mx-md-10" >
-            Lorem ipsum, dolor sit amet, cectetur adipisicing elit
+            The smartest CO2 offset marketplace
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            We do CO2e offsets.Your way.<br/><br/>
+You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             ratione facere nam optio obcaecati autem dolorem possimus eligendi
           </p>
           <!-- <my-input
