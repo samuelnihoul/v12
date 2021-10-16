@@ -7,7 +7,8 @@ import "./assets/styles.scss";
 import "@/styles/bootstrap-grid.css"
 import './styles/quasar.scss'
 import '@quasar/extras/mdi-v5/mdi-v5.css'
-
+import {Buffer} from  "buffer"
+(window as any).Buffer = (window as any).Buffer|| Buffer;
 createApp(App).use(Quasar, {
   config: {
     brand: {

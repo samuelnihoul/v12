@@ -1,8 +1,9 @@
 <template>
   <div>
     <q-img src="@/assets/images/tucan.jpg" height="500">
-      <h1>Contact Us</h1></q-img
+      <h1>Contact Us {{wallet.publicKey}}</h1></q-img
     >
+    <q-btn @click="test">test</q-btn>
     <h2>Contact Details</h2>
     <div class="container">
       <div class="container">
@@ -24,11 +25,30 @@
     </div>
   </div>
 </template>
-<script>
-import {useWallet }from "@solana/wallet-adapter-vue" 
-const wallet = useWallet()
-export default wallet
+
+
+
+<script lang="ts" setup>
+import {defineComponent} from "vue"
+import {useWallet, initWallet }from "@solana/wallet-adapter-vue"
+import { getPhantomWallet, WalletName } from '@solana/wallet-adapter-wallets';
+
+// Initialise the wallet store once.
+const wallets = [getPhantomWallet()]
+initWallet({ wallets, autoConnect: true });
+
+const { wallet, select, connect, disconnect, connected, sendTransaction } = useWallet();
+select(WalletName.Phantom)
+
+function test() {
+  console.log(wallet);
+  
+}
+
 </script>
+
+
+
 <style scoped>
 .container {
   display: flex;

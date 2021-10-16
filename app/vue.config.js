@@ -1,28 +1,38 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const VueAutoRoutingPlugin = require('vue-auto-routing/lib/webpack-plugin')
-
+const Webpack = require("webpack");
+const VueAutoRoutingPlugin = require("vue-auto-routing/lib/webpack-plugin");
 
 module.exports = {
-  transpileDependencies: [
-    'quasar'
-  ],
+  transpileDependencies: ["quasar"],
 
   configureWebpack: {
     plugins: [
       new VueAutoRoutingPlugin({
         // Path to the directory that contains your page components.
-        pages: 'src/pages',
-  
+        pages: "src/pages",
+
         // A string that will be added to importing component path (default @/pages/).
-        importPrefix: '@/pages/'
-      })
-    ]
+        importPrefix: "@/pages/",
+      }),
+      new Webpack.ProvidePlugin({
+        process: "process/browser",
+      }),
+    ],
+    resolve: {
+      fallback: {
+        crypto: require.resolve("crypto-browserify"),
+        stream: require.resolve("stream-browserify"),
+      },
+      alias: {
+        process: "process/browser",
+      },
+    },
   },
 
   pluginOptions: {
     quasar: {
-      importStrategy: 'kebab',
-      rtlSupport: false
-    }
-  }
-}
+      importStrategy: "kebab",
+      rtlSupport: false,
+    },
+  },
+};
