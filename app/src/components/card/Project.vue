@@ -1,13 +1,12 @@
 <template>
   <q-card class="project-card">
     <!-- this can should be dynamic--><q-img
-      src="https://source.unsplash.com/random/900x600"
-      
-      height="300"
+      :src="item?.image"
+      style="height: 300px !important"
     >
       <q-badge
         inline
-        label="$10.00 USD/TONNE"
+        :label="`$ ${item.price} USD/TONNE`"
         class="price"
         color="#000"
       ></q-badge>
@@ -21,13 +20,8 @@
     </q-img>
 
     <q-card-section>
-      <div class="text-h6">
-        This is test project #[dynamic number]
-      </div>
-      <div class="text-subtitle2">
-        Travel to the best outdoor experience on planet Earth. A vacation you
-        will never forget!
-      </div>
+      <div class="text-h6" v-text="item.name"></div>
+      <div class="text-subtitle2" v-text="item.description"></div>
     </q-card-section>
 
     <!-- <q-card-actions>
@@ -52,7 +46,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { IProject } from "@/IProject";
+import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
   props: {
@@ -63,6 +58,10 @@ export default defineComponent({
     presentation: {
       type: Boolean,
       default: false,
+    },
+    item: {
+      type: Object as PropType<IProject>,
+      required: true,
     },
   },
   setup() {
