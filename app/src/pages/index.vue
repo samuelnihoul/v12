@@ -181,7 +181,7 @@ export default defineComponent({
 
 .first {
   width: 100%;
-  background: url("https://wallpaperaccess.com/full/1204217.jpg");
+  background: url("../../public/IMG/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png");
   background-size: cover;
   margin-top: 0 !important;
 }
@@ -192,6 +192,7 @@ export default defineComponent({
   h1 {
     text-shadow: 1px 1px 2px #000;
     color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   h1 {
     font-size: 3.2em;
