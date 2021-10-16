@@ -1,6 +1,6 @@
 # ignition-v0.7
 
-IMPORTANT: the project currently contains 2 web apps: one for the registry and one for the front end.
+IMPORTANT: the project currently contains 2 web apps: a frontend template (app) and an interactive registry-candy-machine (registry).
 
 IMPORTANT: this version it out of date:
 
