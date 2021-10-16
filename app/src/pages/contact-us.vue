@@ -42,7 +42,7 @@ select(WalletName.Phantom)
 
 function test() {
   console.log(wallet);
-  
+  console.log(JSON.stringify(wallet));
 }
 
 </script>
