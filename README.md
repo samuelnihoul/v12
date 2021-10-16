@@ -2,7 +2,8 @@
 
 IMPORTANT: the project currently contains 2 web apps: one for the registry and one for the front end.
 
-OUR ALPHA VERSION: https://github.com/h-ignition/ignition-v0.8/tree/phantom (migration to Vue3 + registry integration)
+IMPORTANT: this version it out of date:
+OUR ALPHA VERSION: https://github.com/h-ignition/ignition-v0.8/tree/phantom (migration to Vue3 + solana integration in the front)
 
 # harmonia-eko (./app)
 
