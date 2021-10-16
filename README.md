@@ -1,4 +1,4 @@
-# ignition-v0.7
+# ignition-v0.7 (./)
 
 IMPORTANT: the project currently contains 2 web apps: a front-end template (app) and an interactive registry-candy-machine (registry).
 
