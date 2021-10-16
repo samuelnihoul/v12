@@ -58,7 +58,7 @@
       </div>
     </section>
     <section>
-      <h2 class="my-title">Notre objectif</h2>
+      <h2 class="my-title">Our mission</h2>
 
       <div class="my-row">
         <div class="offset-md-1 col-md-10">
