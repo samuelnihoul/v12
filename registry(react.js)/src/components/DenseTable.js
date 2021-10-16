@@ -185,7 +185,7 @@ export default function DenseTable() {
       },
       signers: [mint],
     });
-
+    getAllProjects();
     return tx;
   }
 
