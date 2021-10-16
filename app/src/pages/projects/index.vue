@@ -35,7 +35,7 @@
       <section class="mt-6">
         <h3 class="section-title">FEATURE YOUR PROJECT</h3>
         <p class="mt-md-10 mb-10 text-body1">
-          If you have an eligible Gold Standard project that you would like to
+          If you have a project that you would like to
           include on this page, please read our
           <a href="#">Terms & Conditions>></a>, fill in this
           <a href="#">project profile template>></a> and provide it to
