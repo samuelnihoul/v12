@@ -88,7 +88,7 @@ export default function DenseTable() {
 
     //@ts-ignore
     let pl = [];
-    projects.forEach((p: any) => {
+    projects.forEach((p) => {
       // p.publicKey
       // p.account
       pl.push({
@@ -97,6 +97,8 @@ export default function DenseTable() {
         price: p.account.offsetPrice.toString(),
         address: p.publicKey.toString(),
         owner: p.account.authority.toString(),
+        description: p.account.description,
+        image: p.account.pictureURL,
       });
       console.log(p.account.availableOffset.toString());
       console.log(p.account.authority.toString());
@@ -239,7 +241,7 @@ export default function DenseTable() {
                   </TableCell>
 
                   <TableCell align="right">{row.description}</TableCell>
-                  <TableCell align="right">{row.price}</TableCell>
+                  <TableCell align="right">{row.image}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
