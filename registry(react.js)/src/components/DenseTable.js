@@ -70,9 +70,6 @@ export default function DenseTable() {
   const sellerAccount = new web3.PublicKey(
     "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
   );
-  const projectAccount = new web3.PublicKey(
-    "C4WKtnm7mrvftQ748Nm1k8DMV5BPq1EF2Bd1RgZwVTMb"
-  );
 
   const candyMachineUuid = "GMxBmP";
   const mint = web3.Keypair.generate();
@@ -138,7 +135,7 @@ export default function DenseTable() {
     getAllProjects();
   }
 
-  async function buyAndMint(offsets) {
+  async function buyAndMint(offsets, projectAccount) {
     const provider = await getProvider();
 
     const harmoniaProgram = new Program(idl2, programID, provider);
@@ -233,7 +230,7 @@ export default function DenseTable() {
                   <TableCell>
                     <button
                       onClick={() => {
-                        buyAndMint(1);
+                        buyAndMint(1, new web3.PublicKey(row.address));
                       }}
                     >
                       purchase 1
