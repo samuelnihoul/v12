@@ -4,9 +4,10 @@
       <template v-slot:default="{ hover }">
         <div>
           <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
+            :src="'https://source.unsplash.com/random'"
             lazy-src="/logo.png"
             height="300"
+            max-width="450"
           >
             <v-badge
               inline

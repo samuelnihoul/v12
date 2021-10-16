@@ -59,7 +59,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
       </div>
     </section>
     <section>
-      <h2 class="my-title">Our Objective</h2>
+      <h2 class="my-title">Our Focus</h2>
 
       <div class="row">
         <div class="offset-md-2 col-md-8">
@@ -77,7 +77,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
     </section>
     <section>
       <div class="offset-md-2 col-md-8">
-        <h2 class="my-title">They support us</h2>
+        <h2 class="my-title">Our partners</h2>
         <div class="w-100 d-flex mb-3">
           <v-hover v-slot="{ hover }" v-for="i in 5" :key="'zzz' + i">
             <v-card
@@ -138,18 +138,18 @@ export default defineComponent({
       focus: [
         {
           image: '/own-forest.png',
-          body: 'Lorem ipsum sjdjs sjsjs eeeej jejejej sjssjsj Lorem ipsum dolor sit amet consectetur',
-          title: 'Lorem ipsum dolor sit amet consectetur',
+          title: 'Safety',
+          body: 'We aim to promote a wide range of offsets, including mild geo-engineering.',
         },
         {
           image: '/carbon-footprint.png',
-          body: 'Lorem ipsum sjdjs sjsjs eeeej jejejej sjssjsj lotem ekkskdk ksd sdksdkddskdskdsksd',
-          title: 'Lorem ipsum dolor sit amet consectetur',
+          body: '',
+          title: 'Decentralization and Automation',
         },
         {
           image: '/carbon-pollution.png',
-          body: 'Lorem ipsum sjdjs sjsjs eeeej jejejej sjssjsj',
-          title: 'Lorem ipsum dolor sit amet consectetur',
+          body: "Rewards are always meaningful, as proof of gratitude and care.", 
+          title: 'User Experience and Reward',
         },
       ],
     }

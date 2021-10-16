@@ -27,7 +27,7 @@
         </div>
         <v-spacer></v-spacer>
         {{/*unsure on the syntax here */}}
-        <div><v-link about-us>About us</v-link><br><v-link contact-us>Contact Us</v-link></div>
+        <div><a href='/about-us'>About us</a><br><a href="contact-us">Contact Us</a></div>
         <v-spacer></v-spacer>
         <div>
           <v-btn icon>
