@@ -74,9 +74,10 @@
         </div>
       </div>
     </section>
+    
     <section>
       <div class="offset-md-1 col-md-10">
-        <h2 class="my-title">Ces partenaires nous font confiance</h2>
+        <h2 class="my-title">They support us</h2>
         <div class="w-100 d-flex mb-3">
           <q-card
             v-for="i in 5"
@@ -88,12 +89,12 @@
           </q-card>
         </div>
         <div class="d-flex justify-end">
-          <a href="#">Voir tous les partenaires ></a>
+          <a href="#">See all partners ></a>
         </div>
       </div>
     </section>
     <section>
-      <h2 class="my-title">Nos derniers projets</h2>
+      <h2 class="my-title">Our latest projects</h2>
       <div class="offset-md-1 col-md-10">
         <div>
           <new-projects></new-projects>
@@ -117,7 +118,7 @@
       </div>
     </section>
     <section>
-      <h2 class="my-title">Nos clients vous le dise</h2>
+      <h2 class="my-title">Our customers tell you</h2>
       <div class="offset-md-1 col-md-10">
         <div class="my-row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
@@ -135,12 +136,14 @@ import { defineComponent } from "vue";
 import CardCustomer from "@/components/card/Customer.vue";
 import CardFocus from "@/components/card/Focus.vue";
 import NewProjects from "@/components/NewProjects.vue";
+
 export default defineComponent({
   components: {
     // MyInput,
     CardCustomer,
     NewProjects,
     CardFocus,
+    
   },
   // layout: "fixed",
   data() {
