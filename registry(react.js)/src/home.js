@@ -7,8 +7,8 @@ export default function Home() {
       <h2>This is our awesome candy machine.</h2>
       <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
       <p>
-        By the way, each projects features its own natural wonder, so choose
-        wisely!
+        By the way, each projects features its own natural wonder (WIP), so
+        choose wisely!
       </p>
       <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       <DenseTable />
