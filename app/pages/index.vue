@@ -16,12 +16,12 @@
       >
         <div>
           <h1 class="mx-md-10">
-            Lorem ipsum, dolor sit amet, cectetur adipisicing elit
+            The smartest CO2 offset marketplace
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            ratione facere nam optio obcaecati autem dolorem possimus eligendi
-          </p>
+            We do CO2e offsets.Your way.<br/><br/>
+
+You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.      </p>
           <my-input
             placeholder="Recherche par numéro de projet, industrie ou bénéfices"
           >
@@ -36,7 +36,7 @@
                     v-on="on"
                     style="border-right: 1px solid"
                   >
-                    Afrique
+                    Africa
                     <v-icon> mdi-chevron-down </v-icon>
                     <!-- <v-icon v-else>mdi-chevron-up</v-icon> -->
                   </v-btn>
@@ -52,14 +52,14 @@
               </v-menu>
             </template>
             <template #append>
-              <v-btn color="primary" rounded large>JE RECHERCHE</v-btn>
+              <v-btn color="primary" rounded large>Search</v-btn>
             </template>
           </my-input>
         </div>
       </div>
     </section>
     <section>
-      <h2 class="my-title">Notre objectif</h2>
+      <h2 class="my-title">Our Objective</h2>
 
       <div class="row">
         <div class="offset-md-2 col-md-8">
@@ -77,7 +77,7 @@
     </section>
     <section>
       <div class="offset-md-2 col-md-8">
-        <h2 class="my-title">Ces partenaires nous font confiance</h2>
+        <h2 class="my-title">They support us</h2>
         <div class="w-100 d-flex mb-3">
           <v-hover v-slot="{ hover }" v-for="i in 5" :key="'zzz' + i">
             <v-card
@@ -85,24 +85,24 @@
               class="w-20 d-flex justify-center align-center"
               style="height: 150px"
             >
-              <h2>SGBCI</h2>
+              <h2>()</h2>
             </v-card>
           </v-hover>
         </div>
         <div class="d-flex justify-end">
-          <a href="#">Voir tous les partenaires ></a>
+          <a href="#">See all></a>
         </div>
       </div>
     </section>
     <section>
-      <h2 class="my-title">Nos derniers projets</h2>
+      <h2 class="my-title">Latest projects</h2>
       <div class="offset-md-2 col-md-10">
         <div>
           <new-projects></new-projects>
         </div>
         <div class="w-100 d-flex justify-space-between align-center">
           <v-btn color="primary" rounded large :to="{ name: 'projects' }"
-            >Tous les projets</v-btn
+            >All projects</v-btn>
           >
           <div>
             <v-btn outlined icon class="my-button-prev"
@@ -116,7 +116,7 @@
       </div>
     </section>
     <section>
-      <h2 class="my-title">Nos clients vous le dise</h2>
+      <h2 class="my-title">Offseters tell you</h2>
       <div class="offset-md-2 col-md-8">
         <div class="row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
@@ -167,7 +167,7 @@ export default defineComponent({
 
 .first {
   width: 100%;
-  background: url('https://wallpaperaccess.com/full/1204217.jpg');
+  background: url("@/../assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png");
   background-size: cover;
   margin-top: 0 !important;
 }
