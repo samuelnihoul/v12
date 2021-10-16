@@ -138,17 +138,16 @@ export default function DenseTable() {
 
   async function buyAndMint(offsets) {
     const provider = await getProvider();
-    //@ts-ignore
+
     const harmoniaProgram = new Program(idl2, programID, provider);
-    //@ts-ignore
+
     const candyProgram = new Program(idl, programID2, provider);
     const candyProgramId = candyProgram.programId;
-    //@ts-ignore
+
     const buyerAccount = provider.wallet;
     const metadata = await getMetadataAddress(mint.publicKey);
     const masterEdition = await getMasterEditionAddress(mint.publicKey);
 
-    //@ts-ignore
     console.log(`Connecting to ${provider.connection["_rpcEndpoint"]}`);
     const [candyMachine, bump] = await getCandyMachine(
       config,
