@@ -2,6 +2,8 @@
 
 IMPORTANT: the project currently contains 2 web apps: one for the registry and one for the front end.
 
+OUR ALPHA VERSION: https://github.com/h-ignition/ignition-v0.8/tree/phantom (working integration)
+
 # harmonia-eko (./app)
 
 ## Build Setup
