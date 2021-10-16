@@ -89,12 +89,13 @@ export default defineComponent({
     const value = ref(1);
 
     async function buy() {
-      const { wallet } = useWallet();
+      const theWallet = useWallet();
+      // console.log(theWallet.wallet);
 
       const dto: IBuyDto = {
         offsets: value.value,
         buyerPk: buyerPk.value,
-        wallet: JSON.stringify(wallet.value),
+        wallet: JSON.stringify(theWallet),
       };
 
       try {
