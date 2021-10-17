@@ -1,9 +1,0 @@
-
-.anchor
-.DS_Store
-target
-**/*.rs.bk
-node_modules
-app/node_modules
-test-ledger
-registry(react.js)/node_modules
