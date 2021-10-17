@@ -4,4 +4,3 @@ yarn.lock
 front/yarn.lock
 back/node_modules
 test-ledger
-Cargo.toml
