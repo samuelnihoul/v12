@@ -57,8 +57,8 @@ export default defineComponent({
       initWallet({ wallets, autoConnect: true });
       const { select } = useWallet();
       select(WalletName.Phantom);
-
-      // wallet.sendTransaction()  it's ready to be passed as argument
+      const wallet=useWallet();
+    
     });
 
     const perPage = computed(() => {
