@@ -1,4 +1,6 @@
-# ignition-v0.7 (./)
+# ignition-v0.8.1 (./)
+
+To try v0.7.5, head on to the v0.7 branch
 
 ## Build Setup
 
