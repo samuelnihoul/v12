@@ -9613,6 +9613,11 @@ vue-auto-routing@^1.0.1:
   dependencies:
     vue-route-generator "^1.0.0"
 
+vue-axios@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/vue-axios/-/vue-axios-3.3.7.tgz#1958b6fb712eb4011ab21db433b2350e2a6d684f"
+  integrity sha512-SmNFJIkM5YF4eWfaWfmCmORy52ZP5b8ml9PCTi7C0VsuQK4vwZON6ToNWuyFGCL6U/Fp/pzfIgdLLh/O/qKzYQ==
+
 vue-cli-plugin-quasar@~4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-quasar/-/vue-cli-plugin-quasar-4.0.2.tgz#e85f4c7d7f1e48c223698acadb25c82ef8c5f1a2"
