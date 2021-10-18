@@ -79,10 +79,10 @@ import {
 } from "@project-serum/anchor";
 
 // @ts-ignore
-import * as idl from "../../idls/idl.json";
+import idl from "../../idls/idl.json";
 
 // @ts-ignore
-import * as idl2 from "../../idls/idl2.json";
+import idl2 from "../../idls/idl2.json";
 
 import {
   getCandyMachine,
@@ -125,7 +125,7 @@ export default defineComponent({
     // const axios = inject("axios") as AxiosInstance;
 
     const label = ref("Acheter");
-    const buyerPk = ref("");
+    const buyerPk = ref(null);
     const value = ref(1);
 
     async function getProvider(wallet: Wallet) {
@@ -171,8 +171,6 @@ export default defineComponent({
         candyMachineUuid,
         candyProgramId
       );
-
-      //return aa;
 
       const tx = await harmoniaProgram.rpc.buyAndMint(new BN(offsets), {
         accounts: {
@@ -227,7 +225,7 @@ export default defineComponent({
       };
 
       await buyAndMint({
-        buyerPk: buyerPk.value,
+        buyerPk: buyerPk.value ?? publicKey.value!.toBase58(),
         offsets: value.value,
         wallet: providerWallet,
       });
