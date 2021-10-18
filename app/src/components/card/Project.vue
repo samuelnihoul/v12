@@ -89,13 +89,37 @@ export default defineComponent({
     const value = ref(1);
 
     async function buy() {
-      const theWallet = useWallet();
+      const {
+        sendTransaction,
+        signTransaction,
+        signAllTransactions,
+        signMessage,
+        publicKey,
+      } = useWallet();
+
+      const providerWallet = {
+        sendTransaction,
+        get signTransaction() {
+          return signTransaction.value;
+        },
+        get signAllTransactions() {
+          return signAllTransactions.value;
+        },
+        get signMessage() {
+          return signMessage.value;
+        },
+        get publicKey() {
+          return publicKey.value;
+        },
+      };
       // console.log(theWallet.wallet);
+
+      console.log("ii", providerWallet);
 
       const dto: IBuyDto = {
         offsets: value.value,
         buyerPk: buyerPk.value,
-        wallet: JSON.stringify(theWallet),
+        wallet: JSON.stringify(providerWallet),
       };
 
       try {
