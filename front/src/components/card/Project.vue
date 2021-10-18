@@ -89,13 +89,18 @@ export default defineComponent({
     const value = ref(1);
 
     async function buy() {
+      const wallets = [getPhantomWallet()];
+      initWallet({ wallets, autoConnect: true });
+      const { select } = useWallet();
+      select(WalletName.Phantom);
       const theWallet = useWallet();
       // console.log(theWallet.wallet);
 
       const dto: IBuyDto = {
         offsets: value.value,
-        buyerPk: buyerPk.value,
-        wallet: JSON.stringify(theWallet),
+        buyerPk: theWallet,
+        wallet: theWallet,
+
       };
 
       try {
