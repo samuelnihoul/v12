@@ -22,6 +22,9 @@ module.exports = {
       fallback: {
         crypto: require.resolve("crypto-browserify"),
         stream: require.resolve("stream-browserify"),
+        // path: require.resolve("path-browserify"),
+        path: false,
+        fs: false,
       },
       alias: {
         process: "process/browser",
