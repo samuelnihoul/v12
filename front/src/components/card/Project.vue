@@ -65,7 +65,23 @@ import { defineComponent, inject, PropType, ref } from "vue";
 import { useWallet, initWallet } from "@solana/wallet-adapter-vue";
 import { getPhantomWallet, WalletName } from "@solana/wallet-adapter-wallets";
 import { AxiosInstance } from "axios";
+const { 
+    sendTransaction,
+    signTransaction,
+    signAllTransactions,
+    signMessage,
+    publicKey,
+    wallet,
+    select
+} = useWallet()
 
+const providerWallet = {
+    sendTransaction,
+    get signTransaction () { return signTransaction.value },
+    get signAllTransactions () { return signAllTransactions.value },
+    get signMessage () { return signMessage.value },
+    get publicKey () { return publicKey.value },
+}
 export default defineComponent({
   props: {
     elevation: {
@@ -83,23 +99,17 @@ export default defineComponent({
   },
   setup() {
     const axios = inject("axios") as AxiosInstance;
-
     const label = ref("Acheter");
     const buyerPk = ref("");
     const value = ref(1);
-
     async function buy() {
-      const wallets = [getPhantomWallet()];
-      initWallet({ wallets, autoConnect: true });
-      const { select } = useWallet();
-      select(WalletName.Phantom);
-      const theWallet = useWallet();
-      // console.log(theWallet.wallet);
-
-      const dto: IBuyDto = {
-        offsets: value.value,
-        buyerPk: theWallet,
-        wallet: theWallet,
+    select(WalletName.Phantom)
+    const dto: IBuyDto = {
+      offsets: value.value,
+       buyerPk: providerWallet.publicKey?providerWallet.publicKey.toString():"",
+        wallet: providerWallet, 
+        
+        
 
       };
 

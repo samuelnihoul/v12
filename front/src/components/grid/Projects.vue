@@ -55,8 +55,7 @@ export default defineComponent({
 
       const wallets = [getPhantomWallet()];
       initWallet({ wallets, autoConnect: true });
-      const { select } = useWallet();
-      select(WalletName.Phantom);
+      
       
 
     })
