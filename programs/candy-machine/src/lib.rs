@@ -8,7 +8,7 @@ use {
     arrayref::array_ref,
     spl_associated_token_account,
     spl_token::state::Mint,
-    spl_token_metadata::{
+    metaplex_token_metadata::{
         instruction::{create_master_edition, create_metadata_accounts, update_metadata_accounts},
         state::{
             MAX_CREATOR_LEN, MAX_CREATOR_LIMIT, MAX_NAME_LENGTH, MAX_SYMBOL_LENGTH, MAX_URI_LENGTH,
@@ -31,7 +31,6 @@ pub struct MintAccounts<'b, 'info> {
     pub candy_machine: &'b mut ProgramAccount<'info, CandyMachine>,
     pub config: &'b ProgramAccount<'info, Config>,
     pub payer: &'b AccountInfo<'info>,
-    pub wallet: &'b AccountInfo<'info>,
     pub metadata: &'b AccountInfo<'info>,
     pub mint: &'b AccountInfo<'info>,
     pub mint_authority: &'b AccountInfo<'info>,
@@ -70,11 +69,11 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
 
     let mut nft_level = None;
     for i in 0..candy_machine.data.items_by_level.len() {
-        msg!(
-            "offsets_amount:{}, price:{}",
-            offsets_amount,
-            candy_machine.data.items_by_level[i].price
-        );
+        // msg!(
+        //     "offsets_amount:{}, price:{}",
+        //     offsets_amount,
+        //     candy_machine.data.items_by_level[i].price
+        // );
         if offsets_amount >= candy_machine.data.items_by_level[i].price {
             if candy_machine.items_redeemed_by_level[i]
                 < candy_machine.data.items_by_level[i].items_available
@@ -102,6 +101,7 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
     // Flag localnet with go_live_date = 0 ?!??
 
     if !localtest {
+
         let config_line = get_config_line(
             &config.to_account_info(),
             candy_machine.items_redeemed as usize,
@@ -115,15 +115,15 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
             &[candy_machine.bump],
         ];
 
-        let mut creators: Vec<spl_token_metadata::state::Creator> =
-            vec![spl_token_metadata::state::Creator {
+        let mut creators: Vec<metaplex_token_metadata::state::Creator> =
+            vec![metaplex_token_metadata::state::Creator {
                 address: candy_machine.key(),
                 verified: true,
                 share: 0,
             }];
 
         for c in &config.data.creators {
-            creators.push(spl_token_metadata::state::Creator {
+            creators.push(metaplex_token_metadata::state::Creator {
                 address: c.address,
                 verified: false,
                 share: c.share,
@@ -155,25 +155,34 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
             candy_machine.to_account_info().clone(),
         ];
 
+        // msg!("Calling create_metadata_accounts. ctx.payer.is_writable ? {} / {}", ctx.payer.is_writable, ctx.payer.key);
+
+        let create_metadata_instruction = create_metadata_accounts(
+            *ctx.token_metadata_program.key,
+            *ctx.metadata.key,
+            *ctx.mint.key,
+            *ctx.mint_authority.key,
+            *ctx.payer.key,
+            candy_machine.key(),
+            config_line.name,
+            config.data.symbol.clone(),
+            config_line.uri,
+            Some(creators),
+            config.data.seller_fee_basis_points,
+            false,
+            config.data.is_mutable,
+        );
+        // create_metadata_instruction.accounts.iter().for_each(|account| {
+        //     msg!("Account {}. Writable {}. Signer {}.", account.pubkey, account.is_writable, account.is_signer);
+        // });
+
         invoke_signed(
-            &create_metadata_accounts(
-                *ctx.token_metadata_program.key,
-                *ctx.metadata.key,
-                *ctx.mint.key,
-                *ctx.mint_authority.key,
-                *ctx.payer.key,
-                candy_machine.key(),
-                config_line.name,
-                config.data.symbol.clone(),
-                config_line.uri,
-                Some(creators),
-                config.data.seller_fee_basis_points,
-                false,
-                config.data.is_mutable,
-            ),
+            &create_metadata_instruction,
             metadata_infos.as_slice(),
             &[&authority_seeds],
         )?;
+
+        // msg!("Calling create_master_edition.");
 
         invoke_signed(
             &create_master_edition(
@@ -230,7 +239,6 @@ pub mod candy_machine {
             candy_machine: &mut ctx.accounts.candy_machine,
             config: &ctx.accounts.config,
             payer: &ctx.accounts.payer,
-            wallet: &ctx.accounts.wallet,
             metadata: &ctx.accounts.metadata,
             mint: &ctx.accounts.mint,
             mint_authority: &ctx.accounts.mint_authority,
@@ -250,7 +258,7 @@ pub mod candy_machine {
 
     pub fn update_candy_machine(
         ctx: Context<UpdateCandyMachine>,
-        price: Option<u64>,
+        _price: Option<u64>,
         go_live_date: Option<i64>,
     ) -> ProgramResult {
         let candy_machine = &mut ctx.accounts.candy_machine;
@@ -281,6 +289,7 @@ pub mod candy_machine {
             return Ok(());
         }
 
+        
         
         msg!("Create Mint account");
         invoke(
@@ -349,7 +358,6 @@ pub mod candy_machine {
             candy_machine: &mut ctx.accounts.candy_machine,
             config: &ctx.accounts.config,
             payer: &ctx.accounts.payer,
-            wallet: &ctx.accounts.wallet,
             metadata: &ctx.accounts.metadata,
             mint: &ctx.accounts.mint,
             mint_authority: &ctx.accounts.payer,
@@ -523,7 +531,6 @@ pub mod candy_machine {
         let mut total_items = 0;
         for i in &candy_machine.data.items_by_level {
             total_items = total_items + i.items_available;
-            msg!("{} items available at price {}", i.items_available, i.price);
         }
 
         if get_config_count(&ctx.accounts.config.to_account_info().data.borrow())?
@@ -585,15 +592,12 @@ pub struct MintNFT<'info> {
     #[account(
         mut,
         has_one = config,
-        has_one = wallet,
         seeds = [PREFIX.as_bytes(), config.key().as_ref(), candy_machine.data.uuid.as_bytes()],
         bump = candy_machine.bump,
     )]
     candy_machine: ProgramAccount<'info, CandyMachine>,
     #[account(mut, signer)]
     payer: AccountInfo<'info>,
-    #[account(mut)]
-    wallet: AccountInfo<'info>,
     // With the following accounts we aren't using anchor macros because they are CPI'd
     // through to token-metadata which will do all the validations we need on them.
     #[account(mut)]
@@ -606,7 +610,7 @@ pub struct MintNFT<'info> {
     update_authority: AccountInfo<'info>,
     #[account(mut)]
     master_edition: AccountInfo<'info>,
-    #[account(address = spl_token_metadata::id())]
+    #[account(address = metaplex_token_metadata::id())]
     token_metadata_program: AccountInfo<'info>,
     #[account(address = spl_token::id())]
     token_program: AccountInfo<'info>,
@@ -635,15 +639,12 @@ pub struct MintOne<'info> {
     #[account(
         mut,
         has_one = config,
-        has_one = wallet,
         seeds = [PREFIX.as_bytes(), config.key().as_ref(), candy_machine.data.uuid.as_bytes()],
         bump = candy_machine.bump,
     )]
     pub candy_machine: ProgramAccount<'info, CandyMachine>,
     #[account(mut, signer)]
     pub payer: AccountInfo<'info>,
-    #[account(mut)]
-    pub wallet: AccountInfo<'info>,
     #[account(mut)]
     pub associated_token: AccountInfo<'info>,
     #[account(mut)]
@@ -652,7 +653,7 @@ pub struct MintOne<'info> {
     pub mint: AccountInfo<'info>,
     #[account(mut)]
     pub master_edition: AccountInfo<'info>,
-    #[account(address = spl_token_metadata::id())]
+    #[account(address = metaplex_token_metadata::id())]
     pub token_metadata_program: AccountInfo<'info>,
     #[account(address = spl_associated_token_account::id())]
     pub ata_program: AccountInfo<'info>,
