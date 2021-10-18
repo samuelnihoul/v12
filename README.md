@@ -25,11 +25,7 @@ $ anchor test
 $ yarn
 
 # serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
+$ yarn serve
 ```
 
 # coeur (./back)
@@ -39,5 +35,5 @@ $ yarn start
 $ yarn install
 
 ## serve with hot reload at localhost:3000
-$ npm start
+$ yarn start
 ```
