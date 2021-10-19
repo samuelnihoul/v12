@@ -3,3 +3,8 @@ front/node_modules
 back/node_modules
 test-ledger
 target
+yarn.lock
+app/yarn.lock
+app/node_modules
+app/package.JSON
+app/yarn.lock
