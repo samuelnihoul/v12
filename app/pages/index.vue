@@ -98,7 +98,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
       <h2 class="my-title">Latest projects</h2>
       <div class="offset-md-2 col-md-10">
         <div>
-          <new-projects></new-projects>
+          <new-projects style="display:flex"></new-projects>
         </div>
         <div class="w-100 d-flex justify-space-between align-center">
           <v-btn color="primary" rounded large :to="{ name: 'projects' }"

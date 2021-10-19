@@ -1,5 +1,5 @@
 <template>
-  <v-card class="project-card" :elevation="elevation">
+  <v-card class="project-card" :elevation="elevation" max-width="500">
     <v-hover>
       <template v-slot:default="{ hover }">
         <div>
