@@ -6,14 +6,14 @@ use {
         Discriminator, Key,
     },
     arrayref::array_ref,
-    spl_associated_token_account,
-    spl_token::state::Mint,
     metaplex_token_metadata::{
         instruction::{create_master_edition, create_metadata_accounts, update_metadata_accounts},
         state::{
             MAX_CREATOR_LEN, MAX_CREATOR_LIMIT, MAX_NAME_LENGTH, MAX_SYMBOL_LENGTH, MAX_URI_LENGTH,
         },
     },
+    spl_associated_token_account,
+    spl_token::state::Mint,
     std::cell::Ref,
 };
 
@@ -92,6 +92,7 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
 
     // No lamport transfert
     // NFT are given against some co2 offset
+    let item_redeemed_index = candy_machine.items_redeemed_by_level[nft_level.unwrap()];
     candy_machine.items_redeemed_by_level[nft_level.unwrap()] = candy_machine
         .items_redeemed_by_level[nft_level.unwrap()]
     .checked_add(1)
@@ -101,11 +102,7 @@ fn mint<'b, 'info>(offsets_amount: u64, ctx: MintAccounts<'b, 'info>) -> Program
     // Flag localnet with go_live_date = 0 ?!??
 
     if !localtest {
-
-        let config_line = get_config_line(
-            &config.to_account_info(),
-            candy_machine.items_redeemed as usize,
-        )?;
+        let config_line = get_config_line(&config.to_account_info(), item_redeemed_index as usize)?;
 
         let config_key = config.key();
         let authority_seeds = [
@@ -279,7 +276,6 @@ pub mod candy_machine {
         ctx: Context<'_, '_, '_, 'info, MintOne<'info>>,
         offsets_amount: u64,
     ) -> ProgramResult {
-
         let candy_machine = &ctx.accounts.candy_machine;
 
         // If offset amount less than min price, return without minting
@@ -289,8 +285,6 @@ pub mod candy_machine {
             return Ok(());
         }
 
-        
-        
         msg!("Create Mint account");
         invoke(
             &system_instruction::create_account(

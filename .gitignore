@@ -3,3 +3,5 @@ front/node_modules
 back/node_modules
 test-ledger
 target
+
+/.anchor

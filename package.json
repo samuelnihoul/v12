@@ -7,6 +7,14 @@
     },
     "devDependencies": {
         "chai": "^4.3.4",
-        "mocha": "^9.0.3"
+        "mocha": "^9.0.3",
+        "@solana/spl-token": "^0.1.8",
+        "@types/mocha": "^9.0.0",
+        "commander": "^8.1.0",
+        "loglevel": "^1.7.1",
+        "jsonschema": "^1.4.0",
+        "ts-jest": "^26",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.3.5"
     }
 }
