@@ -93,10 +93,10 @@ export async function getOwnedTokenAccounts(
   //             lamports,
   //         },
   //     }));
-  let resp = await connection.getParsedTokenAccountsByOwner(publicKey, {
+  const resp = await connection.getParsedTokenAccountsByOwner(publicKey, {
     programId: TOKEN_PROGRAM_ID,
   });
-  let data = resp.value.map(({ pubkey, account }) => {
+  const data = resp.value.map(({ pubkey, account }) => {
     return {
       publicKey: new PublicKey(pubkey),
       accountInfo: {
@@ -278,7 +278,7 @@ export async function initializeCandyMachine(
   );
 
   for (let idx = 0; idx < itemsCount; idx += 10) {
-    let count = Math.min(10, itemsCount - idx);
+    const count = Math.min(10, itemsCount - idx);
     const addLinesTx = await addConfigLines(
       program,
       myWallet,
