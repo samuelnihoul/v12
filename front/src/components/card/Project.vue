@@ -6,7 +6,7 @@
     >
       <q-badge
         inline
-        :label="`$ ${item.price} USD/TONNE`"
+        :label="`$ ${item.price} lamports/TONNE`"
         class="price"
         color="#000"
       ></q-badge>
@@ -34,16 +34,16 @@
         <q-popup-edit v-model="label">
           <h6 class="mb-1 text-center" v-text="item.name"></h6>
           <q-input
-            label="Quantité demandée"
+            label="Quantity"
             type="number"
             :max="+item.number"
             v-model="value"
           />
           <div class="my-4">
-            <q-input v-model="buyerPk" label="Votre adresse public" />
+            <q-input v-model="buyerPk" label="Wallet address" />
           </div>
           <q-btn @click="buy" color="black" class="full-width"
-            >Lancer la transaction</q-btn
+            >Send transaction</q-btn
           >
         </q-popup-edit>
       </div>
