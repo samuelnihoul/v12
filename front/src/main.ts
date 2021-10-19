@@ -7,7 +7,7 @@ import "./assets/styles.scss";
 import "@/styles/bootstrap-grid.css";
 import "./styles/quasar.scss";
 import "@quasar/extras/mdi-v5/mdi-v5.css";
-import { Buffer } from "buffer";
+import { Buffer } from "buffer/";
 import axios from "axios";
 import VueAxios from "vue-axios";
 
