@@ -356,9 +356,9 @@ version = "0.1.0"
 dependencies = [
  "anchor-lang",
  "arrayref",
+ "metaplex-token-metadata",
  "spl-associated-token-account",
  "spl-token",
- "spl-token-metadata",
 ]
 
 [[package]]
@@ -536,13 +536,6 @@ dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "wasi",
-]
-
-[[package]]
-name = "h"
-version = "0.1.0"
-dependencies = [
- "anchor-lang",
 ]
 
 [[package]]
@@ -729,6 +722,34 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "59accc507f1338036a0477ef61afdae33cde60840f4dfe481319ce3ad116ddf9"
 dependencies = [
  "autocfg",
+]
+
+[[package]]
+name = "metaplex-token-metadata"
+version = "0.0.1"
+source = "git+https://github.com/harmonia-eko/metaplex/#999fdf54adacd06e33b5c1d58ae7ac53825c2bf9"
+dependencies = [
+ "arrayref",
+ "borsh",
+ "metaplex-token-vault",
+ "num-derive",
+ "num-traits",
+ "solana-program",
+ "spl-token",
+ "thiserror",
+]
+
+[[package]]
+name = "metaplex-token-vault"
+version = "0.0.1"
+source = "git+https://github.com/harmonia-eko/metaplex/#999fdf54adacd06e33b5c1d58ae7ac53825c2bf9"
+dependencies = [
+ "borsh",
+ "num-derive",
+ "num-traits",
+ "solana-program",
+ "spl-token",
+ "thiserror",
 ]
 
 [[package]]
