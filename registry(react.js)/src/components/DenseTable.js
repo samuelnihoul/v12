@@ -99,10 +99,8 @@ export default function DenseTable() {
         description: p.account.description,
         image: p.account.pictureUrl,
       });
-      console.log(p.account.availableOffset.toString());
-      console.log(p.account.authority.toString());
-      console.log(p.publicKey.toString());
     });
+    pl.filter((p) => p.image == "https://source.unsplash.com/random");
     //@ts-ignore
     setProjectList(pl);
   }
