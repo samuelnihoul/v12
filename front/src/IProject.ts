@@ -9,7 +9,7 @@ export interface IProject {
 }
 
 export interface IBuyDto {
+  buyerPk: any;
   offsets: number;
-  buyerPk: string;
   wallet: any;
 }

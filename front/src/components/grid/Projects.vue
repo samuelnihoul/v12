@@ -34,31 +34,33 @@ import {
 } from "vue";
 import CardProject from "@/components/card/Project.vue";
 
-import { AxiosInstance } from "axios";
 import { initWallet, useWallet } from "@solana/wallet-adapter-vue";
 import { getPhantomWallet, WalletName } from "@solana/wallet-adapter-wallets";
+import useSolana from "@/composables/useSolana";
+import { IProject } from "@/IProject";
+
 export default defineComponent({
   components: {
     CardProject,
   },
   setup() {
-    const axios = inject("axios") as AxiosInstance;
+    const { getAllProjects } = useSolana();
 
     const state = reactive({
-      items: [],
+      items: [] as IProject[],
       page: 1,
     });
 
     onBeforeMount(async () => {
-      const { data } = await axios.get("projects");
-      state.items = data;
-
+      // const { data } = await axios.get("projects");
       const wallets = [getPhantomWallet()];
       initWallet({ wallets, autoConnect: true });
       const { select } = useWallet();
       select(WalletName.Phantom);
-      const wallet=useWallet();
-    
+
+      // const wallet = useWallet();
+
+      state.items = await getAllProjects(null);
     });
 
     const perPage = computed(() => {
