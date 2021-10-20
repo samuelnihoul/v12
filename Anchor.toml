@@ -1,10 +1,8 @@
 [programs.localnet]
-h = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
 harmonia = "HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"
 candy_machine = "CANHaiDd6HPK3ykgunmXFNZMrZ4KbZgEidY5US2L8CTw"
 
 [programs.devnet]
-h = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
 harmonia = "HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"
 candy_machine = "CANHaiDd6HPK3ykgunmXFNZMrZ4KbZgEidY5US2L8CTw"
 
