@@ -3,5 +3,6 @@ front/node_modules
 back/node_modules
 test-ledger
 target
-
+app
+registry(react.js)
 /.anchor
