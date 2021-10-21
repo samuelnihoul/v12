@@ -18,6 +18,7 @@ import {
   BN,
   Program,
   Idl,
+  PublicKey
 } from "@project-serum/anchor";
 import { token } from "@project-serum/anchor/dist/cjs/utils";
 import {
@@ -26,7 +27,7 @@ import {
 } from "@solana/spl-token";
 import { useWallet } from "@solana/wallet-adapter-vue";
 import {
-  PublicKey,
+  
   clusterApiUrl,
   SystemProgram,
   Connection,
@@ -127,7 +128,7 @@ export default () => {
     return tx;
   }
 
-  async function buy(buyerPk: any, offsets: number) {
+  async function buy(buyerPk: string, offsets: number) {
     const {
       sendTransaction,
       signTransaction,
@@ -152,14 +153,14 @@ export default () => {
       signTransaction: signTransaction.value,
       signAllTransactions: signAllTransactions.value,
       signMessage: signMessage.value,
-      publicKey: cloneDeep(publicKey.value)?.toBase58(),
+      publicKey: publicKey.value,
     };
 
     console.log("wwalleett", cloneDeep(providerWallet));
     console.log("pk", cloneDeep(publicKey.value));
 
     await buyAndMint({
-      buyerPk: cloneDeep(publicKey.value),
+      buyerPk: publicKey,
       offsets,
       wallet: cloneDeep(providerWallet),
     });
