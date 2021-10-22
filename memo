@@ -23,4 +23,3 @@ nuhutuh25@nuhutuh25-Inspiron-5502:~/Desktop/ignition-v0.7$ solana address -k ~/.
 9JHJomPyKtfFqCtxrtu6hp6G7X4PNQiwqNwabYtRK2g
 nuhutuh25@nuhutuh25-Inspiron-5502:~/Desktop/ignition-v0.7$ 
 
-Maybe the authority problem comes from the Anchor.toml file wher I did not put the program.devnet and program.localnet
