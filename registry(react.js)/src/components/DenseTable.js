@@ -100,7 +100,7 @@ export default function DenseTable() {
         image: p.account.pictureUrl,
       });
     });
-    pl.filter((p) => p.image == "https://source.unsplash.com/random");
+    pl.filter((p) => p.image == "../../assets/E3.png");
     //@ts-ignore
     setProjectList(pl);
   }
