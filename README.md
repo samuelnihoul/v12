@@ -1,3 +1,5 @@
+![harmonia-eko's cover picture](assets/E3.png)
+
 # ignition-v0.8.1 (./)
 
 To try v0.8.5 (current), start both app as per below.
