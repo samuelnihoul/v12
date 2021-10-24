@@ -73,10 +73,10 @@ export default function DenseTable() {
   const projectAccount = new web3.PublicKey(
     "wED6ubLJJDBriKLCkA5QtJtg7LGCy1dXPvN28EoX45f"
   );
-  const candyMachineUuid = "GMxBmP";
+  const candyMachineUuid = "C96bbs";
   const mint = web3.Keypair.generate();
   const config = new web3.PublicKey(
-    "GMxBmPkJsAvC4QJXjroagjBQQmSwdC1qhQhaVGL6cjgB"
+    "C96bbsj1nAJrCNnuRC1W367qkRHST7dQ7i115ERojCu7"
   );
 
   async function getAllProjects() {
@@ -265,7 +265,6 @@ export default function DenseTable() {
                       purchase 1
                     </button>
                   </TableCell>
-
                   <TableCell align="right">{row.description}</TableCell>
                   <TableCell align="right">
                     <img
