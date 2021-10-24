@@ -270,7 +270,7 @@ export default function DenseTable() {
                   <TableCell align="right">
                     <img
                       src={row.image}
-                      style={{ width: "300px", height: "300px" }}
+                      style={{ width: "200px", height: "250px" }}
                     />
                   </TableCell>
                 </TableRow>
