@@ -135,7 +135,7 @@ export default function DenseTable() {
     getAllProjects();
   }
 
-  async function buyAndMint(offsets, sellerAccount, projectAccount) {
+  async function buyAndMint(offsets) {
     const provider = await getProvider();
 
     const harmoniaProgram = new Program(idl2, programID, provider);
@@ -256,9 +256,10 @@ export default function DenseTable() {
                     <button
                       onClick={() => {
                         buyAndMint(
-                          1,
+                          1
+                          /*,
                           new web3.PublicKey(row.owner.toString()),
-                          new web3.PublicKey(row.address.toString())
+                          new web3.PublicKey(row.address.toString())*/
                         );
                       }}
                     >
