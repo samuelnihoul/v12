@@ -1,4 +1,4 @@
-![harmonia-eko's cover picture](assets/E3.png)
+![harmonia-eko's cover picture](https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png)
 
 # ignition-v0.8.1 (./)
 
