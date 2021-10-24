@@ -212,12 +212,12 @@ export default function DenseTable() {
               value={name}
             />
             <input
-              placeholder="number"
+              placeholder="initial amount"
               //@ts-ignore
               onChange={(e) => setNumber(e.target.value)}
             />
             <input
-              placeholder="amount"
+              placeholder="price"
               //@ts-ignore
               onChange={(e) => setPrice(e.target.value)}
             />
