@@ -100,7 +100,7 @@ export default function DenseTable() {
         image: p.account.pictureUrl,
       });
     });
-    pl.filter((p) => p.image == "../../assets/E3.png");
+
     //@ts-ignore
     setProjectList(pl);
   }
@@ -121,7 +121,7 @@ export default function DenseTable() {
       new BN(price),
       name,
       "this is kindness",
-      "https://source.unsplash.com/random",
+      "https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png",
       {
         accounts: {
           project: projectAccount.publicKey,
