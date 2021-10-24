@@ -438,7 +438,7 @@ pub mod candy_machine {
         let mut data = account.data.borrow_mut();
 
         let mut fixed_config_lines = vec![];
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if index > config.data.max_number_of_lines - 1 {
             return Err(ErrorCode::IndexGreaterThanLength.into());
         }
@@ -739,7 +739,7 @@ pub fn get_config_line(
     index: usize,
 ) -> core::result::Result<ConfigLine, ProgramError> {
     let arr = a.data.borrow();
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let total = get_config_count(&arr)?;
     if index > total {
         return Err(ErrorCode::IndexGreaterThanLength.into());
