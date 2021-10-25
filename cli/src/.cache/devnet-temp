@@ -1,0 +1,23 @@
+{
+  "program": {
+    "uuid": "6y88G2",
+    "config": "6y88G22VNz5QwP85WbxWmhTXwCmrvPD7Jt88mHTL1P2X"
+  },
+  "items": {
+    "0": {
+      "link": "https://arweave.net/ugAzrsEUTZ9AiAM2Txm-gJ0NJiMv58WxePLkXzeZMe0",
+      "name": "1",
+      "onChain": true
+    },
+    "1": {
+      "link": "https://arweave.net/4IOmZQ9afPI-Q2bHaUzPQbKAU_OwrBwRPHOlQBvrbdw",
+      "name": "2",
+      "onChain": true
+    }
+  },
+  "env": "devnet",
+  "cacheName": "temp",
+  "authority": "9JHJomPyKtfFqCtxrtu6hp6G7X4PNQiwqNwabYtRK2g",
+  "candyMachineAddress": "GncfRd7iXQ9V72EweBDkVjq359eoN7KfNSaeNs3gDXUA",
+  "startDate": 983401200
+}

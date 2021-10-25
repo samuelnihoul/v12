@@ -20,3 +20,4 @@ registry(react.js)
 /.anchor
 app
 whitepaper.md
+cli/node_modules
