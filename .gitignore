@@ -5,3 +5,7 @@ target
 node_modules
 app/node_modules
 test-ledger
+static
+app
+registry(react.js)
+reactApp/node_modules
