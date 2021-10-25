@@ -9,4 +9,5 @@ static
 app
 registry(react.js)
 reactApp/node_modules
-frontend
+front
+back
