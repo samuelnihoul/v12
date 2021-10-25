@@ -200,16 +200,6 @@ export default function DenseTable() {
       </div>
       <div>
         {wallet.connected ? (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "100px",
-            }}
-          >
-            <WalletMultiButton />
-          </div>
-        ) : (
           <div>
             <br />
             <div>
@@ -291,6 +281,16 @@ export default function DenseTable() {
                 </TableBody>
               </Table>
             </TableContainer>
+          </div>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "100px",
+            }}
+          >
+            <WalletMultiButton />
           </div>
         )}
       </div>
