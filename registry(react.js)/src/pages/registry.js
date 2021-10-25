@@ -20,8 +20,8 @@ import {
   web3,
   setProvider,
 } from "@project-serum/anchor";
-import idl2 from "../idl2.json";
-import idl from "../idl.json";
+import idl2 from "../idls/idl2.json";
+import idl from "../idls/idl.json";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import {
@@ -37,7 +37,7 @@ import {
   mintNft,
   TOKEN_METADATA_PROGRAM_ID,
   updateCandyMachine,
-} from "../utils/helper.ts";
+} from "../utils/helper";
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
@@ -186,99 +186,114 @@ export default function DenseTable() {
     getAllProjects();
     return tx;
   }
-
-  if (!wallet.connected) {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "100px",
-        }}
-      >
-        <WalletMultiButton />
+  return (
+    <>
+      <div style={{ textAlign: "center" }}>
+        <h1>Welcome to the Home of CO2 Offsets.</h1>
+        <h2>This is our awesome candy machine.</h2>
+        <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
+        <p>
+          By the way, each projects features its own natural wonder, so choose
+          wisely!
+        </p>
+        <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
-    );
-  } else {
-    return (
       <div>
-        <br />
-        <div>
-          <div>
-            <h2>{value}</h2>
-            <input
-              placeholder="name"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-            />
-            <input
-              placeholder="initial amount"
-              //@ts-ignore
-              onChange={(e) => setNumber(e.target.value)}
-            />
-            <input
-              placeholder="price"
-              //@ts-ignore
-              onChange={(e) => setPrice(e.target.value)}
-            />
-            <button onClick={() => create(name, number, price)}>
-              Create New Project
-            </button>
+        {wallet.connected ? (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "100px",
+            }}
+          >
+            <WalletMultiButton />
           </div>
-        </div>
-        <br />
-        <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-            <TableHead>
-              <TableRow>
-                <TableCell align="right">Project Name</TableCell>
-                <TableCell align="right">CO2e Available (T)</TableCell>
-                <TableCell align="right">Price (lamports)</TableCell>
-                <TableCell align="right">Account</TableCell>
-                <TableCell align="right">Owner</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {projectList.map((row) => (
-                <TableRow
+        ) : (
+          <div>
+            <br />
+            <div>
+              <div>
+                <h2>{value}</h2>
+                <input
+                  placeholder="name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                />
+                <input
+                  placeholder="initial amount"
                   //@ts-ignore
-                  key={row}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
-                  <TableCell align="right">{row.number}</TableCell>
-                  <TableCell align="right">{row.price}</TableCell>
-                  {<TableCell align="right">{row.address}</TableCell>}
-                  {<TableCell align="right">{row.owner}</TableCell>}
-                  <TableCell>
-                    <button
-                      onClick={() => {
-                        buyAndMint(
-                          1
-                          /*,
+                  onChange={(e) => setNumber(e.target.value)}
+                />
+                <input
+                  placeholder="price"
+                  //@ts-ignore
+                  onChange={(e) => setPrice(e.target.value)}
+                />
+                <button onClick={() => create(name, number, price)}>
+                  Create New Project
+                </button>
+              </div>
+            </div>
+            <br />
+            <TableContainer component={Paper}>
+              <Table
+                sx={{ minWidth: 650 }}
+                size="small"
+                aria-label="a dense table"
+              >
+                <TableHead>
+                  <TableRow>
+                    <TableCell align="right">Project Name</TableCell>
+                    <TableCell align="right">CO2e Available (T)</TableCell>
+                    <TableCell align="right">Price (lamports)</TableCell>
+                    <TableCell align="right">Account</TableCell>
+                    <TableCell align="right">Owner</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {projectList.map((row) => (
+                    <TableRow
+                      //@ts-ignore
+                      key={row}
+                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                    >
+                      <TableCell component="th" scope="row">
+                        {row.name}
+                      </TableCell>
+                      <TableCell align="right">{row.number}</TableCell>
+                      <TableCell align="right">{row.price}</TableCell>
+                      {<TableCell align="right">{row.address}</TableCell>}
+                      {<TableCell align="right">{row.owner}</TableCell>}
+                      <TableCell>
+                        <button
+                          onClick={() => {
+                            buyAndMint(
+                              1
+                              /*,
                           new web3.PublicKey(row.owner.toString()),
                           new web3.PublicKey(row.address.toString())*/
-                        );
-                      }}
-                    >
-                      purchase 1
-                    </button>
-                  </TableCell>
-                  <TableCell align="right">{row.description}</TableCell>
-                  <TableCell align="right">
-                    <img
-                      src={row.image}
-                      style={{ width: "200px", height: "250px" }}
-                    />
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+                            );
+                          }}
+                        >
+                          purchase 1
+                        </button>
+                      </TableCell>
+                      <TableCell align="right">{row.description}</TableCell>
+                      <TableCell align="right">
+                        <img
+                          src={row.image}
+                          style={{ width: "200px", height: "250px" }}
+                        />
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </div>
+        )}
       </div>
-    );
-  }
+    </>
+  );
 }

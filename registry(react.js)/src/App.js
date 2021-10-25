@@ -1,6 +1,5 @@
-import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
-import Home from "./home";
+import Home from "./pages/home";
 
 import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
 import {
@@ -8,6 +7,7 @@ import {
   ConnectionProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
+import Registry from "./pages/registry";
 
 const wallets = [getPhantomWallet()];
 
@@ -17,6 +17,7 @@ const AppWithProvider = () => (
       <WalletModalProvider>
         <BrowserRouter>
           <Route path="/" component={Home} />
+          <Route path="/registry" component={Registry} />
         </BrowserRouter>
       </WalletModalProvider>
     </WalletProvider>
