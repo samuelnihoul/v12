@@ -120,7 +120,7 @@ export default function DenseTable() {
       new BN(number),
       new BN(price),
       name,
-      "this is kindness",
+      "this is a test project, just for you :)",
       "https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png",
       {
         accounts: {
