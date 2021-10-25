@@ -13,9 +13,9 @@ import { AccountLayout, MintLayout, Token } from '@solana/spl-token';
 
 
 export function getHarmoniaProgram(provider: anchor.Provider) {
-    const harmoniaProgram = anchor.workspace.Harmonia;
-    // const harmoniaIdl = JSON.parse(require('fs').readFileSync('./target/idl/harmonia.json', 'utf8'));
-    // const harmoniaProgram = new anchor.Program(harmoniaIdl, new web3.PublicKey("HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"), provider) as any;
+    // const harmoniaProgram = anchor.workspace.Harmonia;
+    const harmoniaIdl = JSON.parse(require('fs').readFileSync('./target/idl/harmonia.json', 'utf8'));
+    const harmoniaProgram = new anchor.Program(harmoniaIdl, new web3.PublicKey("HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"), provider) as any;
     return harmoniaProgram;
 }
 export function getCandyProgram(provider: anchor.Provider) {
