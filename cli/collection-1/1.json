@@ -3,7 +3,12 @@
   "symbol": "",
   "image": "image.png",
   "properties": {
-    "files": [{ "uri": "image.png", "type": "image/png" }],
+    "files": [
+      {
+        "uri": "https://arweave.net/XHdk8JmICc6ZxIukLFseN_7PpC43-n7Cc6-J5g-hBf8",
+        "type": "image/png"
+      }
+    ],
     "category": "image",
     "creators": [
       {
@@ -19,5 +24,5 @@
     { "trait_type": "bonus", "value": "beach" },
     { "trait_type": "bonus", "value": "big" }
   ],
-  "collection": "1 - The Hackaton"
+  "collection": "-1 - The Hackaton"
 }

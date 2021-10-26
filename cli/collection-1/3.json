@@ -3,7 +3,12 @@
   "symbol": "",
   "image": "image.png",
   "properties": {
-    "files": [{ "uri": "image.png", "type": "image/png" }],
+    "files": [
+      {
+        "uri": "https://arweave.net/CKwmUCpkDTg0i03nPh_h4w81qSwsA6hQv7q-PVt4KJ4",
+        "type": "image/png"
+      }
+    ],
     "category": "image",
     "creators": [
       {
@@ -18,5 +23,5 @@
     { "trait_type": "base", "value": "octopus" },
     { "trait_type": "bonus", "value": "big" }
   ],
-  "collection": "1 - The Hackaton"
+  "collection": "-1 - The Hackaton"
 }
