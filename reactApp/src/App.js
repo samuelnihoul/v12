@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 
 import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
 import {
@@ -7,7 +7,7 @@ import {
   ConnectionProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import Registry from "./pages/registry";
+import Registry from "./pages/Registry";
 
 const wallets = [getPhantomWallet()];
 
