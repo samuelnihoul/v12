@@ -1,5 +1,5 @@
 {
-  "name": "22",
+  "name": "1",
   "symbol": "",
   "image": "image.png",
   "properties": {
@@ -7,7 +7,7 @@
     "category": "image",
     "creators": [
       {
-        "address": "9wR6MPaeMZyKGn6f53knRAVHrnogAb3mf6cJ8CLmi6Uu",
+        "address": "HLzNPGRFKGDxqRdD9mrrBELQf7sRVFq5CWXD2YJWwKuc",
         "share": 100
       }
     ]
@@ -15,8 +15,9 @@
   "description": "",
   "seller_fee_basis_points": 500,
   "attributes": [
-    { "trait_type": "base", "value": "octopus" },
-    { "trait_type": "bonus", "value": "white" }
+    { "trait_type": "base", "value": "quartz" },
+    { "trait_type": "bonus", "value": "beach" },
+    { "trait_type": "bonus", "value": "big" }
   ],
   "collection": "1 - The Hackaton"
 }
