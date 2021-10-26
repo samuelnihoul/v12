@@ -42,7 +42,7 @@ import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
 } from "@solana/spl-token";
-
+import App from "../components/App";
 const { Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
@@ -199,6 +199,7 @@ export default function DenseTable() {
         <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
       <div>
+        <App />
         {wallet.connected ? (
           <div>
             <br />
