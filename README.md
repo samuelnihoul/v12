@@ -2,7 +2,7 @@
 
 # ignition-v0.8.1 (./)
 
-To try v0.8.5, start both app as per below.
+To try v0.8.5, start back and front as per below.
 
 To try v0.9, start the reactApp.
 
