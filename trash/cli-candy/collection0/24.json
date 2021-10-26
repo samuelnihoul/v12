@@ -1,0 +1,23 @@
+{
+  "name": "24",
+  "symbol": "",
+  "image": "image.png",
+  "properties": {
+    "files": [{ "uri": "image.png", "type": "image/png" }],
+    "category": "image",
+    "creators": [
+      {
+        "address": "HLzNPGRFKGDxqRdD9mrrBELQf7sRVFq5CWXD2YJWwKuc",
+        "share": 100
+      }
+    ]
+  },
+  "description": "",
+  "seller_fee_basis_points": 500,
+  "attributes": [
+    { "trait_type": "base", "value": "marble" },
+    { "trait_type": "bonus", "value": "yule" },
+    { "trait_type": "bonus", "value": "cave" }
+  ],
+  "collection": "1 - The Hackaton"
+}
