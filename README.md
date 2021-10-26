@@ -49,5 +49,7 @@ $ yarn
 
 ## serve with hot reload at localhost:3000
 $ yarn start
+
+##now go to localhost:3000/registry
 ```
--> Go to localhost:3000/registry
+
