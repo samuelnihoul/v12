@@ -4,7 +4,7 @@
 
 To try v0.8.5, start back and front as per below.
 
-To try v0.9, start the reactApp.
+To try v0.9, start the reactApp and go to the /registry page in your browser.
 
 ## Useful Commands
 
@@ -50,4 +50,4 @@ $ yarn
 ## serve with hot reload at localhost:3000
 $ yarn start
 ```
-
+-> Go to localhost:3000/registry
