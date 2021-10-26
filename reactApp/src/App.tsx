@@ -1,7 +1,7 @@
 import "./App.css";
 import { useMemo } from "react";
 
-import Home from "../pages/Home";
+import Home from "./Home";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
