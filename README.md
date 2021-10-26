@@ -2,11 +2,11 @@
 
 # ignition-v0.8.1 (./)
 
-To try v0.8.5 (current), start both app as per below.
+To try v0.8.5, start back and front as per below.
 
-To try v0.7.5, head on to the v0.7 branch
+To try v0.9, start the reactApp.
 
-## Build Setup
+## Useful Commands
 
 ```bash
 #build
@@ -35,8 +35,19 @@ $ yarn serve
 
 ```bash
 ## install dependencies
-$ yarn install
+$ yarn
 
 ## serve with hot reload at localhost:3000
 $ yarn start
 ```
+
+# v0.9 (./reactApp)
+
+```bash
+## install dependencies
+$ yarn
+
+## serve with hot reload at localhost:3000
+$ yarn start
+```
+
