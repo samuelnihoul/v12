@@ -727,6 +727,7 @@ dependencies = [
 [[package]]
 name = "metaplex-token-metadata"
 version = "0.0.1"
+source = "git+https://github.com/harmonia-eko/metaplex/#999fdf54adacd06e33b5c1d58ae7ac53825c2bf9"
 dependencies = [
  "arrayref",
  "borsh",
@@ -741,6 +742,7 @@ dependencies = [
 [[package]]
 name = "metaplex-token-vault"
 version = "0.0.1"
+source = "git+https://github.com/harmonia-eko/metaplex/#999fdf54adacd06e33b5c1d58ae7ac53825c2bf9"
 dependencies = [
  "borsh",
  "num-derive",
