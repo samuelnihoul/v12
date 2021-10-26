@@ -1,8 +1,8 @@
 ![harmonia-eko's cover picture](https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png)
 
-# ignition-v0.8.1 (./)
+# v0.8 (./)
 
-To try v0.8.5, start back and front as per below.
+To try v0.8, start back and front as per below.
 
 To try v0.9, start the reactApp and go to localhost:3000/registry
 
