@@ -12,8 +12,6 @@ static
 app
 registry(react.js)
 reactApp/node_modules
-front
-back
 target
 app/*
 registry(react.js)
