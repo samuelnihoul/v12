@@ -1,8 +1,7 @@
 
 import { useMemo } from "react";
 
-import Home from "./Home";
-
+import {Router, Link, BrowserRouter} from "react-router-dom"
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
@@ -87,14 +86,8 @@ const App = () => {
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
-              <Home
-                candyMachineId={candyMachineId}
-                config={config}
-                connection={connection}
-                startDate={startDateSeed}
-                treasury={treasury}
-                txTimeout={txTimeout}
-              />
+      <BrowserRouter></BrowserRouter>
+              
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>
