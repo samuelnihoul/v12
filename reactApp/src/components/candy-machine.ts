@@ -164,7 +164,7 @@ export const getCandyMachineState = async (
     CANDY_MACHINE_PROGRAM,
     provider
   );
-
+//@ts-ignore
   const program = new anchor.Program(idl, CANDY_MACHINE_PROGRAM, provider);
   const candyMachine = {
     id: candyMachineId,
