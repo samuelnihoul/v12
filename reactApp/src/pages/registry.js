@@ -73,10 +73,10 @@ export default function DenseTable() {
   const projectAccount = new web3.PublicKey(
     "wED6ubLJJDBriKLCkA5QtJtg7LGCy1dXPvN28EoX45f"
   );
-  const candyMachineUuid = "C96bbs";
+  const candyMachineUuid = "EBWUGD";
   const mint = web3.Keypair.generate();
   const config = new web3.PublicKey(
-    "C96bbsj1nAJrCNnuRC1W367qkRHST7dQ7i115ERojCu7"
+    "EBWUGDGd9cyPNJEP2P71ocHGCc4R2WZAFpGz3KZmwhDf"
   );
 
   async function getAllProjects() {
@@ -190,7 +190,10 @@ export default function DenseTable() {
     <>
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
-        <h2>Here you can directly purchase your offset through the projects candy machines.</h2>
+        <h2>
+          Here you can directly purchase your offset through the projects candy
+          machines.
+        </h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
         <p>
           By the way, each projects features its own natural wonder, so choose
@@ -200,100 +203,97 @@ export default function DenseTable() {
       </div>
       <div>
         <App />
-        
+
+        <div>
+          <br />
           <div>
-            <br />
             <div>
-              <div>
-                <h2>{value}</h2>
-                <input
-                  placeholder="name"
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
-                />
-                <input
-                  placeholder="initial amount"
-                  //@ts-ignore
-                  onChange={(e) => setNumber(e.target.value)}
-                />
-                <input
-                  placeholder="price"
-                  //@ts-ignore
-                  onChange={(e) => setPrice(e.target.value)}
-                />
-                <button onClick={() => create(name, number, price)}>
-                  Create New Project
-                </button>
-              </div>
+              <h2>{value}</h2>
+              <input
+                placeholder="name"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+              <input
+                placeholder="initial amount"
+                //@ts-ignore
+                onChange={(e) => setNumber(e.target.value)}
+              />
+              <input
+                placeholder="price"
+                //@ts-ignore
+                onChange={(e) => setPrice(e.target.value)}
+              />
+              <button onClick={() => create(name, number, price)}>
+                Create New Project
+              </button>
             </div>
-            <br />
-            <TableContainer component={Paper}>
-              <Table
-                sx={{ minWidth: 650 }}
-                size="small"
-                aria-label="a dense table"
-              >
-                <TableHead>
-                  <TableRow>
-                    <TableCell align="right">Project Name</TableCell>
-                    <TableCell align="right">CO2e Available (T)</TableCell>
-                    <TableCell align="right">Price (lamports)</TableCell>
-                    <TableCell align="right">Account</TableCell>
-                    <TableCell align="right">Owner</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {projectList.map((row) => (
-                    <TableRow
-                      //@ts-ignore
-                      key={row}
-                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                    >
-                      <TableCell component="th" scope="row">
-                        {row.name}
-                      </TableCell>
-                      <TableCell align="right">{row.number}</TableCell>
-                      <TableCell align="right">{row.price}</TableCell>
-                      {<TableCell align="right">{row.address}</TableCell>}
-                      {<TableCell align="right">{row.owner}</TableCell>}
-                      <TableCell>
-                        <button
-                          onClick={() => {
-                            buyAndMint(
-                              1
-                              /*,
+          </div>
+          <br />
+          <TableContainer component={Paper}>
+            <Table
+              sx={{ minWidth: 650 }}
+              size="small"
+              aria-label="a dense table"
+            >
+              <TableHead>
+                <TableRow>
+                  <TableCell align="right">Project Name</TableCell>
+                  <TableCell align="right">CO2e Available (T)</TableCell>
+                  <TableCell align="right">Price (lamports)</TableCell>
+                  <TableCell align="right">Account</TableCell>
+                  <TableCell align="right">Owner</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {projectList.map((row) => (
+                  <TableRow
+                    //@ts-ignore
+                    key={row}
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  >
+                    <TableCell component="th" scope="row">
+                      {row.name}
+                    </TableCell>
+                    <TableCell align="right">{row.number}</TableCell>
+                    <TableCell align="right">{row.price}</TableCell>
+                    {<TableCell align="right">{row.address}</TableCell>}
+                    {<TableCell align="right">{row.owner}</TableCell>}
+                    <TableCell>
+                      <button
+                        onClick={() => {
+                          buyAndMint(
+                            1
+                            /*,
                           new web3.PublicKey(row.owner.toString()),
                           new web3.PublicKey(row.address.toString())*/
-                            );
-                          }}
-                        >
-                          purchase 1
-                        </button>
-                      </TableCell>
-                      <TableCell align="right">{row.description}</TableCell>
-                      <TableCell align="right">
-                        <img
-                          src={row.image}
-                          style={{ width: "200px", height: "250px" }}
-                        />
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </div>
-        
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "100px",
-            }}
-          >
-          
-          </div>
-      
+                          );
+                        }}
+                      >
+                        purchase 1
+                      </button>
+                    </TableCell>
+                    <TableCell align="right">{row.description}</TableCell>
+                    <TableCell align="right">
+                      <img
+                        src={row.image}
+                        style={{ width: "200px", height: "250px" }}
+                      />
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "100px",
+          }}
+        ></div>
       </div>
     </>
   );
