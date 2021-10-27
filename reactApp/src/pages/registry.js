@@ -189,7 +189,7 @@ export default function DenseTable() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>Welcome to the Registry.</h1>
+        <h1>Welcome to the registry.</h1>
         <h2>Here you can directly purchase your offset through the projects candy machines.</h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
         <p>
