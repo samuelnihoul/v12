@@ -202,8 +202,10 @@ export default function DenseTable() {
         <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
       <div>
-        <App />
-
+        <App />{" "}
+        {
+          // this needs to be rmed to check the registry for now
+        }
         <div>
           <br />
           <div>
@@ -260,18 +262,16 @@ export default function DenseTable() {
                     {<TableCell align="right">{row.address}</TableCell>}
                     {<TableCell align="right">{row.owner}</TableCell>}
                     <TableCell>
-                      <button
+                      {/*<button
                         onClick={() => {
                           buyAndMint(
                             1
-                            /*,
-                          new web3.PublicKey(row.owner.toString()),
-                          new web3.PublicKey(row.address.toString())*/
+                            
                           );
                         }}
                       >
                         purchase 1
-                      </button>
+                      </button>*/}
                     </TableCell>
                     <TableCell align="right">{row.description}</TableCell>
                     <TableCell align="right">
@@ -286,7 +286,6 @@ export default function DenseTable() {
             </Table>
           </TableContainer>
         </div>
-
         <div
           style={{
             display: "flex",
