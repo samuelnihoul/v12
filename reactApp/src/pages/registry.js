@@ -291,7 +291,7 @@ export default function DenseTable() {
               marginTop: "100px",
             }}
           >
-            <WalletMultiButton />
+          
           </div>
       
       </div>
