@@ -52,17 +52,6 @@ export default function DenseTable() {
     return provider;
   }
   const [projectList, setProjectList] = useState([]);
-  const sellerAccount = new web3.PublicKey(
-    "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
-  );
-  const projectAccount = new web3.PublicKey(
-    "wED6ubLJJDBriKLCkA5QtJtg7LGCy1dXPvN28EoX45f"
-  );
-  const candyMachineUuid = "C96bbs";
-  const mint = web3.Keypair.generate();
-  const config = new web3.PublicKey(
-    "C96bbsj1nAJrCNnuRC1W367qkRHST7dQ7i115ERojCu7"
-  );
 
   async function getAllProjects() {
     const provider = await getProvider();
@@ -125,8 +114,8 @@ export default function DenseTable() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>Welcome to the Home of CO2 Offsets.</h1>
-        <h2>This is our awesome candy machine.</h2>
+        <h1>Welcome to the Registry.</h1>
+        <h2>Here you can instantly purchase offsets and get NFTs with the projects candy machines.</h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
         <p>
           By the way, each projects features its own natural wonder, so choose
@@ -136,7 +125,7 @@ export default function DenseTable() {
       </div>
       <div>
         
-        {wallet.connected ? (
+       
           <div>
             <br />
             <div>
@@ -222,7 +211,7 @@ export default function DenseTable() {
               </Table>
             </TableContainer>
           </div>
-        ) : (
+      
           <div
             style={{
               display: "flex",
@@ -232,7 +221,7 @@ export default function DenseTable() {
           >
             <WalletMultiButton />
           </div>
-        )}
+        
       </div>
     </>
   );
