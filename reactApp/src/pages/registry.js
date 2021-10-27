@@ -189,8 +189,8 @@ export default function DenseTable() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>Welcome to the Home of CO2 Offsets.</h1>
-        <h2>This is our awesome candy machine.</h2>
+        <h1>Welcome to the Registry.</h1>
+        <h2>Here you can directly purchase your offset through the projects candy machines.</h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
         <p>
           By the way, each projects features its own natural wonder, so choose
@@ -200,7 +200,7 @@ export default function DenseTable() {
       </div>
       <div>
         <App />
-        {wallet.connected ? (
+        
           <div>
             <br />
             <div>
@@ -283,7 +283,7 @@ export default function DenseTable() {
               </Table>
             </TableContainer>
           </div>
-        ) : (
+        
           <div
             style={{
               display: "flex",
@@ -293,7 +293,7 @@ export default function DenseTable() {
           >
             <WalletMultiButton />
           </div>
-        )}
+      
       </div>
     </>
   );
