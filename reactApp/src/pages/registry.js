@@ -6,6 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import styled from "styled-components";
 import { useState } from "react";
 import {
   Connection,
@@ -43,6 +44,10 @@ import {
   TOKEN_PROGRAM_ID,
 } from "@solana/spl-token";
 import App from "../components/App";
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 const { Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
@@ -202,10 +207,6 @@ export default function DenseTable() {
         <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
       <div>
-        <App />{" "}
-        {
-          // this needs to be rmed to check the registry for now
-        }
         <div>
           <br />
           <div>
@@ -279,6 +280,9 @@ export default function DenseTable() {
                         src={row.image}
                         style={{ width: "200px", height: "250px" }}
                       />
+                    </TableCell>
+                    <TableCell>
+                      <App />
                     </TableCell>
                   </TableRow>
                 ))}
