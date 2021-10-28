@@ -14,10 +14,9 @@ reactApp/node_modules
 front
 back
 target
-app/*
 registry(react.js)
 /.anchor
-app
+
 whitepaper.md
 cli/node_modules
 trash
