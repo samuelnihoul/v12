@@ -6,28 +6,14 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import styled from "styled-components";
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetch";
 import {
-  Connection,
-  PublicKey,
-  clusterApiUrl,
-  SystemProgram,
-  
-} from "@solana/web3.js";
-import {
-  BN,
-  Program,
-  Provider,
-  web3,
-  Idl,
-  setProvider,
   Wallet
 } from "@project-serum/anchor";
-import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
+import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
 export default function Registry(props:CMSProps) {
   const wallet = useAnchorWallet();
