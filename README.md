@@ -1,10 +1,11 @@
 ![harmonia-eko's cover picture](https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png)
 
-# v0.8 (./)
+# v0.9 (./)
 
-To try v0.8, start back and front as per below.
+Version notes:
 
-To try v0.9, start the reactApp and go to localhost:3000/registry
+- We are in the process of migrating our Nuxt.js frontend to React.js. As per this version both apps are separated. 
+- To check out the registry, go to localhost:3000/registry
 
 ## Useful Commands
 
@@ -19,7 +20,7 @@ $ anchor deploy
 $ anchor test
 ```
 
-# harmonia-eko.ooo (./front)
+# harmonia-eko.ooo (./app)
 
 ## Build Setup
 
@@ -31,17 +32,7 @@ $ yarn
 $ yarn serve
 ```
 
-# coeur (./back)
-
-```bash
-## install dependencies
-$ yarn
-
-## serve with hot reload at localhost:3000
-$ yarn start
-```
-
-# v0.9 (./reactApp)
+# registry.harmonia-eko.ooo (./registry)
 
 ```bash
 ## install dependencies
