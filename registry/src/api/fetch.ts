@@ -10,11 +10,12 @@ export const fetchProjects = async (anchorWallet: anchor.Wallet,
       });
       
     
-      const program = new anchor.Program(idl as anchor.Idl, CANDY_MACHINE_PROGRAM, provider);
-    //@ts-ignore
+    const program = new anchor.Program(idl as anchor.Idl, CANDY_MACHINE_PROGRAM, provider);
+    
     const projects = await program.account.project.all();
     let pl: any[]  = [];
     projects.forEach((p) => {
+      console.log(p)
       // p.publicKey
       // p.account
       pl.push({
