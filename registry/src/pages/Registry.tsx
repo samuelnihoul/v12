@@ -13,10 +13,10 @@ import { fetchProjects } from "../api/fetch";
 import {
   Wallet
 } from "@project-serum/anchor";
-import { useAnchorWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
 export default function Registry(props:CMSProps) {
-  const wallet = useAnchorWallet();
+  const wallet = useWallet();
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [price, setPrice] = useState(0);
@@ -24,7 +24,8 @@ export default function Registry(props:CMSProps) {
   const [projectList, setProjectList] = useState([]);
 
   React.useEffect(()=>{
-    fetchProjects(wallet as Wallet,props.connection).then(p=>setProjectList(p))}
+    //@ts-ignore
+    fetchProjects(wallet,props.connection).then(p=>setProjectList(p))}
   , []);
 
   /*async function create(name: string, number:number, price:number) {

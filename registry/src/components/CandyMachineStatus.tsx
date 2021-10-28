@@ -180,9 +180,7 @@ const CMS = (props: CMSProps) => {
       {wallet && <p>Remaining: {itemsRemaining}</p>}
 
       <MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) : (
+        {
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
@@ -205,7 +203,7 @@ const CMS = (props: CMSProps) => {
               />
             )}
           </MintButton>
-        )}
+        }
       </MintContainer>
 
       <Snackbar

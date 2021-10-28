@@ -12,10 +12,12 @@ import {
   getSolletWallet,
   getSolletExtensionWallet,
 } from "@solana/wallet-adapter-wallets";
-
+import {WalletDialogButton} from "@solana/wallet-adapter-material-ui"
 import {
   ConnectionProvider,
   WalletProvider,
+  useWallet,
+  
 } from "@solana/wallet-adapter-react";
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
@@ -81,18 +83,21 @@ const App = () => {
     ],
     []
   );
-
+const wallet=useWallet()
   return (
       <ThemeProvider theme={theme}>
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
              <BrowserRouter>
+             { (!wallet)?<WalletDialogButton>Connect Wallet</WalletDialogButton>:
+             <>
                <Route exact path="/" component={()=><Home/>} />             
                <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}
                config ={config} connection={connection} startDate={startDateSeed} treasury={treasury} 
                 txTimeout={txTimeout}
                />} />
+               </>}
               </BrowserRouter>
             </WalletDialogProvider>
           </WalletProvider>
