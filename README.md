@@ -32,6 +32,8 @@ $ yarn
 
 # serve with hot reload at localhost:3000
 $ yarn serve
+or
+$ yarn dev
 ```
 
 # registry.harmonia-eko.ooo (./registry)
