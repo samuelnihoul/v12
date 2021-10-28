@@ -198,7 +198,7 @@ export default function Registry(props:CMSProps) {
   } */
   ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
   return (
-    <><Link to="/"></Link>
+    <><Link to="/">Home</Link>
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
         <h2>
