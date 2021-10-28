@@ -4,7 +4,7 @@
 
 Version notes:
 
-- We are in the process of migrating our Nuxt.js frontend to React.js. As per this version both apps are separated. 
+- We are in the process of incorporating our Nuxt.js front template into our React.js CRUD app. As per this version both apps are separated. 
 - To check out the registry, go to localhost:3000/registry
 
 ## Useful Commands
