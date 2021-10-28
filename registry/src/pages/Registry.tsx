@@ -27,18 +27,8 @@ import {
   setProvider,
   Wallet
 } from "@project-serum/anchor";
-import idl from "../idls/idl.json";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
-const { Keypair } = web3;
-const baseAccount = Keypair.generate();
-const opts = {
-  preflightCommitment: "processed",
-};
-
-const programID = new PublicKey(idl.metadata.address);
-
-
 export default function Registry(props:CMSProps) {
   const wallet = useAnchorWallet();
   const [name, setName] = useState("");
@@ -47,7 +37,7 @@ export default function Registry(props:CMSProps) {
   const [value, setValue] = useState("");
   const [projectList, setProjectList] = useState([]);
 
-  React.useEffect(()=>{
+  React.useEffect(()=>{//@ts-ignore
     setProjectList(fetchProjects(wallet as Wallet,props.connection))}
   , []);
 
@@ -188,7 +178,7 @@ export default function Registry(props:CMSProps) {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {projectList.map((row) => (
+                {projectList? projectList.map((row) => (
                   <TableRow
                     //@ts-ignore
                     key={row}
@@ -222,7 +212,7 @@ export default function Registry(props:CMSProps) {
                       />
                     </TableCell>
                   </TableRow>
-                ))}
+                )):<></>}
               </TableBody>
             </Table>
           </TableContainer>

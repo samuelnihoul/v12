@@ -1,5 +1,6 @@
 import * as anchor from "@project-serum/anchor";
 import {CANDY_MACHINE_PROGRAM }from "./candy-machine"
+import idl from "../idls/idl.json"
 export const fetchProjects = async (anchorWallet: anchor.Wallet,
     
     connection: anchor.web3.Connection
@@ -7,10 +8,7 @@ export const fetchProjects = async (anchorWallet: anchor.Wallet,
     const provider = new anchor.Provider(connection, anchorWallet, {
         preflightCommitment: "recent",
       });
-      const idl = await anchor.Program.fetchIdl(
-        CANDY_MACHINE_PROGRAM,
-        provider
-      );
+      
     
       const program = new anchor.Program(idl as anchor.Idl, CANDY_MACHINE_PROGRAM, provider);
     //@ts-ignore

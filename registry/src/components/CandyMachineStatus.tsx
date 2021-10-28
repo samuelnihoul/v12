@@ -101,7 +101,7 @@ const CMS = (props: CMSProps) => {
           "singleGossip",
           false
         );
-
+//@ts-ignore
         if (!status?.err) {
           setAlertState({
             open: true,
