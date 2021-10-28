@@ -23,8 +23,8 @@ export default function Registry(props:CMSProps) {
   const [value, setValue] = useState("");
   const [projectList, setProjectList] = useState([]);
 
-  React.useEffect(()=>{//@ts-ignore
-    setProjectList(fetchProjects(wallet as Wallet,props.connection))}
+  React.useEffect(()=>{
+    fetchProjects(wallet as Wallet,props.connection).then(p=>setProjectList(p))}
   , []);
 
   /*async function create(name: string, number:number, price:number) {
