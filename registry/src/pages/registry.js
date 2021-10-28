@@ -262,18 +262,7 @@ export default function DenseTable() {
                     <TableCell align="right">{row.price}</TableCell>
                     {<TableCell align="right">{row.address}</TableCell>}
                     {<TableCell align="right">{row.owner}</TableCell>}
-                    <TableCell>
-                      {/*<button
-                        onClick={() => {
-                          buyAndMint(
-                            1
-                            
-                          );
-                        }}
-                      >
-                        purchase 1
-                      </button>*/}
-                    </TableCell>
+
                     <TableCell align="right">{row.description}</TableCell>
                     <TableCell align="right">
                       <img

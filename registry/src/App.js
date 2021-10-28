@@ -16,7 +16,7 @@ const AppWithProvider = () => (
     <WalletProvider wallets={wallets} autoConnect>
       <WalletModalProvider>
         <BrowserRouter>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/registry" component={Registry} />
         </BrowserRouter>
       </WalletModalProvider>
