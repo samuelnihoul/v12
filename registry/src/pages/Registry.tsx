@@ -26,7 +26,7 @@ import {
   setProvider,
 } from "@project-serum/anchor";
 import idl from "../idls/idl.json";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
 /* import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import {
   ensureBalance,
@@ -47,10 +47,6 @@ import {
   TOKEN_PROGRAM_ID,
 } from "@solana/spl-token"; */
 import CM from "../components/CandyMachineStatus";
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
 const { Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
@@ -61,19 +57,19 @@ const programID = new PublicKey(idl.metadata.address);
 
 
 export default function Registry(props:CMSProps) {
-  const wallet = useWallet();
+  const wallet = useAnchorWallet();
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [price, setPrice] = useState(0);
   const [value, setValue] = useState("");
-  async function getProvider() {
+  /* async function getProvider() {
     const network = clusterApiUrl("devnet");
     //@ts-ignore
     const connection = new Connection(network, opts.preflightCommitment);
     //@ts-ignore
     const provider = new Provider(connection, wallet, opts.preflightCommitment);
     return provider;
-  }
+  } */
   const [projectList, setProjectList] = useState([]);
   /*   const sellerAccount = new web3.PublicKey(
     "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
@@ -87,10 +83,16 @@ export default function Registry(props:CMSProps) {
     "EBWUGDGd9cyPNJEP2P71ocHGCc4R2WZAFpGz3KZmwhDf"
   ); */
 
-  async function getAllProjects() {
-    const provider = await getProvider();
+
+
+
+
+
+
+  /* async function getAllProjects() {
+    //const provider = await getProvider();
     
-    const program = new Program(idl as Idl, programID, provider);
+    const program = new Program(idl as Idl, programID, Provider);
     let projects = await program.account.project.all();
 
     //@ts-ignore
@@ -141,7 +143,7 @@ export default function Registry(props:CMSProps) {
       }
     );
     getAllProjects();
-  }
+  } */
   ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
   /* async function buyAndMint(offsets) {
     const provider = await getProvider();
@@ -231,7 +233,7 @@ export default function Registry(props:CMSProps) {
                 //@ts-ignore
                 onChange={(e) => setPrice(e.target.value)}
               />
-              <button onClick={() => create(name, number, price)}>
+              <button onClick={() =>{} /* create(name, number, price) */}>
                 Create New Project
               </button>
             </div>
