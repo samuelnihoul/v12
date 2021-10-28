@@ -9,14 +9,12 @@ front/node_modules
 back/node_modules
 test-ledger
 static
-app
 registry(react.js)
 reactApp/node_modules
 target
-app/*
 registry(react.js)
 /.anchor
-app
+
 whitepaper.md
 cli/node_modules
 trash
