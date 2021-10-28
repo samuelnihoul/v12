@@ -1,5 +1,4 @@
 import * as anchor from "@project-serum/anchor";
-import {CANDY_MACHINE_PROGRAM }from "./candy-machine"
 import idl from "../idls/idl.json"
 export const fetchProjects = async (anchorWallet: anchor.Wallet,
     
@@ -10,7 +9,7 @@ export const fetchProjects = async (anchorWallet: anchor.Wallet,
       });
       
     
-    const program = new anchor.Program(idl as anchor.Idl, CANDY_MACHINE_PROGRAM, provider);
+    const program = new anchor.Program(idl as anchor.Idl, new anchor.web3.PublicKey("HARm9wjX7iJ1eqQCckXdd1imRFXE6PsVChVdV4PbfLc"), provider);
     
     const projects = await program.account.project.all();
     let pl: any[]  = [];
