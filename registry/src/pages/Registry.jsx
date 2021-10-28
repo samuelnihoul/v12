@@ -25,12 +25,6 @@ import {
 } from "@project-serum/anchor";
 import idl from "../idls/idl.json";
 import { useWallet } from "@solana/wallet-adapter-react";
-<<<<<<< HEAD:registry/src/pages/Registry.tsx
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-
-
-
-=======
 /* import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import {
   ensureBalance,
@@ -50,12 +44,11 @@ import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
 } from "@solana/spl-token"; */
-import App from "../components/App";
+import CM from "../components/CandyMachineStatus";
 const Row = styled.div`
   display: flex;
   flex-direction: row;
 `;
->>>>>>> master:registry/src/pages/registry.js
 const { Keypair } = web3;
 const baseAccount = Keypair.generate();
 const opts = {
@@ -80,8 +73,6 @@ export default function Registry(...props) {
     return provider;
   }
   const [projectList, setProjectList] = useState([]);
-<<<<<<< HEAD:registry/src/pages/Registry.tsx
-=======
   /*   const sellerAccount = new web3.PublicKey(
     "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
   );
@@ -93,12 +84,11 @@ export default function Registry(...props) {
   const config = new web3.PublicKey(
     "EBWUGDGd9cyPNJEP2P71ocHGCc4R2WZAFpGz3KZmwhDf"
   ); */
->>>>>>> master:registry/src/pages/registry.js
 
   async function getAllProjects() {
     const provider = await getProvider();
     
-    const program = new Program(idl as Idl, programID, provider);
+    const program = new Program(idl, programID, provider);
     let projects = await program.account.project.all();
 
     //@ts-ignore
@@ -125,13 +115,13 @@ export default function Registry(...props) {
     getAllProjects();
   }, []);
 
-  async function create(name: string, number: number, price:number) {
+  async function create(name, number, price) {
     if (!name) return;
     const provider = await getProvider();
 
     const projectAccount = web3.Keypair.generate();
 
-    const program = new Program(idl as Idl, programID, provider);
+    const program = new Program(idl, programID, provider);
     const tx = await program.rpc.create(
       new BN(number),
       new BN(price),
@@ -150,16 +140,6 @@ export default function Registry(...props) {
     );
     getAllProjects();
   }
-<<<<<<< HEAD:registry/src/pages/Registry.tsx
-
-  
-  
-  return (
-    <>
-      <div style={{ textAlign: "center" }}>
-        <h1>Welcome to the Registry.</h1>
-        <h2>Here you can instantly purchase offsets and get NFTs with the projects candy machines.</h2>
-=======
   ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
   /* async function buyAndMint(offsets) {
     const provider = await getProvider();
@@ -221,7 +201,6 @@ export default function Registry(...props) {
           Here you can directly purchase your offset through the projects candy
           machines.
         </h2>
->>>>>>> master:registry/src/pages/registry.js
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
         <p>
           By the way, each projects features its own natural wonder, so choose
@@ -230,13 +209,8 @@ export default function Registry(...props) {
         <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
       <div>
-<<<<<<< HEAD:registry/src/pages/Registry.tsx
-        
-       
-=======
         <div>
           <br />
->>>>>>> master:registry/src/pages/registry.js
           <div>
             <div>
               <h2>{value}</h2>
@@ -259,79 +233,6 @@ export default function Registry(...props) {
                 Create New Project
               </button>
             </div>
-<<<<<<< HEAD:registry/src/pages/Registry.tsx
-            <br />
-            <TableContainer component={Paper}>
-              <Table
-                sx={{ minWidth: 650 }}
-                size="small"
-                aria-label="a dense table"
-              >
-                <TableHead>
-                  <TableRow>
-                    <TableCell align="right">Project Name</TableCell>
-                    <TableCell align="right">CO2e Available (T)</TableCell>
-                    <TableCell align="right">Price (lamports)</TableCell>
-                    <TableCell align="right">Account</TableCell>
-                    <TableCell align="right">Owner</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {projectList.map((row) => (
-                    <TableRow
-                      //@ts-ignore
-                      key={row}
-                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                    >
-                      <TableCell component="th" scope="row">
-                        {//@ts-ignore
-                        row.name}
-                      </TableCell>
-                      <TableCell align="right">{
-                          //@ts-ignore
-                      row.number}</TableCell>
-                      <TableCell align="right">{//@ts-ignore
-                      row.price}</TableCell>
-                      {<TableCell align="right">{//@ts-ignore
-                      row.address}</TableCell>}
-                      {<TableCell align="right">{//@ts-ignore
-                      row.owner}</TableCell>}
-                      <TableCell>
-                        <button
-                          onClick={() => {
-                            
-                          }}
-                        >
-                          purchase 1
-                        </button>
-                      </TableCell>
-                      <TableCell align="right">{//@ts-ignore
-                      row.description}</TableCell>
-                      <TableCell align="right">
-                        <img
-                          src={//@ts-ignore
-                              row.image}
-                          style={{ width: "200px", height: "250px" }}
-                        />
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </div>
-      
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "100px",
-            }}
-          >
-            <WalletMultiButton />
-          </div>
-        
-=======
           </div>
           <br />
           <TableContainer component={Paper}>
@@ -372,7 +273,7 @@ export default function Registry(...props) {
                       />
                     </TableCell>
                     <TableCell>
-                      <App />
+                      <CM />
                     </TableCell>
                   </TableRow>
                 ))}
@@ -387,7 +288,6 @@ export default function Registry(...props) {
             marginTop: "100px",
           }}
         ></div>
->>>>>>> master:registry/src/pages/registry.js
       </div>
     </>
   );
