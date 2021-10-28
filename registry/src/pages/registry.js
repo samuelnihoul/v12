@@ -24,7 +24,7 @@ import {
 import idl2 from "../idls/idl2.json";
 import idl from "../idls/idl.json";
 import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+/* import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import {
   ensureBalance,
   getCandyMachine,
@@ -42,7 +42,7 @@ import {
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
-} from "@solana/spl-token";
+} from "@solana/spl-token"; */
 import App from "../components/App";
 const Row = styled.div`
   display: flex;
@@ -57,7 +57,7 @@ const opts = {
 const programID = new PublicKey(idl2.metadata.address);
 const programID2 = new PublicKey(idl.metadata.address);
 
-export default function DenseTable() {
+export default function Registry(...props) {
   const wallet = useWallet();
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
@@ -72,7 +72,7 @@ export default function DenseTable() {
     return provider;
   }
   const [projectList, setProjectList] = useState([]);
-  const sellerAccount = new web3.PublicKey(
+  /*   const sellerAccount = new web3.PublicKey(
     "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
   );
   const projectAccount = new web3.PublicKey(
@@ -82,7 +82,7 @@ export default function DenseTable() {
   const mint = web3.Keypair.generate();
   const config = new web3.PublicKey(
     "EBWUGDGd9cyPNJEP2P71ocHGCc4R2WZAFpGz3KZmwhDf"
-  );
+  ); */
 
   async function getAllProjects() {
     const provider = await getProvider();
@@ -139,8 +139,8 @@ export default function DenseTable() {
     );
     getAllProjects();
   }
-
-  async function buyAndMint(offsets) {
+  ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
+  /* async function buyAndMint(offsets) {
     const provider = await getProvider();
 
     const harmoniaProgram = new Program(idl2, programID, provider);
@@ -190,7 +190,8 @@ export default function DenseTable() {
     });
     getAllProjects();
     return tx;
-  }
+  } */
+  ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
   return (
     <>
       <div style={{ textAlign: "center" }}>
