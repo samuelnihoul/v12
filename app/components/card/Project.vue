@@ -4,7 +4,7 @@
       <template v-slot:default="{ hover }">
         <div>
           <v-img
-            :src="'https://source.unsplash.com/random'"
+            :src="'https://picsum.photos/200/300'"
             lazy-src="/logo.png"
             height="300"
             max-width="450"
