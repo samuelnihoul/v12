@@ -10,6 +10,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
+import { fetchProjects } from "../api/fetch";
 import {
   Connection,
   PublicKey,
@@ -24,6 +25,7 @@ import {
   web3,
   Idl,
   setProvider,
+  Wallet
 } from "@project-serum/anchor";
 import idl from "../idls/idl.json";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
@@ -62,64 +64,13 @@ export default function Registry(props:CMSProps) {
   const [number, setNumber] = useState(0);
   const [price, setPrice] = useState(0);
   const [value, setValue] = useState("");
-  /* async function getProvider() {
-    const network = clusterApiUrl("devnet");
-    //@ts-ignore
-    const connection = new Connection(network, opts.preflightCommitment);
-    //@ts-ignore
-    const provider = new Provider(connection, wallet, opts.preflightCommitment);
-    return provider;
-  } */
   const [projectList, setProjectList] = useState([]);
-  /*   const sellerAccount = new web3.PublicKey(
-    "E62W9WK5XR6VM9HYMxYyS6gkLLmBiNeBbsFjvBVfY766"
-  );
-  const projectAccount = new web3.PublicKey(
-    "wED6ubLJJDBriKLCkA5QtJtg7LGCy1dXPvN28EoX45f"
-  );
-  const candyMachineUuid = "EBWUGD";
-  const mint = web3.Keypair.generate();
-  const config = new web3.PublicKey(
-    "EBWUGDGd9cyPNJEP2P71ocHGCc4R2WZAFpGz3KZmwhDf"
-  ); */
 
+  React.useEffect(()=>{
+    setProjectList(fetchProjects(wallet as Wallet,props.connection))}
+  , []);
 
-
-
-
-
-
-  /* async function getAllProjects() {
-    //const provider = await getProvider();
-    
-    const program = new Program(idl as Idl, programID, Provider);
-    let projects = await program.account.project.all();
-
-    //@ts-ignore
-    let pl = [];
-    projects.forEach((p) => {
-      // p.publicKey
-      // p.account
-      pl.push({
-        name: p.account.name,
-        number: p.account.availableOffset.toString(),
-        price: p.account.offsetPrice.toString(),
-        address: p.publicKey.toString(),
-        owner: p.account.authority.toString(),
-        description: p.account.description,
-        image: p.account.pictureUrl,
-      });
-    });
-
-    //@ts-ignore
-    setProjectList(pl);
-  }
-
-  React.useEffect(() => {
-    getAllProjects();
-  }, []);
-
-  async function create(name: string, number:number, price:number) {
+  /*async function create(name: string, number:number, price:number) {
     if (!name) return;
     const provider = await getProvider();
 
