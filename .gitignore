@@ -20,4 +20,5 @@ app
 whitepaper.md
 cli/node_modules
 trash
+registry/node_modules
 tmp
