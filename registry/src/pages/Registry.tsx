@@ -29,25 +29,6 @@ import {
 } from "@project-serum/anchor";
 import idl from "../idls/idl.json";
 import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
-/* import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import {
-  ensureBalance,
-  getCandyMachine,
-  getCandyProgram,
-  getHarmoniaProgram,
-  getMasterEditionAddress,
-  getMetadataAddress,
-  getOwnedTokenAccounts,
-  getTokenWalletAddress,
-  initializeCandyMachine,
-  mintNft,
-  TOKEN_METADATA_PROGRAM_ID,
-  updateCandyMachine,
-} from "../utils/helper";
-import {
-  ASSOCIATED_TOKEN_PROGRAM_ID,
-  TOKEN_PROGRAM_ID,
-} from "@solana/spl-token"; */
 import CM from "../components/CandyMachineStatus";
 const { Keypair } = web3;
 const baseAccount = Keypair.generate();
@@ -95,7 +76,7 @@ export default function Registry(props:CMSProps) {
     );
     getAllProjects();
   } */
-  ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
+  ///////////////////////////////////////////////////Coming back soon///////////////////////////////////////////////
   /* async function buyAndMint(offsets) {
     const provider = await getProvider();
 
@@ -147,7 +128,7 @@ export default function Registry(props:CMSProps) {
     getAllProjects();
     return tx;
   } */
-  ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
+  ///////////////////////////////////////////////////Coming back soon///////////////////////////////////////////////
   return (
     <><Link to="/">Home</Link>
     <CM {...props}/>
