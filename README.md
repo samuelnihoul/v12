@@ -32,7 +32,7 @@ $ yarn
 
 # serve with hot reload at localhost:3000
 $ yarn serve
-or
+#or
 $ yarn dev
 ```
 
