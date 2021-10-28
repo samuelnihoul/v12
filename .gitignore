@@ -9,7 +9,6 @@ front/node_modules
 back/node_modules
 test-ledger
 static
-app
 registry(react.js)
 reactApp/node_modules
 front
