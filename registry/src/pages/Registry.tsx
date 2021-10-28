@@ -206,12 +206,12 @@ export default function Registry(props:CMSProps) {
           Here you can directly purchase your offset through the projects candy
           machines.
         </h2>
-        <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️</p>
-        <p>
+        <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️<br/>
+        
           By the way, each projects features its own natural wonder, so choose
-          wisely!
-        </p>
-        <p>🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
+          wisely!<br/>
+        
+      🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
       </div>
       <div>
         <div>
