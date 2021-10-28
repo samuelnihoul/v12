@@ -9,6 +9,7 @@ import Paper from "@mui/material/Paper";
 import styled from "styled-components";
 import {Link} from "react-router-dom"
 import { useState } from "react";
+import {CMSProps} from "../components/CandyMachineStatus"
 import {
   Connection,
   PublicKey,
@@ -59,7 +60,7 @@ const opts = {
 const programID = new PublicKey(idl.metadata.address);
 
 
-export default function Registry(...props) {
+export default function Registry(props:CMSProps) {
   const wallet = useWallet();
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
@@ -281,7 +282,9 @@ export default function Registry(...props) {
                       />
                     </TableCell>
                     <TableCell>
-                      <CM />
+                      <CM {...props}
+                      
+                      />
                     </TableCell>
                   </TableRow>
                 ))}

@@ -88,8 +88,17 @@ const App = () => {
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
              <BrowserRouter>
-               <Route exact path="/" component={Home} />
-               <Route path="/registry" component={Registry} />
+               <Route exact path="/" component={()=><Home/>
+              
+              
+              
+              
+              } />
+               <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}
+               config ={config} connection={connection} startDate={startDateSeed} treasury={treasury} 
+
+txTimeout={txTimeout}
+               />} />
               </BrowserRouter>
             </WalletDialogProvider>
           </WalletProvider>
