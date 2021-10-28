@@ -89,10 +89,8 @@ const App = () => {
             <WalletDialogProvider>
              <BrowserRouter>
                <Route exact path="/" component={Home} />
-               <Route path="/Registry" component={Registry} />
+               <Route path="/registry" component={Registry} />
               </BrowserRouter>
-      
-              
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>
