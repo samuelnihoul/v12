@@ -7,6 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 import { useState } from "react";
 import {
   Connection,
@@ -88,7 +89,7 @@ export default function Registry(...props) {
   async function getAllProjects() {
     const provider = await getProvider();
     
-    const program = new Program(idl, programID, provider);
+    const program = new Program(idl as Idl, programID, provider);
     let projects = await program.account.project.all();
 
     //@ts-ignore
@@ -115,13 +116,13 @@ export default function Registry(...props) {
     getAllProjects();
   }, []);
 
-  async function create(name, number, price) {
+  async function create(name: string, number:number, price:number) {
     if (!name) return;
     const provider = await getProvider();
 
     const projectAccount = web3.Keypair.generate();
 
-    const program = new Program(idl, programID, provider);
+    const program = new Program(idl as Idl, programID, provider);
     const tx = await program.rpc.create(
       new BN(number),
       new BN(price),
@@ -194,7 +195,7 @@ export default function Registry(...props) {
   } */
   ///////////////////////////////////////////////////Coming soon///////////////////////////////////////////////
   return (
-    <>
+    <><Link to="/"></Link>
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
         <h2>
@@ -258,17 +259,24 @@ export default function Registry(...props) {
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
-                      {row.name}
+                      {//@ts-ignore
+                      row.name}
                     </TableCell>
-                    <TableCell align="right">{row.number}</TableCell>
-                    <TableCell align="right">{row.price}</TableCell>
-                    {<TableCell align="right">{row.address}</TableCell>}
-                    {<TableCell align="right">{row.owner}</TableCell>}
+                    <TableCell align="right">{//@ts-ignore
+                    row.number}</TableCell>
+                    <TableCell align="right">{//@ts-ignore
+                    row.price}</TableCell>
+                    {<TableCell align="right">{//@ts-ignore
+                    row.address}</TableCell>}
+                    {<TableCell align="right">{//@ts-ignore
+                    row.owner}</TableCell>}
 
-                    <TableCell align="right">{row.description}</TableCell>
+                    <TableCell align="right">{//@ts-ignore
+                    row.description}</TableCell>
                     <TableCell align="right">
                       <img
-                        src={row.image}
+                        src={//@ts-ignore
+                          row.image}
                         style={{ width: "200px", height: "250px" }}
                       />
                     </TableCell>
