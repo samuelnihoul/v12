@@ -8,7 +8,7 @@ Version notes:
 - To check out the registry, go to localhost:3000/registry.
 - In the app, to access the project description page, go to "all projects" then hover over a project and click "see more info".
 - If the homepage doesn't load at first, hit refresh.
-- In the registry, wallet autoconnect has unpredictible behavior.
+- In the registry, wallet autoconnect has unpredictible behavior. If you are wondering what the mint buttons do but can't connect your wallet, they currently mint from a common sample candy machine **on devnet**.
 
 ## Useful Commands
 
