@@ -5,6 +5,7 @@ import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetch";
 import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
+import {newProject} from '../api/newProject'
 export default function Registry(props:CMSProps) {
   const wallet = useWallet();
   const [name, setName] = useState("");
@@ -18,84 +19,6 @@ export default function Registry(props:CMSProps) {
     fetchProjects(wallet,props.connection).then(p=>setProjectList(p))}
   , []);
 
-  /* async function create(name: string, number:number, price:number) {
-    if (!name) return;
-    const provider = await getProvider();
-
-    const projectAccount = web3.Keypair.generate();
-
-    const program = new Program(idl as Idl, programID, provider);
-    const tx = await program.rpc.create(
-      new BN(number),
-      new BN(price),
-      name,
-      "this is a test project, just for you :)",
-      "https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png",
-      {
-        accounts: {
-          project: projectAccount.publicKey,
-          seller: provider.wallet.publicKey,
-          systemProgram: web3.SystemProgram.programId,
-        },
-
-        signers: [projectAccount],
-      }
-    );
-    getAllProjects();
-  }  */
-  ///////////////////////////////////////////////////Coming back soon///////////////////////////////////////////////
-  /* async function buyAndMint(offsets) {
-    const provider = await getProvider();
-
-    const harmoniaProgram = new Program(idl2, programID, provider);
-
-    const candyProgram = new Program(idl, programID2, provider);
-    const candyProgramId = candyProgram.programId;
-
-    const buyerAccount = provider.wallet;
-    const metadata = await getMetadataAddress(mint.publicKey);
-    const masterEdition = await getMasterEditionAddress(mint.publicKey);
-
-    console.log(`Connecting to ${provider.connection["_rpcEndpoint"]}`);
-    const [candyMachine, bump] = await getCandyMachine(
-      config,
-      candyMachineUuid,
-      candyProgramId
-    );
-
-    const token = await getTokenWalletAddress(
-      buyerAccount.publicKey,
-      mint.publicKey
-    );
-
-    console.log(candyProgram.account.candyMachine.fetch(candyMachine));
-    const tx = await harmoniaProgram.rpc.buyAndMint(new BN(offsets), {
-      accounts: {
-        project: projectAccount,
-        buyer: buyerAccount.publicKey,
-        seller: sellerAccount,
-        candyProgram: candyProgram.programId,
-        config: config,
-        candyMachine: candyMachine,
-        payer: buyerAccount.publicKey,
-        wallet: sellerAccount, // treasury
-        mint: mint.publicKey,
-        associatedToken: token,
-        metadata: metadata,
-        masterEdition: masterEdition,
-        tokenMetadataProgram: TOKEN_METADATA_PROGRAM_ID,
-        ataProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
-        tokenProgram: TOKEN_PROGRAM_ID,
-        systemProgram: SystemProgram.programId,
-        rent: web3.SYSVAR_RENT_PUBKEY,
-        clock: web3.SYSVAR_CLOCK_PUBKEY,
-      },
-      signers: [mint],
-    });
-    getAllProjects();
-    return tx;
-  } */
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   return (
     <>
     <button><Link to="/">home</Link></button>
@@ -133,7 +56,8 @@ export default function Registry(props:CMSProps) {
                 //@ts-ignore
                 onChange={(e) => setPrice(e.target.value)}
               />
-              <button onClick={() =>{} /* create(name, number, price) */}>
+              <button onClick={() =>{ //@ts-ignore
+              newProject(name, number, price,wallet,props.connection) }}>
                 create project
               </button>
             </div>
@@ -143,7 +67,7 @@ export default function Registry(props:CMSProps) {
             <table
              style={{borderSpacing:"100px"}}
               
-              
+    
             >
               <tr>
                 
