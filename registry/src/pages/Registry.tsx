@@ -22,7 +22,7 @@ export default function Registry(props:CMSProps) {
 
   return (
     <>
-    {!wallet.connected?<WalletDialogButton>connect</WalletDialogButton>:<></>}
+    {!wallet.connected?<WalletDialogButton>connect wallet</WalletDialogButton>:<></>}
     <button><Link to="/">home</Link></button>
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
