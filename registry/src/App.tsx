@@ -1,6 +1,6 @@
 
 import { useMemo } from "react";
-import "./App.scss"
+import "./App.css"
 import {Route, BrowserRouter} from "react-router-dom"
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
