@@ -13,7 +13,7 @@ export default function Home() {
           <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
           
-          <Carousel style={{paddingTop:'100px'}}>
+          <Carousel style={{paddingTop:'120px'}}>
           <Carousel.Item>
             <img
             
@@ -27,7 +27,7 @@ export default function Home() {
            
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
+              <h3>Project "Strong Forests"</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -44,7 +44,7 @@ export default function Home() {
            
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
+              <h3>Project "Community Culture"</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -61,12 +61,12 @@ export default function Home() {
            
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
+              <h3>Project "Healthy Lions"</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
           </Carousel>
-          <Link to='/registry'>Registry</Link>
+          <button><Link to='/registry'>registry</Link></button>
       </div>
       </>
     )

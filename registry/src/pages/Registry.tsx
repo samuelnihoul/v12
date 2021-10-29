@@ -107,8 +107,8 @@ export default function Registry(props:CMSProps) {
   } */
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   return (
-    <><Link to="/">Home</Link>
-    
+    <>
+    <button><Link to="/">home</Link></button>
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
         <h2>
@@ -154,6 +154,7 @@ export default function Registry(props:CMSProps) {
               sx={{ minWidth: 650 }}
               size="small"
               aria-label="a dense table"
+              
             >
               <TableHead>
                 <TableRow>
@@ -194,9 +195,7 @@ export default function Registry(props:CMSProps) {
                       />
                     </TableCell>
                     <TableCell>
-                      <CM {...props}
-                      
-                      />
+                      <CM {...props}                      />
                     </TableCell>
                   </TableRow>
                 )):<></>}
