@@ -3,17 +3,24 @@ import Carousel from "react-bootstrap/Carousel"
 export default function Home() {
   return (
     <>
-      <div style={{textAlign: 'center'}}>
-        <img src="/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"/>
-          <h1>The Smartest CO2 Offset Marketplace</h1>
-          <h2>We do CO2 offsets. Your way.</h2>
+      <div style={{textAlign: 'center',
+      backgroundImage:`url(${"/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"})`,
+      backgroundRepeat: 'no-repeat',
+      height: '800px',
+      color: 'white'
+      }}>
+          <h1 style={{paddingTop:"300px"}}>The Smartest CO2 Offset Marketplace</h1>
+          <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
-          <Carousel>
+          
+          <Carousel style={{paddingTop:'250px'}}>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
+              src="/assets/images/crabs.jpg"
               alt="Project1"
+              style={{width:"600px", height:'400px'}}
+           
             />
             <Carousel.Caption>
               <h3>First slide label</h3>
