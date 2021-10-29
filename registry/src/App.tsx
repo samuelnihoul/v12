@@ -65,16 +65,17 @@ const wallet=useWallet()
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
+             
+             
              <BrowserRouter>
-             { (!wallet)?<WalletDialogButton>Connect Wallet</WalletDialogButton>:
-             <>
+             
                <Route exact path="/" component={()=><Home/>} />             
                <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}
                config ={config} connection={connection} startDate={startDateSeed} treasury={treasury} 
                 txTimeout={txTimeout}
                />} />
-               </>}
-              </BrowserRouter>
+               </BrowserRouter>
+              
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>
