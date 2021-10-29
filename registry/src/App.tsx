@@ -17,9 +17,8 @@ import {
   ConnectionProvider,
   WalletProvider,
   useWallet,
-  
 } from "@solana/wallet-adapter-react";
-
+import "bootstrap/dist/css/bootstrap.min.css"
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Registry from './pages/Registry'
@@ -45,30 +44,6 @@ const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 
 const txTimeout = 30000; // milliseconds (confirm this works for your project)
 
-const theme = createTheme({
-    palette: {
-        type: 'dark',
-    },
-    overrides: {
-        MuiButtonBase: {
-            root: {
-                justifyContent: 'flex-start',
-            },
-        },
-        MuiButton: {
-            root: {
-                textTransform: undefined,
-                padding: '12px 16px',
-            },
-            startIcon: {
-                marginRight: 8,
-            },
-            endIcon: {
-                marginLeft: 8,
-            },
-        },
-    },
-});
 
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
@@ -85,12 +60,8 @@ const App = () => {
   );
 const wallet=useWallet()
   return (<>
-    <head>
-      <meta charSet="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"/>
-      </head>
-      <ThemeProvider theme={theme}>
+    
+      
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
@@ -107,7 +78,7 @@ const wallet=useWallet()
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>
-      </ThemeProvider><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossOrigin="anonymous"></script>
+      
 </>
   );
 };
