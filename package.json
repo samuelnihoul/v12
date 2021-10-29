@@ -20,6 +20,7 @@
     "loglevel": "^1.7.1",
     "mz": "^2.7.0",
     "nuxt": "^2.15.7",
+    "styled-components": "^5.3.3",
     "vuetify": "^2.5.5",
     "yaml": "^1.10.2"
   },

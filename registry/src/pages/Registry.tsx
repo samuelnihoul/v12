@@ -1,11 +1,4 @@
 import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
@@ -146,59 +139,62 @@ export default function Registry(props:CMSProps) {
             </div>
           </div>
           <br />
-          <TableContainer component={Paper} style={{backgroundColor:"black", color:"white!important"}}>
-            <Table
-              sx={{ minWidth: 650 }}
-              size="small"
+          <div  style={{backgroundColor:"black", color:"white !important"}}>
+            <table
+              
+              
               aria-label="a dense table"
               
             >
-              <TableHead>
-                <TableRow>
-                  <TableCell align="right">Project Name</TableCell>
-                  <TableCell align="right">CO2e Available (T)</TableCell>
-                  <TableCell align="right">Price (lamports)</TableCell>
-                  <TableCell align="right">Account</TableCell>
-                  <TableCell align="right">Owner</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
+              <tr>
+                <th>
+                  <td align="right">Project Name</td>
+                  <td align="right">CO2e Available (T)</td>
+                  <td align="right">Price (lamports)</td>
+                  <td align="right">Account</td>
+                  <td align="right">Owner</td>
+                  <td align="right">Project Description</td>
+                  <td align="right">Picture</td>
+
+                </th>
+              </tr>
+              <tr>
                 {projectList? projectList.map((row) => (
-                  <TableRow
+                  <tr
                     //@ts-ignore
-                    key={row}
-                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                  >
-                    <TableCell component="th" scope="row">
+                    key={row}>
+                    
+                  
+                    <td >
                       {//@ts-ignore
                       row.name}
-                    </TableCell>
-                    <TableCell align="right">{//@ts-ignore
-                    row.number}</TableCell>
-                    <TableCell align="right">{//@ts-ignore
-                    row.price}</TableCell>
-                    {<TableCell align="right">{//@ts-ignore
-                    row.address}</TableCell>}
-                    {<TableCell align="right">{//@ts-ignore
-                    row.owner}</TableCell>}
+                    </td>
+                    <td align="right">{//@ts-ignore
+                    row.number}</td>
+                    <td align="right">{//@ts-ignore
+                    row.price}</td>
+                    {<td align="right">{//@ts-ignore
+                    row.address}</td>}
+                    {<td align="right">{//@ts-ignore
+                    row.owner}</td>}
 
-                    <TableCell align="right">{//@ts-ignore
-                    row.description}</TableCell>
-                    <TableCell align="right">
+                    <td align="right">{//@ts-ignore
+                    row.description}</td>
+                    <td align="right">
                       <img
                         src={//@ts-ignore
                           row.image}
                         style={{ width: "200px", height: "250px" }}
                       />
-                    </TableCell>
-                    <TableCell>
+                    </td>
+                    <td>
                       <CM {...props}                      />
-                    </TableCell>
-                  </TableRow>
+                    </td>
+                  </tr>
                 )):<></>}
-              </TableBody>
-            </Table>
-          </TableContainer>
+              </tr>
+            </table>
+          </div>
         </div>
         <div
           style={{
