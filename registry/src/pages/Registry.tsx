@@ -10,9 +10,6 @@ import {Link} from "react-router-dom"
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetch";
-import {
-  Wallet
-} from "@project-serum/anchor";
 import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
 export default function Registry(props:CMSProps) {
@@ -28,7 +25,7 @@ export default function Registry(props:CMSProps) {
     fetchProjects(wallet,props.connection).then(p=>setProjectList(p))}
   , []);
 
-  /*async function create(name: string, number:number, price:number) {
+  /* async function create(name: string, number:number, price:number) {
     if (!name) return;
     const provider = await getProvider();
 
@@ -52,7 +49,7 @@ export default function Registry(props:CMSProps) {
       }
     );
     getAllProjects();
-  } */
+  }  */
   ///////////////////////////////////////////////////Coming back soon///////////////////////////////////////////////
   /* async function buyAndMint(offsets) {
     const provider = await getProvider();
@@ -149,7 +146,7 @@ export default function Registry(props:CMSProps) {
             </div>
           </div>
           <br />
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} style={{backgroundColor:"black", color:"white!important"}}>
             <Table
               sx={{ minWidth: 650 }}
               size="small"
