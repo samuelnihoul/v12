@@ -144,7 +144,7 @@ export default function Registry(props:CMSProps) {
                 onChange={(e) => setPrice(e.target.value)}
               />
               <button onClick={() =>{} /* create(name, number, price) */}>
-                Create New Project
+                create project
               </button>
             </div>
           </div>
