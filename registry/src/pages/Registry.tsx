@@ -141,20 +141,19 @@ export default function Registry(props:CMSProps) {
           <br />
           <div  style={{backgroundColor:"black", color:"white !important"}}>
             <table
+             style={{borderSpacing:"100px"}}
               
-              
-              aria-label="a dense table"
               
             >
               <tr>
                 
-                  <th align="right">Project Name</th>
-                  <th align="right">CO2e Available (T)</th>
-                  <th align="right">Price (lamports)</th>
-                  <th align="right">Account</th>
-                  <th align="right">Owner</th>
-                  <th align="right">Project Description</th>
-                  <th align="right">Picture</th>
+                  <th align="center">Project Name</th>
+                  <th align="center">CO2e Available (T)</th>
+                  <th align="center">Price (lamports)</th>
+                  <th align="center">Account</th>
+                  <th align="center">Owner</th>
+                  <th align="center">Project Description</th>
+                  <th align="center">Picture</th>
 
                 
               </tr>
@@ -169,18 +168,18 @@ export default function Registry(props:CMSProps) {
                       {//@ts-ignore
                       row.name}
                     </td>
-                    <td align="right">{//@ts-ignore
+                    <td align="center">{//@ts-ignore
                     row.number}</td>
-                    <td align="right">{//@ts-ignore
+                    <td align="center">{//@ts-ignore
                     row.price}</td>
-                    {<td align="right">{//@ts-ignore
+                    {<td align="center">{//@ts-ignore
                     row.address}</td>}
-                    {<td align="right">{//@ts-ignore
+                    {<td align="center">{//@ts-ignore
                     row.owner}</td>}
 
-                    <td align="right">{//@ts-ignore
+                    <td align="center">{//@ts-ignore
                     row.description}</td>
-                    <td align="right">
+                    <td align="center">
                       <img
                         src={//@ts-ignore
                           row.image}
