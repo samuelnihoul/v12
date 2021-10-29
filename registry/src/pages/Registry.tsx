@@ -117,7 +117,7 @@ export default function Registry(props:CMSProps) {
         </h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️<br/>
         
-          By the way, each projects features its own natural wonder, so choose
+          By the way, each project features its own natural wonder, so choose
           wisely!<br/>
         
       🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
