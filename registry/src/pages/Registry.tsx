@@ -147,18 +147,18 @@ export default function Registry(props:CMSProps) {
               
             >
               <tr>
-                <th>
-                  <td align="right">Project Name</td>
-                  <td align="right">CO2e Available (T)</td>
-                  <td align="right">Price (lamports)</td>
-                  <td align="right">Account</td>
-                  <td align="right">Owner</td>
-                  <td align="right">Project Description</td>
-                  <td align="right">Picture</td>
+                
+                  <th align="right">Project Name</th>
+                  <th align="right">CO2e Available (T)</th>
+                  <th align="right">Price (lamports)</th>
+                  <th align="right">Account</th>
+                  <th align="right">Owner</th>
+                  <th align="right">Project Description</th>
+                  <th align="right">Picture</th>
 
-                </th>
+                
               </tr>
-              <tr>
+              
                 {projectList? projectList.map((row) => (
                   <tr
                     //@ts-ignore
@@ -192,7 +192,7 @@ export default function Registry(props:CMSProps) {
                     </td>
                   </tr>
                 )):<></>}
-              </tr>
+              
             </table>
           </div>
         </div>
