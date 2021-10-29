@@ -112,12 +112,12 @@ export default function Registry(props:CMSProps) {
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
         <h2>
-          Here you can directly purchase your offset through the projects candy
+          Here you can directly purchase your offsets through the projects candy
           machines.
         </h2>
         <p>The more offsets you buy, the rarer the NFT. Good luck! ☘️<br/>
         
-          By the way, each projects features its own natural wonder, so choose
+          Each project features its own natural wonder, so choose
           wisely!<br/>
         
       🌺🐴🦕🐙🦐🐣🐷🐮🦁🐡🌴🌺</p>
@@ -144,7 +144,7 @@ export default function Registry(props:CMSProps) {
                 onChange={(e) => setPrice(e.target.value)}
               />
               <button onClick={() =>{} /* create(name, number, price) */}>
-                Create New Project
+                create project
               </button>
             </div>
           </div>
