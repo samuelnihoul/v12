@@ -18,8 +18,8 @@ export const newProject =async(name: string, number:number, price:number, anchor
       new anchor.BN(number),
       new anchor.BN(price),
       name,
-      "this is a test project, just for you :)",
-      "https://harmonia-eko.ghost.io/content/images/size/w1000/2021/10/E3HD.png",
+      "this is a test project",
+      "https://images.unsplash.com/photo-1464550838636-1a3496df938b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHxhttps://harmonia-eko.ghost.io/content/images/size/w2000/2021/10/eddy-klaus-BHNxfaeNCTI-unsplash-1.jpg8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1630&q=80",
       {
         accounts: {
           project: projectAccount.publicKey,
