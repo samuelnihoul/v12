@@ -12,17 +12,16 @@ import {
   getSolletWallet,
   getSolletExtensionWallet,
 } from "@solana/wallet-adapter-wallets";
-import {WalletDialogButton} from "@solana/wallet-adapter-material-ui"
 import {
   ConnectionProvider,
   WalletProvider,
-  useWallet,
+  useAnchorWallet,
 } from "@solana/wallet-adapter-react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-import { createTheme, ThemeProvider } from "@material-ui/core";
 import Registry from './pages/Registry'
 import Home from './pages/Home'
+import { NewProject } from "./pages/NewProject";
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
 );
@@ -58,24 +57,31 @@ const App = () => {
     ],
     []
   );
-const wallet=useWallet()
+const wallet=useAnchorWallet()
   return (<>
     
       
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
-             
-             
              <BrowserRouter>
-             
-               <Route exact path="/" component={()=><Home/>} />             
+               <Route exact path="/" component={()=><Home/>} />  
+               <Route path="/submitAProject" component={
+                 ()=><NewProject wallet={
+                   wallet 
+                  }connection={connection}/>
+                   }
+                   />
+                 
+                   
+                 
+                 
+                     
                <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}
                config ={config} connection={connection} startDate={startDateSeed} treasury={treasury} 
                 txTimeout={txTimeout}
                />} />
-               </BrowserRouter>
-              
+               </BrowserRouter>   
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>

@@ -2,17 +2,13 @@ import * as React from "react";
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
-import { fetchProjects } from "../api/fetch";
+import { fetchProjects } from "../api/fetchProjects";
 import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
 import {newProject} from '../api/newProject'
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 export default function Registry(props:CMSProps) {
   const wallet = useWallet();
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState(0);
-  const [price, setPrice] = useState(0);
-  const [value, setValue] = useState("");
   const [projectList, setProjectList] = useState([]);
 
   React.useEffect(()=>{
@@ -24,6 +20,8 @@ export default function Registry(props:CMSProps) {
     <>
     {!wallet.connected?<><WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton><p>to interact with the app clic here ⬆️</p></>:<p>✅ connected</p>}
     <button><Link to="/">home</Link></button>
+    <button><Link to="/submitAProject">submit a project</Link></button>
+    
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
         <h2>
@@ -41,34 +39,13 @@ export default function Registry(props:CMSProps) {
         <div>
           <br />
           <div>
-            <div>
-              <h2>{value}</h2>
-              <input
-                placeholder="name"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
-              <input
-                placeholder="initial amount"
-                //@ts-ignore
-                onChange={(e) => setNumber(e.target.value)}
-              />
-              <input
-                placeholder="price"
-                //@ts-ignore
-                onChange={(e) => setPrice(e.target.value)}
-              />
-              <button onClick={() =>{ //@ts-ignore
-              newProject(name, number, price,wallet,props.connection) }}>
-                create project
-              </button>
-            </div>
+            
           </div>
           <br />
           <div  style={{backgroundColor:"black", color:"white !important"}}>
             <table
              style={{borderSpacing:"100px"}}
-              
+   
     
             >
               <tr>

@@ -1,8 +1,10 @@
 import * as anchor from "@project-serum/anchor";
 import idl from "../idls/idl.json"
-export const newProject =async(name: string, number:number, price:number, anchorWallet: anchor.Wallet,
+import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
+
+export const newProject =async(name: string, number:number, price:number, anchorWallet: AnchorWallet,
     
-    connection: anchor.web3.Connection
+    connection: anchor.web3.Connection,image:string,description:string
   ): Promise<any[]>=>{
     const provider = new anchor.Provider(connection, anchorWallet, {
         preflightCommitment: "recent",
