@@ -84,7 +84,7 @@ export default function Registry(props:CMSProps) {
                     <td align="center">
                       <img
                         src={//@ts-ignore
-                          row.image} alt="project picture"
+                          row.image} alt="project"
                         style={{ width: "200px", height: "250px" }}
                       />
                     </td>
