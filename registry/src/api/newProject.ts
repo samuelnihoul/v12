@@ -5,7 +5,7 @@ import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
 export const newProject =async(name: string, number:number, price:number, anchorWallet: AnchorWallet,
     
     connection: anchor.web3.Connection,image:string,description:string
-  ): Promise<any[]>=>{
+  ): Promise<string>=>{
     const provider = new anchor.Provider(connection, anchorWallet, {
         preflightCommitment: "recent",
       });
@@ -16,7 +16,7 @@ export const newProject =async(name: string, number:number, price:number, anchor
     const projectAccount = anchor.web3.Keypair.generate();
 
     
-    const tx = await program.rpc.create(
+     const tx =await program.rpc.create(
       new anchor.BN(number),
       new anchor.BN(price),
       name,
@@ -32,5 +32,5 @@ export const newProject =async(name: string, number:number, price:number, anchor
         signers: [projectAccount],
       }
     );
-    return
+    return tx
   } 

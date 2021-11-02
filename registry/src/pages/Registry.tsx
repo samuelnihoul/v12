@@ -5,7 +5,6 @@ import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetchProjects";
 import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
-import {newProject} from '../api/newProject'
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 export default function Registry(props:CMSProps) {
   const wallet = useWallet();
@@ -14,7 +13,7 @@ export default function Registry(props:CMSProps) {
   React.useEffect(()=>{
     //@ts-ignore
     fetchProjects(wallet,props.connection).then(p=>setProjectList(p))}
-  , []);
+  , [props.connection,wallet]);
 
   return (
     <>
@@ -85,7 +84,7 @@ export default function Registry(props:CMSProps) {
                     <td align="center">
                       <img
                         src={//@ts-ignore
-                          row.image}
+                          row.image} alt="project picture"
                         style={{ width: "200px", height: "250px" }}
                       />
                     </td>

@@ -18,7 +18,7 @@ export default function Home() {
       }}>
         <Navbar bg='dark' expand="lg">
           <Navbar.Brand href='/'>
-            <img src='/assets/images/d20.png' width='70px'/>
+            <img src='/assets/images/d20.png' width='70px' alt='logo'/>
             </Navbar.Brand>
             </Navbar>
             
