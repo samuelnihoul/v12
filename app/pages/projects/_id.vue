@@ -8,7 +8,7 @@
         src="https://cdn.vuetifyjs.com/images/cards/forest-art.jpg"
         lazy-src="/logo.png"
       >
-        <h1 class="white--text">Ici on a le titre du projet</h1>
+        <h1 class="white--text">Project title here</h1>
       </v-parallax>
     </section>
 
@@ -79,25 +79,18 @@
         <div class="col-md-4">
           <h3>Description</h3>
           <p class="mt-2">
-            The project activity is designed to introduce geothermal energy
-            based space heating system to realize heat supply to a series of new
-            residential buildings and commercial buildings in Changdao county
-            over winter season, which will displace heat supply from isolated
-            coal-fired boilers as a business-as-usual scenario in the project
-            area. Changdao county is in Yantai City of Shandong Province.
-            According to the current Changdao County Urban Master Plan
-            requirements, the Changdao County government will take a series of
-            measures to improve the environment and the living conditions of
-            residents. The proposed project will involve the construction and
-            operation of geothermal production wells, reinjection wells, heat
-            substations and heat supply pipelines. The project owner is Jiangsu
-            Zhiji New Energy Technology Co., Ltd. It can supply geothermal heat
-            to 6,332.5 thousand m2 of newly built residential buildings and
-            1,117.5 thousand m2 of newly built commercial buildings with a total
-            heating load of 381.4 MW. The scenario prior to the implementation
-            of the proposed project activity is that heat supplied to the
-            building areas in winter would be provided by isolated coal-fired
-            boilers.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+            Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+              Lorem ipsum dolor sit amet, consectetur adipiscing el effective.
+              Lorem ipsum dolor sit amet, consectetur adipiscing el effective!
+        
+        
           </p>
         </div>
       </div>
@@ -109,10 +102,10 @@
     <section>
       <h2 class="section-title">CERTIFICATION DOCUMENTS</h2>
       <a v-if="$vuetify.breakpoint.name == 'xs'"
-        >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</a
+        >VIEW CERTIFICATION DOCUMENTS</a
       >
       <v-btn color="primary" outlined x-large v-else
-        >VIEW CERTIFICATION DOCUMENTS IN SUSTAINCERT</v-btn
+        >VIEW CERTIFICATION DOCUMENTS</v-btn
       >
     </section>
     <section>

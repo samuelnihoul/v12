@@ -36,7 +36,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
                     v-on="on"
                     style="border-right: 1px solid"
                   >
-                    Africa
+                    Europe
                     <v-icon> mdi-chevron-down </v-icon>
                     <!-- <v-icon v-else>mdi-chevron-up</v-icon> -->
                   </v-btn>
@@ -77,7 +77,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
     </section>
     <section>
       <div class="offset-md-2 col-md-8">
-        <h2 class="my-title">Our partners</h2>
+        <h2 class="my-title">Built with</h2>
         <div class="w-100 d-flex mb-3">
           <v-hover v-slot="{ hover }" v-for="i in 5" :key="'zzz' + i">
             <v-card
@@ -85,7 +85,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
               class="w-20 d-flex justify-center align-center"
               style="height: 150px"
             >
-              <h2>()</h2>
+              <v-img :src="require('~/assets/logos/sol.png')" max-width="80px"/>
             </v-card>
           </v-hover>
         </div>
@@ -95,7 +95,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
       </div>
     </section>
     <section>
-      <h2 class="my-title">Latest projects</h2>
+      <h2 class="my-title">Latest Projects</h2>
       <div class="offset-md-2 col-md-10">
         <div>
           <new-projects style="display:flex"></new-projects>
@@ -116,7 +116,7 @@ You can mitigate the climate crisis from your garage, backyard or even fingertip
       </div>
     </section>
     <section>
-      <h2 class="my-title">Offseters tell you</h2>
+      <h2 class="my-title">Offseters Tell You</h2>
       <div class="offset-md-2 col-md-8">
         <div class="row">
           <div class="col-md-4" v-for="i in 3" :key="'cleint' + i">
