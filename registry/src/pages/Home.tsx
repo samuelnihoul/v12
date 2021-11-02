@@ -26,7 +26,7 @@ export default function Home() {
           <TypingCarousel />
           <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
-          <h3>This is a demo version designed for stakeholders and prospects</h3>
+          <h3>This is a demo version designed for stakeholders and prospects.</h3>
           <Carousel style={{paddingTop:'120px'}}>
           <Carousel.Item>
             <img
