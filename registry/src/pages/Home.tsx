@@ -1,15 +1,12 @@
 import {Link} from "react-router-dom"
 import Carousel from "react-bootstrap/Carousel"
 import Navbar from "react-bootstrap/Navbar"
+import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
+const Row=styled.div`display:flex;flex-direction:row;text-align:center;`
 export default function Home() {
-
-
-
-  
   return (
     <>
-    
       <div style={{textAlign: 'center',
       backgroundImage:`url(${"/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"})`,
       backgroundRepeat: 'no-repeat',
@@ -27,7 +24,8 @@ export default function Home() {
           <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
           <h3>This is a demo version designed for stakeholders and prospects.</h3>
-          <Carousel style={{paddingTop:'120px'}}>
+          <Row><select  placeholder='Europe'>Select a Region</select><input type='search'></input></Row>
+                   <Carousel style={{paddingTop:'120px'}}>
           <Carousel.Item>
             <img
               className="d-block w-100"
