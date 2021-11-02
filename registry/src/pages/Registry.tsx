@@ -17,7 +17,7 @@ export default function Registry(props:CMSProps) {
 
   return (
     <>
-    {!wallet.connected?<><WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton><p>to interact with the app clic here ⬆️</p></>:<p>✅ connected</p>}
+    {!wallet.connected?<><WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton><p>to interact with the app click here ⬆️</p></>:<p>✅ connected</p>}
     <button><Link to="/">home</Link></button>
     <button><Link to="/submitAProject">submit a project</Link></button>
     
