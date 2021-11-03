@@ -10,6 +10,7 @@ export const Navbar=()=>{
       <Nav.Link href="/" >Home</Nav.Link>
       <Nav.Link href="/registry">Registry</Nav.Link>
       <Nav.Link href="/aboutUs">About Us</Nav.Link>
+      <Nav.Link href="/submitAProject">Submit a Project</Nav.Link>
     </Nav>
             </Navba>
     )

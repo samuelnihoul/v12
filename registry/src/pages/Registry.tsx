@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Link} from "react-router-dom"
+
 import {Navbar} from '../components/Navbar'
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
@@ -19,8 +19,7 @@ export default function Registry(props:CMSProps) {
   return (
     <><Navbar/>
     {!wallet.connected?<><WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton><p>to interact with the app click here ⬆️</p></>:<p>✅ connected</p>}
-    <button><Link to="/">home</Link></button>
-    <button><Link to="/submitAProject">submit a project</Link></button>
+    
     
       <div style={{ textAlign: "center" }}>
         <h1>Welcome to the registry.</h1>
