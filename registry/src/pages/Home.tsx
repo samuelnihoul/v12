@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel"
 import Navbar from "react-bootstrap/Navbar"
 import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
-const Row=styled.div`display:flex;flex-direction:row;align-items:center;text-align:center;`
+const Row=styled.div`display:flex;flex-direction:row;justify-content:center;text-align:center;`
 const Pill=styled.div`display:flex;flex-direction:row;border-color:gold;border-style:solid;border-radius:30px;font-size:30px;margin:30px;padding-left:5px;`
 export default function Home() {
   return (
@@ -22,9 +22,7 @@ export default function Home() {
       alignItems:'center',
       
       }}>
-        
             
-
           <TypingCarousel />
           <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
@@ -88,7 +86,7 @@ export default function Home() {
           
       <div>
       <h2 style={{textAlign:'center'}}>Built with</h2>
-      <Row><p>()</p><p>()</p><p>()</p></Row></div>
+      <Row><img src='assets/logos/nodejs-logo.png' width='70px'/><img src='assets/logos/sol.png' width='70px'/><img src='assets/logos/reactjs-development-services.png' width='70px'/></Row></div>
       </>
     )
 }
