@@ -9,7 +9,7 @@ export const Navbar=()=>{
     return(
         <Navba bg='dark' expand="lg" variant='dark'>
         
-        {!wallet.connected?<WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton>:<p>✅ connected</p>}
+        {!wallet.connected?<WalletDialogButton >connect wallet</WalletDialogButton>:<p>✅ connected</p>}
     
           <Navba.Brand href='/'>
             <img src='/assets/images/d20.png' width='70px' alt='logo'/>
