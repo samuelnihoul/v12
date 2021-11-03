@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+
 import Carousel from "react-bootstrap/Carousel"
 import Navbar from "react-bootstrap/Navbar"
 import styled from "styled-components"
@@ -22,7 +22,6 @@ export default function Home() {
       alignItems:'center',
       
       }}>
-            
           <TypingCarousel />
           <h2> We do CO2 offsets. Your way.</h2>
           <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
@@ -35,7 +34,7 @@ export default function Home() {
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg></button>
           </Pill></div>
-                   <Carousel style={{paddingTop:'0px'}}>
+             <Carousel style={{paddingTop:'0px'}}>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -86,7 +85,7 @@ export default function Home() {
           
       <div>
       <h2 style={{textAlign:'center'}}>Built with</h2>
-      <Row><img src='assets/logos/nodejs-logo.png' width='70px'/><img src='assets/logos/sol.png' width='70px'/><img src='assets/logos/reactjs-development-services.png' width='70px'/></Row></div>
+      <Row><img src='assets/logos/nodejs-logo.png' width='70px' alt='node'/><img src='assets/logos/sol.png' width='70px' alt='solana'/><img src='assets/logos/reactjs-development-services.png' alt='react'width='70px'/></Row></div>
       </>
     )
 }
