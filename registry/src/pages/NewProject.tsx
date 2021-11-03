@@ -4,13 +4,15 @@ import { newProject } from "../api/newProject";
 import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
 import Alert from 'react-bootstrap/Alert';
 import Spinner from "react-bootstrap/Spinner"
+import {Navbar} from '../components/Navbar'
+
 export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{
     const [name, setName] = useState("");
     const [number, setNumber] = useState(0);
     const [price, setPrice] = useState(0);
     const [image, setImage]=useState('')
     const [description, setDescription] = useState("");
-return(
+return(<><Navbar/>
 
 <div style={{display:'flex' ,flexDirection:'column'}}>
               <input
@@ -49,5 +51,6 @@ return(
             </Alert>) }}>
                 create project
               </button>
-            </div>)
+            </div></>
+            )
 }

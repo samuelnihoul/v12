@@ -1,23 +1,13 @@
 
 import Carousel from "react-bootstrap/Carousel"
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
+import {Navbar} from '../components/Navbar'
 import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
 const Row=styled.div`display:flex;flex-direction:row;justify-content:center;text-align:center;`
 const Pill=styled.div`display:flex;flex-direction:row;border-color:gold;border-style:solid;border-radius:30px;font-size:30px;margin:30px;padding-left:5px;`
 export default function Home() {
   return (
-    <><Navbar bg='dark' expand="lg" variant='dark'>
-          <Navbar.Brand href='/'>
-            <img src='/assets/images/d20.png' width='70px' alt='logo'/>
-            </Navbar.Brand>
-            <Nav className="me-auto" style={{color: 'white'}}>
-      <Nav.Link href="#home" >Home</Nav.Link>
-      <Nav.Link href="#registry">Registry</Nav.Link>
-      <Nav.Link href="#aboutUs">About Us</Nav.Link>
-    </Nav>
-            </Navbar>
+    <><Navbar/>
       <div style={{textAlign: 'center',
       backgroundImage:`url(${"/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"})`,
       backgroundRepeat: 'no-repeat',
