@@ -1,12 +1,10 @@
 import * as React from "react";
-
 import {Navbar} from '../components/Navbar'
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetchProjects";
 import { useWallet } from "@solana/wallet-adapter-react";
 import CM from "../components/CandyMachineStatus";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 export default function Registry(props:CMSProps) {
   const wallet = useWallet();
   const [projectList, setProjectList] = useState([]);
@@ -17,8 +15,7 @@ export default function Registry(props:CMSProps) {
   , [props.connection,wallet]);
 
   return (
-    <><Navbar/>
-    {!wallet.connected?<><WalletDialogButton style={{paddingLeft:"110px"}}>connect wallet</WalletDialogButton><p>to interact with the app click here ⬆️</p></>:<p>✅ connected</p>}
+    <><Navbar />
     
     
       <div style={{ textAlign: "center" }}>
