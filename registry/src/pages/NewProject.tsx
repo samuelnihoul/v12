@@ -5,6 +5,7 @@ import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
 import Alert from 'react-bootstrap/Alert';
 import Spinner from "react-bootstrap/Spinner"
 import {Navbar} from '../components/Navbar'
+import { useWallet } from "@solana/wallet-adapter-react";
 
 export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{
     const [name, setName] = useState("");
@@ -12,9 +13,11 @@ export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{
     const [price, setPrice] = useState(0);
     const [image, setImage]=useState('')
     const [description, setDescription] = useState("");
+    const [aNewProject,setANewProject]=useState(false)
+    const wallet = useWallet()
 return(<><Navbar/>
 
-<div style={{display:'flex' ,flexDirection:'column'}}>
+<div >
               <input
                 placeholder="name"
                 onChange={(e) => setName(e.target.value)}
@@ -43,14 +46,17 @@ return(<><Navbar/>
               
             /><input type="file" placeholder='browse' onChange={(e) => setImage(e.target.value)}/> 
 
-<Spinner animation='border' variant='light'/>
+
 
               <button onClick={() =>{
-              newProject(name, number, price,props.wallet,props.connection,image,description).then(()=><Alert variant="success">
-              Success!
-            </Alert>) }}>
-                create project
-              </button>
+                setANewProject(true)
+              newProject(name, number, price,wallet,props.connection,image,description).then(()=>{setANewProject(false);return <Alert variant="success">
+              Success! 
+            </Alert>}).catch(error =>{
+              setANewProject(false)
+              alert(error);}
+)
+          }}>create</button>
             </div></>
-            )
+)       
 }
