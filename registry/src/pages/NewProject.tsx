@@ -57,6 +57,7 @@ return(<><Navbar/>
               alert(error);}
 )
           }}>create</button>
+          {aNewProject?<p>Please wait</p>:<></>}
             </div></>
 )       
 }
