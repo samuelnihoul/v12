@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-
+import AuthContainer from "./AuthContainer"
 export default function Login() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
@@ -27,7 +27,8 @@ export default function Login() {
   }
 
   return (
-    <>
+    <AuthContainer>
+   
       <Card style={{backgroundColor:'black'}}>
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
@@ -50,9 +51,11 @@ export default function Login() {
           </div>
         </Card.Body>
       </Card>
+
       <div className="w-100 text-center mt-2">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
-    </>
+
+    </AuthContainer>
   )
 }
