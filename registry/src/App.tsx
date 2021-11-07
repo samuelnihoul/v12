@@ -29,31 +29,16 @@ import Login from "./components/Login"
 import PrivateRoute from "./components/PrivateRoute"
 import ForgotPassword from "./components/ForgotPassword"
 import UpdateProfile from "./components/UpdateProfile"
-const treasury = new anchor.web3.PublicKey(
-  process.env.REACT_APP_TREASURY_ADDRESS!
-);
-
-const config = new anchor.web3.PublicKey(
-  process.env.REACT_APP_CANDY_MACHINE_CONFIG!
-);
-
-const candyMachineId = new anchor.web3.PublicKey(
-  process.env.REACT_APP_CANDY_MACHINE_ID!
-);
-
+const treasury = new anchor.web3.PublicKey(process.env.REACT_APP_TREASURY_ADDRESS!);
+const config = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_CONFIG!);
+const candyMachineId = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_ID!);
 const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
-
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
 const connection = new anchor.web3.Connection(rpcHost);
-
 const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
-
-const txTimeout = 30000; // milliseconds (confirm this works for your project)
-
-
+const txTimeout = 30000;
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
-
   const wallets = useMemo(
     () => [
         getPhantomWallet(),
@@ -71,7 +56,7 @@ const App = () => {
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletDialogProvider>
             <Container className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh" }}>
-              <div className="w-100" style={{maxWidth: "400px"  }}>
+              <div className="w-100" style={{maxWidth: "400px" ,backgroundColor:"black"}}>
                 <Router>
                   <AuthProvider>
                     <Switch>

@@ -4,9 +4,9 @@ import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
 export default function UpdateProfile() {
-  const emailRef = useRef()
-  const passwordRef = useRef()
-  const passwordConfirmRef = useRef()
+  const emailRef = useRef(null)
+  const passwordRef = useRef(null)
+  const passwordConfirmRef = useRef(null)
   const { currentUser, updatePassword, updateEmail } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)

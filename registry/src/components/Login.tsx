@@ -4,8 +4,8 @@ import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
 export default function Login() {
-  const emailRef = useRef()
-  const passwordRef = useRef()
+  const emailRef = useRef(null)
+  const passwordRef = useRef(null)
   const { login } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
@@ -28,7 +28,7 @@ export default function Login() {
 
   return (
     <>
-      <Card>
+      <Card style={{backgroundColor:'black'}}>
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}

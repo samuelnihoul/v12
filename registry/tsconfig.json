@@ -22,6 +22,6 @@
   },
   "include": [
     "src/**/*.ts"
-, "src/contexts/AuthContext.jsx"  ],
+, "src/contexts/AuthContext.tsx"  ],
   "exclude": ["src/api/firebase.ts"]
 }
