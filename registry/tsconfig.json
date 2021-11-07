@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src/**/*.ts"
+, "src/contexts/AuthContext.tsx"  ],
+  "exclude": ["src/api/firebase.ts"]
 }
