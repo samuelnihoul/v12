@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext"
 
 
-export const Navbar=()=>{
+export default function Navbar(){
   const [error, setError] = useState("")
   const { logout } = useAuth()
   const history = useHistory()
@@ -36,6 +36,7 @@ export const Navbar=()=>{
       <Nav.Link href="/" >Home</Nav.Link>
       <Nav.Link href="/registry">Registry</Nav.Link>
       <Nav.Link href="/aboutUs">About Us</Nav.Link>
+      <Nav.Link href="/contactUs">Contact Us</Nav.Link>
       <Nav.Link href="/submitAProject">Submit a Project</Nav.Link>
       <Nav.Link href='/login'>Login</Nav.Link>
       <Nav.Link href='/signup'>Signup</Nav.Link>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Navbar} from '../components/Navbar'
+import Navbar from '../components/Navbar'
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetchProjects";

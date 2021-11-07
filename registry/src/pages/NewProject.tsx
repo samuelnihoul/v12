@@ -4,7 +4,7 @@ import { newProject } from "../api/newProject";
 import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
 import Alert from 'react-bootstrap/Alert';
 //import Spinner from "react-bootstrap/Spinner"
-import {Navbar} from '../components/Navbar'
+import Navbar from '../components/Navbar'
 import { useWallet } from "@solana/wallet-adapter-react";
 
 export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{

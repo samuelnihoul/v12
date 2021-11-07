@@ -1,6 +1,6 @@
 
 import Carousel from "react-bootstrap/Carousel"
-import {Navbar} from '../components/Navbar'
+import Navbar from '../components/Navbar'
 import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
 const Row=styled.div`display:flex;flex-direction:row;justify-content:center;text-align:center;`
