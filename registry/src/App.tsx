@@ -60,9 +60,9 @@ const App = () => {
                     <Route path="/login" component={Login} />
                     <Route path="/forgot-password" component={ForgotPassword} />
                  
-                <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
-                <Route path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
-                <PrivateRoute exact path="/" component={()=><Home/>} />
+                <PrivateRoute path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
+                <PrivateRoute path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
+                <Route exact path="/" component={()=><Home/>} />
               </AuthProvider>
             </Router>
           </WalletDialogProvider>
