@@ -1,12 +1,9 @@
 
 import Carousel from "react-bootstrap/Carousel"
 import Navbar from '../components/Navbar'
-import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
 import { Link } from "react-router-dom"
-const Row=styled.div`display:flex;flex-direction:row;justify-content:center;text-align:center;margin:30px`
-const Pill=styled.div`display:flex;flex-direction:row;border-color:gold;border-style:solid;border-radius:30px;font-size:30px;margin:30px;padding-left:5px;`
 export default function Home() {
   return (
     <div className="h-100 align-items-center"style={{backgroundImage:`url(${"/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"})`,backgroundRepeat: 'no-repeat'}}>
@@ -21,7 +18,6 @@ export default function Home() {
         <br/>
         <br/>
         <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>
-        
       </div>
       <Carousel style={{backgroundColor:'transparent'}}>
         <Carousel.Item>
@@ -46,12 +42,6 @@ export default function Home() {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel> 
-      <div>
-        <h2 style={{textAlign:'center'}}>Built with</h2>
-        <div>
-          <img src='assets/logos/nodejs-logo.png' width='70px' alt='node'/><img src='assets/logos/sol.png' width='70px' alt='solana'/><img src='assets/logos/reactjs-development-services.png' alt='react'width='70px'/>
-        </div>
-      </div>
     </div>
   )
 }
