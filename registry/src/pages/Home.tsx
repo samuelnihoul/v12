@@ -3,6 +3,8 @@ import Carousel from "react-bootstrap/Carousel"
 import Navbar from '../components/Navbar'
 import styled from "styled-components"
 import {TypingCarousel} from "../components/TypingCarousel"
+import React from "react"
+import { Link } from "react-router-dom"
 const Row=styled.div`display:flex;flex-direction:row;justify-content:center;text-align:center;`
 const Pill=styled.div`display:flex;flex-direction:row;border-color:gold;border-style:solid;border-radius:30px;font-size:30px;margin:30px;padding-left:5px;`
 export default function Home() {
@@ -20,7 +22,7 @@ export default function Home() {
       }}>
           <TypingCarousel />
           <h2> We do CO2 offsets. Your way.</h2>
-          <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? Sell yours.</h2>
+          <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? <Link to='/contactUs'> Sell yours</Link>.</h2>
           <br/><br/>
           <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>
           <Pill>{/*<select  placeholder='Europe'  style={{borderStyle:'none',borderRadius:"30px",marginLeft:'10px'}}></select>*/}<input style={{
