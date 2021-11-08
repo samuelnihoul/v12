@@ -8,15 +8,15 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
-export function AuthProvider({ children }) {
+export function AuthProvider({ children }): JSX.Element {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  function signup(email, password) {
+  function signup(email: string, password: string) {
     return createUserWithEmailAndPassword(auth,email, password);
   }
 
-  function login(email, password) {
+  function login(email: string, password: string) {
     return signInWithEmailAndPassword(auth,email, password);
   }
 
@@ -24,7 +24,7 @@ export function AuthProvider({ children }) {
     return signOut(auth);
   }
 
-  function resetPassword(email) {
+  function resetPassword(email: string) {
     return sendPasswordResetEmail(auth,email);
   }
 

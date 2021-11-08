@@ -10,7 +10,7 @@ import { useAuth } from "../contexts/AuthContext"
 
 export default function Navbar(){
   const [error, setError] = useState("")
-  const { logout } = useAuth()
+  const { logout,currentUser } = useAuth()
   const history = useHistory()
 
   async function handleLogout() {
@@ -39,8 +39,8 @@ export default function Navbar(){
       <Nav.Link href="/contactUs">Contact Us</Nav.Link>
       <Nav.Link href="/submitAProject">Submit a Project</Nav.Link>
       <Nav.Link href='/login'>Login</Nav.Link>
-      <Nav.Link href='/signup'>Signup</Nav.Link>
-      <Nav.Link onClick={handleLogout}>Log out</Nav.Link>
+      <Nav.Link href='/signup'>Signup</Nav.Link>{currentUser&&
+      <Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
       
     </Nav>
             </Navba>
