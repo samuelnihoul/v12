@@ -28,7 +28,7 @@ export default function Navbar(){
     return(
         <Navba bg='dark' expand="lg" variant='dark'>
           {error && <Alert variant="danger">{error}</Alert>}
-        {!wallet.connected?<WalletDialogButton >connect wallet</WalletDialogButton>:<p>✅ connected</p>}
+        {!wallet.connected?<WalletDialogButton className='align-right'>connect&nbsp;<img src='/assets/logos/exchange-white.png'width='20px' alt='sol logo'/>&nbsp;wallet</WalletDialogButton>:<p>✅ connected</p>}
           <Navba.Brand href='/'>
             <img src='/assets/images/d20.png' width='70px' alt='logo'/>
             </Navba.Brand>
