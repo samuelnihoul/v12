@@ -3,16 +3,13 @@ import Navbar from '../components/Navbar'
 
 export default function AboutUs() {
     return (
-        <div>
-            <Navbar/><img
-src="/assets/images/crabs.jpg"
-height="500"
-alt='crabs'
-/>
+        <div className='w-100' style={{backgroundImage:'url(/assets/images/crabs.jpg)',height:'100vh',backgroundSize:'auto 100%',backgroundRepeat:'no-repeat'}}>
+            <Navbar/>
+        
 
     <h1>About Us</h1>
 
-<div className="container"><div><h2>We work hard to soothe our planet's fever with quality and affordable offsets.</h2>
+<div ><div><h2>We work hard to soothe our planet's fever with quality and affordable offsets.</h2>
     </div ><div>We see <strong>exotic CO2e offsets.</strong><br/>
 
 We see their potential.<br/><br/>

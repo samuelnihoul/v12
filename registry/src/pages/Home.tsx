@@ -3,18 +3,20 @@ import Carousel from "react-bootstrap/Carousel"
 import Navbar from '../components/Navbar'
 import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useHistory} from "react-router-dom"
 export default function Home() {
+  const history=useHistory()
   return (
-    <div className="h-100 align-items-center"style={{backgroundImage:`url(${"/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"})`,backgroundRepeat: 'no-repeat'}}>
+
+    <div onScroll={()=>history.push('/aboutUs')}className="h-100 align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat'}}>
       <Navbar/>
       <div style={{textAlign: 'center',display: 'flex',flexDirection:'column'}}>
       <TypingCarousel/>
         <h2> We do CO2 offsets. Your way.</h2>
         <br/>
         <br/>
-        <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? <Link to='/contactUs'> Sell yours</Link>.</h2>
-        <h2>Your company does anything good for the climate? <Link to='/contactUs'> Sell yours</Link>.</h2>
+        <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? <Link to='/contactUs'>Contact Us</Link>.</h2>
+        <h2>Your company does anything good for the climate? <Link to='/contactUs'>Contact Us</Link>.</h2>
         <br/>
         <br/>
         <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>

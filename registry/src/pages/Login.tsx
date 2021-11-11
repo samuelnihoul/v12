@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import AuthContainer from "../components/AuthContainer"
+import Navbar from "../components/Navbar"
 export default function Login() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
@@ -26,7 +27,8 @@ export default function Login() {
     setLoading(false)
   }
 
-  return (
+  return (<>
+    <Navbar/>
     <AuthContainer>
    
       <Card style={{backgroundColor:'black'}}>
@@ -56,6 +58,6 @@ export default function Login() {
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
 
-    </AuthContainer>
+    </AuthContainer></>
   )
 }
