@@ -35,8 +35,8 @@ export default function Navbar(){
             <Nav className="me-auto" style={{color: 'white'}}>
       <Nav.Link href="/" >Home</Nav.Link>
       <Nav.Link href="/registry">Registry <Badge bg= 'warning'>demo</Badge></Nav.Link>
-      <Nav.Link href="/aboutUs">About Us</Nav.Link>
-      <Nav.Link href="/contactUs"> Contact Us</Nav.Link>
+    {/*   <Nav.Link href="/aboutUs">About Us</Nav.Link>
+      <Nav.Link href="/contactUs"> Contact Us</Nav.Link> */}
       <Nav.Link href="/submitAProject">Submit a Project <Badge bg= 'warning'>demo</Badge></Nav.Link>
       <Nav.Link href='/login'>Login</Nav.Link>
       <Nav.Link href='/signup'>Signup</Nav.Link>{currentUser&&
