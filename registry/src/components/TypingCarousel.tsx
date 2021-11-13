@@ -1,6 +1,6 @@
 export const TypingCarousel=()=>{
 
-    var TxtRotate = function(el, toRotate, period) {
+    var TxtRotate = function(el: Element, toRotate: any, period: string) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -52,8 +52,8 @@ export const TypingCarousel=()=>{
         }
         // INJECT CSS
         var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+       css.type = "text/css";
+         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
         document.body.appendChild(css);
       };
     return(<>

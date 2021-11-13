@@ -29,6 +29,8 @@ import PrivateRoute from "./components/PrivateRoute"
 import ForgotPassword from "./pages/ForgotPassword"
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 const treasury = new anchor.web3.PublicKey(process.env.REACT_APP_TREASURY_ADDRESS!);
 const config = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_CONFIG!);
 const candyMachineId = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_ID!);
@@ -54,10 +56,9 @@ const App = () => {
     <>     
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
-          <WalletDialogProvider>
+          <WalletDialogProvider><AuthProvider>
             <Router>
-              <AuthProvider>
-                
+              <Navbar/>
                     <Route path="/signup" component={Signup} />
                     <Route path="/login" component={Login} />
                     <Route path="/forgot-password" component={ForgotPassword} />
@@ -67,11 +68,12 @@ const App = () => {
                 <PrivateRoute path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
                 <PrivateRoute path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
                 <Route exact path="/" component={()=><Home/>} />
-              </AuthProvider>
-            </Router>
+              <Footer/>
+            </Router></AuthProvider>
           </WalletDialogProvider>
         </WalletProvider>
       </ConnectionProvider>
+      
     </>
   );
 };

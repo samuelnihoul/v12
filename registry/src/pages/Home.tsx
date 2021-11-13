@@ -1,18 +1,18 @@
 
 import Carousel from "react-bootstrap/Carousel"
 import Navbar from '../components/Navbar'
-import {TypingCarousel} from "../components/TypingCarousel"
+// import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
 import { Link, useHistory} from "react-router-dom"
 export default function Home() {
   const history=useHistory()
   return (
 
-    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat',maxHeight:'100vh'}}>
-      <Navbar/>
+    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat'}}>
+      {/* <Navbar/> */}
       <div style={{textAlign: 'center',display: 'flex',flexDirection:'column'}}>
-      <TypingCarousel/>
-        <h2> We do CO2 offsets. Your way.</h2>
+{/*       <TypingCarousel/>
+ */}        <h2> We do CO2 offsets. Your way.</h2>
         <br/>
         <br/>
         <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips? <Link to='/contactUs'>Contact Us</Link>.</h2>
