@@ -4,7 +4,7 @@ import FooterCopyright from "./FooterCopyright";
 
 const FooterOne = () => (
   <>
-    <footer className="footer" id="footer-fixed">
+    <footer className="footer" id="footer-fixed" style={{maxHeight:'30px'}}>
       <div className="footer-main">
         <div className="container">
           <div className="row">
@@ -24,28 +24,19 @@ const FooterOne = () => (
             <div className="col-sm-6 col-md-4">
               <div className="widget widget-text widget-links">
                 <h5 className="widget-title">Contact Us</h5>
-                <ul>
-                  <li>
-                    <i className="icofont icofont-google-map"></i>
-                    <a href={process.env.PUBLIC_URL}>
-                      Park Lane Llandrindod Wells, LD7 9QW
-                    </a>
-                  </li>
+                  
                   <li>
                     <i className="icofont icofont-iphone"></i>
-                    <a href="tel:441632960290">+44 1632 960290</a>
+                    <a href="tel:0033970406998">+33 970 406 698 </a>
                   </li>
                   <li>
                     <i className="icofont icofont-mail"></i>
-                    <a href="mailto:helloscoda@gmail.com">
-                      helloscoda@gmail.com
+                    <a href="contact@harmonia-eko.ooo">
+                      contact@harmonia-eko.ooo
                     </a>
                   </li>
-                  <li>
-                    <i className="icofont icofont-globe"></i>
-                    <a href={process.env.PUBLIC_URL}>www.envato.com</a>
-                  </li>
-                </ul>
+                  
+                
               </div>
             </div>
 

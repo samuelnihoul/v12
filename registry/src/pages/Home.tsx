@@ -1,14 +1,14 @@
 
 import Carousel from "react-bootstrap/Carousel"
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 // import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
-import { Link, useHistory} from "react-router-dom"
+import { Link, /* useHistory */} from "react-router-dom"
 export default function Home() {
-  const history=useHistory()
+  // const history=useHistory()
   return (
 
-    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat'}}>
+    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat',padding:'100px'}}>
       {/* <Navbar/> */}
       <div style={{textAlign: 'center',display: 'flex',flexDirection:'column'}}>
 {/*       <TypingCarousel/>
@@ -21,7 +21,7 @@ export default function Home() {
         <br/>
         <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>
       </div>
-      <Carousel style={{backgroundColor:'transparent'}}>
+      <Carousel style={{backgroundColor:'transparent',padding:'100px'}}>
         <Carousel.Item>
           <img className="d-block w-100"src="/assets/images/country1.png"alt="Project1"style={{maxWidth:"600px",maxHeight:'400px',textAlign:"center"}}/>
           <Carousel.Caption>

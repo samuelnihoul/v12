@@ -53,7 +53,7 @@ const App = () => {
   );
   const wallet=useAnchorWallet()
   return (
-    <>     
+    <div style={{height:'100vh'}}>     
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletDialogProvider><AuthProvider>
@@ -74,7 +74,7 @@ const App = () => {
         </WalletProvider>
       </ConnectionProvider>
       
-    </>
+    </div>
   );
 };
 
