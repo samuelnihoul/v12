@@ -34,6 +34,7 @@ export default function Navbar(){
             </Navba.Brand>
             <Nav className="me-auto" style={{color: 'white'}}>
       <Nav.Link href="/" >Home</Nav.Link>
+      <Nav.Link href='#'>Marketplace <Badge bg= 'danger'>OoO</Badge></Nav.Link>
       <Nav.Link href="/registry">Registry <Badge bg= 'warning'>demo</Badge></Nav.Link>
     {/*   <Nav.Link href="/aboutUs">About Us</Nav.Link>
       <Nav.Link href="/contactUs"> Contact Us</Nav.Link> */}
