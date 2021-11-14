@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import { useState } from "react";
 import {CMSProps} from "../components/CandyMachineStatus"
 import { fetchProjects } from "../api/fetchProjects";
@@ -15,7 +15,7 @@ export default function Registry(props:CMSProps) {
   , [props.connection,wallet]);
 
   return (
-    <><Navbar />
+    <>
     
     
       <div style={{ textAlign: "center" }}>
