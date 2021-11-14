@@ -6,3 +6,6 @@
 a {
   color: gold;
 }
+a:hover {
+  color: lightgoldenrodyellow;
+}
