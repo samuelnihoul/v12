@@ -1,11 +1,10 @@
-div{
-    
-    text-align: center;
+div {
+  text-align: center;
 }
-.carousel{
-    background-color:transparent;
-    padding:10vh 0 10vh 0
+.carousel {
+  background-color: transparent;
+  padding: 10% 0 10% 0;
 }
-.intro{
-    padding-top:10vh
+.intro {
+  padding-top: 10%;
 }
