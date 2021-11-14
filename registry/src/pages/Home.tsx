@@ -16,8 +16,8 @@ export default function Home() {
  */}        <h2> We do CO2 offsets. Your way.</h2>
         <br/>
         <br/>
-        <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips?  <a href='mailto:contact@harmonia-eko.ooo'>Contact Us</a>.</h2>
-        <h2>Your company does anything good for the climate? <a href='mailto:contact@harmonia-eko.ooo'>Contact Us</a>.</h2>
+        <h2>You can mitigate the climate crisis from your garage, backyard or even fingertips?  <a href='mailto:contact@harmonia-eko.ooo'>Contact us</a>.</h2>
+        <h2>Your company does anything good for the climate? <a href='mailto:contact@harmonia-eko.ooo'>Contact us</a>.</h2>
         <br/>
         <br/>
         <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>
