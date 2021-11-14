@@ -8,7 +8,7 @@ export default function Home() {
   // const history=useHistory()
   return (
 
-    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat',padding:'100px'}}>
+    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat',padding:'100px',display:'flex',height:'100vh'}}>
       {/* <Navbar/> */}
       <div style={{textAlign: 'center',display: 'flex',flexDirection:'column'}}>
 {/*       <TypingCarousel/>

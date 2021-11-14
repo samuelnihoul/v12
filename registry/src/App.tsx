@@ -23,7 +23,7 @@ import { NewProject } from "./pages/NewProject";
 import React from "react"
 import Signup from "./pages/Signup"
 import {AuthProvider}from "./contexts/AuthContext"
-import { BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter as Router, Route,Switch} from "react-router-dom"
 import Login from "./pages/Login"
 import PrivateRoute from "./components/PrivateRoute"
 import ForgotPassword from "./pages/ForgotPassword"
@@ -57,8 +57,11 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletDialogProvider><AuthProvider>
-            <Router>
+            <Router><div className='display-flex h-100vh'>
+
+            </div>
               <Navbar/>
+              <Switch>
                     <Route path="/signup" component={Signup} />
                     <Route path="/login" component={Login} />
                     <Route path="/forgot-password" component={ForgotPassword} />
@@ -68,6 +71,7 @@ const App = () => {
                 <PrivateRoute path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
                 <PrivateRoute path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
                 <Route exact path="/" component={()=><Home/>} />
+                </Switch>
               <Footer/>
             </Router></AuthProvider>
           </WalletDialogProvider>
