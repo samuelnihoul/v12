@@ -31,6 +31,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import './App.css'
 const treasury = new anchor.web3.PublicKey(process.env.REACT_APP_TREASURY_ADDRESS!);
 const config = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_CONFIG!);
 const candyMachineId = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_ID!);
@@ -53,7 +54,7 @@ const App = () => {
   );
   const wallet=useAnchorWallet()
   return (
-    <div style={{height:'100vh'}}>     
+    <div className='app'>     
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletDialogProvider><AuthProvider>

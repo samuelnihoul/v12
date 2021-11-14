@@ -4,13 +4,14 @@ import Carousel from "react-bootstrap/Carousel"
 // import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
 import { Link, /* useHistory */} from "react-router-dom"
+import '../styles/Home.css'
 export default function Home() {
   // const history=useHistory()
   return (
 
-    <div /* onScroll={()=>history.push('/aboutUs')} */className="align-items-center"style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat: 'no-repeat',padding:'100px',display:'flex',height:'100vh'}}>
+    <div style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat:'no-repeat'}}>
       {/* <Navbar/> */}
-      <div style={{textAlign: 'center',display: 'flex',flexDirection:'column'}}>
+      <div className='intro'>
 {/*       <TypingCarousel/>
  */}        <h2> We do CO2 offsets. Your way.</h2>
         <br/>
@@ -21,7 +22,7 @@ export default function Home() {
         <br/>
         <h3>This is a <span style={{color:"gold"}}>demo version</span> designed for stakeholders and prospects.</h3>
       </div>
-      <Carousel style={{backgroundColor:'transparent',padding:'100px'}}>
+      <Carousel>
         <Carousel.Item>
           <img className="d-block w-100"src="/assets/images/country1.png"alt="Project1"style={{maxWidth:"600px",maxHeight:'400px',textAlign:"center"}}/>
           <Carousel.Caption>
