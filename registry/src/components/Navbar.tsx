@@ -7,7 +7,7 @@ import {  useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext"
 import Badge from 'react-bootstrap/Badge'
-
+import '../styles/Navbar.css'
 export default function Navbar(){
   const [error, setError] = useState("")
   const { logout,currentUser } = useAuth()
@@ -38,9 +38,11 @@ export default function Navbar(){
     {/*   <Nav.Link href="/aboutUs">About Us</Nav.Link>
       <Nav.Link href="/contactUs"> Contact Us</Nav.Link> */}
       <Nav.Link href="/submitAProject">Submit a Project <Badge bg= 'warning'>demo</Badge></Nav.Link>
+      <div className='aie'>
       <Nav.Link href='/login'>Login</Nav.Link>
-      <Nav.Link href='/signup'>Signup</Nav.Link>{currentUser&&
-      <Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
+      <Nav.Link href='/signup'>Signup</Nav.Link>
+      {currentUser&&<Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
+      </div>
       
     </Nav>
             </Navba>

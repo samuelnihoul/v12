@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel"
 // import Navbar from '../components/Navbar'
 // import {TypingCarousel} from "../components/TypingCarousel"
 import React from "react"
-import { Link, /* useHistory */} from "react-router-dom"
+// import { Link, /* useHistory */} from "react-router-dom"
 import '../styles/Home.css'
 export default function Home() {
   // const history=useHistory()
@@ -11,7 +11,7 @@ export default function Home() {
 
     <div style={{backgroundImage:'url(/assets/images/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png)',backgroundRepeat:'no-repeat'}}>
       {/* <Navbar/> */}
-      <div className='intro'>
+      <div className='intro tac'>
 {/*       <TypingCarousel/>
  */}        <h2> We do CO2 offsets. Your way.</h2>
         <br/>
