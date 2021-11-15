@@ -15,7 +15,7 @@ button {
 .bt {
   color: black;
 }
-form {
+.npf {
   display: flex;
   flex-direction: column;
   padding: 10% 35% 10% 35%;

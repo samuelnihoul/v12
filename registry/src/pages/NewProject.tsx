@@ -18,7 +18,7 @@ export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{
     const wallet = useWallet()
 return(<>
 
-<form >
+<form className='npf' >
               <input
                 placeholder="name"
                 onChange={(e) => setName(e.target.value)}
