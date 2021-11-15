@@ -33,16 +33,16 @@ export default function Navbar(){
             <img src='/assets/images/d20.png' width='70px' alt='logo'/>
             </Navba.Brand>
             <Nav className="me-auto" style={{color: 'white'}}>
-      <Nav.Link href="/" >Home</Nav.Link>
       <Nav.Link href='#'>Marketplace <Badge bg= 'warning'>soon</Badge></Nav.Link>
-      <Nav.Link href="#">Registry <Badge bg= 'danger'>O.O.O.</Badge></Nav.Link>
-    {/*   <Nav.Link href="/aboutUs">About Us</Nav.Link>
-      <Nav.Link href="/contactUs"> Contact Us</Nav.Link> */}
-      <Nav.Link href="#">Submit a Project <Badge bg= 'danger'>O.O.O.</Badge></Nav.Link>
+      <Nav.Link href="/registry">Registry <Badge bg='light'className='bt'>demo</Badge></Nav.Link>
+      {/* <Nav.Link href="/aboutUs">About Us</Nav.Link>
+      <Nav.Link href="/contactUs"> Contact Us</Nav.Link>  */}
+      <Nav.Link href="/submitAProject">Submit a Project <Badge bg='light' className='bt'>demo</Badge></Nav.Link>
       <div className='aie'>
-      <Nav.Link href='/login'>Login</Nav.Link>
+      {!currentUser&&<Nav.Link href='/login'>Login</Nav.Link>}
       <Nav.Link href='/signup'>Signup</Nav.Link>
       {currentUser&&<Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
+      
       </div>
       
     </Nav>
