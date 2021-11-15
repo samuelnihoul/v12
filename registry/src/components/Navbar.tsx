@@ -39,8 +39,8 @@ export default function Navbar(){
       <Nav.Link href="/contactUs"> Contact Us</Nav.Link>  */}
       <Nav.Link href="/submitAProject">Submit a Project <Badge bg='light' className='bt'>demo</Badge></Nav.Link>
       <div className='aie'>
-      {!currentUser&&<Nav.Link href='/login'>Login</Nav.Link>}
-      <Nav.Link href='/signup'>Signup</Nav.Link>
+      {!currentUser&&<Nav.Link href='/login'>Login <Badge bg='danger'>OoO</Badge></Nav.Link>}
+      <Nav.Link href='/signup'>Signup <Badge bg='danger'>OoO</Badge></Nav.Link>
       {currentUser&&<Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
       
       </div>
