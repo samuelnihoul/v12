@@ -20,3 +20,6 @@ form {
   flex-direction: column;
   padding: 10% 35% 10% 35%;
 }
+li {
+  list-style: none;
+}
