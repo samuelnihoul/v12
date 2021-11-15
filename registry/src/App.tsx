@@ -25,7 +25,7 @@ import Signup from "./pages/Signup"
 import {AuthProvider}from "./contexts/AuthContext"
 import { BrowserRouter as Router, Route,Switch} from "react-router-dom"
 import Login from "./pages/Login"
-import PrivateRoute from "./components/PrivateRoute"
+// import PrivateRoute from "./components/PrivateRoute"
 import ForgotPassword from "./pages/ForgotPassword"
 // import ContactUs from "./pages/ContactUs";
 // import AboutUs from "./pages/AboutUs";
@@ -69,8 +69,8 @@ const App = () => {
                   {/*   <Route path="/contactUs" component={ContactUs} />
                     <Route path="/aboutUs" component={AboutUs} /> */}
                  
-              <PrivateRoute path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
-                <PrivateRoute path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
+              <Route path="/registry" component={()=><Registry candyMachineId={candyMachineId}config ={config} connection={connection} startDate={startDateSeed} treasury={treasury}txTimeout={txTimeout}/>} />
+                <Route path="/submitAProject" component={()=><NewProject wallet={wallet }connection={connection}/>}/>
                <Route exact path="/" component={()=><Home/>} />
                 </Switch>
               <Footer/>
