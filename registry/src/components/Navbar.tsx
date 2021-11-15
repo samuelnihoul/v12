@@ -37,7 +37,7 @@ export default function Navbar(){
       <Nav.Link href="/registry">Registry <Badge bg='light'className='bt'>demo</Badge></Nav.Link>
       {/* <Nav.Link href="/aboutUs">About Us</Nav.Link>
       <Nav.Link href="/contactUs"> Contact Us</Nav.Link>  */}
-      <Nav.Link href="/submitAProject">Submit a Project <Badge bg='light' className='bt'>demo</Badge></Nav.Link>
+      <Nav.Link href="/submitAProject">Ledgerize your Project <Badge bg='light' className='bt'>demo</Badge></Nav.Link>
       <div className='aie'>
       {!currentUser&&<Nav.Link href='/login'>Login <Badge bg='danger'>OoO</Badge></Nav.Link>}
       <Nav.Link href='/signup'>Signup <Badge bg='danger'>OoO</Badge></Nav.Link>
