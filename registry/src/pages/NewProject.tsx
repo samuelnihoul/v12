@@ -3,6 +3,7 @@ import { useState } from "react";
 import { newProject } from "../api/newProject";
 import {AnchorWallet} from "@solana/wallet-adapter-react/lib/useAnchorWallet"
 import Alert from 'react-bootstrap/Alert';
+import {Form as form} from 'react-bootstrap'
 //import Spinner from "react-bootstrap/Spinner"
 // import Navbar from '../components/Navbar'
 import { useWallet } from "@solana/wallet-adapter-react";
@@ -17,7 +18,7 @@ export const NewProject = (props:{wallet:AnchorWallet,connection:Connection})=>{
     const wallet = useWallet()
 return(<>
 
-<div >
+<form >
               <input
                 placeholder="name"
                 onChange={(e) => setName(e.target.value)}
@@ -58,6 +59,6 @@ return(<>
 )
           }}>create</button>
           {aNewProject?<p>Please wait</p>:<></>}
-            </div></>
+            </form></>
 )       
 }
