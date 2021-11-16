@@ -1,0 +1,18 @@
+[
+
+  {
+    "id": 1,
+    "icon": "linkedin",
+    "portfolio": 1,
+    "footer": 1,
+    "link": "http://linkedin.com/company/harmonia-eko"
+  },
+ 
+  {
+    "id": 2,
+    "icon": "twitter",
+    "portfolio": 1,
+    "footer": 0,
+    "link": "http://twitter.com/harmonia_eko"
+  }
+]
