@@ -22,7 +22,7 @@ import Home from './Home'
 import { NewProject } from "./NewProject";
 import React from "react"
 import Signup from "./Signup"
-import {AuthProvider}from "../contexts/AuthContext"
+import { AuthProvider } from "../contexts/AuthContext"
 import Login from "./Login"
 // import PrivateRoute from "../components/PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
@@ -35,37 +35,34 @@ const config = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_CON
 const candyMachineId = new anchor.web3.PublicKey(process.env.REACT_APP_CANDY_MACHINE_ID!);
 const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
- const connection = new anchor.web3.Connection(rpcHost);
+const connection = new anchor.web3.Connection(rpcHost);
 const startDateSeed = parseInt(process.env.REACT_APP_CANDY_START_DATE!, 10);
 const txTimeout = 30000;
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
   const wallets = useMemo(
     () => [
-        getPhantomWallet(),
-        getSlopeWallet(),
-        getSolflareWallet(),
-        getSolletWallet({ network }),
-        getSolletExtensionWallet({ network })
+      getPhantomWallet(),
+      getSlopeWallet(),
+      getSolflareWallet(),
+      getSolletWallet({ network }),
+      getSolletExtensionWallet({ network })
     ],
     []
   );
-  const wallet=useAnchorWallet()
+  const wallet = useAnchorWallet()
   return (
-    <div className='app'>     
-      <ConnectionProvider endpoint={endpoint}>
-        <WalletProvider wallets={wallets} autoConnect={true}>
-          <WalletDialogProvider><AuthProvider>
+    <div className='app'>
 
-              <Navbar/>
-              
-              <Footer/>
-            </AuthProvider>
-          </WalletDialogProvider>
-        </WalletProvider>
-      </ConnectionProvider>
-      
-    </div>
+
+      <AuthProvider>
+        <Navbar />
+
+        <Footer />
+      </AuthProvider>
+
+
+    </div >
   );
 };
 
