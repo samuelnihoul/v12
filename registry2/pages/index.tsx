@@ -57,7 +57,6 @@ const App = () => {
 
       <AuthProvider>
         <Navbar />
-
         <Footer />
       </AuthProvider>
 

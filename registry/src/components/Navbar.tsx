@@ -42,7 +42,6 @@ export default function Navbar() {
           {!currentUser && <Nav.Link href='/login'>Login <Badge bg='danger'>OoO</Badge></Nav.Link>}
           <Nav.Link href='/signup'>Signup <Badge bg='danger'>OoO</Badge></Nav.Link>
           {currentUser && <Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
-
         </div>
 
       </Nav>
