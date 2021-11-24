@@ -1,0 +1,50 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/react
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Nuhutuh25\.local\share\solana\install\active_release\bin;C:\Users\Nuhutuh25\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Users\Nuhutuh25\AppData\Roaming\npm;C:\Users\Nuhutuh25\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nuhutuh25\AppData\Local\Yarn\bin;C:\Users\Nuhutuh25\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.yarnpkg.com. is not in the cert's altnames: DNS:*.hotspot.hub-one.net, DNS:hotspot.hub-one.net
+      at new NodeError (node:internal/errors:371:5)
+      at Object.checkServerIdentity (node:tls:297:12)
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1540:27)
+      at TLSSocket.emit (node:events:394:28)
+      at TLSSocket._finishInit (node:_tls_wrap:944:8)
+      at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)
+
+npm manifest: 
+  {
+    "name": "v11",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "next": "12.0.4",
+      "react": "17.0.2",
+      "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+      "eslint": "7.32.0",
+      "eslint-config-next": "12.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -13,9 +13,10 @@ reactApp/node_modules
 target
 registry(react.js)
 /.anchor
-
+v*/node_modules
 whitepaper.md
 cli/node_modules
 trash
 registry/node_modules
 tmp
+v*/.next
