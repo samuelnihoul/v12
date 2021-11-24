@@ -1,17 +1,16 @@
 {
-    "id": 1,
-    "title": "STARTUP BUSINESS",
-    "tagline": "SCODA AGENCY",
-    "text": "WE AREN'T AFRAID TO BE DIFFERENT",
-    "video": "video/agency.mp4",
-    "image": "video/agency.png",
-    "buttons": [
-      {
-        "id": 1,
-        "text": "START A PROJECT",
-        "link": "!#",
-        "type": "btn-dark btn-circle"
-      }
-    ]
-  }
-  
+  "id": 1,
+  "title": "carbon offset marketplace",
+  "tagline": "harmonia-ney",
+  "text": "WE AREN'T AFRAID TO BE DIFFERENT",
+  "video": "video/pines.mov",
+  "image": "video/pines.png",
+  "buttons": [
+    {
+      "id": 1,
+      "text": "START A PROJECT",
+      "link": "!#",
+      "type": "btn-dark btn-circle"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataStartup from "../../data/Slider/startup-business-data.json";
 import serviceOneImg from "../../assets/images/startup-bg-left.jpg";
 import HeaderOne from "../../components/Header/HeaderOne";
@@ -25,11 +25,8 @@ const StartupBusiness = () => {
     <Loader>
       <HeaderOne />
       <HeroVideo data={dataStartup} />
-      <Welcome title="Who We Are" tagline="The way we work is fun">
-        We are a fully in-house digital agency focusing on branding, marketing,
-        web design and development with clients ranging from start-ups, Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Sed varius quam ut
-        magna ultricies pellentesque.
+      <Welcome title="Who We Are" tagline="The way we work is harmonious">
+        We are a CO2eq offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?). Buy and sell offsets with peace: get certified with ease and funded with grace.
       </Welcome>
       <OurServices
         title="What We Do"
