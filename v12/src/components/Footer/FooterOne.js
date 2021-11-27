@@ -20,11 +20,7 @@ const FooterOne = () => (
                   </a>
                 </div>
                 <p>
-                  We are a fully in-house digital agency focusing on branding,
-                  marketing, web design and development with clients ranging
-                  from start-ups, Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed varius quam ut magna ultricies
-                  pellentesque.
+                  We are your online carbon offset marketplace.
                 </p>
               </div>
             </div>
@@ -79,22 +75,22 @@ const FooterOne = () => (
                   <li>
                     <i className="icofont icofont-google-map"></i>
                     <a href={process.env.PUBLIC_URL}>
-                      Park Lane Llandrindod Wells, LD7 9QW
+                      14 La Blaye, 22150 Ploeuc-l'Hermitage
                     </a>
                   </li>
                   <li>
                     <i className="icofont icofont-iphone"></i>
-                    <a href="tel:441632960290">+44 1632 960290</a>
+                    <a href="tel:441632960290">+33 970 406 998</a>
                   </li>
                   <li>
                     <i className="icofont icofont-mail"></i>
-                    <a href="mailto:helloscoda@gmail.com">
-                      helloscoda@gmail.com
+                    <a href="mailto:contact@harmonia-eko.ooo">
+                      contact@harmonia-eko.ooo
                     </a>
                   </li>
                   <li>
                     <i className="icofont icofont-globe"></i>
-                    <a href={process.env.PUBLIC_URL}>www.envato.com</a>
+                    <a href={process.env.PUBLIC_URL}>harmonia-eko.ooo</a>
                   </li>
                 </ul>
               </div>

@@ -95,17 +95,17 @@
             {
                 "id": 1.18,
                 "title": "Construction",
-                "link": "/construction"   
+                "link": "/construction"
             },
             {
                 "id": 1.19,
                 "title": "Music",
-                "link": "/music" 
+                "link": "/music"
             },
             {
                 "id": 1.20,
                 "title": "Weddings",
-                "link": "/weddings"  
+                "link": "/weddings"
             }
         ]
     },
@@ -244,112 +244,11 @@
                 "title": "Blog Sidebar Left",
                 "link": "/blog-sidebar-left"
             }
-        ]  
-    },
-    {
-        "id": 4,
-        "title": "Portfolio",
-        "link": "/portfolio",
-        "megaMenu": false,
-        "subMenu": [
-            {
-                "id": 4.1,
-                "title": "Boxed",
-                "link": "/boxed",
-                "subMenu": [
-                    {
-                        "id": 4.11,
-                        "title": "2 Columns",
-                        "link": "/box-2-columns"
-                    },
-                    {
-                        "id": 4.12,
-                        "title": "3 Columns",
-                        "link": "/box-3-columns"
-                    },
-                    {
-                        "id": 4.13,
-                        "title": "4 Columns",
-                        "link": "/box-4-columns"
-                    }
-                ]
-            },
-            {
-                "id": 4.2,
-                "title": "Boxed - Space",
-                "link": "/boxed-space",
-                "subMenu": [
-                    {
-                        "id": 4.21,
-                        "title": "2 Columns",
-                        "link": "/box-space-2-columns"
-                    },
-                    {
-                        "id": 4.22,
-                        "title": "3 Columns",
-                        "link": "/box-space-3-columns"
-                    },
-                    {
-                        "id": 4.23,
-                        "title": "4 Columns",
-                        "link": "/box-space-4-columns"
-                    }
-                ]
-            },
-            {
-                "id": 4.3,
-                "title": "Wide",
-                "link": "/wide",
-                "subMenu": [
-                    {
-                        "id": 4.31,
-                        "title": "2 Columns",
-                        "link": "/wide-2-columns"
-                    },
-                    {
-                        "id": 4.32,
-                        "title": "3 Columns",
-                        "link": "/wide-3-columns"
-                    },
-                    {
-                        "id": 4.33,
-                        "title": "4 Columns",
-                        "link": "/wide-4-columns"
-                    }
-                ]
-            },
-            {
-                "id": 4.4,
-                "title": "Wide - Space",
-                "link": "/wide-space",
-                "subMenu": [
-                    {
-                        "id": 4.41,
-                        "title": "2 Columns",
-                        "link": "/wide-space-2-columns"
-                    },
-                    {
-                        "id": 4.42,
-                        "title": "3 Columns",
-                        "link": "/wide-space-3-columns"
-                    },
-                    {
-                        "id": 4.43,
-                        "title": "4 Columns",
-                        "link": "/wide-space-4-columns"
-                    }
-                ]
-            },
-            {
-                "id": 4.5,
-                "title": "Single Portfolio",
-                "link": "/single-portfolio"
-            }
         ]
     },
     {
         "id": 5,
-        "title": "Shops",
+        "title": "Shop",
         "link": "/shops",
         "megaMenu": false,
         "subMenu": [
@@ -388,11 +287,11 @@
                 "title": "Shop Checkout",
                 "link": "/shop-checkout"
             }
-        ]  
+        ]
     },
     {
         "id": 6,
-        "title": "Elements",
+        "title": "+",
         "link": "/elements",
         "colsTitle": "Elements",
         "itemsPerCol": 6,
@@ -486,7 +385,7 @@
             {
                 "id": 6.18,
                 "title": "Countdowns",
-                "link": "/countdowns"   
+                "link": "/countdowns"
             }
         ]
     }

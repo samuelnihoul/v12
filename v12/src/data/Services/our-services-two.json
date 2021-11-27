@@ -1,20 +1,20 @@
 [
   {
-    "id": 1,
-    "icon": "test-tube-alt",
-    "title": "Creative Design",
-    "text": "Designing a good website that accommodates a lot of content is a tricky balancing act to pull off."
+    "id": 3,
+    "icon": "thermometer",
+    "title": "Climate Justice & Restorationism",
+    "text": "We will base our customer advice and project policies on climate justice and damage reversal through emphasis on the notion of 'historical emissions'."
   },
   {
     "id": 2,
-    "icon": "computer",
-    "title": "Web Developing",
-    "text": "We build mobile apps for the conference, integrating unique content and branding to create."
+    "icon": "gift",
+    "title": "User Reward",
+    "text": "Rewards are meaningful as proof of gratitude and care. Let's leverage that, as the world often needs small nudges to move forward in the best direction."
   },
   {
-    "id": 3,
-    "icon": "headphone-alt",
-    "title": "Marketing Support",
-    "text": "Google has made this important since 1998 when it launched. Content became, and still is king since websites."
+    "id": 1,
+    "icon": "safety",
+    "title": "Safety & Reliability",
+    "text": "We are not afraid to welcome mild geo-engineering but work hard to ensure quality and safety of what we sell."
   }
 ]

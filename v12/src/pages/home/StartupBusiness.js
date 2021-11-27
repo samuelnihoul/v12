@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "../../components/Loader/Loader";
 import dataStartup from "../../data/Slider/startup-business-data.json";
-import serviceOneImg from "../../assets/images/startup-bg-left.jpg";
+import serviceOneImg from "../../assets/images/video/pines.png";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroVideo from "../../components/Hero/HeroVideo";
 import Welcome from "../../components/WelcomeSection/Welcome";
@@ -25,18 +25,18 @@ const StartupBusiness = () => {
     <Loader>
       <HeaderOne />
       <HeroVideo data={dataStartup} />
-      <Welcome title="Who We Are" tagline="The way we work is harmonious">
-        We are a CO2eq offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?). Buy and sell offsets with peace: get certified with ease and funded with grace.
+      <Welcome title="What We Do" tagline="The way we work is harmonious">
+        We are a CO2eq offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?).<br /><br />Buy and sell offsets with peace: get certified with ease and funded with grace.
       </Welcome>
       <OurServices
-        title="What We Do"
-        tagline="We develop big ideas that sell."
+        title="Our Focus"
+        tagline="We help implement your dreams of ecoharmony."
         serviceImg={serviceOneImg}
       />
       <CounterOne type="wide" />
-      <OurServicesTwo title="About Us" tagline="Part of your success" />
+      <OurServicesTwo title="About Us" tagline="Part of the solution" />
       <Portfolio columns="4" layout="wide" filter="true">
-        <HeadingSection title="Our Work" />
+        <HeadingSection title="Latest Projects" />
       </Portfolio>
       <TestimonialsTwo title="Testimonials" tagline="Happy clients" />
       <BlogSlider />
