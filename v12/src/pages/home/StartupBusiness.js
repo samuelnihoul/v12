@@ -23,7 +23,7 @@ const StartupBusiness = () => {
   }, []);
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroVideo data={dataStartup} />
       <Welcome title="What We Do" tagline="The way we work is harmonious">
         We are a CO2eq offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?).<br /><br />Buy and sell offsets with peace: get certified with ease and funded with grace.
@@ -33,10 +33,10 @@ const StartupBusiness = () => {
         tagline="We help implement your dreams of ecoharmony."
         serviceImg={serviceOneImg}
       />
-      <CounterOne type="wide" />
+      <CounterOne type="wide" bg={undefined} />
       <OurServicesTwo title="About Us" tagline="Part of the solution" />
       <Portfolio columns="4" layout="wide" filter="true">
-        <HeadingSection title="Latest Projects" />
+        <HeadingSection title="Latest Projects" tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
       </Portfolio>
       <TestimonialsTwo title="Testimonials" tagline="Happy clients" />
       <BlogSlider />

@@ -85,8 +85,7 @@ const Portfolio = forwardRef(
                         groups={item.groups}
                         space={space ? "true" : "false"}
                         columns={columns}
-                        openLightbox={openLightbox}
-                      />
+                        openLightbox={openLightbox} links={undefined} type={undefined} />
                     ))
                   : dataPortfolio.map((item, i) => (
                     <PortfolioItem
@@ -97,8 +96,7 @@ const Portfolio = forwardRef(
                       groups={item.groups}
                       space={space ? "true" : "false"}
                       columns={columns}
-                      openLightbox={openLightbox}
-                    />
+                      openLightbox={openLightbox} links={undefined} type={undefined} />
                   ))}
               </div>
               {isOpen && (
