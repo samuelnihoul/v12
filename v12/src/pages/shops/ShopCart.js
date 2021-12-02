@@ -3,7 +3,7 @@ import Loader from "../../components/Loader/Loader";
 import dataProducts from "../../data/OnlineShop/basic-shop-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import ShopItem from "../../components/Shop/ShopItem";
-import img from "../../assets/images/shop/single-product-01.jpg";
+import img from "../../assets/images/shop/single-product-01.jpeg";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const ShopCart = () => (
