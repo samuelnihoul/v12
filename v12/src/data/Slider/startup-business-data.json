@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "carbon offset marketplace",
+  "tagline": "harmonia-eko",
+  "text": "we cool down the planet. together.",
+  "video": "video/pines.mov",
+  "image": "video/pines.png",
+  "buttons": [
+    {
+      "id": 1,
+      "text": "go climate neutral",
+      "link": "/shop-masonry",
+      "type": "btn-dark btn-circle"
+    },
+    {
+      "id": 2,
+      "text": "get funded",
+      "link": "/contact-creative",
+      "type": "btn-dark btn-circle"
+    }
+  ]
+}

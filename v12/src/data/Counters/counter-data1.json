@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "value": 50,
+    "title": "USD Spent for Climate"
+  },
+  {
+    "id": 2,
+    "value": 0,
+    "title": "Tonnes Offset"
+  },
+  {
+    "id": 3,
+    "value": 1,
+    "title": "Certificates Issued"
+  },
+  {
+    "id": 4,
+    "value": 2,
+    "title": "Projects"
+  }
+]
