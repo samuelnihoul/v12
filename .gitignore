@@ -1,3 +1,9 @@
 v*/node_modules
 v11/.next
 **/.DS_Store
+app
+v8
+v9
+v10
+registry1
+registry2
