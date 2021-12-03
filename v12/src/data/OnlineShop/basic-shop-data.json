@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Landfill Methane",
-    "image": "shop/product-01.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Rice Methane",
-    "image": "shop/product-02.jpg",
+    "image": "shop/single-product-02.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Veganism Promotion",
-    "image": "shop/product-03.jpg",
+    "image": "shop/single-product-03.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Oil and Gas Production Methane Reduction",
-    "image": "shop/product-04.jpg",
+    "image": "shop/single-product-04.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Coal Mining Methane Reduction",
-    "image": "shop/product-05.jpg",
+    "image": "shop/single-product-05.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "Wastewater Methane Reduction",
-    "image": "shop/product-06.jpg",
+    "image": "shop/single-product-06.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "Climate Migration Promotion",
-    "image": "shop/product-07.jpg",
+    "image": "shop/single-product-07.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
@@ -58,41 +58,9 @@
   {
     "id": 8,
     "title": "Arctic Methane",
-    "image": "shop/product-08.jpg",
+    "image": "shop/single-product-08.jpeg",
     "currency": "BNB",
     "price": "0.1",
     "oldprice": "NA"
-  },
-  {
-    "id": 9,
-    "title": "Short Sleeve Print T-Shirt",
-    "image": "shop/product-09.jpg",
-    "currency": "BNB",
-    "price": "0.1",
-    "oldprice": ""
-  },
-  {
-    "id": 10,
-    "title": "Short Sleeve Print T-Shirt",
-    "image": "shop/product-10.jpg",
-    "currency": "BNB",
-    "price": "0.1",
-    "oldprice": "NA"
-  },
-  {
-    "id": 11,
-    "title": "Casual Shirt",
-    "image": "shop/product-11.jpg",
-    "currency": "BNB",
-    "price": "0.1",
-    "oldprice": ""
-  },
-  {
-    "id": 12,
-    "title": "Half Sleeve T-shirt",
-    "image": "shop/product-12.jpg",
-    "currency": "BNB",
-    "price": "0.1",
-    "oldprice": ""
   }
 ]

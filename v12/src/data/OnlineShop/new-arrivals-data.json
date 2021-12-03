@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Jet Black/White Sports Trim",
-    "image": "shop/product-01.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "85.99",
     "oldprice": "104.99"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Jet Black/ T-shirt",
-    "image": "shop/product-02.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "59.99",
     "oldprice": "79.99"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Navy Blue Plain",
-    "image": "shop/product-03.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "59.99",
     "oldprice": "79.99"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Just Let Me Sleep",
-    "image": "shop/product-04.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "195.99",
     "oldprice": "230.99"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Indigo Denim Shirt",
-    "image": "shop/product-05.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "220.95",
     "oldprice": "250.95"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "Stone Grey Melange Plain",
-    "image": "shop/product-06.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "145.75",
     "oldprice": "185.75"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "High Primate",
-    "image": "shop/product-07.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "80.95",
     "oldprice": "90.95"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "title": "Red Half Sleeve T-shirt",
-    "image": "shop/product-08.jpg",
+    "image": "shop/single-product-01.jpeg",
     "currency": "$",
     "price": "66.00",
     "oldprice": "77.00"

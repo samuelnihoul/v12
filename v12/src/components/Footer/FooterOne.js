@@ -1,5 +1,5 @@
 import React from "react";
-import logoFooter from "../../assets/images/logo-footer.png";
+import logoFooter from "../../assets/images/D21.png";
 import FooterCopyright from "./FooterCopyright";
 
 const FooterOne = () => (
@@ -29,20 +29,18 @@ const FooterOne = () => (
                 <h5 className="widget-title">Work With Us</h5>
                 <ul>
                   <li>
-                    <a href="#!">Themeforest</a>
+                    <a href="#!">Partnership</a>
                   </li>
                   <li>
-                    <a href="#!">Audio Jungle</a>
+                    <a href="#!">Internship</a>
                   </li>
                   <li>
-                    <a href="#!">Code Canyon</a>
+                    <a href="#!">Get Shares</a>
                   </li>
                   <li>
-                    <a href="#!">Video Hive</a>
+                    <a href="#!">Cofounding</a>
                   </li>
-                  <li>
-                    <a href="#!">Envato Market</a>
-                  </li>
+
                 </ul>
               </div>
             </div>
