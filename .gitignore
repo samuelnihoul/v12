@@ -1,5 +1,4 @@
-v*/node_modules
-v11/.next
+**/node_modules
 **/.DS_Store
 app
 v8
