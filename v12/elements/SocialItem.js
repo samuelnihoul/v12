@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const SocialItem = ({ icon, link }) => (
   <li>

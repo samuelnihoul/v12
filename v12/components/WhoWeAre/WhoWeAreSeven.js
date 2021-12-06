@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 // import ReactWow from "react-wow";
 import HeadingSection from "../HeadingSection/HeadingSection";
 import aboutData from "../../data/About/about-home-agency-data.json";

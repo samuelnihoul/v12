@@ -2,7 +2,7 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-icon-section.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-"react-icofont";
+
 
 const TabsIconSection = ({ title, tagline, classes }) => {
   return (

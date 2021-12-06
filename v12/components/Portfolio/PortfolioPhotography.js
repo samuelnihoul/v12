@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 import dataPortfolio from "../../data/Portfolio/portfolio-photography-data.json";
 
 const PortfolioPhotography = () => (

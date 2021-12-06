@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from "react";
-"react-icofont";
+
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataGallery from "../../data/Gallery/gallery-restaurant-data.json";

@@ -1,6 +1,6 @@
 import React from "react";
 // import ReactWow from "react-wow";
-"react-icofont";
+
 
 const PortfolioItem = ({
   title,

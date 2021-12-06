@@ -1,6 +1,6 @@
 import React from "react";
 import dataServices from "../../../data/Services/services-construction-data.json";
-"react-icofont";
+
 
 const ServicesConstruction = () => (
   <section className="dark-bg">

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import dataExperience from "../../data/Carousel/experience-resume-data.json";
 import dataEducation from "../../data/Carousel/education-resume-data.json";
-"react-icofont";
+
 
 const Resume = forwardRef((props, ref) => {
   const settings = {

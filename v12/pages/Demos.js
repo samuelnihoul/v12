@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 import dataDemos from "../data/Demos/demos-data.json";
 import Loader from "../components/Loader/Loader";
 import HeroDemo from "../components/Hero/HeroDemo";

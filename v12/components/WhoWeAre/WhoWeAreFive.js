@@ -1,6 +1,6 @@
 import React from "react";
 import dataServices from "../../data/Services/services-seo-data.json";
-"react-icofont";
+
 
 const WhoWeAreFive = () => (
   <section>

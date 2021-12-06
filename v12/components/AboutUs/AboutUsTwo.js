@@ -1,7 +1,7 @@
 import React from "react";
 import dataAccordion from "../../data/Accordion/accordions-data.json";
 import AccordionsComponent from "../Accordions/AccordionsComponent";
-"react-icofont";
+
 
 const AboutUsTwo = ({ title, image, toggler, setToggler }) => (
   <section className="white-bg">

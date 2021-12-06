@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-"react-icofont";
+
 // import ReactWOW from "react-wow";
 
 const AboutGym = forwardRef(

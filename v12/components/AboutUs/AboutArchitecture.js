@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-"react-icofont";
+
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-default-data.json";
 import img from "../../assets/images/architecture-img.jpg";

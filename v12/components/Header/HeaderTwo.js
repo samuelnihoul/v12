@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Scrollspy from "react-scrollspy";
-"react-icofont";
+
 import dataNav from "../../data/Navbar/nav-creativeone-data.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";

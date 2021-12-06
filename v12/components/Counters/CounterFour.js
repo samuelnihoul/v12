@@ -1,6 +1,6 @@
 import React from "react";
 import dataCounter from "../../data/Counters/counter-data2.json";
-"react-icofont";
+
 
 const CounterFour = () =>
   dataCounter.map(

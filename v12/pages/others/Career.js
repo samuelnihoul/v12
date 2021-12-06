@@ -3,7 +3,7 @@ import Loader from "./../../components/Loader/Loader";
 import dataCarrers from "../../data/Careers/careers-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleWidget from "../../components/PageTitle/PageTitleWidget";
-"react-icofont";
+
 import FooterOne from "../../components/Footer/FooterOne";
 
 const Career = () => (

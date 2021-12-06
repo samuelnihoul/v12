@@ -1,6 +1,6 @@
 import React from "react";
 import ContactFormSix from "./ContactFormSix";
-"react-icofont";
+
 import Map from "../Maps/Map";
 
 const ContactFour = () => (

@@ -1,7 +1,7 @@
 import React from "react";
 import dataArrivals from "../../data/OnlineShop/new-arrivals-data.json";
 import HeadingSeven from "../HeadingSection/HeadingSeven";
-"react-icofont";
+
 
 const NewArrivalsShop = () => (
   <section>

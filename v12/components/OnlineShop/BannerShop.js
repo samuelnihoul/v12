@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const BannerShop = () => (
   <section className="pb-0">

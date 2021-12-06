@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const CTAVideo = ({ title, tagline, textButton, linkButon }) => (
   <section className="parallax-bg-14 fitness-section">

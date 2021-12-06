@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const TeamMemberTwo = ({ name, role, image, social, delay }) => {
   return (

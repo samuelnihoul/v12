@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import Scrollspy from "react-scrollspy";
-"react-icofont";
+
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";
 import MainLogo from "../MainLogo";

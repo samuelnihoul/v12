@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import dataAbout from "../../data/About/about-appstyle-data.json";
 import img from "../../assets/images/slides/iPhone-big.png";
-"react-icofont";
+
 
 const AboutAppStyle = forwardRef((props, ref) => (
   <section className="main-section white-bg" id="feature" ref={ref}>

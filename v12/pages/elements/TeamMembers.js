@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 import teamData from "../../data/Team/team-data.json";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";

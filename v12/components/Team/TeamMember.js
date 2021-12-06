@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const TeamMember = ({ name, role, image, social, delay, removePadding }) => {
   return (

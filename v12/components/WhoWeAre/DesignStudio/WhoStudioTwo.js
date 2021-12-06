@@ -1,6 +1,6 @@
 import React from "react";
 import dataServices from "../../../data/Services/services-studio-data.json";
-"react-icofont";
+
 // import ReactWOW from "react-wow";
 
 const WhoStudioTwo = () => (

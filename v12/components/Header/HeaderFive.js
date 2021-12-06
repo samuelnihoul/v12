@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Scrollspy from "react-scrollspy";
-"react-icofont";
+
 import SocialNav from "../Navs/SocialNav";
 import AttributeNav from "../Navs/AttributeNav";
 import SearchOverlay from "../../elements/SearchOverlay";

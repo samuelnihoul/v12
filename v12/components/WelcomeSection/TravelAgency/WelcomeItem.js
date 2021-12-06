@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const WelcomeItem = () => (
   <div className="white-bg clearfix pt-100 pb-100 relative">

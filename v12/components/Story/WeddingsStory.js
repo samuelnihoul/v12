@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 import imgGroom from "../../assets/images/andy-img.jpg";
 import imgBridal from "../../assets/images/anna-img.jpg";
 

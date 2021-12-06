@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-"react-icofont";
+
 
 const SubscribeApp = () => {
 

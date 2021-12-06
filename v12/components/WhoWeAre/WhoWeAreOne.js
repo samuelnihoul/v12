@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 import { useLax } from "../../helpers/use-lax";
 import aboutData from "../../data/About/about-home-agency-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";

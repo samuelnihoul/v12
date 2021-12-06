@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-"react-icofont";
+
 import dataEvents from "../../../data/Portfolio/portfolio-music-data.json";
 
 const EventsMusic = forwardRef((props, ref) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import dataAccessories from "../../data/OnlineShop/man-accesories-data.json";
 import HeadingSeven from "../HeadingSection/HeadingSeven";
-"react-icofont";
+
 
 const ManAccesoriesShop = () => (
   <section>

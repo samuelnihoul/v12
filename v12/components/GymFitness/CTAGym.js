@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const CTAGym = () => (
   <section className="pt-50 pb-50 green-bg">

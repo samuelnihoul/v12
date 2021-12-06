@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
   const pages = [];

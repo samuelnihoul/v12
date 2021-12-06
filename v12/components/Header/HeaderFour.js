@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-"react-icofont";
+
 import Scrollspy from "react-scrollspy";
 import useWindowSize from "../../helpers/GetWindowSize";
 import dataNavbar from "../../data/Navbar/navbar-resume.json";

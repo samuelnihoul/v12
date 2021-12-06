@@ -2,7 +2,7 @@ import React, { forwardRef, useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataPortfolio from "../../data/Portfolio/portfolio-gym-data.json";
-"react-icofont";
+
 
 const classNameesGym = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);

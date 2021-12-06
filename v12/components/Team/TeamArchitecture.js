@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import dataTeam from "../../data/Team/team-architecture.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-"react-icofont";
+
 
 const TeamArchitecture = forwardRef(({ title, tagline }, ref) => (
   <section className="white-bg" id="team" ref={ref}>

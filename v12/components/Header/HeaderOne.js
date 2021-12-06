@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-"react-icofont";
+
 import DropdownMenu from "../Navs/DropdownMenu";
 import SearchOverlay from "../../elements/SearchOverlay";
 import AttributeNav from "../Navs/AttributeNav";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
-"react-icofont";
+
 
 const AlertDismissible = ({ variant, children }) => {
   const [show, setShow] = useState(true);

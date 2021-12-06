@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const SocialTop = () => (
   <ul className="social-media-dark social-top">

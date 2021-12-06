@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-"react-icofont";
+
 import imgWave from "../../../assets/images/slides/wave-2.svg";
 
 const TestimonialsApp = forwardRef(({ toggler, setToggler }, ref) => (

@@ -7,7 +7,7 @@ import PageTitlePortfolio from "../../components/PageTitle/PageTitlePortfolio";
 import img1 from "../../assets/images/portfolio/single-portfolio-1.jpg";
 import img2 from "../../assets/images/portfolio/single-portfolio-2.jpg";
 import img3 from "../../assets/images/portfolio/single-portfolio-3.jpg";
-"react-icofont";
+
 import CTAOne from "../../components/CTA/CTAOne";
 import FooterOne from "../../components/Footer/FooterOne";
 

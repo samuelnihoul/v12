@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 
 const GalleryItem = ({ image, link, openLightbox }) => (
   <li className="portfolio-item gutter-space">

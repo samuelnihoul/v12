@@ -1,5 +1,5 @@
 import React from "react";
-"react-icofont";
+
 // import ReactWOW from "react-wow";
 
 const PortfolioMasonryItem = ({ title, category, image, links }) => (

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Scrollspy from "react-scrollspy";
-"react-icofont";
+
 import dataNav from "../../data/Navbar/nav-construction.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SearchOverlay from "../../elements/SearchOverlay";

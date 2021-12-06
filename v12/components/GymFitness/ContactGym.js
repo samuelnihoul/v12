@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from "react";
-"react-icofont";
+
 import Map from "../Maps/Map";
 
 const ContactGym = forwardRef((props, ref) => {

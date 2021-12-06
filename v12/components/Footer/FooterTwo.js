@@ -1,6 +1,6 @@
 import React from "react";
 import dataSocial from "../../data/Social/social-footer.json";
-"react-icofont";
+
 
 const FooterTwo = () => (
   <section className="dark-bg flat-footer">

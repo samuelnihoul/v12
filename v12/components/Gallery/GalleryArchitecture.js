@@ -3,7 +3,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataGallery from "../../data/Gallery/gallery-architecture-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-"react-icofont";
+
 
 const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
   const [isOpen, setIsOpen] = useState(false);

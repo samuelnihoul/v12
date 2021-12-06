@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import dataServices from "../../data/Services/services-architecture.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-"react-icofont";
+
 
 const ServicesArchitecture = forwardRef(({ title, tagline }, ref) => (
   <section id="service" className="dark-bg" ref={ref}>
