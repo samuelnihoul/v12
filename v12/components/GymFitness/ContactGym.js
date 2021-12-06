@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import Map from "../Maps/Map";
 
 const ContactGym = forwardRef((props, ref) => {
@@ -76,7 +76,7 @@ const ContactGym = forwardRef((props, ref) => {
                   name="submit"
                   className="btn btn-green btn-square"
                 >
-                  Send Message <Icofont icon="email" />
+                  Send Message <i class="icofont-email"></i>
                 </button>
               </p>
             </form>

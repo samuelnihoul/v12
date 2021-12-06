@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 // import ReactWow from "react-wow";
 import HeadingSection from "../HeadingSection/HeadingSection";
 import aboutData from "../../data/About/about-home-agency-data.json";
@@ -26,11 +26,11 @@ const WhoWeAreSeven = () => (
             //   animation="fadeTop"
             //   delay={`0.${i + 1}s`}
             // >
-              <div className="col-md-4 feature-box text-center radius-icon">
-                <Icofont icon={service.icon} className="font-50px dark-icon" />
-                <h4 className="text-uppercase">{service.title}</h4>
-                <p>{service.text}</p>
-              </div>
+            <div className="col-md-4 feature-box text-center radius-icon">
+              <Icofont icon={service.icon} className="font-50px dark-icon" />
+              <h4 className="text-uppercase">{service.title}</h4>
+              <p>{service.text}</p>
+            </div>
             // </ReactWow>
           );
         })}

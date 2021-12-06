@@ -1,7 +1,7 @@
 import React from "react";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
-import Icofont from "react-icofont";
+"react-icofont";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const ShopCheckout = () => (
@@ -200,7 +200,7 @@ const ShopCheckout = () => (
                         >
                           <span>
                             Submit order
-                            <Icofont icon="check" />
+                            <i class="icofont-check"></i>
                           </span>
                         </button>
                       </div>

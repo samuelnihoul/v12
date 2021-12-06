@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const PriceItemOne = ({
   icon,
@@ -28,7 +28,7 @@ const PriceItemOne = ({
         "pricing-box " + (tableType === "rounded" ? "border-radius-25" : "")
       }
     >
-      <Icofont icon={icon} />
+      <i className={`icofont-${icon}`}></i>
       <h4>{title}</h4>
       <h2>
         <sup>{currency}</sup>
@@ -51,7 +51,7 @@ const PriceItemOne = ({
         </a>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 export default PriceItemOne;

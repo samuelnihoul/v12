@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import teamData from "../../data/Team/team-data.json";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
@@ -30,7 +30,7 @@ const TeamMembers = () => (
                             return (
                               <li className="social-icon" key={item.id}>
                                 <a href={item.link}>
-                                  <Icofont icon={item.icon} />
+                                  <i className={`icofont-${item.icon}`}></i>
                                 </a>
                               </li>
                             );
@@ -68,7 +68,7 @@ const TeamMembers = () => (
                             return (
                               <li className="social-icon" key={item.id}>
                                 <a href={item.link}>
-                                  <Icofont icon={item.icon} />
+                                  <i className={`icofont-${item.icon}`}></i>
                                 </a>
                               </li>
                             );
@@ -85,7 +85,7 @@ const TeamMembers = () => (
           ))}
         </div>
       </div>
-    </section>
+    </section >
     <section className="pt-0">
       <div className="container">
         <div className="row startup-member">
@@ -106,7 +106,7 @@ const TeamMembers = () => (
                             return (
                               <li className="social-icon" key={item.id}>
                                 <a href={item.link}>
-                                  <Icofont icon={item.icon} />
+                                  <i className={`icofont-${item.icon}`}></i>
                                 </a>
                               </li>
                             );
@@ -123,7 +123,7 @@ const TeamMembers = () => (
           ))}
         </div>
       </div>
-    </section>
+    </section >
     <section className="pt-0">
       <div className="container">
         <div className="row media-member">
@@ -144,7 +144,7 @@ const TeamMembers = () => (
                             return (
                               <li className="social-icon" key={item.id}>
                                 <a href={item.link}>
-                                  <Icofont icon={item.icon} />
+                                  <i className={`icofont-${item.icon}`}></i>
                                 </a>
                               </li>
                             );
@@ -163,9 +163,9 @@ const TeamMembers = () => (
           ))}
         </div>
       </div>
-    </section>
+    </section >
     <FooterOne />
-  </Loader>
+  </Loader >
 );
 
 export default TeamMembers;

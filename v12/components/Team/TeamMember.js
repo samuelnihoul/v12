@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const TeamMember = ({ name, role, image, social, delay, removePadding }) => {
   return (
@@ -28,7 +28,7 @@ const TeamMember = ({ name, role, image, social, delay, removePadding }) => {
                   return (
                     <li className="social-icon" key={item.id}>
                       <a href={item.link}>
-                        <Icofont icon={item.icon} />
+                        <i className={`icofont-${item.icon}`}></i>
                       </a>
                     </li>
                   );
@@ -38,7 +38,7 @@ const TeamMember = ({ name, role, image, social, delay, removePadding }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

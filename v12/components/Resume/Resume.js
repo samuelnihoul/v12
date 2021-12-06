@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import dataExperience from "../../data/Carousel/experience-resume-data.json";
 import dataEducation from "../../data/Carousel/education-resume-data.json";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const Resume = forwardRef((props, ref) => {
   const settings = {
@@ -52,7 +52,7 @@ const Resume = forwardRef((props, ref) => {
                 <div key={item.id}>
                   {item.items.map((item) => (
                     <h3 key={item.id}>
-                      <Icofont icon={item.icon} />
+                      <i className={`icofont-${item.icon}`}></i>
                       {item.title}
                     </h3>
                   ))}
@@ -77,7 +77,7 @@ const Resume = forwardRef((props, ref) => {
                 <div key={item.id}>
                   {item.items.map((item) => (
                     <h3 key={item.id}>
-                      <Icofont icon={item.icon} />
+                      <i className={`icofont-${item.icon}`}></i>
                       {item.title}
                     </h3>
                   ))}

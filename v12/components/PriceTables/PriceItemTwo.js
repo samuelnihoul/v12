@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const PriceItemTwo = ({
   icon,
@@ -22,7 +22,7 @@ const PriceItemTwo = ({
     }
   >
     <div className="pricing-box">
-      <Icofont icon={icon} />
+      <i className={`icofont-${icon}`}></i>
       <h4>{title}</h4>
       <h2>
         <sup>{currency}</sup>
@@ -39,7 +39,7 @@ const PriceItemTwo = ({
         </a>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 export default PriceItemTwo;

@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import dataDemos from "../data/Demos/demos-data.json";
 import Loader from "../components/Loader/Loader";
 import HeroDemo from "../components/Hero/HeroDemo";
@@ -45,7 +45,7 @@ const Demos = () => {
                             >
                               <span>
                                 Live Preview
-                                <Icofont icon="layout" />
+                                <i class="icofont-layout"></i>
                               </span>
                             </a>
                           </div>

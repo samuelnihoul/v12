@@ -1,7 +1,7 @@
 import React from "react";
 import dataArrivals from "../../data/OnlineShop/new-arrivals-data.json";
 import HeadingSeven from "../HeadingSection/HeadingSeven";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const NewArrivalsShop = () => (
   <section>
@@ -26,7 +26,7 @@ const NewArrivalsShop = () => (
                         <a href="!#" className="btn btn-white btn-square">
                           ADD TO CART
                           <span className="icon">
-                            <Icofont icon="cart" />
+                            <i class="icofont-cart"></i>
                           </span>
                         </a>
                       </div>

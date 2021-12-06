@@ -2,7 +2,7 @@ import React, { forwardRef, useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataPortfolio from "../../data/Portfolio/portfolio-gym-data.json";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const classNameesGym = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,7 @@ const classNameesGym = forwardRef((props, ref) => {
                             href={item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <Icofont icon="search-1" />
+                            <i class="icofont-search-1"></i>
                           </a>
                         </li>
                       </ul>

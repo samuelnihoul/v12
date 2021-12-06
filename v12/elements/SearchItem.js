@@ -1,12 +1,12 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const SearchItem = ({ showSearchForm }) => {
 
   return (
     <li className="search">
       <a href="!#" id="search-button" onClick={showSearchForm}>
-        <Icofont icon="search-1" />
+        <i class="icofont-search-1"></i>
       </a>
     </li>
   );

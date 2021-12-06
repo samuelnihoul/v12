@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import dataAbout from "../../data/About/about-appstyle-data.json";
 import img from "../../assets/images/slides/iPhone-big.png";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const AboutAppStyle = forwardRef((props, ref) => (
   <section className="main-section white-bg" id="feature" ref={ref}>
@@ -27,7 +27,7 @@ const AboutAppStyle = forwardRef((props, ref) => (
                 <div
                   className="feature-box text-center text-sm-start"
                   key={feature.id}
-                  data-aos-delay={`${i+3}00`}
+                  data-aos-delay={`${i + 3}00`}
                   data-aos={"fade-right"}
                   data-aos-easing={"ease-in-sine"}
                 >
@@ -58,24 +58,24 @@ const AboutAppStyle = forwardRef((props, ref) => (
             {dataAbout
               .filter((v, i) => i > 2)
               .map((feature, i) => (
-                  <div
-                    className="feature-box-right text-center text-sm-end"
-                    key={feature.id}
-                    data-aos-delay={`${i+3}00`}
-                    data-aos={"fade-left"}
-                    data-aos-easing={"ease-in-sine"}
-                  >
-                    <div className="float-sm-right text-center text-sm-end">
-                      <Icofont
-                        icon={feature.icon}
-                        className="font-40px red-icon"
-                      />
-                    </div>
-                    <div className="float-sm-left">
-                      <h4 className="mt-0">{feature.title}</h4>
-                      <p>{feature.text}</p>
-                    </div>
+                <div
+                  className="feature-box-right text-center text-sm-end"
+                  key={feature.id}
+                  data-aos-delay={`${i + 3}00`}
+                  data-aos={"fade-left"}
+                  data-aos-easing={"ease-in-sine"}
+                >
+                  <div className="float-sm-right text-center text-sm-end">
+                    <Icofont
+                      icon={feature.icon}
+                      className="font-40px red-icon"
+                    />
                   </div>
+                  <div className="float-sm-left">
+                    <h4 className="mt-0">{feature.title}</h4>
+                    <p>{feature.text}</p>
+                  </div>
+                </div>
               ))}
           </div>
         </div>

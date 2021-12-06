@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import dataPortfolio from "../../data/Portfolio/portfolio-photography-data.json";
 
 const PortfolioPhotography = () => (
@@ -24,7 +24,7 @@ const PortfolioPhotography = () => (
                         <div className="product-description-wrap">
                           <div className="product-title">
                             <a href={item.link} className="alpha-lightbox">
-                              <Icofont icon="plus" className="font-40px" />
+                              <i class="icofont-plus" className="font-40px"></i>
                             </a>
                           </div>
                         </div>

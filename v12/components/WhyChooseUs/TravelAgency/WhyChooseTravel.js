@@ -1,6 +1,6 @@
 import React from "react";
 import dataTravel from "../../../data/WhyChooseUs/why-travel-data.json";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const WhyChooseTravel = () => (
   <section className="dark-bg">

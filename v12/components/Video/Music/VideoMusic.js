@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const VideoMusic = forwardRef(({ toggler, setToggler }, ref) => (
   <section
@@ -21,7 +21,7 @@ const VideoMusic = forwardRef(({ toggler, setToggler }, ref) => (
               setToggler(!toggler);
             }}
           >
-            <Icofont icon="ui-play" />
+            <i class="icofont-ui-play"></i>
           </a>
         </div>
       </div>

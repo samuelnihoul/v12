@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Scrollspy from "react-scrollspy";
-import Icofont from "react-icofont";
+"react-icofont";
 import dataNav from "../../data/Navbar/nav-creativeone-data.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";
@@ -45,14 +45,14 @@ const HeaderTwo = ({ social, scrollToSection }) => {
         data-speed="1000"
       >
         <div className="container">
-        <button
+          <button
             type="button"
             className={"navbar-toggler " + (collapse ? "collapsed" : "")}
             data-toggle="dropdown"
             data-target="#navbar-menu"
             onClick={showMenu}
           >
-            <Icofont icon="navigation-menu" />
+            <i class="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <div className="collapse navbar-collapse" id="navbar-menu">

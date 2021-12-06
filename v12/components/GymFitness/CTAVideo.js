@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const CTAVideo = ({ title, tagline, textButton, linkButon }) => (
   <section className="parallax-bg-14 fitness-section">
@@ -15,7 +15,7 @@ const CTAVideo = ({ title, tagline, textButton, linkButon }) => (
               href={linkButon}
             >
               <span>
-                {textButton} <Icofont icon="simple-right" />
+                {textButton} <i class="icofont-simple-right"></i>
               </span>
             </a>
           </p>

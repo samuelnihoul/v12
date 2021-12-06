@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import Scrollspy from "react-scrollspy";
-import Icofont from "react-icofont";
+"react-icofont";
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";
 import MainLogo from "../MainLogo";
@@ -51,7 +51,7 @@ const HeaderSeven = ({ social, data, scrollToSection }) => {
             aria-expanded="false"
             onClick={() => showMenu()}
           >
-            <Icofont icon="navigation-menu" />
+            <i class="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <div

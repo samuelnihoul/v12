@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import Scrollspy from "react-scrollspy";
 import useWindowSize from "../../helpers/GetWindowSize";
 import dataNavbar from "../../data/Navbar/navbar-resume.json";
@@ -35,7 +35,7 @@ const HeaderFour = ({ scrollToSection }) => {
               aria-expanded="false"
               onClick={() => showMenu()}
             >
-              <Icofont icon="navigation-menu" />
+              <i class="icofont-navigation-menu"></i>
             </button>
             <MainLogoTwo />
           </div>

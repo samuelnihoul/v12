@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
   const pages = [];
@@ -31,7 +31,7 @@ const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
             className={currentPage === 1 ? "isDisabled" : null}
             onClick={(e) => prevPage(e)}
           >
-            <Icofont icon="simple-left" />
+            <i class="icofont-simple-left"></i>
           </a>
         </li>
         {pages.map((number) => (
@@ -54,7 +54,7 @@ const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
             className={currentPage === pages.length ? "isDisabled" : null}
             onClick={(e) => nextPage(e)}
           >
-            <Icofont icon="simple-right" />
+            <i class="icofont-simple-right"></i>
           </a>
         </li>
       </ul>

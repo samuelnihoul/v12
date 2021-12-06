@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const GalleryItem = ({ image, link, openLightbox }) => (
   <li className="portfolio-item gutter-space">
@@ -14,7 +14,7 @@ const GalleryItem = ({ image, link, openLightbox }) => (
               href={`/assets/images/${link}`}
               onClick={(e) => openLightbox(e, image)}
             >
-              <Icofont icon="plus" className="font-40px" />
+              <i class="icofont-plus" className="font-40px"></i>
             </a>
           </li>
         </ul>

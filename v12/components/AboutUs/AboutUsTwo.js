@@ -1,7 +1,7 @@
 import React from "react";
 import dataAccordion from "../../data/Accordion/accordions-data.json";
 import AccordionsComponent from "../Accordions/AccordionsComponent";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const AboutUsTwo = ({ title, image, toggler, setToggler }) => (
   <section className="white-bg">
@@ -37,7 +37,7 @@ const AboutUsTwo = ({ title, image, toggler, setToggler }) => (
                     }}
                   >
                     <div className="play-button">
-                      <Icofont icon="ui-play" />
+                      <i class="icofont-ui-play"></i>
                     </div>
                   </a>
                 </div>

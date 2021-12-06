@@ -7,7 +7,7 @@ import PageTitlePortfolio from "../../components/PageTitle/PageTitlePortfolio";
 import img1 from "../../assets/images/portfolio/single-portfolio-1.jpg";
 import img2 from "../../assets/images/portfolio/single-portfolio-2.jpg";
 import img3 from "../../assets/images/portfolio/single-portfolio-3.jpg";
-import Icofont from "react-icofont";
+"react-icofont";
 import CTAOne from "../../components/CTA/CTAOne";
 import FooterOne from "../../components/Footer/FooterOne";
 
@@ -79,14 +79,14 @@ const SinglePortfolio = () => {
               </ul>
               <ul className="project-type-list">
                 <li>
-                  <Icofont icon="diamond" /> Design
+                  <i class="icofont-diamond"></i> Design
                 </li>
                 <li>
-                  <Icofont icon="light-bulb" />
+                  <i class="icofont-light-bulb"></i>
                   Development
                 </li>
                 <li>
-                  <Icofont icon="layers" />
+                  <i class="icofont-layers"></i>
                   Apps
                 </li>
               </ul>
@@ -98,7 +98,7 @@ const SinglePortfolio = () => {
                       .map((social) => (
                         <li key={social.id}>
                           <a href={process.env.PUBLIC_URL}>
-                            <Icofont icon={social.icon} />
+                            <i className={`icofont-${social.icon}`}></i>
                           </a>
                         </li>
                       ))}
@@ -128,7 +128,7 @@ const SinglePortfolio = () => {
         means a seat at the table where you will be heard.
       </CTAOne>
       <FooterOne />
-    </Loader>
+    </Loader >
   );
 };
 

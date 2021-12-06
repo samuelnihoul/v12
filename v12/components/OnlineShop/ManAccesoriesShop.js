@@ -1,7 +1,7 @@
 import React from "react";
 import dataAccessories from "../../data/OnlineShop/man-accesories-data.json";
 import HeadingSeven from "../HeadingSection/HeadingSeven";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const ManAccesoriesShop = () => (
   <section>
@@ -26,7 +26,7 @@ const ManAccesoriesShop = () => (
                         <a href="!#" className="btn btn-white btn-square">
                           ADD TO CART
                           <span className="icon">
-                            <Icofont icon="icon" />
+                            <i class="icofont-icon"></i>
                           </span>
                         </a>
                       </div>

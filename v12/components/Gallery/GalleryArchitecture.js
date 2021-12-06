@@ -3,7 +3,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataGallery from "../../data/Gallery/gallery-architecture-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +43,7 @@ const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <Icofont icon="search-1" className="font-40px" />
+                            <i class="icofont-search-1" className="font-40px"></i>
                           </a>
                         </li>
                       </ul>

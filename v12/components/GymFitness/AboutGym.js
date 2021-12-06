@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 // import ReactWOW from "react-wow";
 
 const AboutGym = forwardRef(
@@ -11,19 +11,19 @@ const AboutGym = forwardRef(
       <div className="container">
         <div className="row">
           {/* <ReactWOW animation="fadeLeft"> */}
-            <div className="col-md-6 mb-30">
-              <h2 className="font-400 cardo-font mt-0">{title}</h2>
-              {children}
-              <a
-                href={linkButton}
-                className="btn btn-green btn-square btn-animate mt-20"
-              >
-                <span>
-                  {textButton ? textButton : "Read more"}
-                  <Icofont icon="arrow-right" />
-                </span>
-              </a>
-            </div>
+          <div className="col-md-6 mb-30">
+            <h2 className="font-400 cardo-font mt-0">{title}</h2>
+            {children}
+            <a
+              href={linkButton}
+              className="btn btn-green btn-square btn-animate mt-20"
+            >
+              <span>
+                {textButton ? textButton : "Read more"}
+                <i class="icofont-arrow-right"></i>
+              </span>
+            </a>
+          </div>
           {/* </ReactWOW> */}
           <div className="col-md-6">
             <div className="arcon-video-box">
@@ -40,7 +40,7 @@ const AboutGym = forwardRef(
                       }}
                     >
                       <div className="play-button">
-                        <Icofont icon="ui-play" />
+                        <i class="icofont-ui-play"></i>
                       </div>
                     </a>
                   </div>

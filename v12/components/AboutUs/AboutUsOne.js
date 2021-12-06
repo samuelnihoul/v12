@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const AboutUsOne = ({
   title,
@@ -30,7 +30,7 @@ const AboutUsOne = ({
             >
               <span>
                 {textButton ? textButton : "Read more"}
-                <Icofont icon="arrow-right" />
+                <i class="icofont-arrow-right"></i>
               </span>
             </a>
           </div>
@@ -55,7 +55,7 @@ const AboutUsOne = ({
                       }}
                     >
                       <div className="play-button">
-                        <Icofont icon="youtube-play" />
+                        <i class="icofont-youtube-play"></i>
                       </div>
                     </a>
                   </div>

@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import Icofont from "react-icofont";
+"react-icofont";
 import dataEvents from "../../../data/Portfolio/portfolio-music-data.json";
 
 const EventsMusic = forwardRef((props, ref) => {
@@ -52,7 +52,7 @@ const EventsMusic = forwardRef((props, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <Icofont icon="plus" className="font-40px" />
+                            <i class="icofont-plus" className="font-40px"></i>
                           </a>
                         </li>
                       </ul>

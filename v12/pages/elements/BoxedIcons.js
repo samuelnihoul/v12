@@ -8,7 +8,7 @@ import PageTitleWidget from "../../components/PageTitle/PageTitleWidget";
 import FeatureBoxThree from "../../elements/FeatureBox/FeatureBoxThree";
 import FeatureBoxTwo from "../../elements/FeatureBox/FeatureBoxTwo";
 import FooterOne from "../../components/Footer/FooterOne";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const BoxedIcons = () => (
   <Loader>

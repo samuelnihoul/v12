@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const ServiceBox = ({ icon, title, children, index }) => (
   <div

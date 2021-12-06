@@ -1,6 +1,6 @@
 import React from "react";
 import dataSocial from "../../data/Social/social-footer.json";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const FooterTwo = () => (
   <section className="dark-bg flat-footer">
@@ -11,7 +11,7 @@ const FooterTwo = () => (
             {dataSocial.filter(social => social.footer === 1).map((social) => (
               <li key={social.id}>
                 <a href={social.link}>
-                  <Icofont icon={social.icon} />
+                  <i className={`icofont-${social.icon}`}></i>
                 </a>
               </li>
             ))}
@@ -19,7 +19,7 @@ const FooterTwo = () => (
         </div>
       </div>
     </div>
-  </section>
+  </section >
 );
 
 export default FooterTwo;

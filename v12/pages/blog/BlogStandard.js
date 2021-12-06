@@ -5,7 +5,7 @@ import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleBlog from "../../components/PageTitle/PageTitleBlog";
 import SidebarForBlog from "../../components/Sidebar/SidebarForBlog";
-import Icofont from "react-icofont";
+"react-icofont";
 import CommentsRespond from "../../components/Blog/CommentsRespond";
 
 const BlogStandard = ({ sidebar }) => {
@@ -61,7 +61,7 @@ const BlogStandard = ({ sidebar }) => {
                     {dataSocial.map((social, i) => (
                       <li key={i}>
                         <a href={social.link}>
-                          <Icofont icon={social.icon} />
+                          <i className={`icofont-${social.icon}`}></i>
                         </a>
                       </li>
                     ))}
@@ -81,7 +81,7 @@ const BlogStandard = ({ sidebar }) => {
           </div>
         </div>
       </section>
-    </Loader>
+    </Loader >
   );
 };
 

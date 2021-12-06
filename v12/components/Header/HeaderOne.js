@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import DropdownMenu from "../Navs/DropdownMenu";
 import SearchOverlay from "../../elements/SearchOverlay";
 import AttributeNav from "../Navs/AttributeNav";
@@ -69,7 +69,7 @@ const HeaderOne = ({ type }) => {
             data-target="#navbar-menu"
             onClick={showMenu}
           >
-            <Icofont icon="navigation-menu" />
+            <i class="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <DropdownMenu />

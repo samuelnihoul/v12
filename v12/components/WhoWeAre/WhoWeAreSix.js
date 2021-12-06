@@ -1,7 +1,7 @@
 import React from "react";
 import dataDigital from "../../data/Services/our-services-one.json";
 import HeadingFive from "../HeadingSection/HeadingFive";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const WhoWeAreSix = ({ title, tagline }) => (
   <section className="first-ico-box white-bg">

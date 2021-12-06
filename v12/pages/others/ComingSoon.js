@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Icofont from "react-icofont";
+"react-icofont";
 import Countdown from "react-countdown";
 import Loader from "../../components/Loader/Loader";
 
 const ComingSoon = () => {
-  
+
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <ul className="countdown">
@@ -30,29 +30,30 @@ const ComingSoon = () => {
   };
 
   return (
-  <Loader>
-    <section
-      className="title-error-bg coming-cover-bg"
-      data-stellar-background-ratio="0.2"
-    >
-      <div className="container">
-        <div className="page-title text-center">
-          <h1>COMING SOON</h1>
-          <div className="countdown-container">
-          <Countdown
+    <Loader>
+      <section
+        className="title-error-bg coming-cover-bg"
+        data-stellar-background-ratio="0.2"
+      >
+        <div className="container">
+          <div className="page-title text-center">
+            <h1>COMING SOON</h1>
+            <div className="countdown-container">
+              <Countdown
                 date={Date.now() + (6500000 * 60 * 48 + 5000)}
                 renderer={renderer}
               ></Countdown>
+            </div>
+            <p className="mt-30">
+              <Link to="/" className="btn btn-color btn-square">
+                <i class="icofont-chevron-left"></i> Back to Home
+              </Link>
+            </p>
           </div>
-          <p className="mt-30">
-            <Link to="/" className="btn btn-color btn-square">
-              <Icofont icon="chevron-left" /> Back to Home
-            </Link>
-          </p>
         </div>
-      </div>
-    </section>
-  </Loader>
-)};
+      </section>
+    </Loader>
+  )
+};
 
 export default ComingSoon;

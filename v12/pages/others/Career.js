@@ -3,7 +3,7 @@ import Loader from "./../../components/Loader/Loader";
 import dataCarrers from "../../data/Careers/careers-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleWidget from "../../components/PageTitle/PageTitleWidget";
-import Icofont from "react-icofont";
+"react-icofont";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const Career = () => (
@@ -25,7 +25,7 @@ const Career = () => (
                         {career.type}
                       </span>
                       <span className="career-location">
-                        <Icofont icon="google-map-circle" />
+                        <i class="icofont-google-map-circle"></i>
                         {career.location}
                       </span>
                     </div>
@@ -39,7 +39,7 @@ const Career = () => (
                       >
                         <span>
                           Apply Now
-                          <Icofont icon="simple-right" />
+                          <i class="icofont-simple-right"></i>
                         </span>
                       </a>
                     </div>

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Scrollspy from "react-scrollspy";
-import Icofont from "react-icofont";
+"react-icofont";
 import dataNav from "../../data/Navbar/nav-construction.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SearchOverlay from "../../elements/SearchOverlay";
@@ -52,7 +52,7 @@ const HeaderThree = ({ scrollToSection }) => {
             aria-expanded="false"
             onClick={() => showMenu()}
           >
-            <Icofont icon="navigation-menu" />
+            <i class="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <div

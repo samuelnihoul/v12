@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const WelcomeItem = () => (
   <div className="white-bg clearfix pt-100 pb-100 relative">
@@ -29,7 +29,7 @@ const WelcomeItem = () => (
       <div className="mt-30">
         <a href="!#" className="btn btn-color btn-circle btn-animate">
           <span>
-            Our Trips <Icofont icon="air-balloon" />
+            Our Trips <i class="icofont-air-balloon"></i>
           </span>
         </a>
       </div>

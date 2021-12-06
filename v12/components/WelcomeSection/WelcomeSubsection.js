@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const WelcomeSubsection = ({
   title,
@@ -48,7 +48,7 @@ const WelcomeSubsection = ({
               >
                 {textButton}
                 <span className="icon">
-                  <Icofont icon="ui-play" />
+                  <i class="icofont-ui-play"></i>
                 </span>
               </a>
             </p>

@@ -1,6 +1,6 @@
 import React from "react";
 import teamData from "../../data/Team/team-data.json";
-import Icofont from 'react-icofont';
+'react-icofont';
 
 const OurTeamFive = () => (
   <section>
@@ -23,7 +23,7 @@ const OurTeamFive = () => (
                           return (
                             <li className="social-icon" key={item.id}>
                               <a href={item.link}>
-                                <Icofont icon={item.icon} />
+                                <i className={`icofont-${item.icon}`}></i>
                               </a>
                             </li>
                           );
@@ -40,7 +40,7 @@ const OurTeamFive = () => (
         ))}
       </div>
     </div>
-  </section>
+  </section >
 );
 
 export default OurTeamFive;

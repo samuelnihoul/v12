@@ -1,21 +1,21 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const SocialTop = () => (
   <ul className="social-media-dark social-top">
     <li>
       <a href="!#">
-        <Icofont icon="facebook" />
+        <i class="icofont-facebook"></i>
       </a>
     </li>
     <li>
       <a href="!#">
-        <Icofont icon="twitter" />
+        <i class="icofont-twitter"></i>
       </a>
     </li>
     <li>
       <a href="!#">
-        <Icofont icon="linkedin" />
+        <i class="icofont-linkedin"></i>
       </a>
     </li>
   </ul>

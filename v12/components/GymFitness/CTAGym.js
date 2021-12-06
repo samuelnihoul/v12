@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const CTAGym = () => (
   <section className="pt-50 pb-50 green-bg">
@@ -15,7 +15,7 @@ const CTAGym = () => (
           <div className="text-center mt-10 mb-10">
             <a href="!#" className="btn btn-dark btn-square btn-animate">
               <span>
-                Find a Teacher <Icofont icon="simple-right" />
+                Find a Teacher <i class="icofont-simple-right"></i>
               </span>
             </a>
           </div>

@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataGallery from "../../data/Gallery/gallery-restaurant-data.json";
@@ -39,7 +39,7 @@ const GalleryRestaurant = forwardRef((props, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <Icofont icon="search-1" className="font-40px" />
+                            <i class="icofont-search-1" className="font-40px"></i>
                           </a>
                         </li>
                       </ul>

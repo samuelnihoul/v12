@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dataTestimonials from "../../../data/Testimonials/testimonials-data.json";
-import Icofont from "react-icofont";
+"react-icofont";
 // import ReactWOW from "react-wow";
 
 const TestimonialsStudio = () => {
@@ -22,7 +22,7 @@ const TestimonialsStudio = () => {
         <div className="row">
           <div className="col-sm-8 section-heading">
             {/* <ReactWOW animation="fadeTop" delay="0.1s"> */}
-              <h2 className="josefin-font">Best Customers</h2>
+            <h2 className="josefin-font">Best Customers</h2>
             {/* </ReactWOW> */}
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const FeatureBoxThree = ({ index, icon, title, text }) => (
   <div

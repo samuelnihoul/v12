@@ -1,6 +1,6 @@
 import React from "react";
 import dataSocial from "../../data/Social/social-footer.json";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const FooterCopyright = () => (
   <div className="footer-copyright">
@@ -11,7 +11,7 @@ const FooterCopyright = () => (
             {dataSocial.filter((v, i) => i < 5).map((item) => (
               <li key={item.id}>
                 <a href={item.link}>
-                  <Icofont icon={item.icon} />
+                  <i className={`icofont-${item.icon}`}></i>
                 </a>
               </li>
             ))}
@@ -24,7 +24,7 @@ const FooterCopyright = () => (
         </div>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 export default FooterCopyright;

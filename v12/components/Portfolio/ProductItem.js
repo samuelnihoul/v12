@@ -1,5 +1,5 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const ProductItem = ({ image, links, openLightbox, space }) => (
   <li
@@ -19,7 +19,7 @@ const ProductItem = ({ image, links, openLightbox, space }) => (
                 className="alpha-lightbox"
                 onClick={(e) => openLightbox(e, image)}
               >
-                <Icofont icon="plus" className="font-40px" />
+                <i class="icofont-plus" className="font-40px"></i>
               </a>
             </div>
           </div>

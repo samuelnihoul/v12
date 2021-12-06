@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import counterData from "../../data/Counters/counter-data2.json";

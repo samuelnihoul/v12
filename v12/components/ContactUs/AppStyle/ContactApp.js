@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import ContactFormThree from "../ContactFormThree";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const ContactApp = forwardRef((props, ref) => (
   <>
@@ -26,7 +26,7 @@ const ContactApp = forwardRef((props, ref) => (
           <div className="col-md-4">
             <div className="col-inner spacer dark-bg">
               <div className="text-center white-color">
-                <Icofont icon="google-map" className="font-50px white-icon" />
+                <i class="icofont-google-map" className="font-50px white-icon"></i>
                 <h2>Office Address</h2>
                 <p>
                   The PATH Toronto, <br />
@@ -38,7 +38,7 @@ const ContactApp = forwardRef((props, ref) => (
           <div className="col-md-4">
             <div className="col-inner spacer gradient-bg">
               <div className="text-center white-color">
-                <Icofont icon="email" className="font-50px white-icon" />
+                <i class="icofont-email" className="font-50px white-icon"></i>
                 <h2>Email Us</h2>
                 <p className="mb-0">hello@scoda.com</p>
                 <p>jobs@scoda.com</p>

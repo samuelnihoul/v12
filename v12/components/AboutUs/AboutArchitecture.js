@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-default-data.json";
 import img from "../../assets/images/architecture-img.jpg";
@@ -107,7 +107,7 @@ const AboutArchitecture = forwardRef((props, ref) => (
           </div> */}
           <a href="!#" className="btn btn-color btn-circle btn-animate mt-20">
             <span>
-              Read more <Icofont icon="simple-right" />
+              Read more <i class="icofont-simple-right"></i>
             </span>
           </a>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Icofont from "react-icofont";
+"react-icofont";
 import Swiper from "react-id-swiper";
 
 const BlogItemGrid = ({
@@ -66,7 +66,7 @@ const BlogItemGrid = ({
             />
             {type === "video" ? (
               <a className="video-play popup-youtube" href={process.env.PUBLIC_URL + blogURL}>
-                <Icofont icon="ui-play" />
+                <i class="icofont-ui-play"></i>
               </a>
             ) : null}
           </div>

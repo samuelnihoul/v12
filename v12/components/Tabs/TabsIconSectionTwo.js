@@ -2,7 +2,7 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-icon-section-two.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const TabsIconSectionTwo = ({ title, font }) => {
   return (
@@ -18,7 +18,7 @@ const TabsIconSectionTwo = ({ title, font }) => {
                 {dataTabs.map((tab) => (
                   <Tab key={tab.id}>
                     <span>
-                      <Icofont icon={tab.icon} />
+                      <i className={`icofont-${tab.icon}`}></i>
                       {tab.title}
                     </span>
                   </Tab>
@@ -35,7 +35,7 @@ const TabsIconSectionTwo = ({ title, font }) => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

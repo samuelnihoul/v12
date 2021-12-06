@@ -1,12 +1,12 @@
 import React from "react";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const SocialItem = ({ icon, link }) => (
   <li>
     <a href={link}>
-      <Icofont icon={icon} />
+      <i className={`icofont-${icon}`}></i>
     </a>
-  </li>
+  </li >
 );
 
 export default SocialItem;

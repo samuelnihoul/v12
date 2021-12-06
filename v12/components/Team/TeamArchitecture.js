@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import dataTeam from "../../data/Team/team-architecture.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const TeamArchitecture = forwardRef(({ title, tagline }, ref) => (
   <section className="white-bg" id="team" ref={ref}>
@@ -34,7 +34,7 @@ const TeamArchitecture = forwardRef(({ title, tagline }, ref) => (
                         {member.social.map((item) => (
                           <li className="social-icon" key={item.id}>
                             <a href={item.link}>
-                              <Icofont icon={item.icon} />
+                              <i className={`icofont-${item.icon}`}></i>
                             </a>
                           </li>
                         ))}
@@ -52,7 +52,7 @@ const TeamArchitecture = forwardRef(({ title, tagline }, ref) => (
         ))}
       </div>
     </div>
-  </section>
+  </section >
 ));
 
 export default TeamArchitecture;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
-import Icofont from "react-icofont";
+"react-icofont";
 
 const AlertDismissible = ({ variant, children }) => {
   const [show, setShow] = useState(true);
@@ -14,7 +14,7 @@ const AlertDismissible = ({ variant, children }) => {
         aria-label="Close"
         onClick={() => setShow(!show)}
       >
-        <Icofont icon="close" />
+        <i class="icofont-close"></i>
       </button>
       {children}
     </Alert>
