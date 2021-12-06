@@ -1,11 +1,5 @@
 import React from "react";
 import '../assets/css/style.css'
-import Demo from './Demos'
-function App() {
-
-  return (<Demo></Demo>
-
-  );
+export default function App({ Component, pageProps }) {
+  return <Component className="App" {...pageProps} />
 }
-
-export default App;
