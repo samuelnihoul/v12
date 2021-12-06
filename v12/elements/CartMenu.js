@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 import useWindowResizeListener from "../helpers/useWindowResizeListener";
 import cartData from "../data/Cart/cart-data.json";
 
@@ -11,7 +11,7 @@ const CartMenu = () => {
     if (width < 991) {
       const el = e.target;
       if (e.target.nextSibling) {
-        console.log("parent",el.parentElement)
+        console.log("parent", el.parentElement)
         if (el.parentElement.classList.contains("on")) {
           el.nextSibling.style.display = "none";
           el.parentElement.classList.remove("on");
@@ -39,7 +39,7 @@ const CartMenu = () => {
         <span className="badge">{cartData.length}</span>
       </a>
       <ul
-        className="dropdown-menu dropdown-item cart-list animated " style={{display: "none"}}
+        className="dropdown-menu dropdown-item cart-list animated " style={{ display: "none" }}
       >
         {cartData.map((item) => (
           <li key={item.id}>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 
 const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
   let columns = Array(item.length / itemsPerCol);
@@ -29,7 +29,7 @@ const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
         <div className="row">
           {items.map((val, i) => (
             <div
-            key={i}
+              key={i}
               className={
                 "col-menu col-lg-" + (columns.length === 3 ? "4" : "3") + " col-md-12"
               }

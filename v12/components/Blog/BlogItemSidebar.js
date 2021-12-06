@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 
 const BlogItemSidebar = ({
   id,
@@ -21,11 +21,11 @@ const BlogItemSidebar = ({
       className={
         "post " +
         ((blogType && index === firstPost) ||
-        (blogType && index === firstPost + 1)
+          (blogType && index === firstPost + 1)
           ? ""
           : (index === firstPost)
-          ? ""
-          : "mt-50")
+            ? ""
+            : "mt-50")
       }
     >
       <div className="post-img">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 import dataGallery from "../../../data/Gallery/gallery-construction-data.json";
 
 const GalleryConstruction = () => (

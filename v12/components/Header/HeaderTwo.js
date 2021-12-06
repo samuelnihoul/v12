@@ -5,7 +5,7 @@ import dataNav from "../../data/Navbar/nav-creativeone-data.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";
 import MainLogo from "../MainLogo";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 
 const HeaderTwo = ({ social, scrollToSection }) => {
   const [fixed, setFixed] = useState(false);
