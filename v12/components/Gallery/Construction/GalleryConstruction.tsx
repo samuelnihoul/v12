@@ -28,7 +28,7 @@ const GalleryConstruction = () => (
                     </div>
                     <ul className="portfolio-details">
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/single-portfolio`}>View Project </Link>
+                        <Link href={`${process.env.PUBLIC_URL}/single-portfolio`}><a>View Project</a></Link>
                       </li>
                     </ul>
                   </div>
@@ -39,7 +39,7 @@ const GalleryConstruction = () => (
         </div>
       </div>
     </div>
-  </section>
+  </section >
 );
 
 export default GalleryConstruction;

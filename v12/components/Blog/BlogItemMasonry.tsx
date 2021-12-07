@@ -19,19 +19,19 @@ const BlogItemMasonry = ({ id, image, title, published, excerpt }) => {
         </div>
         <div className="post-info">
           <h3>
-            <Link to={`${process.env.PUBLIC_URL + blogURL}`}>{title}</Link>
+            <Link href={`${process.env.PUBLIC_URL + blogURL}`}><a>{title}</a></Link>
           </h3>
           <h6>{published}</h6>
           <p>{excerpt}</p>
           <Link
-            className="readmore dark-color"
-            to={`${process.env.PUBLIC_URL + blogURL}`}
-          >
-            <span>Read More</span>
+
+            href={`${process.env.PUBLIC_URL + blogURL}`}
+          ><a className="readmore dark-color">
+              <span>Read More</span></a>
           </Link>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

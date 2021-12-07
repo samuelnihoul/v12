@@ -39,7 +39,7 @@ const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
                 <ul className="menu-col">
                   {val.map((value, index) => (
                     <li key={index}>
-                      <Link to={val[index]["link"]}>{val[index]["title"]}</Link>
+                      <Link href={val[index]["link"]}><a>{val[index]["title"]}</a></Link>
                     </li>
                   ))}
                 </ul>
@@ -48,7 +48,7 @@ const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
           ))}
         </div>
       </li>
-    </ul>
+    </ul >
   );
 };
 

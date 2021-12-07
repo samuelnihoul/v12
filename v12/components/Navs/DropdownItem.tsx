@@ -25,12 +25,12 @@ const DropdownItem = ({ item }) => {
       {item.map((val, i) => (
         <li key={i} className="dropdown">
           <Link
-            className={"dropdown-item " + (val.subMenu ? "dropdown-toggle" : null)}
+
             data-toggle="dropdown"
-            to={process.env.PUBLIC_URL + val.link}
-            onClick={(e) => handleOpen(e)}
+            href={process.env.PUBLIC_URL + val.link}
+
           >
-            {val.title}
+            <a onClick={(e) => handleOpen(e)} className={"dropdown-item " + (val.subMenu ? "dropdown-toggle" : null)}>{val.title}</a>
           </Link>
           {val.subMenu ? <DropdownSubItem item={val.subMenu} /> : null}
         </li>

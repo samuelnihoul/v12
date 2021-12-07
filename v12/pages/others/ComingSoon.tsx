@@ -45,8 +45,10 @@ const ComingSoon = () => {
               ></Countdown>
             </div>
             <p className="mt-30">
-              <Link to="/" className="btn btn-color btn-square">
-                <i className="icofont-chevron-left"></i> Back to Home
+              <Link href="/"
+
+              ><a className="btn btn-color btn-square">
+                  <i className="icofont-chevron-left"></i> Back to Home</a>
               </Link>
             </p>
           </div>
