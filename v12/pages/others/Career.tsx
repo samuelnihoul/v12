@@ -25,7 +25,7 @@ const Career = () => (
                         {career.type}
                       </span>
                       <span className="career-location">
-                        <i class="icofont-google-map-circle"></i>
+                        <i className="icofont-google-map-circle"></i>
                         {career.location}
                       </span>
                     </div>
@@ -39,7 +39,7 @@ const Career = () => (
                       >
                         <span>
                           Apply Now
-                          <i class="icofont-simple-right"></i>
+                          <i className="icofont-simple-right"></i>
                         </span>
                       </a>
                     </div>

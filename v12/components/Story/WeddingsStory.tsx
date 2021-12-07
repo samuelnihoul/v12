@@ -33,17 +33,17 @@ const WeddingsStory = () => (
               <ul className="social-networks text-center">
                 <li className="social-icon-fb">
                   <a href="!#" target="_blank">
-                    <i class="icofont-facebook"></i>
+                    <i className="icofont-facebook"></i>
                   </a>
                 </li>
                 <li className="social-icon-tw">
                   <a href="!#" target="_blank">
-                    <i class="icofont-twitter"></i>
+                    <i className="icofont-twitter"></i>
                   </a>
                 </li>
                 <li className="social-icon-lk">
                   <a href="!#" target="_blank">
-                    <i class="icofont-linkedin"></i>
+                    <i className="icofont-linkedin"></i>
                   </a>
                 </li>
               </ul>
@@ -57,7 +57,7 @@ const WeddingsStory = () => (
             <p className="text-center mt-30">
               <a href="!#" className="btn btn-pink btn-square btn-animate">
                 <span>
-                  Know More <i class="icofont-simple-right"></i>
+                  Know More <i className="icofont-simple-right"></i>
                 </span>
               </a>
             </p>
@@ -72,17 +72,17 @@ const WeddingsStory = () => (
               <ul className="social-networks text-center">
                 <li className="social-icon-fb">
                   <a href="!#" target="_blank">
-                    <i class="icofont-facebook"></i>
+                    <i className="icofont-facebook"></i>
                   </a>
                 </li>
                 <li className="social-icon-tw">
                   <a href="!#" target="_blank">
-                    <i class="icofont-twitter"></i>
+                    <i className="icofont-twitter"></i>
                   </a>
                 </li>
                 <li className="social-icon-lk">
                   <a href="!#" target="_blank">
-                    <i class="icofont-linkedin"></i>
+                    <i className="icofont-linkedin"></i>
                   </a>
                 </li>
               </ul>
@@ -96,7 +96,7 @@ const WeddingsStory = () => (
             <p className="text-center mt-30">
               <a href="!#" className="btn btn-pink btn-square btn-animate">
                 <span>
-                  Know More <i class="icofont-simple-right"></i>
+                  Know More <i className="icofont-simple-right"></i>
                 </span>
               </a>
             </p>

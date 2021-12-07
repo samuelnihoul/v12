@@ -107,7 +107,7 @@ const AboutArchitecture = forwardRef((props, ref) => (
           </div> */}
           <a href="!#" className="btn btn-color btn-circle btn-animate mt-20">
             <span>
-              Read more <i class="icofont-simple-right"></i>
+              Read more <i className="icofont-simple-right"></i>
             </span>
           </a>
         </div>

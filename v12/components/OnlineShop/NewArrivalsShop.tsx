@@ -26,7 +26,7 @@ const NewArrivalsShop = () => (
                         <a href="!#" className="btn btn-white btn-square">
                           ADD TO CART
                           <span className="icon">
-                            <i class="icofont-cart"></i>
+                            <i className="icofont-cart"></i>
                           </span>
                         </a>
                       </div>

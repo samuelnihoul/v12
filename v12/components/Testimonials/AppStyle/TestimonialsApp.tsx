@@ -27,7 +27,7 @@ const TestimonialsApp = ({ toggler, setToggler, children }) => (
             }}
           >
             <div className="play-button mt-20">
-              <i class="icofont-ui-play"></i>
+              <i className="icofont-ui-play"></i>
             </div>
           </a>
         </div>

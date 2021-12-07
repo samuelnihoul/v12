@@ -6,7 +6,7 @@ const SearchItem = ({ showSearchForm }) => {
   return (
     <li className="search">
       <a href="!#" id="search-button" onClick={showSearchForm}>
-        <i class="icofont-search-1"></i>
+        <i className="icofont-search-1"></i>
       </a>
     </li>
   );

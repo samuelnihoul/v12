@@ -31,7 +31,7 @@ const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
             className={currentPage === 1 ? "isDisabled" : null}
             onClick={(e) => prevPage(e)}
           >
-            <i class="icofont-simple-left"></i>
+            <i className="icofont-simple-left"></i>
           </a>
         </li>
         {pages.map((number) => (
@@ -54,7 +54,7 @@ const Pagination = ({ postsPerPage, totalPosts, page, currentPage }) => {
             className={currentPage === pages.length ? "isDisabled" : null}
             onClick={(e) => nextPage(e)}
           >
-            <i class="icofont-simple-right"></i>
+            <i className="icofont-simple-right"></i>
           </a>
         </li>
       </ul>

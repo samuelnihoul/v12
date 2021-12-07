@@ -24,7 +24,7 @@ const PortfolioPhotography = () => (
                         <div className="product-description-wrap">
                           <div className="product-title">
                             <a href={item.link} className="alpha-lightbox">
-                              <i class="icofont-plus" className="font-40px"></i>
+                              <i className="icofont-plus" className="font-40px"></i>
                             </a>
                           </div>
                         </div>

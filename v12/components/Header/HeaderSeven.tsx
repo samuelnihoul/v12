@@ -51,7 +51,7 @@ const HeaderSeven = ({ social, data, scrollToSection }) => {
             aria-expanded="false"
             onClick={() => showMenu()}
           >
-            <i class="icofont-navigation-menu"></i>
+            <i className="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <div

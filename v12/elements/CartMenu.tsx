@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 import useWindowResizeListener from "../helpers/useWindowResizeListener";
 import cartData from "../data/Cart/cart-data.json";
 

@@ -30,7 +30,7 @@ const AboutUsOne = ({
             >
               <span>
                 {textButton ? textButton : "Read more"}
-                <i class="icofont-arrow-right"></i>
+                <i className="icofont-arrow-right"></i>
               </span>
             </a>
           </div>
@@ -55,7 +55,7 @@ const AboutUsOne = ({
                       }}
                     >
                       <div className="play-button">
-                        <i class="icofont-youtube-play"></i>
+                        <i className="icofont-youtube-play"></i>
                       </div>
                     </a>
                   </div>

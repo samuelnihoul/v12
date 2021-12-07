@@ -19,7 +19,7 @@ const ProductItem = ({ image, links, openLightbox, space }) => (
                 className="alpha-lightbox"
                 onClick={(e) => openLightbox(e, image)}
               >
-                <i class="icofont-plus" className="font-40px"></i>
+                <i className="icofont-plus" className="font-40px"></i>
               </a>
             </div>
           </div>

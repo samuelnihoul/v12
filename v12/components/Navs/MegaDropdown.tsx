@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
 const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
   let columns = Array(item.length / itemsPerCol);

@@ -43,7 +43,7 @@ const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <i class="icofont-search-1" className="font-40px"></i>
+                            <i className="icofont-search-1" className="font-40px"></i>
                           </a>
                         </li>
                       </ul>

@@ -20,7 +20,7 @@ const AboutGym = forwardRef(
             >
               <span>
                 {textButton ? textButton : "Read more"}
-                <i class="icofont-arrow-right"></i>
+                <i className="icofont-arrow-right"></i>
               </span>
             </a>
           </div>
@@ -40,7 +40,7 @@ const AboutGym = forwardRef(
                       }}
                     >
                       <div className="play-button">
-                        <i class="icofont-ui-play"></i>
+                        <i className="icofont-ui-play"></i>
                       </div>
                     </a>
                   </div>

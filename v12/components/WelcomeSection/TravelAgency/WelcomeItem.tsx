@@ -29,7 +29,7 @@ const WelcomeItem = () => (
       <div className="mt-30">
         <a href="!#" className="btn btn-color btn-circle btn-animate">
           <span>
-            Our Trips <i class="icofont-air-balloon"></i>
+            Our Trips <i className="icofont-air-balloon"></i>
           </span>
         </a>
       </div>

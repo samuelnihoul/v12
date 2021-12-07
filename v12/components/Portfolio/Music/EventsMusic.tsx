@@ -52,7 +52,7 @@ const EventsMusic = forwardRef((props, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <i class="icofont-plus" className="font-40px"></i>
+                            <i className="icofont-plus" className="font-40px"></i>
                           </a>
                         </li>
                       </ul>

@@ -69,7 +69,7 @@ const HeaderOne = ({ type }) => {
             data-target="#navbar-menu"
             onClick={showMenu}
           >
-            <i class="icofont-navigation-menu"></i>
+            <i className="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <DropdownMenu />

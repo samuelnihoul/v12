@@ -48,7 +48,7 @@ const WelcomeSubsection = ({
               >
                 {textButton}
                 <span className="icon">
-                  <i class="icofont-ui-play"></i>
+                  <i className="icofont-ui-play"></i>
                 </span>
               </a>
             </p>

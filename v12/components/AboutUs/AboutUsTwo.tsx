@@ -37,7 +37,7 @@ const AboutUsTwo = ({ title, image, toggler, setToggler }) => (
                     }}
                   >
                     <div className="play-button">
-                      <i class="icofont-ui-play"></i>
+                      <i className="icofont-ui-play"></i>
                     </div>
                   </a>
                 </div>

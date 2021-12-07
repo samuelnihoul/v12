@@ -43,6 +43,6 @@ const OurServices = ({ serviceImg, title, tagline, children }) => (
       </div>
     </div>
   </section>
-));
+);
 
 export default OurServices;

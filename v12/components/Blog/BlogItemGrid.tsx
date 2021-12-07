@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
 import Swiper from "react-id-swiper";
 
@@ -66,7 +66,7 @@ const BlogItemGrid = ({
             />
             {type === "video" ? (
               <a className="video-play popup-youtube" href={process.env.PUBLIC_URL + blogURL}>
-                <i class="icofont-ui-play"></i>
+                <i className="icofont-ui-play"></i>
               </a>
             ) : null}
           </div>

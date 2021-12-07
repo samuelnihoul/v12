@@ -52,12 +52,12 @@ const PortfolioItem = ({
                 href="!#"
                 onClick={(e) => openLightbox(e, image)}
               >
-                <i class="icofont-search-1"></i>
+                <i className="icofont-search-1"></i>
               </a>
             </li>
             <li>
               <a href={require("../../assets/images/" + image)}>
-                <i class="icofont-link-alt"></i>
+                <i className="icofont-link-alt"></i>
               </a>
             </li>
           </ul>

@@ -21,404 +21,404 @@ const ThemeIcons = () => (
         <div className="row mt-50">
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-addons"></i>
+              <i className="icofont-addons"></i>
               <code>addons</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-address-book"></i>
+              <i className="icofont-address-book"></i>
               <code>address-book</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-adjust"></i>
+              <i className="icofont-adjust"></i>
               <code>adjust</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-alarm"></i>
+              <i className="icofont-alarm"></i>
               <code>alarm</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-at"></i> <code>at</code>
+              <i className="icofont-at"></i> <code>at</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-magic-alt"></i>
+              <i className="icofont-magic-alt"></i>
               <code>magic-alt</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-magnet"></i>
+              <i className="icofont-magnet"></i>
               <code>magnet</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-map-pins"></i>
+              <i className="icofont-map-pins"></i>
               <code>map-pins</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-molecule"></i>
+              <i className="icofont-molecule"></i>
               <code>molecule</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-signal"></i>
+              <i className="icofont-signal"></i>
               <code>signal</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-ui-user"></i>
+              <i className="icofont-ui-user"></i>
               <code>ui-user</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-baseball"></i>
+              <i className="icofont-baseball"></i>
               <code>baseball</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-runner-alt-1"></i>
+              <i className="icofont-runner-alt-1"></i>
               <code>runner-alt-1</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-dust"></i> <code>dust</code>
+              <i className="icofont-dust"></i> <code>dust</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-volcano"></i>
+              <i className="icofont-volcano"></i>
               <code>volcano</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-hail-thunder-sunny"></i>
+              <i className="icofont-hail-thunder-sunny"></i>
               <code>hail-thunder-sunny</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-architecture"></i>
+              <i className="icofont-architecture"></i>
               <code>architecture</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-dna"></i> <code>dna</code>
+              <i className="icofont-dna"></i> <code>dna</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-blood-drop"></i>
+              <i className="icofont-blood-drop"></i>
               <code>blood-drop</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-surgeon"></i>
+              <i className="icofont-surgeon"></i>
               <code>surgeon</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-icu"></i> <code>icu</code>
+              <i className="icofont-icu"></i> <code>icu</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-tooth"></i>
+              <i className="icofont-tooth"></i>
               <code>tooth</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-air-balloon"></i>
+              <i className="icofont-air-balloon"></i>
               <code>air-balloon</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-airplane-alt"></i>
+              <i className="icofont-airplane-alt"></i>
               <code>airplane-alt</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-articulated"></i>
+              <i className="icofont-articulated"></i>
               <code>articulated</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-auto-rickshaw"></i>
+              <i className="icofont-auto-rickshaw"></i>
               <code>auto-rickshaw</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-bicycle-alt-1"></i>
+              <i className="icofont-bicycle-alt-1"></i>
               <code>bicycle-alt-1</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-bus-alt-1"></i>
+              <i className="icofont-bus-alt-1"></i>
               <code>bus-alt-1</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-cable-car"></i>
+              <i className="icofont-cable-car"></i>
               <code>cable-car</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-car-alt-2"></i>
+              <i className="icofont-car-alt-2"></i>
               <code>car-alt-2</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-car"></i> <code>car</code>
+              <i className="icofont-car"></i> <code>car</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-motor-bike-alt"></i>
+              <i className="icofont-motor-bike-alt"></i>
               <code>motor-bike-alt</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-motor-biker"></i>
+              <i className="icofont-motor-biker"></i>
               <code>motor-biker</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-rocket-alt-2"></i>
+              <i className="icofont-rocket-alt-2"></i>
               <code>rocket-alt-2</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-sail-boat"></i>
+              <i className="icofont-sail-boat"></i>
               <code>sail-boat</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-sea-plane"></i>
+              <i className="icofont-sea-plane"></i>
               <code>sea-plane</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-helicopter"></i>
+              <i className="icofont-helicopter"></i>
               <code>helicopter</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-android-nexus"></i>
+              <i className="icofont-android-nexus"></i>
               <code>android-nexus</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-android-tablet"></i>
+              <i className="icofont-android-tablet"></i>
               <code>android-tablet</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-apple-watch"></i>
+              <i className="icofont-apple-watch"></i>
               <code>apple-watch</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-game-console"></i>
+              <i className="icofont-game-console"></i>
               <code>game-console</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-game-controller"></i>
+              <i className="icofont-game-controller"></i>
               <code>game-controller</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-imac"></i> <code>imac</code>
+              <i className="icofont-imac"></i> <code>imac</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-iphone"></i>
+              <i className="icofont-iphone"></i>
               <code>iphone</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-ui-head-phone"></i>
+              <i className="icofont-ui-head-phone"></i>
               <code>ui-head-phone</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-abacus-alt"></i>
+              <i className="icofont-abacus-alt"></i>
               <code>abacus-alt</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-calculator-alt-1"></i>
+              <i className="icofont-calculator-alt-1"></i>
               <code>calculator-alt-1</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-pen-holder"></i>
+              <i className="icofont-pen-holder"></i>
               <code>pen-holder</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-ruler-pencil-alt-2"></i>
+              <i className="icofont-ruler-pencil-alt-2"></i>
               <code>ruler-pencil-alt-2</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-brush"></i>
+              <i className="icofont-brush"></i>
               <code>brush</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-cut"></i> <code>cut</code>
+              <i className="icofont-cut"></i> <code>cut</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-trash"></i>
+              <i className="icofont-trash"></i>
               <code>trash</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-atom"></i> <code>atom</code>
+              <i className="icofont-atom"></i> <code>atom</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-bell-alt"></i>
+              <i className="icofont-bell-alt"></i>
               <code>bell-alt</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-brainstorming"></i>
+              <i className="icofont-brainstorming"></i>
               <code>brainstorming</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-court"></i>
+              <i className="icofont-court"></i>
               <code>court</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-finger-print"></i>
+              <i className="icofont-finger-print"></i>
               <code>finger-print</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-boy"></i> <code>boy</code>
+              <i className="icofont-boy"></i> <code>boy</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-girl"></i> <code>girl</code>
+              <i className="icofont-girl"></i> <code>girl</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-guiter"></i>
+              <i className="icofont-guiter"></i>
               <code>guiter</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-play-alt-1"></i>
+              <i className="icofont-play-alt-1"></i>
               <code>play-alt-1</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-briefcase-2"></i>
+              <i className="icofont-briefcase-2"></i>
               <code>briefcase-2</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-money-bag"></i>
+              <i className="icofont-money-bag"></i>
               <code>money-bag</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-slightly-smile"></i>
+              <i className="icofont-slightly-smile"></i>
               <code>slightly-smile</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-hill"></i> <code>hill</code>
+              <i className="icofont-hill"></i> <code>hill</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-beach"></i>
+              <i className="icofont-beach"></i>
               <code>beach</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-chart-pie"></i>
+              <i className="icofont-chart-pie"></i>
               <code>chart-pie</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-search"></i>
+              <i className="icofont-search"></i>
               <code>search</code>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon-view">
-              <i class="icofont-cursor-drag"></i>
+              <i className="icofont-cursor-drag"></i>
               <code>cursor-drag</code>
             </div>
           </div>

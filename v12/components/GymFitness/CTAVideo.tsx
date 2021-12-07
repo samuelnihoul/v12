@@ -15,7 +15,7 @@ const CTAVideo = ({ title, tagline, textButton, linkButon }) => (
               href={linkButon}
             >
               <span>
-                {textButton} <i class="icofont-simple-right"></i>
+                {textButton} <i className="icofont-simple-right"></i>
               </span>
             </a>
           </p>

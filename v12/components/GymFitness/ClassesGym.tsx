@@ -56,7 +56,7 @@ const classNameesGym = forwardRef((props, ref) => {
                             href={item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <i class="icofont-search-1"></i>
+                            <i className="icofont-search-1"></i>
                           </a>
                         </li>
                       </ul>

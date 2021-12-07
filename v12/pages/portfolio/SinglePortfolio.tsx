@@ -79,14 +79,14 @@ const SinglePortfolio = () => {
               </ul>
               <ul className="project-type-list">
                 <li>
-                  <i class="icofont-diamond"></i> Design
+                  <i className="icofont-diamond"></i> Design
                 </li>
                 <li>
-                  <i class="icofont-light-bulb"></i>
+                  <i className="icofont-light-bulb"></i>
                   Development
                 </li>
                 <li>
-                  <i class="icofont-layers"></i>
+                  <i className="icofont-layers"></i>
                   Apps
                 </li>
               </ul>

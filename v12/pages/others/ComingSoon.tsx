@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
 import Countdown from "react-countdown";
 import Loader from "../../components/Loader/Loader";
@@ -46,7 +46,7 @@ const ComingSoon = () => {
             </div>
             <p className="mt-30">
               <Link to="/" className="btn btn-color btn-square">
-                <i class="icofont-chevron-left"></i> Back to Home
+                <i className="icofont-chevron-left"></i> Back to Home
               </Link>
             </p>
           </div>

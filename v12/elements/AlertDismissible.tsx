@@ -14,7 +14,7 @@ const AlertDismissible = ({ variant, children }) => {
         aria-label="Close"
         onClick={() => setShow(!show)}
       >
-        <i class="icofont-close"></i>
+        <i className="icofont-close"></i>
       </button>
       {children}
     </Alert>

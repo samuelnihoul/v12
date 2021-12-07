@@ -5,7 +5,7 @@ import dataNav from "../../data/Navbar/nav-creativeone-data.json";
 import AttributeNav from "../Navs/AttributeNav";
 import SocialNav from "../Navs/SocialNav";
 import MainLogo from "../MainLogo";
-import { Link } from "next/link";
+import Link from "next/link";
 
 const HeaderTwo = ({ social, scrollToSection }) => {
   const [fixed, setFixed] = useState(false);
@@ -52,7 +52,7 @@ const HeaderTwo = ({ social, scrollToSection }) => {
             data-target="#navbar-menu"
             onClick={showMenu}
           >
-            <i class="icofont-navigation-menu"></i>
+            <i className="icofont-navigation-menu"></i>
           </button>
           <MainLogo showMenu={showMenu} />
           <div className="collapse navbar-collapse" id="navbar-menu">

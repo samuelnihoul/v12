@@ -200,7 +200,7 @@ const ShopCheckout = () => (
                         >
                           <span>
                             Submit order
-                            <i class="icofont-check"></i>
+                            <i className="icofont-check"></i>
                           </span>
                         </button>
                       </div>

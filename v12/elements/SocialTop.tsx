@@ -5,17 +5,17 @@ const SocialTop = () => (
   <ul className="social-media-dark social-top">
     <li>
       <a href="!#">
-        <i class="icofont-facebook"></i>
+        <i className="icofont-facebook"></i>
       </a>
     </li>
     <li>
       <a href="!#">
-        <i class="icofont-twitter"></i>
+        <i className="icofont-twitter"></i>
       </a>
     </li>
     <li>
       <a href="!#">
-        <i class="icofont-linkedin"></i>
+        <i className="icofont-linkedin"></i>
       </a>
     </li>
   </ul>

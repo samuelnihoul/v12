@@ -76,7 +76,7 @@ const ContactGym = forwardRef((props, ref) => {
                   name="submit"
                   className="btn btn-green btn-square"
                 >
-                  Send Message <i class="icofont-email"></i>
+                  Send Message <i className="icofont-email"></i>
                 </button>
               </p>
             </form>

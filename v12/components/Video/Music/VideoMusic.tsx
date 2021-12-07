@@ -21,7 +21,7 @@ const VideoMusic = ({ toggler, setToggler, children }) => (
               setToggler(!toggler);
             }}
           >
-            <i class="icofont-ui-play"></i>
+            <i className="icofont-ui-play"></i>
           </a>
         </div>
       </div>

@@ -6,11 +6,11 @@ import Shuffle from "shufflejs";
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
 
-const Portfolio = forwardRef(
-  ({ filter, layout, columns, space, items, classAppend, children }, ref) => {
+const Portfolio =
+  ({ filter, layout, columns, space, items, classAppend, children }) => {
     const categories = ["all", 'regeneration', 'mechanical', 'biochemical', 'social'];
-    const element = useRef();
-    const [shuffle, setShuffle] = useState();
+    const element = useRef(null);
+    const [shuffle, setShuffle] = useState(null);
 
     useEffect(() => {
       if (element.current) {
@@ -111,6 +111,6 @@ const Portfolio = forwardRef(
       </section>
     );
   }
-);
+  ;
 
 export default Portfolio;

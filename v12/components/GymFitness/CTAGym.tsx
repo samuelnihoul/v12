@@ -15,7 +15,7 @@ const CTAGym = () => (
           <div className="text-center mt-10 mb-10">
             <a href="!#" className="btn btn-dark btn-square btn-animate">
               <span>
-                Find a Teacher <i class="icofont-simple-right"></i>
+                Find a Teacher <i className="icofont-simple-right"></i>
               </span>
             </a>
           </div>

@@ -13,7 +13,7 @@ const BannerShop = () => (
               <h4 className="cardo-font">Free Delivery on order over $100</h4>
               <a href="!#" className="btn btn-white btn-square btn-animate mt-20">
                 <span>
-                  Buy Now <i class="icofont-simple-right"></i>
+                  Buy Now <i className="icofont-simple-right"></i>
                 </span>
               </a>
             </div>
@@ -27,7 +27,7 @@ const BannerShop = () => (
               <h4 className="cardo-font">Free Delivery on order over $100</h4>
               <a href="!#" className="btn btn-white btn-square btn-animate mt-20">
                 <span>
-                  Buy Now <i class="icofont-simple-right"></i>
+                  Buy Now <i className="icofont-simple-right"></i>
                 </span>
               </a>
             </div>

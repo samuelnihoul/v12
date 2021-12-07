@@ -51,7 +51,7 @@ const SubscribeApp = () => {
                       value="Subscribe"
                     >
                       <span>
-                        Subscribe <i class="icofont-check"></i>
+                        Subscribe <i className="icofont-check"></i>
                       </span>
                     </button>
                   </div>

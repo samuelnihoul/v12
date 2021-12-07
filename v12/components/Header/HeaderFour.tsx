@@ -35,7 +35,7 @@ const HeaderFour = ({ scrollToSection }) => {
               aria-expanded="false"
               onClick={() => showMenu()}
             >
-              <i class="icofont-navigation-menu"></i>
+              <i className="icofont-navigation-menu"></i>
             </button>
             <MainLogoTwo />
           </div>
