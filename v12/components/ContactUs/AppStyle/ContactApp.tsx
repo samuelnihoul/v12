@@ -4,7 +4,7 @@ import ContactFormThree from "../ContactFormThree";
 
 const ContactApp = forwardRef((props, ref) => (
   <>
-    <section className="contact-us white-bg" id="contact" ref={ref}>
+    <section className="contact-us white-bg" id="contact" >
       <div className="container">
         <div className="row">
           <div className="col-sm-6 section-heading">

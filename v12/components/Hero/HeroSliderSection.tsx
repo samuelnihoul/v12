@@ -10,12 +10,12 @@ import SwiperCore, { EffectFade, Navigation, Autoplay, Pagination } from "swiper
 SwiperCore.use([EffectFade, Navigation, Autoplay, Pagination]);
 
 const HeroSliderSection = forwardRef(({ data }, ref) => (
-  <section className="pt-0 pb-0" id="home" ref={ref}>
+  <section className="pt-0 pb-0" id="home" >
     <div className="slider-bg flexslider">
       <ul className="slides">
         <Swiper
           navigation={true}
-          pagination={{clickable: true}}
+          pagination={{ clickable: true }}
           loop={true}
           grabCursor={true}
           effect={"fade"}
@@ -26,9 +26,8 @@ const HeroSliderSection = forwardRef(({ data }, ref) => (
               <div
                 className="slide-img"
                 style={{
-                  background: `url(${
-                    require("../../assets/images/" + slide.image)
-                  }) center center / cover scroll no-repeat`,
+                  background: `url(${require("../../assets/images/" + slide.image)
+                    }) center center / cover scroll no-repeat`,
                 }}
               ></div>
               <div

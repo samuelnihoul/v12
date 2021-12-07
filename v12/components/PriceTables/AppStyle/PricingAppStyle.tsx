@@ -3,7 +3,7 @@ import dataPrices from "../../../data/PriceTables/price-appstyle-data.json";
 import PriceItemApp from "./PriceItemApp";
 
 const PricingAppStyle = forwardRef((props, ref) => (
-  <section className="pt-0 white-bg skew-bg" id="pricing" ref={ref}>
+  <section className="pt-0 white-bg skew-bg" id="pricing" >
     <div className="container">
       <div className="row">
         <div className="col-md-4 col-sm-12">

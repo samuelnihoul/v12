@@ -5,7 +5,7 @@ import dataTabs from "../../data/TabsIconSection/tabs-default-data.json";
 import img from "../../assets/images/architecture-img.jpg";
 
 const AboutArchitecture = forwardRef((props, ref) => (
-  <section id="about" className="pb-80" ref={ref}>
+  <section id="about" className="pb-80" >
     <div className="container">
       <div className="row">
         <div className="col-md-5 mb-20">

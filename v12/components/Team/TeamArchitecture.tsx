@@ -3,8 +3,8 @@ import dataTeam from "../../data/Team/team-architecture.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
 
 
-const TeamArchitecture = forwardRef(({ title, tagline }, ref) => (
-  <section className="white-bg" id="team" ref={ref}>
+const TeamArchitecture = ({ title, tagline, children }) => (
+  <section className="white-bg" id="team" >
     <div className="container">
       <div className="row">
         <HeadingSection title={title} tagline={tagline} />

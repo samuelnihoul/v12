@@ -18,7 +18,7 @@ const GalleryRestaurant = forwardRef((props, ref) => {
   };
 
   return (
-    <section className="pt-0 pb-0" id="gallery" ref={ref}>
+    <section className="pt-0 pb-0" id="gallery" >
       <div className="container-fluid">
         <div className="row">
           <div className="portfolio-container text-center">

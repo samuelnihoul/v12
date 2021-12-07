@@ -3,8 +3,8 @@ import PriceItemOne from "./PriceItemOne";
 import pricesData from "../../data/PriceTables/price-tables-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
 
-const PriceTablesTwo = forwardRef(({ title, tagline, btnType, tableType, classes }, ref) => (
-    <section id="pricing" ref={ref} className={classes || ""} >
+const PriceTablesTwo = ({ title, tagline, btnType, tableType, classes, children }) => (
+  <section id="pricing" className={classes || ""} >
     <div className="container">
       <div className="row">
         <HeadingSection

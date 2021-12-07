@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataSchedule from "../../data/Services/schedule-gym-data.json";
 
 const ScheduleGym = forwardRef((props, ref) => (
-  <section className="dark-bg" id="schedule" ref={ref}>
+  <section className="dark-bg" id="schedule" >
     <div className="container">
       <div className="row">
         <div className="col-sm-8 section-heading white-color">

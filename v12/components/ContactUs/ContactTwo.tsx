@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import ContactFormTwo from './ContactFormTwo';
 import HeadingTwo from '../HeadingSection/HeadingTwo';
 
-const ContactTwo = forwardRef(({ title, bg, classAppend }, ref) => (
-    <section className={"contact-us " + (bg === "color" ? "default-bg" : "")} id="contact" ref={ref}>
+const ContactTwo = ({ title, bg, classAppend, children }) => (
+  <section className={"contact-us " + (bg === "color" ? "default-bg" : "")} id="contact" >
     <div className="container">
       <div className="row">
         <HeadingTwo title={title} />

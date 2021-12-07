@@ -7,7 +7,7 @@ const AboutGym = forwardRef(
     { title, textButton, linkButton, image, children, toggler, setToggler },
     ref
   ) => (
-    <section className="white-bg pb-70" id="about" ref={ref}>
+    <section className="white-bg pb-70" id="about" >
       <div className="container">
         <div className="row">
           {/* <ReactWOW animation="fadeLeft"> */}

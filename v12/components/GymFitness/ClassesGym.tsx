@@ -18,7 +18,7 @@ const classNameesGym = forwardRef((props, ref) => {
   };
 
   return (
-    <section className="grey-bg" id="classes" ref={ref}>
+    <section className="grey-bg" id="classes" >
       <div className="container">
         <div className="row">
           <div className="col-sm-8 section-heading">

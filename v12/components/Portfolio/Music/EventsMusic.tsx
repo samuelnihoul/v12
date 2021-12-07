@@ -18,7 +18,7 @@ const EventsMusic = forwardRef((props, ref) => {
   };
 
   return (
-    <section id="event" className="pb-0" ref={ref}>
+    <section id="event" className="pb-0" >
       <div className="container">
         <div className="row">
           <div className="col-md-8 section-heading">

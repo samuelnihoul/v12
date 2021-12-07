@@ -11,7 +11,7 @@ const ContactGym = forwardRef((props, ref) => {
   };
 
   return (
-    <section className="contact-us pt-0" id="contact" ref={ref}>
+    <section className="contact-us pt-0" id="contact" >
       <Map classAppend="wide" />
       <div className="container">
         <div className="row mt-120">

@@ -4,7 +4,7 @@ import OurSkillsOne from "../OurSkills/OurSkillsOne";
 import CounterFour from "../Counters/CounterFour";
 
 const WhoWeAreFour = forwardRef((props, ref) => (
-  <section className="main-section" id="about" ref={ref}>
+  <section className="main-section" id="about" >
     <div className="container">
       <div className="row">
         <HeadingTwo

@@ -3,8 +3,8 @@ import dataServices from "../../data/Services/services-architecture.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
 
 
-const ServicesArchitecture = forwardRef(({ title, tagline }, ref) => (
-  <section id="service" className="dark-bg" ref={ref}>
+const ServicesArchitecture = ({ title, tagline, children }) => (
+  <section id="service" className="dark-bg" >
     <div className="container">
       <div className="row">
         <HeadingSection

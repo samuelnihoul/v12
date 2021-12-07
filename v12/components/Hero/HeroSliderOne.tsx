@@ -5,10 +5,10 @@ import Canvas from "../../elements/Canvas";
 
 const HeroSliderOne = forwardRef((props, ref) => {
 
-    const tags = ["HELLO", "I'M", "CREATIVE", "DESIGNER", "&", "FRONT-END DEVELOPER"];
+  const tags = ["HELLO", "I'M", "CREATIVE", "DESIGNER", "&", "FRONT-END DEVELOPER"];
 
   return (
-    <section className="pt-0 pb-0" id="home" ref={ref}>
+    <section className="pt-0 pb-0" id="home" >
       <div className="full-screen-bg">
         <div
           className="parallax-img"
@@ -22,9 +22,9 @@ const HeroSliderOne = forwardRef((props, ref) => {
               <div className="animate-caption">
                 <h2 className="white-color mt-30">
                   <TextLoop mask={true}>
-                      {tags.map((tag, i) => (
-                          <span key={i}>{tag}</span>
-                      ))}
+                    {tags.map((tag, i) => (
+                      <span key={i}>{tag}</span>
+                    ))}
                   </TextLoop>
                 </h2>
               </div>

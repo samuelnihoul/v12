@@ -51,7 +51,7 @@ const Portfolio = forwardRef(
       <section
         className={"pb-0 " + (classAppend ? classAppend : "")}
         id="work"
-        ref={ref}
+
       >
         {children ? (
           <div className="container">

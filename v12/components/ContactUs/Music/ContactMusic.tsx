@@ -10,7 +10,7 @@ const ContactMusic = forwardRef((props, ref) => {
   };
 
   return (
-    <section className="contact-us white-bg" id="contact" ref={ref}>
+    <section className="contact-us white-bg" id="contact" >
       <div className="container">
         <div className="clearfix">
           <div className="bg-flex col-md-6 map-section bg-flex-left">

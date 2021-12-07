@@ -9,7 +9,7 @@ import img5 from "../../assets/images/food-img-02.jpg";
 const AboutRestaurant = forwardRef((props, ref) => {
   useLax();
   return (
-    <section className="main-section dark-bg" id="about" ref={ref}>
+    <section className="main-section dark-bg" id="about" >
       <div className="left_parallax">
         <div
           className="lax parallax_img left_one"

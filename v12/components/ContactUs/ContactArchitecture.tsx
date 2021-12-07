@@ -2,8 +2,8 @@ import React, { forwardRef } from "react";
 import HeadingSection from "../HeadingSection/HeadingSection";
 import ContactFormThree from "./ContactFormThree";
 
-const ContactArchitecture = forwardRef(({ title, tagline, text, classAppend }, ref) => (
-  <section className="contact-us" id="contact" ref={ref}>
+const ContactArchitecture = ({ title, tagline, text, classAppend, children }) => (
+  <section className="contact-us" id="contact" >
     <div className="container">
       <div className="row">
         <HeadingSection title={title} tagline={tagline}>

@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import img from "../../../assets/images/singer-img.png";
 
 const AboutMusic = forwardRef((props, ref) => (
-  <section id="about" ref={ref}>
+  <section id="about" >
     <div className="container">
       <div className="row">
         <div className="col-md-8 section-heading">

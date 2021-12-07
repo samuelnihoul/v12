@@ -4,7 +4,7 @@ import img from "../../assets/images/slides/iPhone-big.png";
 
 
 const AboutAppStyle = forwardRef((props, ref) => (
-  <section className="main-section white-bg" id="feature" ref={ref}>
+  <section className="main-section white-bg" id="feature" >
     <div className="container">
       <div className="row">
         <div className="col-sm-8 section-heading">

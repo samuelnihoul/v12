@@ -3,7 +3,7 @@ import ContactFormFour from "./ContactFormFour";
 import HeadingTwo from "../HeadingSection/HeadingTwo";
 
 const ContactRestaurant = forwardRef((props, ref) => (
-  <section className="contact-us pb-140" id="bookAtable" ref={ref}>
+  <section className="contact-us pb-140" id="bookAtable" >
     <div className="container">
       <div className="row">
         <HeadingTwo title="Book a Table" />

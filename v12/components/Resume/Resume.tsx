@@ -29,7 +29,7 @@ const Resume = forwardRef((props, ref) => {
   };
 
   return (
-    <section className="dark-bg" id="resume" ref={ref}>
+    <section className="dark-bg" id="resume" >
       <div className="container">
         <div className="row">
           <div className="col-sm-8 section-heading white-color">

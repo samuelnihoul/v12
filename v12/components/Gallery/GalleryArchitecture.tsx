@@ -19,7 +19,7 @@ const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
   };
 
   return (
-    <section className="pt-0 pb-0 white-bg" id="project" ref={ref}>
+    <section className="pt-0 pb-0 white-bg" id="project" >
       <div className="container-fluid">
         <div className="row">
           <HeadingSection title={title} tagline={tagline} />

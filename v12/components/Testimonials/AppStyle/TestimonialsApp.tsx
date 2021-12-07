@@ -2,9 +2,9 @@ import React, { forwardRef } from "react";
 
 import imgWave from "../../../assets/images/slides/wave-2.svg";
 
-const TestimonialsApp = forwardRef(({ toggler, setToggler }, ref) => (
+const TestimonialsApp = ({ toggler, setToggler, children }) => (
   <section
-    ref={ref}
+
     className="parallax-bg-12 fixed-bg app-bg"
     data-stellar-background-ratio="0.2"
     id="review"

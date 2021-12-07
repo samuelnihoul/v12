@@ -5,7 +5,7 @@ import imgPhone from "../../assets/images/slides/iPhone-01.png";
 // import ReactWOW from "react-wow";
 
 const ParallaxAppStyle = forwardRef((props, ref) => (
-  <section className="pt-0 pb-0" id="home" ref={ref}>
+  <section className="pt-0 pb-0" id="home" >
     <div
       className="full-screen-bg"
       style={{

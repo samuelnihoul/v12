@@ -2,8 +2,8 @@ import React, { forwardRef } from "react";
 import dataServices from "../../data/Services/our-services-two.json";
 import ServiceBox from "./ServiceBox";
 
-const OurServices = forwardRef(({ serviceImg, title, tagline }, ref) => (
-  <section className="white-bg" id="service" ref={ref}>
+const OurServices = ({ serviceImg, title, tagline, children }) => (
+  <section className="white-bg" id="service" >
     <div className="col-md-6 col-sm-4 bg-flex bg-flex-left">
       <div
         className="bg-flex-holder bg-flex-cover"

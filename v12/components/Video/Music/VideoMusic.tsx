@@ -1,12 +1,12 @@
 import React, { forwardRef } from "react";
 
 
-const VideoMusic = forwardRef(({ toggler, setToggler }, ref) => (
+const VideoMusic = ({ toggler, setToggler, children }) => (
   <section
     className="parallax-bg-13 fixed-bg"
     data-stellar-background-ratio="0.2"
     id="how"
-    ref={ref}
+
   >
     <div className="overlay-bg"></div>
     <div className="container">
