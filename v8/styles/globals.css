@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  height: 100vh !important;
+  flex-direction: column;
+}
+a {
+  color: gold;
+}
+a:hover {
+  color: lightgoldenrodyellow;
+}
+button {
+  background-color: darkgoldenrod !important;
+}
+.bt {
+  color: black;
+}
+.npf {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 35% 10% 35%;
+}
+li {
+  list-style: none;
+}
+.tac {
+  text-align: center;
+}
+.carousel {
+  background-color: transparent;
+  padding: 10% 0 10% 0;
+}
+.intro {
+  padding-top: 10%;
+}
+.aie {
+  align-self: end;
+  flex-direction: row;
+  display: flex;
+}
