@@ -98,10 +98,10 @@ import Demos from "./pages/Demos";
 function App() {
 
   return (
-    <Router basename={"/demos"}>
+    <Router basename={"/"}>
       <ScrollToTop>
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Demos} />
+          <Route exact path={`${process.env.PUBLIC_URL}/demos`} component={Demos} />
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/creative-agency`}
