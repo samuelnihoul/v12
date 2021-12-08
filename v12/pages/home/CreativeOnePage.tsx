@@ -50,7 +50,7 @@ const CreativeOnePage = () => {
         contact.current.scrollIntoView({ behavior: "smooth" });
         break;
       default:
-        
+
     }
   };
 
