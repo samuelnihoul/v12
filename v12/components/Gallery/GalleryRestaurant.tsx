@@ -28,7 +28,7 @@ const GalleryRestaurant = forwardRef((props, ref) => {
                   <div className="portfolio photo-gallery">
                     <div className="dark-overlay"></div>
                     <img
-                      src={require("../../assets/images/" + item.image)}
+                      src={require("/assets/images/" + item.image)}
                       alt=""
                     />
                     <div className="portfolio-wrap">
@@ -46,7 +46,7 @@ const GalleryRestaurant = forwardRef((props, ref) => {
                       {isOpen && (
                         <Lightbox
                           mainSrc={
-                            require("../../assets/images/" + photo)
+                            require("/assets/images/" + photo)
                           }
                           onCloseRequest={() => closeLightbox()}
                         />

@@ -29,7 +29,7 @@ const PortfolioStudio = () => {
               <div className="col-md-8">
                 <div className="section-heading text-left">
                   {/* <ReactWOW animation="fadeTop" delay="0.1s"> */}
-                    <h2 className="josefin-font">Featured Works</h2>
+                  <h2 className="josefin-font">Featured Works</h2>
                   {/* </ReactWOW> */}
                 </div>
               </div>
@@ -51,7 +51,7 @@ const PortfolioStudio = () => {
                     <div className="work-item-thumbnail">
                       <a href={process.env.PUBLIC_URL}>
                         <img
-                          src={require("../../../assets/images/" + item.image)}
+                          src={require("..//assets/images/" + item.image)}
                           alt={item.title}
                         />
                       </a>

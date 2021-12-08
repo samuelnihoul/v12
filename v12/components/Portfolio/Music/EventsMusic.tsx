@@ -40,7 +40,7 @@ const EventsMusic = forwardRef((props, ref) => {
                     <div className="dark-overlay"></div>
                     <img
                       src={
-                        require("../../../assets/images/" + item.image)
+                        require("..//assets/images/" + item.image)
                       }
                       alt=""
                     />
@@ -63,7 +63,7 @@ const EventsMusic = forwardRef((props, ref) => {
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={require("../../../assets/images/" + photo)}
+                mainSrc={require("..//assets/images/" + photo)}
                 onCloseRequest={() => closeLightbox()}
               />
             )}

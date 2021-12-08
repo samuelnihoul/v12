@@ -30,7 +30,7 @@ const ConstructionSlider = ({ data }) => {
                 <div
                   className="slide-img"
                   style={{
-                    background: `url(${require("../../../assets/images/" +
+                    background: `url(${require("..//assets/images/" +
                       slide.image)}) center center / cover scroll no-repeat`,
                   }}
                 ></div>
@@ -41,12 +41,12 @@ const ConstructionSlider = ({ data }) => {
                 >
                   <div className="hero-text white-color">
                     <div className="container text-center">
-                        <h4 className="white-color font-400 letter-spacing-5 text-uppercase">
-                          {slide.tagline ? slide.tagline : ""}
-                        </h4>
-                        <h2 className="white-color font-700 text-uppercase">
-                          {slide.title}
-                        </h2>
+                      <h4 className="white-color font-400 letter-spacing-5 text-uppercase">
+                        {slide.tagline ? slide.tagline : ""}
+                      </h4>
+                      <h2 className="white-color font-700 text-uppercase">
+                        {slide.title}
+                      </h2>
                       {slide.buttons.length !== 0 ? (
                         <p className="text-center mt-30">
                           <SliderButtons buttons={slide.buttons} />

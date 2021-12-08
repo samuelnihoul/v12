@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-default-data.json";
-import img from "../../assets/images/architecture-img.jpg";
+import img from "/assets/images/architecture-img.jpg";
 
 const AboutArchitecture = forwardRef((props, ref) => (
   <section id="about" className="pb-80" >

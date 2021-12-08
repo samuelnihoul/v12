@@ -31,9 +31,8 @@ const OnlineShopSlider = ({ data }) => {
                 <div
                   className="slide-img"
                   style={{
-                    background: `url(${
-                      require("../../assets/images/" + slide.image)
-                    }) center center / cover scroll no-repeat`,
+                    background: `url(${require("/assets/images/" + slide.image)
+                      }) center center / cover scroll no-repeat`,
                   }}
                 ></div>
                 <div

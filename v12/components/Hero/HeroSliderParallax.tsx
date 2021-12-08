@@ -1,8 +1,8 @@
 import React from "react";
-import memphis1 from "../../assets/images/memphis-1.png";
-import memphis2 from "../../assets/images/memphis-2.png";
-import memphis3 from "../../assets/images/memphis-3.png";
-import memphis4 from "../../assets/images/memphis-4.png";
+import memphis1 from "/assets/images/memphis-1.png";
+import memphis2 from "/assets/images/memphis-2.png";
+import memphis3 from "/assets/images/memphis-3.png";
+import memphis4 from "/assets/images/memphis-4.png";
 
 const HeroSliderParallax = () => (
   <section className="remove-padding transition-none">
@@ -25,7 +25,7 @@ const HeroSliderParallax = () => (
         className="rev_slider fullwidthabanner"
         style={{ display: "none" }}
         data-version="5.4.1"
-      >    
+      >
         <ul>
           <li
             data-index="rs-3046"

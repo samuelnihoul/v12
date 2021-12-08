@@ -34,7 +34,7 @@ const PortfolioItem = ({
         }
       >
         <div className="dark-overlay"></div>
-        <img src={require("../../assets/images/" + image)} alt="" />
+        <img src={require("/assets/images/" + image)} alt="" />
         <div className="portfolio-wrap">
           <div className="portfolio-description">
             <h3 className="portfolio-title">{title}</h3>
@@ -56,7 +56,7 @@ const PortfolioItem = ({
               </a>
             </li>
             <li>
-              <a href={require("../../assets/images/" + image)}>
+              <a href={require("/assets/images/" + image)}>
                 <i className="icofont-link-alt"></i>
               </a>
             </li>

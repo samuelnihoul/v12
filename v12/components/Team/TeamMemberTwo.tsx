@@ -11,7 +11,7 @@ const TeamMemberTwo = ({ name, role, image, social, delay }) => {
     >
       <div className="team-member-container gallery-image-hover">
         <img
-          src={require("../../assets/images/" + image)}
+          src={require("/assets/images/" + image)}
           className="img-fluid"
           alt={image}
         />

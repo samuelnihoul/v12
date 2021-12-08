@@ -42,7 +42,7 @@ const BlogSlider = () => {
       </div>
       <div className="container">
         <div className="row">
-          <HeadingSection title="Our Blogs" tagline="Latest News" />
+          <HeadingSection title="Our Blogs" tagline="Latest News" classAppend={undefined} font={undefined} children={undefined} />
         </div>
         <div className="row mt-50">
           <div className="col-md-12 remove-padding">
@@ -52,7 +52,7 @@ const BlogSlider = () => {
                   <div className="post-img">
                     <img
                       className="img-fluid"
-                      src={require("../../assets/images/" + post.image)}
+                      src={"/assets/images/" + post.image}
                       alt=""
                     />
                   </div>

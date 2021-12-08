@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import dataAbout from "../../data/About/about-appstyle-data.json";
-import img from "../../assets/images/slides/iPhone-big.png";
+import img from "/assets/images/slides/iPhone-big.png";
 
 
 const AboutAppStyle = forwardRef((props, ref) => (

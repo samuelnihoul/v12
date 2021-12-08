@@ -8,7 +8,7 @@ import HeroSliderSection from "../../components/Hero/HeroSliderSection";
 import dataSmall from "../../data/Slider/small-business-data.json";
 import WhoWeAreTwo from "../../components/WhoWeAre/WhoWeAreTwo";
 import AboutUsOne from "../../components/AboutUs/AboutUsOne";
-import image from "../../assets/images/about-video-img.jpg";
+import image from "/assets/images/about-video-img.jpg";
 import CounterTwo from "../../components/Counters/CounterTwo";
 import OurTeamTwo from "../../components/Team/OurTeamTwo";
 import PriceTables from "../../components/PriceTables/PriceTables";

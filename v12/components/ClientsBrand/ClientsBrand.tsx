@@ -42,7 +42,7 @@ const ClientsBrand = ({ children, classAppend }) => {
                 <div className="client-logo" key={client.id}>
                   <img
                     className="img-fluid"
-                    src={require("../../assets/images/" + client.image)}
+                    src={require("/assets/images/" + client.image)}
                     alt={client.name}
                   />
                 </div>

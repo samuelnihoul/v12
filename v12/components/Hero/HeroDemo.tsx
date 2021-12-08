@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../../assets/images/background/parallax-bg-19.jpg";
+import bgImg from "/assets/images/background/parallax-bg-19.jpg";
 
 const HeroDemo = () => {
   return (

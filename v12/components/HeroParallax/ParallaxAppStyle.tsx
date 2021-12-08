@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
-import img from "../../assets/images/slides/home-bg-34.jpg";
-import imgWaves from "../../assets/images/slides/wave.svg";
-import imgPhone from "../../assets/images/slides/iPhone-01.png";
+import img from "/assets/images/slides/home-bg-34.jpg";
+import imgWaves from "/assets/images/slides/wave.svg";
+import imgPhone from "/assets/images/slides/iPhone-01.png";
 // import ReactWOW from "react-wow";
 
 const ParallaxAppStyle = forwardRef((props, ref) => (

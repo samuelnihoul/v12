@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Loader from "./../../components/Loader/Loader";
 import dataCreative from "../../data/Slider/creative-one-page-data.json";
-import serviceOneImg from "../../assets/images/onepage-bg-left.jpg";
+import serviceOneImg from "/assets/images/onepage-bg-left.jpg";
 import HeaderTwo from "../../components/Header/HeaderTwo";
 import HeroSliderSection from "../../components/Hero/HeroSliderSection";
 import OurServices from "../../components/OurServices/OurServices";

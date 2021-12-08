@@ -8,7 +8,7 @@ import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderTwo from "../../components/Hero/HeroSliderTwo";
 import WhoWeAreFive from "../../components/WhoWeAre/WhoWeAreFive";
 import AboutUsTwo from "../../components/AboutUs/AboutUsTwo";
-import image from "../../assets/images/about-video-img.jpg";
+import image from "/assets/images/about-video-img.jpg";
 import CounterTwo from "../../components/Counters/CounterTwo";
 import OurTeamThree from "../../components/Team/OurTeamThree";
 import PriceTablesThree from "../../components/PriceTables/PriceTablesThree";

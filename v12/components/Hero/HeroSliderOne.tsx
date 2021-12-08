@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import TextLoop from "react-text-loop";
-import bgImg from "../../assets/images/background/parallax-bg-5.jpg";
+import bgImg from "/assets/images/background/parallax-bg-5.jpg";
 import Canvas from "../../elements/Canvas";
 
 const HeroSliderOne = forwardRef((props, ref) => {

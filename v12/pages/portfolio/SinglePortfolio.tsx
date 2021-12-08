@@ -4,9 +4,9 @@ import dataSocial from "../../data/Social/social-footer.json";
 import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitlePortfolio from "../../components/PageTitle/PageTitlePortfolio";
-import img1 from "../../assets/images/portfolio/single-portfolio-1.jpg";
-import img2 from "../../assets/images/portfolio/single-portfolio-2.jpg";
-import img3 from "../../assets/images/portfolio/single-portfolio-3.jpg";
+import img1 from "/assets/images/portfolio/single-portfolio-1.jpg";
+import img2 from "/assets/images/portfolio/single-portfolio-2.jpg";
+import img3 from "/assets/images/portfolio/single-portfolio-3.jpg";
 
 import CTAOne from "../../components/CTA/CTAOne";
 import FooterOne from "../../components/Footer/FooterOne";

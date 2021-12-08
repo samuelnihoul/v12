@@ -68,35 +68,35 @@ const PortoflioSix = ({ filter, layout, columns, data, type, classAppend, space 
             >
               {type === "masonry"
                 ? data.map((item) => (
-                    <PortfolioItem
-                      title={item.title}
-                      category={item.category}
-                      image={item.image}
-                      links={item.links}
-                      key={item.id}
-                      groups={item.groups}
-                      columns={columns}
-                      type="masonry"
-                      openLightbox={openLightbox}
-                    />
-                  ))
+                  <PortfolioItem
+                    title={item.title}
+                    category={item.category}
+                    image={item.image}
+                    links={item.links}
+                    key={item.id}
+                    groups={item.groups}
+                    columns={columns}
+                    type="masonry"
+                    openLightbox={openLightbox}
+                  />
+                ))
                 : data.map((item) => (
-                    <ProductItem
-                      title={item.title}
-                      category={item.category}
-                      image={item.image}
-                      links={item.links}
-                      key={item.id}
-                      groups={item.groups}
-                      type="product"
-                      space={space}
-                      openLightbox={openLightbox}
-                    />
-                  ))}
+                  <ProductItem
+                    title={item.title}
+                    category={item.category}
+                    image={item.image}
+                    links={item.links}
+                    key={item.id}
+                    groups={item.groups}
+                    type="product"
+                    space={space}
+                    openLightbox={openLightbox}
+                  />
+                ))}
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={require("../../assets/images/" + photo)}
+                mainSrc={require("/assets/images/" + photo)}
                 onCloseRequest={() => closeLightbox()}
               />
             )}

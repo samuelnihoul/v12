@@ -39,7 +39,7 @@ const GalleryTravel = () => {
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={require("../../../assets/images/" + photo)}
+                mainSrc={require("..//assets/images/" + photo)}
                 onCloseRequest={() => closeLightbox()}
               />
             )}

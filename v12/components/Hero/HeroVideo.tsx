@@ -25,12 +25,12 @@ const HeroVideo = ({ data }) => {
         <div className="video-container">
           <div className="filter"></div>
           <video autoPlay loop className="fillWidth"
-            src={require("../../assets/images/" + data.video)}
+            src={require("/assets/images/" + data.video)}
 
           />
           <div className="poster hidden">
             <img
-              src={require("../../assets/images/" + data.image)}
+              src={require("/assets/images/" + data.image)}
               alt="video-img"
             />
           </div>

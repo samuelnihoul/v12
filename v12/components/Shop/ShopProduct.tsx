@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import dataProducts from "../../data/OnlineShop/basic-shop-data.json";
-import img1 from "../../assets/images/shop/single-product-01.jpeg";
-import img2 from "../../assets/images/shop/single-product-01.jpeg";
-import img3 from "../../assets/images/shop/single-product-01.jpeg";
-import img4 from "../../assets/images/shop/single-product-01.jpeg";
+import img1 from "/assets/images/shop/single-product-01.jpeg";
+import img2 from "/assets/images/shop/single-product-01.jpeg";
+import img3 from "/assets/images/shop/single-product-01.jpeg";
+import img4 from "/assets/images/shop/single-product-01.jpeg";
 import ShopItem from "./ShopItem";
 
 const ShopProduct = () => {
@@ -13,7 +13,7 @@ const ShopProduct = () => {
       return (
         <a href="!#">
           <img
-            src={require(`../../assets/images/shop/single-product-0${i + 1}.jpeg`)}
+            src={require(`/assets/images/shop/single-product-0${i + 1}.jpeg`)}
             alt=""
           />
         </a>

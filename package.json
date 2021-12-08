@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "@types/react-slick": "^0.23.7"
+  }
 }

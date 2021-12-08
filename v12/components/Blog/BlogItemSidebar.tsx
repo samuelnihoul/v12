@@ -31,7 +31,7 @@ const BlogItemSidebar = ({
       <div className="post-img">
         <img
           className="img-fluid"
-          src={require("../../assets/images/" + image)}
+          src={require("/assets/images/" + image)}
           alt=""
         />
       </div>

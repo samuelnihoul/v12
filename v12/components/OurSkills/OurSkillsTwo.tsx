@@ -1,5 +1,5 @@
 import React from "react";
-import serviceImg from "../../assets/images/startup-bg-left.jpg";
+import serviceImg from "/assets/images/startup-bg-left.jpg";
 import dataSkills from "../../data/OurSkills/skills-data.json";
 import ProgressBar from "../../elements/ProgressBar";
 
@@ -16,7 +16,7 @@ const OurSkillsTwo = ({ title, tagline }) => (
         <h2 className="text-uppercase font-700">{title}</h2>
         <h4 className="mt-10 line-height-26 default-color">{tagline}</h4>
         <div className="left-service-box pt-40 pb-20">
-          {dataSkills.filter((v,i) => i < 5).map((skill) => (
+          {dataSkills.filter((v, i) => i < 5).map((skill) => (
             <ProgressBar
               key={skill.id}
               title={skill.title}

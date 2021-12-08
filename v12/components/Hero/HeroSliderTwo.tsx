@@ -32,7 +32,7 @@ const HeroSliderTwo = ({ data }) => {
                 <div
                   className="slide-img"
                   style={{
-                    background: `url(${require("../../assets/images/" +
+                    background: `url(${require("/assets/images/" +
                       slide.image)}) center center / cover scroll no-repeat`,
                   }}
                 ></div>
@@ -44,11 +44,11 @@ const HeroSliderTwo = ({ data }) => {
                   <div className="hero-text white-color">
                     <div className="container text-center">
                       <h3 className="white-color font-400">
-                          {slide.tagline ? slide.tagline : ""}
-                        </h3>
-                        <h1 className="white-color text-uppercase font-700 letter-spacing-5">
-                          {slide.title}
-                        </h1>
+                        {slide.tagline ? slide.tagline : ""}
+                      </h3>
+                      <h1 className="white-color text-uppercase font-700 letter-spacing-5">
+                        {slide.title}
+                      </h1>
                       <h3 className="white-color font-400">
                         {slide.text ? parse(slide.text) : ""}
                       </h3>

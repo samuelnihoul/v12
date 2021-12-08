@@ -29,7 +29,7 @@ const ArchitectureSlider = forwardRef(({ data }, ref) => (
               <div
                 className="slide-img"
                 style={{
-                  background: `url(${require("../../assets/images/" +
+                  background: `url(${require("/assets/images/" +
                     slide.image)}) center center / cover scroll no-repeat`,
                 }}
               ></div>
