@@ -32,11 +32,6 @@
                         "id": 2.11,
                         "title": "About Us",
                         "link": "/about-us"
-                    },
-                    {
-                        "id": 2.12,
-                        "title": "About - Creative",
-                        "link": "/about-creative"
                     }
                 ]
             },
@@ -49,11 +44,6 @@
                         "id": 2.21,
                         "title": "Service Simple",
                         "link": "/service-simple"
-                    },
-                    {
-                        "id": 2.22,
-                        "title": "Service Creative",
-                        "link": "/service-creative"
                     }
                 ]
             },
@@ -66,11 +56,6 @@
                         "id": 2.31,
                         "title": "Contact Simple",
                         "link": "/contact-simple"
-                    },
-                    {
-                        "id": 2.32,
-                        "title": "Contact Creative",
-                        "link": "/contact-creative"
                     }
                 ]
             },
