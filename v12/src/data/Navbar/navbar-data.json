@@ -2,7 +2,20 @@
     {
         "id": 1,
         "title": "shop",
-        "link": "/shop-product"
+        "link": "/shop-product",
+        "megaMenu": false,
+        "subMenu": [
+            {
+                "id": 1.1,
+                "title": "Example Project",
+                "link": "/shop-product"
+            },
+            {
+                "id": 1.2,
+                "title": "Shop (Work In Progress)",
+                "link": "/shop-masonry"
+            }
+        ]
     },
     {
         "id": 2,
