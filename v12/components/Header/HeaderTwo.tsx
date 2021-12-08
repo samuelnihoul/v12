@@ -54,7 +54,7 @@ const HeaderTwo = ({ social, scrollToSection }) => {
           >
             <i className="icofont-navigation-menu"></i>
           </button>
-          <MainLogo showMenu={showMenu} />
+          <MainLogo showMenu={showMenu} collapse={null} />
           <div className="collapse navbar-collapse" id="navbar-menu">
             <Scrollspy
               items={[
@@ -73,11 +73,11 @@ const HeaderTwo = ({ social, scrollToSection }) => {
               {dataNav.map((item) => (
                 <li className="scroll navbar-item" key={item.id}>
                   <Link
-                    className="nav-link"
-                    to={item.link}
-                    onClick={(e) => scrollToSection(e, item.link)}
-                  >
-                    {item.title}
+
+                    href={item.link}
+
+                  ><a onClick={(e) => scrollToSection(e, item.link)} className="nav-link">
+                      {item.title}</a>
                   </Link>
                 </li>
               ))}

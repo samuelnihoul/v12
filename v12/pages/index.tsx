@@ -1,81 +1,49 @@
-import React from "react";
-
-import dataDemos from "../data/Demos/demos-data.json";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Loader from "../components/Loader/Loader";
-import HeroDemo from "../components/Hero/HeroDemo";
-import CTAThree from "../components/CTA/CTAThree";
-import FooterCopyright from "../components/Footer/FooterCopyright";
-import DemoParallax from "./DemoParallax";
+import dataStartup from "../data/Slider/startup-business-data.json";
+import serviceOneImg from "../public/video/pines.png";
+import HeaderOne from "../components/Header/HeaderOne";
+import HeroVideo from "../components/Hero/HeroVideo";
+import Welcome from "../components/WelcomeSection/Welcome";
+import OurServices from "../components/OurServices/OurServices";
+import CounterOne from "../components/Counters/CounterOne";
+import OurServicesTwo from "../components/OurServices/OurServicesTwo";
+import TestimonialsTwo from "../components/Testimonials/TestimonialsTwo";
+import BlogSlider from "../components/Blog/BlogSlider";
+import FooterOne from "../components/Footer/FooterOne";
+import Portfolio from "../components/Portfolio/Portfolio";
+import HeadingSection from "../components/HeadingSection/HeadingSection";
 
-const Demos = () => {
+const StartupBusiness = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <Loader>
-      <HeroDemo />
-      <section className="demos">
-        <div className="container">
-          <DemoParallax />
-          <div className="row">
-            <div className="col-sm-8 section-heading">
-              <h2 className="font-700">Multipurpose Home Pages</h2>
-            </div>
-          </div>
-          <div className="row mt-50 main-demos">
-            {dataDemos.map((item) => (
-              <div className="col-md-6" key={item.id}>
-                <div className="product">
-
-
-                  <div className="product-wrap">
-                    <img
-                      src={require("../assets/images/" + item.image)}
-                      className="img-fluid"
-                      alt="team-01"
-                    />
-                    <div className="product-caption">
-                      <div className="product-description text-center">
-                        <div className="product-description-wrap">
-                          <div className="product-title">
-                            <a
-                              href={`${process.env.PUBLIC_URL}\\${item.link}`}
-                              className="btn btn-color btn-secondary btn-animate"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span>
-                                Live Preview
-                                <i className="icofont-layout"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-detail text-center preview-box">
-                    <h4>{item.title}</h4>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <CTAThree
-        typeButton={null}
-        tagline="FOR BUSINESS. PORTFOLIO & PHOTOGRAPHY"
-        title="Create Your Stunning HTML Website Quickly and Easily"
-        textButton="Buy Template"
-        linkButton="https://themeforest.net/item/scoda-multipurpose-one-page-reactjs-template/26852224"
-        bgButton="btn-white"
-        bg="dark"
-      >
-        We do not tell you our story. We write it together. Partnering with us
-        means a seat at
-        <br /> the table where you will be heard.
-      </CTAThree>
-      <FooterCopyright />
+      <HeaderOne type={undefined} />
+      <HeroVideo data={dataStartup} />
+      <Welcome title="What We Do" tagline="The way we work is harmonious">
+        We are a CO2eq offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?).<br /><br />Buy and sell offsets with peace: get certified with ease and funded with grace.
+      </Welcome>
+      <OurServices
+        title="Our Focus"
+        tagline="We help implement your dreams of ecoharmony."
+        serviceImg={serviceOneImg}
+        children={null}
+      />
+      <CounterOne type="wide" bg={undefined} />
+      <OurServicesTwo title="About Us" tagline="Part of the solution" />
+      <Portfolio columns="4" layout="wide" filter="true" space={null} classAppend={null} items={null}>
+        <HeadingSection title="Latest Projects" tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
+      </Portfolio>
+      <TestimonialsTwo title="Testimonials" tagline="Happy clients" />
+      <BlogSlider />
+      <FooterOne />
     </Loader>
   );
 };
 
-export default Demos;
+export default StartupBusiness;

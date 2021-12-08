@@ -8,7 +8,7 @@ const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
     items.push(item.slice(i, i + itemsPerCol));
   }
 
-  const handleOpen = (e) => {
+  const handleOpen = (e: any) => {
     e.preventDefault();
     const el = e.target;
     if (el.nextSibling) {
@@ -37,7 +37,7 @@ const MegaDropdown = ({ item, itemsPerCol, columnTitle }) => {
               <h6 className="title" onClick={e => handleOpen(e)}>{columnTitle}</h6>
               <div className="content animated">
                 <ul className="menu-col">
-                  {val.map((value, index) => (
+                  {val.map((_value: any, index: React.Key) => (
                     <li key={index}>
                       <Link href={val[index]["link"]}><a>{val[index]["title"]}</a></Link>
                     </li>

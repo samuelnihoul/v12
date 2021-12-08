@@ -66,10 +66,10 @@ const CartMenu = () => {
             <strong>Total</strong>: $0.00
           </span>
           <Link
-            to={`${process.env.PUBLIC_URL}/shop-cart`}
-            className="btn btn-light btn-cart"
-          >
-            Cart
+            href={`${process.env.PUBLIC_URL}/shop-cart`}
+
+          ><a className="btn btn-light btn-cart">Cart</a>
+
           </Link>
         </li>
       </ul>
