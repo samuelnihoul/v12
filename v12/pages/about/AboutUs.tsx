@@ -13,23 +13,23 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const AboutUs = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleAbout
       title="About Us"
       tagline="Creative Digital Agency since 2004"
     />
     <WhoWeAreSeven />
-    <OurSkillsTwo 
-        title="Our Skills"
-        tagline="We develop big ideas that sell"
+    <OurSkillsTwo
+      title="Our Skills"
+      tagline="We develop big ideas that sell"
     />
-    <CounterOne type="wide"/>
-    <OurServicesThree 
-        title="About Us"
-        tagline="Part of your success"
+    <CounterOne type="wide" />
+    <OurServicesThree
+      title="About Us"
+      tagline="Part of your success"
     />
     <OurTeamTwo title="MEET OUR TEAM" tagline="WE ARE STRONGER" />
-    <TestimonialsOne 
+    <TestimonialsOne
       title="Testimonials"
       tagline="Happy clients"
     />
