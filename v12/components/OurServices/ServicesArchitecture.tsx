@@ -23,7 +23,7 @@ const ServicesArchitecture = ({ title, tagline, children }) => (
             className="col-md-4 feature-box text-left mb-50 col-sm-6"
           >
             <div className="float-left col-md-3">
-              <Icofont icon={service.icon} className="font-50px default-icon" />
+              <i className={`icofont-${service.icon} font-50px default-icon`} />
             </div>
             <div className="float-right col-md-9">
               <h5 className="mt-0 text-uppercase white-color">

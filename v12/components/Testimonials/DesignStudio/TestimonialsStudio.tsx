@@ -53,10 +53,7 @@ const TestimonialsStudio = () => {
                         </div>
                         <div className="content">
                           <div className="text">
-                            <Icofont
-                              icon="quote-left"
-                              className="font-20px default-color mt-20 mr-10"
-                            />
+                            <i className={"icofont-quote-left font-20px default-color mt-20 mr-10"} />
                             <span>{testimonial.text}</span>
                           </div>
                         </div>

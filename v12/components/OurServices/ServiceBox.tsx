@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const ServiceBox = ({ icon, title, children, index }) => (
   <div
     className="col-md-12 feature-box text-left mb-50 col-sm-6"
@@ -9,7 +8,7 @@ const ServiceBox = ({ icon, title, children, index }) => (
     data-aos-duration={1000}
   >
     <div className="float-left">
-      <Icofont icon={icon} className="font-60px default-icon" />
+      <i className={`icofont-${icon} font-60px default-icon`} />
     </div>
     <div className="float-right">
       <h5 className="mt-0">{title}</h5>

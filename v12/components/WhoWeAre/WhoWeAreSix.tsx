@@ -18,7 +18,7 @@ const WhoWeAreSix = ({ title, tagline }) => (
             data-aos-delay={`${i}00`}
             data-aos-duration={700}
           >
-            <Icofont icon={service.icon} className="font-50px gradient-color" />
+            <i className={`icofont-${service.icon} font-50px gradient-color`} />
             <h3>{service.title}</h3>
             <p>{service.text}</p>
           </div>

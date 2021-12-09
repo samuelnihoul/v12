@@ -13,10 +13,10 @@ const WhoWeAreFive = () => (
             data-aos-delay={`${i}00`}
             data-aos-duration={700}
           >
-            <Icofont
-              icon={service.icon}
+            <i
+
               className={
-                "font-40px light-icon circle-icon fade-icon " + service.classes
+                ` font-40px light-icon circle-icon fade-icon ${service.classes} icofont-${service.icon}`
               }
             />
             <h4 className="upper-case">{service.title}</h4>

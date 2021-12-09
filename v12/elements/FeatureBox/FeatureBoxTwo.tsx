@@ -9,7 +9,7 @@ const FeatureBoxTwo = ({ icon, title, color, children, index }) => (
     data-aos-duration={1000}
   >
     <div className="float-left">
-      <Icofont icon={icon} className="font-50px default-icon" />
+      <i className={`icofont-${icon} font-50px default-icon`} />
     </div>
     <div className={"float-right " + (color === "white" ? "white-color" : "")}>
       <h5 className="mt-0 upper-case">{title}</h5>

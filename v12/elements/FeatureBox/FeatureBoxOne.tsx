@@ -9,7 +9,7 @@ const FeatureBoxOne = ({ icon, title, children, index }) => (
     data-aos-duration={1000}
   >
     <div className="float-left">
-      <Icofont icon={icon} className="font-60px white-icon" />
+      <i className={`icofont-${icon} font-60px white-icon`} />
     </div>
     <div className="float-right">
       <h3 className="mt-0 cardo-font">{title}</h3>

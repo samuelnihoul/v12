@@ -24,7 +24,7 @@ const CounterTwo = ({ bg, type }) => {
               data-aos={"fade-up"}
               data-aos-easing={"ease-in-sine"}
             >
-              <Icofont icon={counter.icon} className="default-icon font-30px" />
+              <i className={`icofont-${counter.icon} default-icon font-30px`} />
               <h2
                 className={
                   "count font-700 " + (bg === "white-bg" ? "" : "white-color")

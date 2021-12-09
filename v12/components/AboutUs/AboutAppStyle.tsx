@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import dataAbout from "../../data/About/about-appstyle-data.json";
 const img = "/images/slides/iPhone-big.png";
 
-
 const AboutAppStyle = forwardRef((props, ref) => (
   <section className="main-section white-bg" id="feature" >
     <div className="container">
@@ -32,10 +31,7 @@ const AboutAppStyle = forwardRef((props, ref) => (
                   data-aos-easing={"ease-in-sine"}
                 >
                   <div className="float-sm-left text-center text-sm-start">
-                    <Icofont
-                      icon={feature.icon}
-                      className="font-40px red-icon"
-                    />
+                    <i className={`icofont-${feature.icon} font-40px red-icon`} />
                   </div>
                   <div className="float-none float-sm-right">
                     <h4 className="mt-0">{feature.title}</h4>
@@ -66,10 +62,7 @@ const AboutAppStyle = forwardRef((props, ref) => (
                   data-aos-easing={"ease-in-sine"}
                 >
                   <div className="float-sm-right text-center text-sm-end">
-                    <Icofont
-                      icon={feature.icon}
-                      className="font-40px red-icon"
-                    />
+                    <i className={`icofont-${feature.icon} font-40px red-icon`} />
                   </div>
                   <div className="float-sm-left">
                     <h4 className="mt-0">{feature.title}</h4>

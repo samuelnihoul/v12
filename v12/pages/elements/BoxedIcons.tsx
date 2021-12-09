@@ -28,10 +28,7 @@ const BoxedIcons = () => (
                 key={service.id}
                 className="col-md-4 feature-box text-center radius-icon"
               >
-                <Icofont
-                  icon={service.icon}
-                  className="font-50px default-icon"
-                />
+                <i className={`icofont-${service.icon} font-50px default-icon`} />
                 <h4 className="text-uppercase">{service.title}</h4>
                 <p>{service.text}</p>
               </div>

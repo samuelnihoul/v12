@@ -18,20 +18,14 @@ const ServicesConstruction = () => (
               <div className="text-center mb-50 main-box">
                 <div className="box-front height-300px white-bg">
                   <div className="content-wrap">
-                    <Icofont
-                      icon={service.icon}
-                      className="font-40px dark-color"
-                    />
+                    <i className={`icofont-${service.icon} font-40px dark-color`} />
                     <h3 className="font-600">{service.title}</h3>
                     <p className="font-400 mt-20 dark-color">{service.text}</p>
                   </div>
                 </div>
                 <div className="box-back height-300px yellow-bg">
                   <div className="content-wrap">
-                    <Icofont
-                      icon={service.icon}
-                      className="font-40px dark-color"
-                    />
+                    <i className={`icofont-${service.icon} font-40px dark-color`} />
                     <h3 className="font-600">{service.title}</h3>
                     <p className="font-400 mt-20 dark-color">{service.text}</p>
                   </div>

@@ -31,10 +31,7 @@ const WhoStudioTwo = () => (
             className="col-md-3 feature-box text-left radius-icon"
             key={service.id}
           >
-            <Icofont
-              icon={service.icon}
-              className="font-50px gradient-color"
-            />
+            <i className={`icofont-${service.icon} font-50px gradient-color`} />
             <h4 className="text-uppercase white-color josefin-font">
               {service.title}
             </h4>

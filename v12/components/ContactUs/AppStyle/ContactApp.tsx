@@ -48,10 +48,7 @@ const ContactApp = forwardRef((props, ref) => (
           <div className="col-md-4">
             <div className="col-inner spacer dark-bg">
               <div className="text-center white-color">
-                <Icofont
-                  icon="google-iphone"
-                  className="font-50px white-icon"
-                />
+                <i className={"icofont-google-iphone font-50px white-icon"} />
                 <h2>Call Us</h2>
                 <p className="mb-0">(+1) 613 555-0105</p>
                 <p>(+1) 613 555-0105</p>

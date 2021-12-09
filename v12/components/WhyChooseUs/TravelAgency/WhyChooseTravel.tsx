@@ -16,10 +16,7 @@ const WhyChooseTravel = () => (
             className="col-md-3 feature-box text-center col-sm-6"
             key={feature.id}
           >
-            <Icofont
-              icon={feature.icon}
-              className="font-40px dark-icon white-bg-icon circle-icon fade-icon"
-            />
+            <i className={`icofont-${feature.icon} font-40px dark-icon white-bg-icon circle-icon fade-icon`} />
             <h5 className="white-color">{feature.title}</h5>
             <p className="white-color">{feature.text}</p>
           </div>
