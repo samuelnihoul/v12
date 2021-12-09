@@ -23,7 +23,7 @@ const TeamArchitecture = ({ title, tagline, children }) => (
             <div className="member text-center">
               <div className="team-member-container">
                 <img
-                  src={require("/assets/images/" + member.image)}
+                  src={"assets/images/" + member.image}
                   className="img-fluid"
                   alt="team-01"
                 />

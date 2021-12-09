@@ -25,7 +25,7 @@ const BlogStandard = ({ sidebar }) => {
                 <div className="post-img">
                   <img
                     className="img-fluid"
-                    src={require("/assets/images/" + featuredPost.image)}
+                    src={"assets/images/" + featuredPost.image}
                     alt=""
                   />
                 </div>

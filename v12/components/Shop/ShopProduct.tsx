@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import dataProducts from "../../data/OnlineShop/basic-shop-data.json";
-import img1 from "/assets/images/shop/single-product-01.jpeg";
-import img2 from "/assets/images/shop/single-product-01.jpeg";
-import img3 from "/assets/images/shop/single-product-01.jpeg";
-import img4 from "/assets/images/shop/single-product-01.jpeg";
+const img1 = "/images/shop/single-product-01.jpeg";
+const img2 = "/images/shop/single-product-01.jpeg";
+const img3 = "/images/shop/single-product-01.jpeg";
+const img4 = "/images/shop/single-product-01.jpeg";
 import ShopItem from "./ShopItem";
 
 const ShopProduct = () => {

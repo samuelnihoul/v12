@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import img from "..//assets/images/singer-img.png";
+const img = "/assets/images/singer-img.png";
 
 const AboutMusic = forwardRef((props, ref) => (
   <section id="about" >

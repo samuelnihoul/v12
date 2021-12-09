@@ -101,7 +101,7 @@ const Portfolio =
               </div>
               {isOpen && (
                 <Lightbox
-                  mainSrc={require("/assets/images/" + photo)}
+                  mainSrc={"/assets/images/" + photo}
                   onCloseRequest={() => closeLightbox()}
                 />
               )}

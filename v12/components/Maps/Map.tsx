@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMap from "google-map-react";
 import Marker from "../../elements/Marker";
-import pinImg from "/assets/images/pin.png";
+const pinImg = "/images/pin.png";
 
 const Map = ({ classAppend }) => {
   const defaultProps = {

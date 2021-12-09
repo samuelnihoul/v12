@@ -1,10 +1,8 @@
 import React from "react";
-import logoWhite from "../assets/images/logo-white.png";
-import logoBlack from "../assets/images/logo-black.png";
-import D21 from '../assets/images/D21.png'
-import D23 from '../assets/images/D23.png'
+const D21 = "/images/D21.png"
+const D23 = "/images/D23.png"
 
-const MainLogo = ({ collapse, showMenu }) => {
+function MainLogo({ collapse, showMenu }) {
   return (
     <div className="navbar-header">
       <div className="logo">
@@ -15,6 +13,6 @@ const MainLogo = ({ collapse, showMenu }) => {
       </div>
     </div>
   );
-};
+}
 
 export default MainLogo;

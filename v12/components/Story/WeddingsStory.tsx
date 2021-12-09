@@ -1,7 +1,7 @@
 import React from "react";
 
-import imgGroom from "/assets/images/andy-img.jpg";
-import imgBridal from "/assets/images/anna-img.jpg";
+const imgGroom = "/images/andy-img.jpg";
+const imgBridal = "/images/anna-img.jpg";
 
 const WeddingsStory = () => (
   <section className="main-section">

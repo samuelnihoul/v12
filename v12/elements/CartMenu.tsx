@@ -45,7 +45,7 @@ const CartMenu = () => {
           <li key={item.id}>
             <a href="!#" onClick={(e) => e.preventDefault()} className="photo">
               <img
-                src={require("../assets/images/" + item.photo)}
+                src={"assets/images/" + item.photo}
                 className="cart-thumb"
                 alt=""
               />

@@ -5,7 +5,7 @@ const TestimonialItem = ({ avatar, name, role, children }) => (
     <div className="testimonial-content">
       <img
         className="img-fluid rounded-circle"
-        src={require("/assets/images/" + avatar)}
+        src={"/assets/images/" + avatar}
         alt="avatar-1"
       />
       <h5>{name}</h5>

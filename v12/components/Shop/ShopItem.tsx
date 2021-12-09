@@ -7,7 +7,7 @@ const ShopItem = ({ layout, image, title, currency, price, oldPrice }) => (
     <div className="product">
       <div className="product-wrap">
         <img
-          src={require("/assets/images/" + image)}
+          src={"assets/images/" + image}
           className="img-fluid"
           alt="team-01"
         />

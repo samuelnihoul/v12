@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import img from "/assets/images/chef-img.png";
+const img = "/images/chef-img.png";
 
 const TheChefs = forwardRef((props, ref) => (
   <section className="dark-bg pb-0 pt-100" id="chefs" >

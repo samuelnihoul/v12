@@ -3,7 +3,7 @@ import WelcomeSubsection from "./WelcomeSubsection";
 import WelcomeFeatures from "./WelcomeFeatures";
 import HeadingThree from "../../components/HeadingSection/HeadingThree";
 import OurSkillsOne from "../OurSkills/OurSkillsOne";
-import image from "/assets/images/about-bg-left.jpg";
+const image = "/images/about-bg-left.jpg";
 import TeamSlider from "../Team/TeamSlider";
 
 const WelcomeTwo = ({ toggler, handleToggler }) => (

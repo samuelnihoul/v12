@@ -9,7 +9,7 @@ const ProductItem = ({ image, links, openLightbox, space }) => (
     }
   >
     <div className="product-wrap">
-      <img src={require("/assets/images/" + image)} alt="" />
+      <img src={"assets/images/" + image} alt="" />
       <div className="product-caption">
         <div className="product-description text-center">
           <div className="product-description-wrap">

@@ -1,5 +1,5 @@
 import React from "react";
-import serviceImg from "/assets/images/startup-bg-left.jpg";
+const serviceImg = "/images/startup-bg-left.jpg";
 import dataSkills from "../../data/OurSkills/skills-data.json";
 import ProgressBar from "../../elements/ProgressBar";
 

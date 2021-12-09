@@ -15,7 +15,7 @@ const ManAccesoriesShop = () => (
             <div className="product">
               <div className="product-wrap">
                 <img
-                  src={require("/assets/images/" + item.image)}
+                  src={"assets/images/" + item.image}
                   className="img-fluid"
                   alt="team-01"
                 />

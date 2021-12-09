@@ -39,7 +39,7 @@ const classNameesGym = forwardRef((props, ref) => {
                   <div className="portfolio gallery-image-hover">
                     <div className="dark-overlay"></div>
                     <img
-                      src={require("/assets/images/" + item.image)}
+                      src={"assets/images/" + item.image}
                       alt=""
                     />
                     <div className="portfolio-wrap">
