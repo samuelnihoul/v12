@@ -16,24 +16,23 @@ const AboutUs = () => (
     <HeaderOne type={undefined} />
     <PageTitleAbout
       title="About Us"
-      tagline="Creative Digital Agency since 2004"
+      tagline="Driving innovation in voluntary carbon offsets since 2021"
     />
     <WhoWeAreSeven />
     <OurSkillsTwo
       title="Our Skills"
-      tagline="We develop big ideas that sell"
+      tagline="We help ambitious climate fixers to make a tangible impact"
     />
-    <CounterOne type="wide" />
+    <CounterOne type="wide" bg={undefined} />
     <OurServicesThree
       title="About Us"
       tagline="Part of your success"
     />
-    <OurTeamTwo title="MEET OUR TEAM" tagline="WE ARE STRONGER" />
+    <OurTeamTwo title="MEET OUR TEAM" tagline="WE ARE STRONGER" children={undefined} />
     <TestimonialsOne
       title="Testimonials"
-      tagline="Happy clients"
-    />
-    <ClientsBrand />
+      tagline="Happy clients" font={undefined} />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

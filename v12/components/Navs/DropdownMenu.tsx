@@ -37,10 +37,10 @@ const DropdownMenu = () => {
             className={
               "dropdown nav-item " + (dropdown.megaMenu === true ? "megamenu-fw" : "")
             }
-            onClick={(e) => handleHover(e)}
+            // onClick={(e) => handleHover(e)}
             key={i}
           >
-            <a href="index" className="dropdown-toggle nav-link" data-toggle="dropdown">
+            <a href={dropdown.link} className="dropdown-toggle nav-link" data-toggle="dropdown">
               {dropdown.title}
             </a>
             {dropdown.megaMenu ? (

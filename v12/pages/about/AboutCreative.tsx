@@ -22,7 +22,7 @@ const AboutCreative = () => {
         toggler={toggler}
         sources={["https://www.youtube.com/watch?v=sU3FkzUKHXU"]}
       />
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <PageTitleAbout
         title="About Creative"
         tagline="Creative Digital Agency since 2004"

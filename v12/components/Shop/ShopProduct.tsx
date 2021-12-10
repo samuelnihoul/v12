@@ -13,7 +13,7 @@ const ShopProduct = () => {
       return (
         <a href="!#">
           <img
-            src={require(`/assets/images/shop/single-product-0${i + 1}.jpeg`)}
+            src={`/assets/images/shop/single-product-0${i + 1}.jpeg`}
             alt=""
           />
         </a>

@@ -27,10 +27,12 @@ const DropdownItem = ({ item }) => {
           <Link
 
             data-toggle="dropdown"
-            href={process.env.PUBLIC_URL + val.link}
+            href={val.link}
 
           >
-            <a onClick={(e) => handleOpen(e)} className={"dropdown-item " + (val.subMenu ? "dropdown-toggle" : null)}>{val.title}</a>
+            <a
+              //onClick={ (e) => handleOpen(e)}
+              className={"dropdown-item " + (val.subMenu ? "dropdown-toggle" : null)}>{val.title}</a>
           </Link>
           {val.subMenu ? <DropdownSubItem item={val.subMenu} /> : null}
         </li>
