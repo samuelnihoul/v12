@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "shop",
+        "link": "/shop",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": [
+            {
+                "id": 1.1,
+                "title": "Shop",
+                "link": "/shop",
+                "subMenu": []
+            },
+            {
+                "id": 1.2,
+                "title": "Example product",
+                "link": "/shop/SingleProduct",
+                "subMenu": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "about",
+        "link": "/about",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    },
+    {
+        "id": 3,
+        "title": "contact",
+        "link": "/contact",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    }
+]
