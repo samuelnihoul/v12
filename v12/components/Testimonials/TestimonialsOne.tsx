@@ -28,8 +28,7 @@ const TestimonialsOne = ({ title, tagline, font }) => {
             title={title}
             tagline={tagline}
             classAppend="white-color"
-            font={font}
-          />
+            font={font} children={undefined} />
         </div>
         <div className="row">
           <div className="col-md-12">

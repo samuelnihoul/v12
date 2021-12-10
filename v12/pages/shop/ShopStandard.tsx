@@ -7,9 +7,9 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ShopStandard = () => (
   <Loader>
-    <HeaderOne />
-    <PageTitleShop title="Shop Standard" />
-    <ShopContent layout="standard" pagination="true"/>
+    <HeaderOne type={undefined} />
+    <PageTitleShop title="Shop Standard" tagline={undefined} />
+    <ShopContent layout="standard" pagination="true" />
     <FooterOne />
   </Loader>
 );

@@ -14,13 +14,13 @@ const GalleryItem = ({ image, link, openLightbox }) => (
               href={`/assets/images/${link}`}
               onClick={(e) => openLightbox(e, image)}
             >
-              <i className="icofont-plus" className="font-40px"></i>
+              <i className="icofont-plus font-40px"></i>
             </a>
           </li>
         </ul>
       </div>
     </div>
-  </li>
+  </li >
 );
 
 export default GalleryItem;

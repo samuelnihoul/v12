@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const BlogItemMasonry = ({ id, image, title, published, excerpt }) => {
+const BlogItemMasonry = ({ id, image, title, published, excerpt, link, slides, type }) => {
 
   const blogURL = `/blog/${title
     .replace(/\//g, "-")

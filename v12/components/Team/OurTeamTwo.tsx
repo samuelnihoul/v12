@@ -7,7 +7,7 @@ const OurTeamTwo = ({ title, tagline, children }) => (
   <section className="white-bg" id="team" >
     <div className="container">
       <div className="row">
-        <HeadingSection title={title} tagline={tagline} />
+        <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
       <div className="row mt-50">
         {teamData.map((member, i) => (
@@ -18,12 +18,13 @@ const OurTeamTwo = ({ title, tagline, children }) => (
             image={member.image}
             social={member.social}
             delay={i + 3}
+            removePadding={null}
           />
         ))}
       </div>
     </div>
   </section>
 
-));
+);
 
 export default OurTeamTwo;

@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import ContactFormFour from "./ContactFormFour";
 import HeadingTwo from "../HeadingSection/HeadingTwo";
 
-const ContactRestaurant = forwardRef((props, ref) => (
+const ContactRestaurant = (props, ref) => {
   <section className="contact-us pb-140" id="bookAtable" >
     <div className="container">
       <div className="row">
@@ -15,6 +15,6 @@ const ContactRestaurant = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default ContactRestaurant;

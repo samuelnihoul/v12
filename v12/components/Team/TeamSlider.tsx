@@ -4,7 +4,7 @@ import dataTeam from "../../data/Team/team-data.json";
 
 const TeamSlider = () => {
   const params = {
-    effect: "fade",
+    effect: "fade" as const,
     autoplay: {
       delay: 2500
     },

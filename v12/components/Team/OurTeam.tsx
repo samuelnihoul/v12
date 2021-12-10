@@ -17,7 +17,7 @@ const OurTeam = ({ title, tagline, bg, extraSpace }) => (
       ""
     )}
     <div className="row">
-      <HeadingSection title={title} tagline={tagline} />
+      <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
     </div>
     <div className="container-fluid">
       <div className="row mt-50">

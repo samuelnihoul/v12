@@ -7,7 +7,7 @@ const TeamArchitecture = ({ title, tagline, children }) => (
   <section className="white-bg" id="team" >
     <div className="container">
       <div className="row">
-        <HeadingSection title={title} tagline={tagline} />
+        <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
     </div>
     <div className="container">
@@ -53,6 +53,6 @@ const TeamArchitecture = ({ title, tagline, children }) => (
       </div>
     </div>
   </section >
-));
+);
 
 export default TeamArchitecture;

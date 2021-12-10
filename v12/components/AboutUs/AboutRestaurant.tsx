@@ -6,7 +6,7 @@ const img3 = "/images/food-img-4.png";
 const img4 = "/images/food-img-01.jpg";
 const img5 = "/images/food-img-02.jpg";
 
-const AboutRestaurant = forwardRef((props, ref) => {
+const AboutRestaurant = (props, ref) => {
   useLax();
   return (
     <section className="main-section dark-bg" id="about" >
@@ -131,6 +131,6 @@ const AboutRestaurant = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default AboutRestaurant;

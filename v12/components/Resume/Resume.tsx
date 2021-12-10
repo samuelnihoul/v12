@@ -5,7 +5,7 @@ import dataExperience from "../../data/Carousel/experience-resume-data.json";
 import dataEducation from "../../data/Carousel/education-resume-data.json";
 
 
-const Resume = forwardRef((props, ref) => {
+const Resume = (props, ref) => {
   const settings = {
     className: "resume-slider",
     slidesToShow: 2,
@@ -91,6 +91,6 @@ const Resume = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default Resume;

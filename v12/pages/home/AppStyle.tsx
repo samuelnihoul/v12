@@ -13,11 +13,11 @@ import SubscribeApp from "../../components/Subscribe/AppStyle/SubscribeApp";
 import FooterTwo from "../../components/Footer/FooterTwo";
 
 const AppStyle = () => {
-  const home = useRef();
-  const feature = useRef();
-  const pricing = useRef();
-  const review = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const feature = useRef(null);
+  const pricing = useRef(null);
+  const review = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

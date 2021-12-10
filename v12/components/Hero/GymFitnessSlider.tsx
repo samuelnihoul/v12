@@ -3,7 +3,7 @@ import Swiper from "react-id-swiper";
 import 'swiper/swiper-bundle.css';
 import SliderButtons from "../../elements/SliderButtons/SliderButtons";
 
-const GymFitnessSlider = forwardRef(({ data }, ref) => {
+const GymFitnessSlider = ({ data }, ref) => {
   const params = {
     loop: true,
     navigation: {
@@ -64,6 +64,6 @@ const GymFitnessSlider = forwardRef(({ data }, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default GymFitnessSlider;

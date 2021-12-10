@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import SliderButtons from "../../elements/SliderButtons/SliderButtons";
 
-const RestaurantSlider = forwardRef(({ data }, ref) => (
+const RestaurantSlider = ({ data }, ref) => {
   <section className="pt-0 pb-0" id="home" >
     <div className="slider-bg flexslider">
       <ul className="slides">
@@ -45,6 +45,6 @@ const RestaurantSlider = forwardRef(({ data }, ref) => (
       </ul>
     </div>
   </section>
-));
+}
 
 export default RestaurantSlider;

@@ -7,9 +7,9 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ShopFullwidth = () => (
   <Loader>
-    <HeaderOne />
-    <PageTitleShop title="Shop Fullwidth" />
-    <ShopContent layout="fullwidth" pagination="true"/>
+    <HeaderOne type={undefined} />
+    <PageTitleShop title="Shop Fullwidth" tagline={undefined} />
+    <ShopContent layout="fullwidth" pagination="true" />
     <FooterOne />
   </Loader>
 );

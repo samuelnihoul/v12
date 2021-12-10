@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import ContactForm from "./ContactForm";
 import Map from "../Maps/Map";
 
-const ContactUs = forwardRef((props, ref) => (
+const ContactUs = (props, ref) => {
   <section className="contact-us white-bg" id="contact" >
     <div className="container">
       <div className="clearfix">
@@ -15,6 +15,6 @@ const ContactUs = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default ContactUs;

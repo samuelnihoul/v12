@@ -3,7 +3,7 @@ import TextLoop from "react-text-loop";
 const bgImg = "/images/background/parallax-bg-5.jpg";
 import Canvas from "../../elements/Canvas";
 
-const HeroSliderOne = forwardRef((props, ref) => {
+const HeroSliderOne = (props, ref) => {
 
   const tags = ["HELLO", "I'M", "CREATIVE", "DESIGNER", "&", "FRONT-END DEVELOPER"];
 
@@ -38,6 +38,6 @@ const HeroSliderOne = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default HeroSliderOne;

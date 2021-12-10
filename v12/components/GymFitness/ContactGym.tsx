@@ -2,7 +2,7 @@ import React, { useState, forwardRef } from "react";
 
 import Map from "../Maps/Map";
 
-const ContactGym = forwardRef((props, ref) => {
+const ContactGym = (props, ref) => {
   const [inputs, setInputs] = useState({});
 
   const handleInputChange = (e) => {
@@ -85,6 +85,6 @@ const ContactGym = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default ContactGym;

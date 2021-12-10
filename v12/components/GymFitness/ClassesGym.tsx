@@ -4,7 +4,7 @@ import "react-image-lightbox/style.css";
 import dataPortfolio from "../../data/Portfolio/portfolio-gym-data.json";
 
 
-const classNameesGym = forwardRef((props, ref) => {
+const classNameesGym = (props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photo, setPhoto] = useState(0);
 
@@ -76,6 +76,6 @@ const classNameesGym = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default classNameesGym;

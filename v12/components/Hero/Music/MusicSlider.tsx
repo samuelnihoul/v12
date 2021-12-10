@@ -3,7 +3,7 @@ import Swiper from "react-id-swiper";
 import 'swiper/swiper-bundle.css';
 import SliderButtons from "../../../elements/SliderButtons/SliderButtons";
 
-const MusicSlider = forwardRef(({ data }, ref) => {
+const MusicSlider = ({ data }, ref) => {
   const params = {
     loop: true,
     navigation: {
@@ -62,6 +62,6 @@ const MusicSlider = forwardRef(({ data }, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default MusicSlider;

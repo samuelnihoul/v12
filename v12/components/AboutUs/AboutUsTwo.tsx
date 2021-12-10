@@ -19,8 +19,7 @@ const AboutUsTwo = ({ title, image, toggler, setToggler }) => (
           <AccordionsComponent
             data={dataAccordion}
             classAppend="mt-50"
-            items={3}
-          />
+            items={3} type={undefined} />
         </div>
         <div className="col-md-6">
           <div className="arcon-video-box mt-30">

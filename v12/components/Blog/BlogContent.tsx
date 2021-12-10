@@ -46,85 +46,83 @@ const BlogContent = ({ type, sidebar }) => {
           <BlogWrapper type={type}>
             {type === "masonry"
               ? currentMasonryPosts.map((post, index) => (
-                  <BlogItemMasonry
-                    key={post.id}
-                    id={post.id}
-                    image={post.image}
-                    title={post.title}
-                    link={post.link ? post.link : null}
-                    slides={post.slides ? post.slides : null}
-                    published={post.published}
-                    excerpt={post.excerpt}
-                    type={post.type}
-                  />
-                ))
+                <BlogItemMasonry
+                  key={post.id}
+                  id={post.id}
+                  image={post.image}
+                  title={post.title}
+                  link={post.link ? post.link : null}
+                  slides={post.slides ? post.slides : null}
+                  published={post.published}
+                  excerpt={post.excerpt}
+                  type={post.type}
+                />
+              ))
               : currentPosts.map(
-                  (post, index) =>
-                    ({
-                      grid: (
-                        <BlogItemGrid
-                          key={post.id}
-                          id={post.id}
-                          index={index}
-                          firstPost={indexOfFirstPost}
-                          image={post.image}
-                          title={post.title}
-                          link={post.link ? post.link : null}
-                          slides={post.slides ? post.slides : null}
-                          published={post.published}
-                          excerpt={post.excerpt}
-                          type={post.type}
-                        />
-                      ),
-                      sidebar: (
-                        <div className="col-md-6" key={post.id}>
-                          <BlogItemSidebar
-                            blogType="sidebar"
-                            id={post.id}
-                            index={index}
-                            firstPost={indexOfFirstPost}
-                            image={post.image}
-                            title={post.title}
-                            link={post.link ? post.link : null}
-                            slides={post.slides ? post.slides : null}
-                            published={post.published}
-                            excerpt={post.excerpt}
-                            type={post.type}
-                          />
-                        </div>
-                      ),
-                      "sidebar-left": (
-                        <BlogItemSidebar
-                          key={post.id}
-                          id={post.id}
-                          index={index}
-                          firstPost={indexOfFirstPost}
-                          image={post.image}
-                          title={post.title}
-                          link={post.link ? post.link : null}
-                          slides={post.slides ? post.slides : null}
-                          published={post.published}
-                          excerpt={post.excerpt}
-                          type={post.type}
-                        />
-                      ),
-                      "sidebar-right": (
-                        <BlogItemSidebar
-                          key={post.id}
-                          id={post.id}
-                          index={index}
-                          firstPost={indexOfFirstPost}
-                          image={post.image}
-                          title={post.title}
-                          link={post.link ? post.link : null}
-                          slides={post.slides ? post.slides : null}
-                          published={post.published}
-                          excerpt={post.excerpt}
-                          type={post.type}
-                        />
-                      ),
-                    }[type])
-                )}
+                (post, index) =>
+                ({
+                  grid: (
+                    <BlogItemGrid
+                      key={post.id}
+                      id={post.id}
+                      index={index}
+                      firstPost={indexOfFirstPost}
+                      image={post.image}
+                      title={post.title}
+                      link={post.link ? post.link : null}
+                      slides={post.slides ? post.slides : null}
+                      published={post.published}
+                      excerpt={post.excerpt}
+                      type={post.type}
+                    />
+                  ),
+                  sidebar: (
+                    <div className="col-md-6" key={post.id}>
+                      <BlogItemSidebar
+                        blogType="sidebar"
+                        id={post.id}
+                        index={index}
+                        firstPost={indexOfFirstPost}
+                        image={post.image}
+                        title={post.title}
+                        link={post.link ? post.link : null}
+                        slides={post.slides ? post.slides : null}
+                        published={post.published}
+                        excerpt={post.excerpt}
+                        type={post.type}
+                      />
+                    </div>
+                  ),
+                  "sidebar-left": (
+                    <BlogItemSidebar
+                      key={post.id}
+                      id={post.id}
+                      index={index}
+                      firstPost={indexOfFirstPost}
+                      image={post.image}
+                      title={post.title}
+                      link={post.link ? post.link : null}
+                      slides={post.slides ? post.slides : null}
+                      published={post.published}
+                      excerpt={post.excerpt}
+                      type={post.type} blogType={undefined} />
+                  ),
+                  "sidebar-right": (
+                    <BlogItemSidebar
+                      key={post.id}
+                      id={post.id}
+                      index={index}
+                      firstPost={indexOfFirstPost}
+                      image={post.image}
+                      title={post.title}
+                      link={post.link ? post.link : null}
+                      slides={post.slides ? post.slides : null}
+                      published={post.published}
+                      excerpt={post.excerpt}
+                      type={post.type} blogType={undefined} />
+                  ),
+                }[type])
+              )}
           </BlogWrapper>
           {type === "sidebar-right" || type === "sidebar" ? (
             <div className="col-md-3 offset-md-1 right-col-rv">

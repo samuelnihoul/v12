@@ -4,7 +4,7 @@ import lax from "lax.js";
 let selector = "lax";
 
 function useLax({ breakpoints, className } = {}) {
-  const requestRef = React.useRef();
+  const requestRef = React.useRef(null);
   selector = className || selector;
 
   React.useEffect(() => {
@@ -26,7 +26,7 @@ function useLax({ breakpoints, className } = {}) {
 }
 
 function useLaxElement() {
-  const ref = React.useRef();
+  const ref = React.useRef(null);
 
   React.useEffect(() => {
     const currentNode = ref.current;

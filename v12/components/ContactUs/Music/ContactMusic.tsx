@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from "react";
 import Map from "../../Maps/Map";
 
-const ContactMusic = forwardRef((props, ref) => {
+const ContactMusic = (props, ref) => {
   const [inputs, setInputs] = useState({});
 
   const handleInputChange = (e) => {
@@ -86,6 +86,6 @@ const ContactMusic = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default ContactMusic;

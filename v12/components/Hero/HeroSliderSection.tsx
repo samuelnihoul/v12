@@ -9,7 +9,7 @@ import SliderButtons from "../../elements/SliderButtons/SliderButtons";
 import SwiperCore, { EffectFade, Navigation, Autoplay, Pagination } from "swiper/core";
 SwiperCore.use([EffectFade, Navigation, Autoplay, Pagination]);
 
-const HeroSliderSection = forwardRef(({ data }, ref) => (
+const HeroSliderSection = ({ data }, ref) => {
   <section className="pt-0 pb-0" id="home" >
     <div className="slider-bg flexslider">
       <ul className="slides">
@@ -62,6 +62,6 @@ const HeroSliderSection = forwardRef(({ data }, ref) => (
       </ul>
     </div>
   </section>
-));
+}
 
 export default HeroSliderSection;

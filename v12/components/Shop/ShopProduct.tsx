@@ -93,7 +93,7 @@ const ShopProduct = () => {
                 name="quantity"
                 title="Qty"
                 className="input-text qty text"
-                size="4"
+                size={4}
               />
               <span className="input-group-btn">
                 <a href="!#" className="btn btn-dark">

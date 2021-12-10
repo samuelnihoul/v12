@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 const img = "/images/chef-img.png";
 
-const TheChefs = forwardRef((props, ref) => (
+const TheChefs = (props, ref) => {
   <section className="dark-bg pb-0 pt-100" id="chefs" >
     <div className="left_parallax">
       <h3
@@ -65,6 +65,6 @@ const TheChefs = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default TheChefs;

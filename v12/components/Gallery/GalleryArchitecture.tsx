@@ -5,7 +5,7 @@ import dataGallery from "../../data/Gallery/gallery-architecture-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
 
 
-const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
+const GalleryArchitecture = ({ title, tagline }, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photo, setPhoto] = useState(0);
 
@@ -43,7 +43,7 @@ const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <i className="icofont-search-1" className="font-40px"></i>
+                            <i className="icofont-search-1 font-40px"></i>
                           </a>
                         </li>
                       </ul>
@@ -61,8 +61,8 @@ const GalleryArchitecture = forwardRef(({ title, tagline }, ref) => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
-});
+}
 
 export default GalleryArchitecture;

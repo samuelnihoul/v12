@@ -12,7 +12,7 @@ const CommentsRespond = () => (
           id="comment-field"
           className="form-control"
           placeholder="Comment"
-          rows="5"
+          rows={5}
         ></textarea>
         <label htmlFor="comment">Comment</label>
       </div>

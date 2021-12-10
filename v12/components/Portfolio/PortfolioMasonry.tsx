@@ -8,8 +8,8 @@ import ProductItem from "./ProductItem";
 
 const PortoflioSix = ({ filter, layout, columns, data, type, classAppend, space }) => {
   const categories = ["all", "design", "web", "branding", "print"];
-  const element = useRef();
-  const [shuffle, setShuffle] = useState();
+  const element = useRef(null);
+  const [shuffle, setShuffle] = useState(null);
 
   const [isOpen, setIsOpen] = useState(false);
   const [photo, setPhoto] = useState(0);
@@ -77,8 +77,7 @@ const PortoflioSix = ({ filter, layout, columns, data, type, classAppend, space 
                     groups={item.groups}
                     columns={columns}
                     type="masonry"
-                    openLightbox={openLightbox}
-                  />
+                    openLightbox={openLightbox} space={undefined} />
                 ))
                 : data.map((item) => (
                   <ProductItem

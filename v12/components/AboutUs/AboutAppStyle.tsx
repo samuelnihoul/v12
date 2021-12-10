@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import dataAbout from "../../data/About/about-appstyle-data.json";
 const img = "/images/slides/iPhone-big.png";
 
-const AboutAppStyle = forwardRef((props, ref) => (
+const AboutAppStyle = (props, ref) => {
   <section className="main-section white-bg" id="feature" >
     <div className="container">
       <div className="row">
@@ -75,6 +75,6 @@ const AboutAppStyle = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default AboutAppStyle;

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const ProductItem = ({ image, links, openLightbox, space }) => (
+const ProductItem = ({ image, links, openLightbox, space, title, category, groups, type }) => (
   <li
     className={
       "portfolio-item portfolio-masonry-item " +
@@ -19,14 +19,14 @@ const ProductItem = ({ image, links, openLightbox, space }) => (
                 className="alpha-lightbox"
                 onClick={(e) => openLightbox(e, image)}
               >
-                <i className="icofont-plus" className="font-40px"></i>
+                <i className="icofont-plus font-40px"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </li>
+  </li >
 );
 
 export default ProductItem;

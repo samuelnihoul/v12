@@ -9,7 +9,7 @@ const TabsIconSection = ({ title, tagline, classes }) => {
     <section className={classes || ""}>
       <div className="container">
         <div className="row">
-          <HeadingSection title={title} tagline={tagline} />
+          <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
         </div>
         <div className="row mt-40 tabs-section">
           <div className="col-md-8">

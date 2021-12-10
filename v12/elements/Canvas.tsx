@@ -6,7 +6,7 @@ const Canvas = () => {
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
     var ctx = canvas.getContext("2d");
-    canvas.innerHTML = canvas.width;
+    canvas.innerHTML = canvas.width.toString();
     var TAU = 2 * Math.PI;
 
     function loop() {
@@ -51,7 +51,7 @@ const Canvas = () => {
     var balls = [];
     for (var i = 0; i < (canvas.width * canvas.height) / (65 * 65); i++) {
       balls.push(
-        new Ball(Math.random() * canvas.width, Math.random() * canvas.height)
+        new Ball(Math.random() * canvas.width, Math.random() * canvas.height, null, null)
       );
     }
 

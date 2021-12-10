@@ -11,11 +11,11 @@ import Portfolio from "../../components/Portfolio/Portfolio";
 
 const PersonalResume = () => {
   useBodyClass("wrap-nav-sidebar");
-  const home = useRef();
-  const about = useRef();
-  const portfolio = useRef();
-  const resume = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const portfolio = useRef(null);
+  const resume = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

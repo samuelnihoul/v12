@@ -17,13 +17,13 @@ import FooterOne from "../../components/Footer/FooterOne";
 import Portfolio from "../../components/Portfolio/Portfolio";
 
 const CreativeOnePage = () => {
-  const home = useRef();
-  const about = useRef();
-  const service = useRef();
-  const team = useRef();
-  const work = useRef();
-  const pricing = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const service = useRef(null);
+  const team = useRef(null);
+  const work = useRef(null);
+  const pricing = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

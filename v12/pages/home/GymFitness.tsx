@@ -17,11 +17,11 @@ import CTAGym from "../../components/GymFitness/CTAGym";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const GymFitness = () => {
-  const home = useRef();
-  const about = useRef();
-  const classes = useRef();
-  const schedule = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const classes = useRef(null);
+  const schedule = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

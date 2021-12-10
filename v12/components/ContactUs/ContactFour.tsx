@@ -25,7 +25,7 @@ const ContactFour = () => (
           <div className="col-md-4">
             <div className="col-inner spacer dark-bg">
               <div className="text-center white-color">
-                <i className="icofont-google-map" className="font-50px white-icon"></i>
+                <i className="icofont-google-map font-50px white-icon"></i>
                 <h2>Office Address</h2>
                 <p>
                   The PATH Toronto, <br />
@@ -37,7 +37,7 @@ const ContactFour = () => (
           <div className="col-md-4">
             <div className="col-inner spacer gradient-bg">
               <div className="text-center white-color">
-                <i className="icofont-email" className="font-50px white-icon"></i>
+                <i className="icofont-email font-50px white-icon"></i>
                 <h2>Email Us</h2>
                 <p className="mb-0">hello@scoda.com</p>
                 <p>jobs@scoda.com</p>
@@ -47,7 +47,7 @@ const ContactFour = () => (
           <div className="col-md-4">
             <div className="col-inner spacer dark-bg">
               <div className="text-center white-color">
-                <i className="icofont-iphone" className="font-50px white-icon"></i>
+                <i className="icofont-iphone font-50px white-icon"></i>
                 <h2>Call Us</h2>
                 <p className="mb-0">(+1) 613 555-0105</p>
                 <p>(+1) 613 555-0105</p>
@@ -55,8 +55,8 @@ const ContactFour = () => (
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   </>
 );
 

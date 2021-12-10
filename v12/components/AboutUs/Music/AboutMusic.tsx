@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 const img = "/assets/images/singer-img.png";
 
-const AboutMusic = forwardRef((props, ref) => (
+const AboutMusic = (props, ref) => {
   <section id="about" >
     <div className="container">
       <div className="row">
@@ -30,6 +30,6 @@ const AboutMusic = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default AboutMusic;

@@ -1,5 +1,30 @@
 [
     {
+        "id": 1,
+        "title": "shop",
+        "link": "/shop",
+        "megaMenu": false,
+        "subMenu": [
+            {
+                "id": 1.1,
+                "title": "About",
+                "link": "/about",
+                "subMenu": [
+                    {
+                        "id": 1.2,
+                        "title": "About Us",
+                        "link": "/about-us"
+                    },
+                    {
+                        "id": 2.12,
+                        "title": "About - Creative",
+                        "link": "/about-creative"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": 2,
         "title": "+",
         "link": "/pages",

@@ -4,7 +4,7 @@ const imgWaves = "/images/slides/wave.svg";
 const imgPhone = "/images/slides/iPhone-01.png";
 // import ReactWOW from "react-wow";
 
-const ParallaxAppStyle = forwardRef((props, ref) => (
+const ParallaxAppStyle = (props, ref) => {
   <section className="pt-0 pb-0" id="home" >
     <div
       className="full-screen-bg"
@@ -67,6 +67,6 @@ const ParallaxAppStyle = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default ParallaxAppStyle;

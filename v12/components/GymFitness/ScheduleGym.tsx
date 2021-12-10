@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataSchedule from "../../data/Services/schedule-gym-data.json";
 
-const ScheduleGym = forwardRef((props, ref) => (
+const ScheduleGym = (props, ref) => {
   <section className="dark-bg" id="schedule" >
     <div className="container">
       <div className="row">
@@ -54,6 +54,6 @@ const ScheduleGym = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default ScheduleGym;

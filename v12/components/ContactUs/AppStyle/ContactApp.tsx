@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import ContactFormThree from "../ContactFormThree";
 
 
-const ContactApp = forwardRef((props, ref) => (
+const ContactApp = (props, ref) => {
   <>
     <section className="contact-us white-bg" id="contact" >
       <div className="container">
@@ -26,7 +26,7 @@ const ContactApp = forwardRef((props, ref) => (
           <div className="col-md-4">
             <div className="col-inner spacer dark-bg">
               <div className="text-center white-color">
-                <i className="icofont-google-map" className="font-50px white-icon"></i>
+                <i className="icofont-google-map font-50px white-icon"></i>
                 <h2>Office Address</h2>
                 <p>
                   The PATH Toronto, <br />
@@ -38,7 +38,7 @@ const ContactApp = forwardRef((props, ref) => (
           <div className="col-md-4">
             <div className="col-inner spacer gradient-bg">
               <div className="text-center white-color">
-                <i className="icofont-email" className="font-50px white-icon"></i>
+                <i className="icofont-email font-50px white-icon"></i>
                 <h2>Email Us</h2>
                 <p className="mb-0">hello@scoda.com</p>
                 <p>jobs@scoda.com</p>
@@ -57,8 +57,8 @@ const ContactApp = forwardRef((props, ref) => (
           </div>
         </div>
       </div>
-    </section>
+    </section >
   </>
-));
+}
 
 export default ContactApp;

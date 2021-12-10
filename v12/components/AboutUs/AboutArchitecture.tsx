@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import dataTabs from "../../data/TabsIconSection/tabs-default-data.json";
 const img = "/images/architecture-img.jpg";
 
-const AboutArchitecture = forwardRef((props, ref) => (
+const AboutArchitecture = (props, ref) => {
   <section id="about" className="pb-80" >
     <div className="container">
       <div className="row">
@@ -114,6 +114,6 @@ const AboutArchitecture = forwardRef((props, ref) => (
       </div>
     </div>
   </section>
-));
+}
 
 export default AboutArchitecture;

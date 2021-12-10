@@ -14,11 +14,11 @@ import ContactRestaurant from "../../components/ContactUs/ContactRestaurant";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const Restaurant = () => {
-  const home = useRef();
-  const about = useRef();
-  const chefs = useRef();
-  const gallery = useRef();
-  const bookAtable = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const chefs = useRef(null);
+  const gallery = useRef(null);
+  const bookAtable = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

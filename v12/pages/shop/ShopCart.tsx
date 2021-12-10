@@ -99,7 +99,7 @@ const ShopCart = () => (
                           </button>
                           <button
                             className="btn btn-color btn-animate"
-                            href="!#"
+                            ref="!#"
                           >
                             <span>
                               Proceed to Checkout

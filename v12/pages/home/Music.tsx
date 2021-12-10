@@ -13,11 +13,11 @@ import ContactMusic from "../../components/ContactUs/Music/ContactMusic";
 import FooterOne from "../../components/Footer/FooterOne";
 
 const Music = () => {
-  const home = useRef();
-  const about = useRef();
-  const how = useRef();
-  const event = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const how = useRef(null);
+  const event = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();

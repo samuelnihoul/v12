@@ -10,8 +10,7 @@ const PriceTables = () => (
         <HeadingSection
           title="Our Pricing"
           tagline="Choose your plan"
-          classAppend="white-color"
-        />
+          classAppend="white-color" font={undefined} children={undefined} />
       </div>
       <div className="row mt-50">
         {pricesData.map((table, i) => (
@@ -24,8 +23,7 @@ const PriceTables = () => (
             features={table.features}
             textButton={table.textButton}
             featured={table.featured}
-            index={i}
-          />
+            index={i} btnType={undefined} tableType={undefined} />
         ))}
       </div>
     </div>

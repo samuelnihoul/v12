@@ -6,7 +6,7 @@ import HeadingSection from "../HeadingSection/HeadingSection";
 import TestimonialItem from "./TestimonialItem";
 import testimonialsData from "../../data/Testimonials/testimonials-data.json";
 
-const TestimonialsTwo = ({ title, tagline}) => {
+const TestimonialsTwo = ({ title, tagline }) => {
   const settings = {
     dots: true,
     centerMode: true,
@@ -23,8 +23,7 @@ const TestimonialsTwo = ({ title, tagline}) => {
           <HeadingSection
             title={title}
             tagline={tagline}
-            classAppend="white-color"
-          />
+            classAppend="white-color" font={undefined} children={undefined} />
         </div>
         <div className="row">
           <div className="col-md-12">
@@ -42,7 +41,7 @@ const TestimonialsTwo = ({ title, tagline}) => {
             </Slider>
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 };

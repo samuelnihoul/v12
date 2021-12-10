@@ -4,7 +4,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import dataGallery from "../../data/Gallery/gallery-restaurant-data.json";
 
-const GalleryRestaurant = forwardRef((props, ref) => {
+const GalleryRestaurant = (props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photo, setPhoto] = useState(0);
 
@@ -39,7 +39,7 @@ const GalleryRestaurant = forwardRef((props, ref) => {
                             href={"assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
-                            <i className="icofont-search-1" className="font-40px"></i>
+                            <i className="icofont-search-1 font-40px"></i>
                           </a>
                         </li>
                       </ul>
@@ -59,8 +59,8 @@ const GalleryRestaurant = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
-});
+}
 
 export default GalleryRestaurant;

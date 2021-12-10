@@ -4,7 +4,7 @@ import "react-image-lightbox/style.css";
 
 import dataEvents from "../../../data/Portfolio/portfolio-music-data.json";
 
-const EventsMusic = forwardRef((props, ref) => {
+const EventsMusic = (props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photo, setPhoto] = useState(0);
 
@@ -72,6 +72,6 @@ const EventsMusic = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default EventsMusic;

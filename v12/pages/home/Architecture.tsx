@@ -14,12 +14,12 @@ import ContactArchitecture from "../../components/ContactUs/ContactArchitecture"
 import FooterOne from "../../components/Footer/FooterOne";
 
 const Architecture = () => {
-  const home = useRef();
-  const about = useRef();
-  const service = useRef();
-  const team = useRef();
-  const project = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const about = useRef(null);
+  const service = useRef(null);
+  const team = useRef(null);
+  const project = useRef(null);
+  const contact = useRef(null);
 
   const scrollToSection = (e, content) => {
     e.preventDefault();
