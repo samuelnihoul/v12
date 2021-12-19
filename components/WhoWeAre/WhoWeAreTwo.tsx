@@ -7,7 +7,7 @@ const WhoWeAreTwo = ({ title, tagline, children }) => (
   <section>
     <div className="container">
       <div className="row">
-        <HeadingSection title={title} tagline={tagline}>
+        <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} >
           {children}
         </HeadingSection>
       </div>

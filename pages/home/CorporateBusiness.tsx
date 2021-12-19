@@ -20,7 +20,7 @@ const CorporateBusiness = () => {
   }, []);
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderSingle data={dataCorporate} />
       <WhoWeAreThree />
       <Portfolio

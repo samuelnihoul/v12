@@ -32,7 +32,7 @@ const MinimalDesign = () => {
         toggler={toggler}
         sources={["https://www.youtube.com/watch?v=sU3FkzUKHXU"]}
       />
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderCombined data={dataMinimal} font="cardo-font" />
       <WelcomeTwo toggler={toggler} handleToggler={handleToggler} />
       <CountersThree type="wide" />

@@ -6,7 +6,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const TermCondition = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Terms & Conditions" />
     <section>
       <div className="container">

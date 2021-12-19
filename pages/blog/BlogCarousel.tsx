@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const BlogCarousel = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleBlog title="Blog Carousel" tagline="Checkout Our Latest Posts" />
     <BlogSlider />
     <ClientsBrand />

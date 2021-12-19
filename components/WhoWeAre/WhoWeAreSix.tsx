@@ -7,7 +7,7 @@ const WhoWeAreSix = ({ title, tagline }) => (
   <section className="first-ico-box white-bg">
     <div className="container">
       <div className="row">
-        <HeadingFive title={title} tagline={tagline} />
+        <HeadingFive title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
       <div className="row mt-50">
         {dataDigital.map((service, i) => (

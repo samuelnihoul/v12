@@ -11,7 +11,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const TravelAgency = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <TravelSlider data={dataSlider} />
     <WhyChooseTravel />
     <WelcomeTravel />

@@ -7,7 +7,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const BlogMasonry = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleBlog title="Blog Masonry" tagline="Checkout Our Latest Posts" />
     <BlogContent type="masonry" />
     <FooterOne />

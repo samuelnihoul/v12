@@ -8,19 +8,19 @@ import FooterOne from "../../components/Footer/FooterOne";
 import Map from "../../components/Maps/Map";
 
 const ContactSimple = () => (
-    <Loader>
-      <HeaderOne />
-      <PageTitleContact
-        title="Contact Simple"
-        tagline="Customer Support 24 Hours"
-      />
-      <ContactThree />
-      <section className="pt-0 pb-0 map-section">
-        <Map classAppend="wide" />
-      </section>
-      <ClientsBrand />
-      <FooterOne />
-    </Loader>
-  );
+  <Loader>
+    <HeaderOne type={undefined} />
+    <PageTitleContact
+      title="Contact Simple"
+      tagline="Customer Support 24 Hours"
+    />
+    <ContactThree />
+    <section className="pt-0 pb-0 map-section">
+      <Map classAppend="wide" />
+    </section>
+    <ClientsBrand />
+    <FooterOne />
+  </Loader>
+);
 
 export default ContactSimple;

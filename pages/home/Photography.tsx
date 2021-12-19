@@ -9,7 +9,7 @@ import PortfolioMasonry from "../../components/Portfolio/PortfolioMasonry";
 
 const Photography = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PhotographySlider data={dataSlider} />
     <PortfolioMasonry
       columns="four"

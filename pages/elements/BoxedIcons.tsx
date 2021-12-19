@@ -12,7 +12,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const BoxedIcons = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Boxed Icons" />
     <section className="pb-0 first-ico-box">
       <div className="container">
@@ -50,8 +50,7 @@ const BoxedIcons = () => (
               key={feature.id}
               icon={feature.icon}
               title={feature.title}
-              text={feature.text}
-            />
+              text={feature.text} index={undefined} />
           ))}
         </div>
       </div>
@@ -70,8 +69,7 @@ const BoxedIcons = () => (
               key={feature.id}
               icon={feature.icon}
               title={feature.title}
-              color="white"
-            >
+              color="white" index={undefined}            >
               {feature.text}
             </FeatureBoxTwo>
           ))}
@@ -90,8 +88,7 @@ const BoxedIcons = () => (
             <FeatureBoxTwo
               key={feature.id}
               icon={feature.icon}
-              title={feature.title}
-            >
+              title={feature.title} color={undefined} index={undefined}            >
               {feature.text}
             </FeatureBoxTwo>
           ))}

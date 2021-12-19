@@ -7,7 +7,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const BlogSidebarRight = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleBlog
       title="Blog Sidebar Right"
       tagline="Checkout Our Latest Posts"

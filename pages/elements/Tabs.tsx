@@ -8,10 +8,10 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Tabs = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Tabs" />
     <TabsDefault />
-    <TabsIconSection title="Icon Tabs" classes="white-bg" />
+    <TabsIconSection title="Icon Tabs" classes="white-bg" tagline={undefined} />
     <FooterOne />
   </Loader>
 );

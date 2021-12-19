@@ -2,7 +2,8 @@ import React from 'react';
 import dataProgress from "../../data/OurSkills/skills-data.json";
 import ProgressBar from "../../elements/ProgressBar";
 
-const OurSkillsThree = ({ classAppend }) => (
+const OurSkillsThree = ({ classAppend }) => (<>{
+
   dataProgress.filter((v, i) => i > 4).map((bar) => (
     <ProgressBar
       key={bar.id}
@@ -10,7 +11,7 @@ const OurSkillsThree = ({ classAppend }) => (
       percentage={bar.percentage}
       color={bar.color ? bar.color : ""}
       classAppend={classAppend ? classAppend : ""} font={undefined} />
-  ))
-);
+  ))}</>
+)
 
 export default OurSkillsThree;

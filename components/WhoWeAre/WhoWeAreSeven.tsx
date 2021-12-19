@@ -10,8 +10,7 @@ const WhoWeAreSeven = () => (
       <div className="row">
         <HeadingSection
           title="Who We Are"
-          tagline="The world at your fingertips"
-        >
+          tagline="The world at your fingertips" classAppend={undefined} font={undefined}        >
           We are a fully in-house digital agency focusing on branding,
           marketing, web design and development with clients ranging from
           start-ups. We pride ourselves on partnering with clients in order to

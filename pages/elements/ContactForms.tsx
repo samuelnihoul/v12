@@ -9,15 +9,14 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ContactForms = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Contact Forms" />
     <ContactArchitecture
       title="CONTACT ME"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget nisl gravida, interdum nunc quis, faucibus ligula. Nam eu neque nunc. Suspendisse egestas dolor ante, nec tincidunt sem malesuada at."
-    />
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget nisl gravida, interdum nunc quis, faucibus ligula. Nam eu neque nunc. Suspendisse egestas dolor ante, nec tincidunt sem malesuada at." tagline={undefined} classAppend={undefined} children={undefined} />
     <ContactThree />
-    <ContactTwo bg="color" />
-    <ContactArchitecture />
+    <ContactTwo bg="color" title={undefined} classAppend={undefined} children={undefined} />
+    <ContactArchitecture title={undefined} tagline={undefined} text={undefined} classAppend={undefined} children={undefined} />
     <FooterOne />
   </Loader>
 );

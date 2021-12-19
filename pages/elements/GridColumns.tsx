@@ -6,7 +6,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const GridColumns = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Grid Columns" />
     <section>
       <div className="container">

@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const PortfolioWideSpaceThree = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitlePortfolio
       title="Wide Space 3 Columns"
       tagline="Our Recent Works"

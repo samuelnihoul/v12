@@ -9,8 +9,7 @@ const PriceTablesTwo = ({ title, tagline, btnType, tableType, classes, children 
       <div className="row">
         <HeadingSection
           title={title}
-          tagline={tagline}
-        />
+          tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
       <div className="row mt-50">
         {pricesData.map((table) => (
@@ -24,12 +23,11 @@ const PriceTablesTwo = ({ title, tagline, btnType, tableType, classes, children 
             textButton={table.textButton}
             btnType={btnType}
             tableType={tableType}
-            featured={table.featured}
-          />
+            featured={table.featured} index={undefined} />
         ))}
       </div>
     </div>
   </section>
-));
+);
 
 export default PriceTablesTwo;

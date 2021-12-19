@@ -37,6 +37,6 @@ const TestimonialsApp = ({ toggler, setToggler, children }) => (
       <img className="img-fluid" alt="wave-shape" src={imgWave} />
     </div>
   </section>
-));
+);
 
 export default TestimonialsApp;

@@ -10,7 +10,7 @@ import CTAVideo from "../../components/GymFitness/CTAVideo";
 
 const ParallaxSections = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Parallax Sections" />
     <CTATwo
       title="Let's Work Together"
@@ -22,12 +22,12 @@ const ParallaxSections = () => (
       vulputate dolor. Nullam venenatis enim in quam euismod fringilla.
     </CTATwo>
     <ThankYouWedding />
-    <TestimonialsOne title="TESTIMONIALS" tagline="Happy Clients" />
-    <CTAVideo 
-        title="Use it or lose it"
-        tagline="Exercise your mind and body"
-        textButton="Sign Up"
-        linkButon="!#"
+    <TestimonialsOne title="TESTIMONIALS" tagline="Happy Clients" font={undefined} />
+    <CTAVideo
+      title="Use it or lose it"
+      tagline="Exercise your mind and body"
+      textButton="Sign Up"
+      linkButon="!#"
     />
     <FooterOne />
   </Loader>

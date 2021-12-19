@@ -11,7 +11,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const OnlineShop = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <OnlineShopSlider data={dataSlider} />
     <BannerShop />
     <NewArrivalsShop />

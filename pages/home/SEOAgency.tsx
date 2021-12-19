@@ -29,7 +29,7 @@ const SEOAgency = () => {
         toggler={toggler}
         sources={["https://www.youtube.com/watch?v=sU3FkzUKHXU"]}
       />
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderTwo data={dataSlider} />
       <WhoWeAreFive />
       <AboutUsTwo

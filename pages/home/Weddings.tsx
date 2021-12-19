@@ -11,7 +11,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Weddings = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <WeddingsSlider data={dataSlider} />
     <WeddingsStory />
     <DateWeddings />

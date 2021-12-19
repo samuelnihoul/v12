@@ -6,9 +6,9 @@ import FooterOne from "../../components/Footer/FooterOne";
 import { Alert } from "react-bootstrap";
 import AlertDismissible from "../../elements/AlertDismissible";
 
-const Alerts = () =>(
+const Alerts = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Alerts" />
     <section>
       <div className="container">

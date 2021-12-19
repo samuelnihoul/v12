@@ -6,7 +6,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Buttons = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Buttons" />
     <section className="widget-btns many-btns">
       <div className="container">

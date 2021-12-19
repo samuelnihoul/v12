@@ -7,7 +7,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const GoogleMaps = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleContact title="Google Maps" />
     <section className="pb-0 map-section">
       <Map classAppend="wide" />

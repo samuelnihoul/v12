@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {useLax} from "../../helpers/use-lax";
+import { useLax } from "../../helpers/use-lax";
 import Loader from "./../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderSection from "../../components/Hero/HeroSliderSection";
@@ -23,7 +23,7 @@ const CreativeAgency = () => {
   }, []);
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderSection data={dataSlider} />
       <WhoWeAreOne
         title="We're Scoda Agency"

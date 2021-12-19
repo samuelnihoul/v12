@@ -7,7 +7,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const BlogSidebar = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleBlog title="Blog Sidebar" tagline="Checkout Our Latest Posts" />
     <BlogContent type="sidebar" />
     <FooterOne />

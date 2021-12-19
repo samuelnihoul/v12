@@ -15,7 +15,7 @@ const BlogStandard = ({ sidebar }) => {
 
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <PageTitleBlog title={post.title} tagline={post.published} />
       <section>
         <div className="container">

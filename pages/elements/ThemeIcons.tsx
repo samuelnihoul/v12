@@ -7,7 +7,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ThemeIcons = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Theme Icons" />
     <section>
       <div className="container">

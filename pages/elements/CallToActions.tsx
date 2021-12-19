@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const CallToActions = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Call To Action" />
     <CTAOne
       title="Let's write your story, together."
@@ -25,18 +25,19 @@ const CallToActions = () => (
       tagline="Careers"
       textButton="Contact Us"
       linkButton="!#"
+      bg={undefined}
     >
       We do not tell you our story. We write it together. Partnering with us
       means a seat at the table where you will be heard.
     </CTAOne>
     <CTAThree
+
       tagline="Let's Talk"
       title="Start a Project"
       bg="dark"
       typeButton="btn-outline"
       textButton="Contact us"
-      linkButton="!#"
-    >
+      linkButton="!#" bgButton={undefined}  >
       We do not tell you our story. We write it together. Partnering with us
       means a seat at the table where you will be heard.
     </CTAThree>
@@ -45,8 +46,7 @@ const CallToActions = () => (
       title="Start a Project"
       textButton="Contact us"
       linkButton="!#"
-      bgButton="btn-white"
-    >
+      bgButton="btn-white" bg={undefined} typeButton={undefined}     >
       We do not tell you our story. We write it together. Partnering with us
       means a seat at the table where you will be heard.
     </CTAThree>

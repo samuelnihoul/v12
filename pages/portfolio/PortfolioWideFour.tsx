@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const PortfolioWideFour = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitlePortfolio title="Wide 4 Columns" tagline="Our Recent Works" />
     <section className="pt-100 pt-100">
       <Portfolio filter="true" columns="4" layout="wide" />

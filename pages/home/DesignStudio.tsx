@@ -13,7 +13,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const DesignStudio = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <HeroSliderParallax />
     <WhoStudioOne />
     <TeamDesignStudio />

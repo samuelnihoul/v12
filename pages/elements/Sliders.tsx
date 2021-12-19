@@ -23,7 +23,7 @@ const Sliders = () => {
   };
 
   const params = {
-    effect: "fade",
+    effect: "fade" as "fade" | "slide" | "cube" | "coverflow" | "flip",
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -32,7 +32,7 @@ const Sliders = () => {
 
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <PageTitleWidget title="Sliders" />
       <section className="pb-100 sliders-page">
         <div className="container">
@@ -245,7 +245,7 @@ const Sliders = () => {
         </div>
       </section>
       <ClientsBrand classAppend="mt-50">
-        <HeadingSection title="CLIENT CAROUSEL" />
+        <HeadingSection title="CLIENT CAROUSEL" tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
       </ClientsBrand>
       <FooterOne />
     </Loader>

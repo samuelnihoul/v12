@@ -7,7 +7,7 @@ const WhoWeAreEight = () => (
     <div className="container">
       <div className="row">
         {dataFeatures.map((feature) => (
-          <FeatureBoxTwo key={feature.id} icon={feature.icon} title={feature.title}>
+          <FeatureBoxTwo key={feature.id} icon={feature.icon} title={feature.title} color={undefined} index={undefined}>
             {feature.text}
           </FeatureBoxTwo>
         ))}

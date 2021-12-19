@@ -9,7 +9,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ServiceSimple = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleService title="Service Simple" tagline="Ideas that soar" />
     <WhoWeAreEight />
     <TestimonialsOne title="Testimonials" tagline="Happy clients" />

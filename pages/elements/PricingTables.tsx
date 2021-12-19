@@ -14,20 +14,18 @@ const PricingTables = () => {
   }, []);
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <PageTitleWidget title="Pricing Tables" />
       <PriceTablesTwo
         title="PRICING DEFAULT"
         tagline="Choose your plan"
         btnType="circle"
-        classes="pb-0"
-      />
+        classes="pb-0" tableType={undefined} children={undefined} />
       <PriceTablesTwo
         title="PRICING ROUNDED"
         tagline="Choose your plan"
         btnType="circle"
-        tableType="rounded"
-      />
+        tableType="rounded" classes={undefined} children={undefined} />
       <FooterOne />
     </Loader>
   );

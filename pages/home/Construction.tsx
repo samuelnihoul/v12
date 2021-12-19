@@ -13,7 +13,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Construction = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <ConstructionSlider data={dataSlider} />
     <ServicesConstruction />
     <GalleryConstruction />
@@ -21,7 +21,7 @@ const Construction = () => (
     <TeamConstruction />
     <ContactConstruction />
     <ClientsBrand />
-    <FooterOne/>
+    <FooterOne />
   </Loader>
 );
 

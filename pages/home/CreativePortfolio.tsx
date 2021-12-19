@@ -10,7 +10,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const CreativePortfolio = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <HeroSliderCreative data={dataCreative} />
     <PortfolioMasonry filter="true" columns="3" data={dataPortfolio} type="masonry" />
     <CTAOne

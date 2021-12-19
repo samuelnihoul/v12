@@ -30,7 +30,7 @@ const SmallBusiness = () => {
         toggler={toggler}
         sources={["https://www.youtube.com/watch?v=sU3FkzUKHXU"]}
       />
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderSection data={dataSmall} />
       <WhoWeAreTwo title="Who we are" tagline="The world at your fingertips">
         We are a fully in-house digital agency focusing on branding, marketing,

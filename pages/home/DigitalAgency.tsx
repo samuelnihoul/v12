@@ -20,7 +20,7 @@ const DigitalAgency = () => {
   }, []);
   return (
     <Loader>
-      <HeaderOne />
+      <HeaderOne type={undefined} />
       <HeroSliderSeven data={dataDigital} />
       <WhoWeAreSix
         title="We Pursue Excellence"

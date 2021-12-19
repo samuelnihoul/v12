@@ -7,7 +7,7 @@ const WhoWeAreThree = () => (
   <section>
     <div className="container">
       <div className="row">
-        <HeadingSection title="SCODA AGENCY" tagline="TELL A BIGGER STORY">
+        <HeadingSection title="SCODA AGENCY" tagline="TELL A BIGGER STORY" classAppend={undefined} font={undefined}>
           We are a fully in-house digital agency focusing on branding,
           marketing, web design and development with clients ranging from
           start-ups, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -20,8 +20,7 @@ const WhoWeAreThree = () => (
             key={feature.id}
             icon={feature.icon}
             title={feature.title}
-            index={i}
-          >
+            index={i} color={undefined}          >
             {feature.text}
           </FeatureBoxTwo>
         ))}

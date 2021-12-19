@@ -6,7 +6,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Privacy = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Privacy Policy" />
     <section>
       <div className="container">

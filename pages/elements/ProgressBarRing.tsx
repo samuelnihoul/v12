@@ -27,6 +27,7 @@ const ProgressBarRing = () => (
                   valueEnd={skill.percentage}
                   duration={0}
                   easingFunction={easeQuadInOut}
+                  repeat={undefined}
                 >
                   {(value) => (
                     <CircularProgressbarWithChildren

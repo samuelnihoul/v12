@@ -6,7 +6,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const Typography = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Typography" />
     <section className="pb-0">
       <div className="container">
@@ -40,7 +40,7 @@ const Typography = () => (
               Nam consequat nunc, ultrices vehicula mauris mollis et. Sed
               pharetra ultrices quam in laoreet. Donec <br />
               <small>
-                This line of text is meant to be treated as fine print. 
+                This line of text is meant to be treated as fine print.
               </small>
               <del>
                 &nbsp;This line of text is meant to be treated as deleted text.

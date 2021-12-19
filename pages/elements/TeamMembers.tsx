@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const TeamMembers = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Team Members" />
     <section>
       <div className="container">

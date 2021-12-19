@@ -10,7 +10,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ServiceCreative = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleService title="Service Creative" tagline="Ideas that soar" />
     <WhoWeAreNine />
     <PriceTables />

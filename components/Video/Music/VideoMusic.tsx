@@ -27,6 +27,6 @@ const VideoMusic = ({ toggler, setToggler, children }) => (
       </div>
     </div>
   </section>
-));
+);
 
 export default VideoMusic;
