@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeadingFive from "../../HeadingSection/HeadingFive";
 
 const ContactFormTravel = ({ title }) => {
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({ name: '', email: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +19,7 @@ const ContactFormTravel = ({ title }) => {
     >
       {title ? (
         <div className="row">
-          <HeadingFive title={title} />
+          <HeadingFive title={title} tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
         </div>
       ) : null}
       <div className="messages"></div>
@@ -29,7 +29,7 @@ const ContactFormTravel = ({ title }) => {
           name="name"
           className="form-control"
           id="name"
-          required="required"
+          required={true}
           placeholder="Your Name"
           data-error="Your Name is Required"
           value={inputs.name}
@@ -45,7 +45,7 @@ const ContactFormTravel = ({ title }) => {
           className="form-control"
           id="email"
           placeholder="Your Email"
-          required="required"
+          required={true}
           data-error="Please Enter Valid Email"
           value={inputs.email}
           onChange={handleInputChange}
@@ -58,7 +58,7 @@ const ContactFormTravel = ({ title }) => {
           name="message"
           className="form-control"
           id="message"
-          rows="7"
+          rows={7}
           placeholder="Your Message"
           required
           data-error="Please, Leave us a message"

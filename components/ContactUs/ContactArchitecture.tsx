@@ -6,7 +6,7 @@ const ContactArchitecture = ({ title, tagline, text, classAppend, children }) =>
   <section className="contact-us" id="contact" >
     <div className="container">
       <div className="row">
-        <HeadingSection title={title} tagline={tagline}>
+        <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined}>
           {text}
         </HeadingSection>
       </div>
@@ -17,6 +17,6 @@ const ContactArchitecture = ({ title, tagline, text, classAppend, children }) =>
       </div>
     </div>
   </section>
-));
+);
 
 export default ContactArchitecture;

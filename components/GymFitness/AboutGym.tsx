@@ -2,10 +2,9 @@ import React, { forwardRef } from "react";
 
 // import ReactWOW from "react-wow";
 
-const AboutGym = forwardRef(
+const AboutGym =
   (
-    { title, textButton, linkButton, image, children, toggler, setToggler },
-    ref
+    { title, textButton, linkButton, image, children, toggler, setToggler }
   ) => (
     <section className="white-bg pb-70" id="about" >
       <div className="container">
@@ -52,6 +51,6 @@ const AboutGym = forwardRef(
       </div>
     </section>
   )
-);
+  ;
 
 export default AboutGym;

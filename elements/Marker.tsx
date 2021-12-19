@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Marker = ({icon}) => (
+const Marker = ({ icon, position }) => (
   <div >
-      <img src={icon} alt="" />
+    <img src={icon} alt="" />
   </div>
 );
 

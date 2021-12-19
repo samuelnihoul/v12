@@ -30,7 +30,7 @@ const HeaderSix = ({ data, scrollToSection }) => {
         >
           <i className="icofont-navigation-menu"></i>
         </button>
-        <MainLogo showMenu={showMenu} />
+        <MainLogo showMenu={showMenu} collapse={undefined} />
         <div
           className="navbar-collapse collapse"
           id="navbar-menu"

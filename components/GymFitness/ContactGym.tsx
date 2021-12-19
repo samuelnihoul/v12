@@ -3,7 +3,7 @@ import React, { useState, forwardRef } from "react";
 import Map from "../Maps/Map";
 
 const ContactGym = (props, ref) => {
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({ name: '', email: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -31,7 +31,7 @@ const ContactGym = (props, ref) => {
                   name="name"
                   className="form-control"
                   id="name"
-                  required="required"
+                  required={true}
                   placeholder="Your Name"
                   data-error="Your Name is Required"
                   value={inputs.name}
@@ -47,7 +47,7 @@ const ContactGym = (props, ref) => {
                   className="form-control"
                   id="email"
                   placeholder="Your Email"
-                  required="required"
+                  required={true}
                   data-error="Please Enter Valid Email"
                   value={inputs.email}
                   onChange={handleInputChange}
@@ -60,7 +60,7 @@ const ContactGym = (props, ref) => {
                   name="message"
                   className="form-control"
                   id="message"
-                  rows="7"
+                  rows={7}
                   placeholder="Your Message"
                   required
                   data-error="Please, Leave us a message"

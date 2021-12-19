@@ -9,7 +9,7 @@ const ContactFour = () => (
       <div className="container">
         <div className="clearfix">
           <div className="bg-flex-right col-md-6 map-section">
-            <Map />
+            <Map classAppend={undefined} />
           </div>
           <div className="col-about-left col-md-6 text-left">
             <h2>Get in Touch</h2>

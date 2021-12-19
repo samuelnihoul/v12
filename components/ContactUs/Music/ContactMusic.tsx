@@ -2,7 +2,7 @@ import React, { useState, forwardRef } from "react";
 import Map from "../../Maps/Map";
 
 const ContactMusic = (props, ref) => {
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({ name: '', email: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -14,7 +14,7 @@ const ContactMusic = (props, ref) => {
       <div className="container">
         <div className="clearfix">
           <div className="bg-flex col-md-6 map-section bg-flex-left">
-            <Map />
+            <Map classAppend={undefined} />
           </div>
           <div className="col-about-right col-md-6 offset-md-6">
             <h2 className="cardo-font">Contact Us</h2>
@@ -34,7 +34,7 @@ const ContactMusic = (props, ref) => {
                   name="name"
                   className="form-control"
                   id="name"
-                  required="required"
+                  required={true}
                   placeholder="Your Name"
                   data-error="Your Name is Required"
                   value={inputs.name}
@@ -50,7 +50,7 @@ const ContactMusic = (props, ref) => {
                   className="form-control"
                   id="email"
                   placeholder="Your Email"
-                  required="required"
+                  required={true}
                   data-error="Please Enter Valid Email"
                   value={inputs.email}
                   onChange={handleInputChange}
@@ -63,7 +63,7 @@ const ContactMusic = (props, ref) => {
                   name="message"
                   className="form-control"
                   id="message"
-                  rows="7"
+                  rows={7}
                   placeholder="Your Message"
                   required
                   data-error="Please, Leave us a message"

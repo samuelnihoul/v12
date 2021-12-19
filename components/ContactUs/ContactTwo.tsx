@@ -6,15 +6,15 @@ const ContactTwo = ({ title, bg, classAppend, children }) => (
   <section className={"contact-us " + (bg === "color" ? "default-bg" : "")} id="contact" >
     <div className="container">
       <div className="row">
-        <HeadingTwo title={title} />
+        <HeadingTwo title={title} text={undefined} />
       </div>
       <div className={"row " + (classAppend || "")}>
         <div className="col-sm-12 offset-md-2 col-md-8">
-          <ContactFormTwo />
+          <ContactFormTwo title={undefined} />
         </div>
       </div>
     </div>
   </section>
-));
+);
 
 export default ContactTwo;

@@ -22,7 +22,7 @@ const GalleryArchitecture = ({ title, tagline }, ref) => {
     <section className="pt-0 pb-0 white-bg" id="project" >
       <div className="container-fluid">
         <div className="row">
-          <HeadingSection title={title} tagline={tagline} />
+          <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
         </div>
         <div className="row mt-50">
           <div className="portfolio-container text-center">

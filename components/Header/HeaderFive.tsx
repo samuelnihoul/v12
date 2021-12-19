@@ -22,7 +22,7 @@ const HeaderFive = ({ data, scrollToSection }) => {
       data-minus-value-mobile="55"
       data-speed="1000"
     >
-      <SearchOverlay />
+      <SearchOverlay show={undefined} onClick={undefined} />
       <div className="container">
         <button
           type="button"
@@ -34,7 +34,7 @@ const HeaderFive = ({ data, scrollToSection }) => {
         >
           <i className="icofont-navigation-menu"></i>
         </button>
-        <MainLogo showMenu={showMenu} />
+        <MainLogo showMenu={showMenu} collapse={undefined} />
         <div
           className="navbar-collapse collapse"
           id="navbar-menu"
@@ -59,7 +59,7 @@ const HeaderFive = ({ data, scrollToSection }) => {
           </Scrollspy>
         </div>
         <AttributeNav>
-          <SocialNav />
+          <SocialNav items={undefined} />
         </AttributeNav>
       </div>
     </nav>

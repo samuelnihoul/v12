@@ -10,8 +10,7 @@ const ServicesArchitecture = ({ title, tagline, children }) => (
         <HeadingSection
           title={title}
           tagline={tagline}
-          classAppend="white-color"
-        />
+          classAppend="white-color" font={undefined} children={undefined} />
       </div>
       <div className="row mt-50">
         {dataServices.map((service, i) => (
@@ -36,6 +35,6 @@ const ServicesArchitecture = ({ title, tagline, children }) => (
       </div>
     </div>
   </section>
-));
+);
 
 export default ServicesArchitecture;

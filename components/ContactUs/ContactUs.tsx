@@ -7,7 +7,7 @@ const ContactUs = (props, ref) => {
     <div className="container">
       <div className="clearfix">
         <div className="bg-flex-right col-md-6 map-section">
-          <Map />
+          <Map classAppend={undefined} />
         </div>
         <div className="col-about-left col-md-6 text-left">
           <ContactForm title="Contact Us" tagline="Stay in Touch" />

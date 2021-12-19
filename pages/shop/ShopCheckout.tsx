@@ -30,7 +30,7 @@ const ShopCheckout = () => (
                         name="name"
                         className="form-control"
                         id="name"
-                        required="required"
+                        required={true}
                         placeholder="Your Name"
                         data-error="Your Name is Required"
                       />
@@ -43,7 +43,7 @@ const ShopCheckout = () => (
                         id="address"
                         name="address"
                         type="text"
-                        required="required"
+                        required={true}
                         placeholder="Address"
                         data-error="Address is Required"
                       />
@@ -56,7 +56,7 @@ const ShopCheckout = () => (
                         id="address_2"
                         name="address_2"
                         type="text"
-                        required="required"
+                        required={true}
                         placeholder="Permanent Address"
                         data-error="Permanent Address is Required"
                       />
@@ -69,7 +69,7 @@ const ShopCheckout = () => (
                         id="city"
                         name="city"
                         type="text"
-                        required="required"
+                        required={true}
                         placeholder="City"
                         data-error="City Name is Required"
                       />
@@ -91,7 +91,7 @@ const ShopCheckout = () => (
                           id="zip"
                           name="zip"
                           type="text"
-                          required="required"
+                          required={true}
                           placeholder="Zip Code"
                           data-error="Zip Code is Required"
                         />
@@ -110,7 +110,7 @@ const ShopCheckout = () => (
                         id="fullname"
                         name="fullname"
                         type="text"
-                        required="required"
+                        required={true}
                         placeholder="Full Name"
                         data-error="Valid Credit Card Name is Required"
                       />
@@ -123,7 +123,7 @@ const ShopCheckout = () => (
                         name="card"
                         type="text"
                         placeholder="0000-0000-0000-0000"
-                        required="required"
+                        required={true}
                         data-error="Valid Card Name"
                       />
                       <div className="help-block with-errors mt-20"></div>
@@ -136,7 +136,7 @@ const ShopCheckout = () => (
                           name="cvv"
                           type="text"
                           placeholder="CVV"
-                          required="required"
+                          required={true}
                           data-error="Valid CVV is Required"
                         />
                         <div className="help-block with-errors mt-20"></div>

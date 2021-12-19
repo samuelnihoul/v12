@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const ContactFormConstruction = () => {
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({ name: "", message: '', email: '' });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setInputs({ ...inputs, [name]: value });
   };
@@ -25,7 +25,7 @@ const ContactFormConstruction = () => {
               name="name"
               className="form-control"
               id="name"
-              required="required"
+              required={true}
               placeholder="Your Name"
               data-error="Your Name is Required"
               value={inputs.name}
@@ -43,7 +43,7 @@ const ContactFormConstruction = () => {
               className="form-control"
               id="email"
               placeholder="Your Email"
-              required="required"
+              required={true}
               data-error="Please Enter Valid Email"
               value={inputs.email}
               onChange={handleInputChange}
@@ -58,7 +58,7 @@ const ContactFormConstruction = () => {
           name="message"
           className="form-control"
           id="message"
-          rows="7"
+          rows={7}
           placeholder="Your Message"
           required
           data-error="Please, Leave us a message"

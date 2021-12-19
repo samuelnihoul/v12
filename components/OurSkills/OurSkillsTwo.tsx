@@ -21,8 +21,7 @@ const OurSkillsTwo = ({ title, tagline }) => (
               key={skill.id}
               title={skill.title}
               percentage={skill.percentage}
-              classAppend="progress-two"
-            />
+              classAppend="progress-two" color={undefined} font={undefined} />
           ))}
         </div>
       </div>
