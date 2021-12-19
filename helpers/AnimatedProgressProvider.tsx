@@ -1,9 +1,27 @@
 import React from "react";
 import { Animate } from "react-move";
+interface props {
+  repeat: boolean,
+  duration: number,
+  valueStart: number,
+  valueEnd: number,
+  easingFunction: Function
 
-class AnimatedProgressProvider extends React.Component {
+}
+class AnimatedProgressProvider extends React.Component<props> {
   interval = undefined;
-
+  /* repeat=undefined;
+  duration=undefined;
+  valueStart=undefined;
+  valueEnd=undefined;
+  easingFunction:Function
+   constructor({repeat,duration,valueEnd,valueStart, easingFunction,...props}:props){super(props);
+   repeat;
+   duration;
+   valueEnd;
+   valueStart;
+   easingFunction;
+   } */
   state = {
     isAnimated: false,
   };

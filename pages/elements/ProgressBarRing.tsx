@@ -14,7 +14,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ProgressBarRing = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Progress Bar Ring" />
     <section>
       <div className="container">
@@ -34,7 +34,7 @@ const ProgressBarRing = () => (
                       strokeWidth={4}
                       styles={buildStyles({
                         strokeLinecap: "butt",
-                        pathTransitionDuration: "none",
+                        pathTransitionDuration: null,
                         pathColor: "#d42e22",
                       })}
                     >

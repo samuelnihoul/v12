@@ -8,18 +8,18 @@ import FooterOne from "../../components/Footer/FooterOne";
 
 const ProgressBars = () => (
   <Loader>
-    <HeaderOne />
+    <HeaderOne type={undefined} />
     <PageTitleWidget title="Progress Bars" />
     <section>
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-50">
             <h3 className="mb-50">Progress Bar Theme</h3>
-            <OurSkillsOne />
+            <OurSkillsOne classAppend={undefined} font={undefined} />
           </div>
           <div className="col-md-6">
             <h3 className="mb-50">Progress Bar Colored</h3>
-            <OurSkillsThree />
+            <OurSkillsThree classAppend={undefined} />
           </div>
         </div>
       </div>
