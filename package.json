@@ -52,7 +52,7 @@
     "build": "next build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "next-app"
   },
   "browserslist": {
     "production": [
@@ -65,5 +65,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "<8.0.0"
   }
 }
