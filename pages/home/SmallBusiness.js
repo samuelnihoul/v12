@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FsLightbox from "fslightbox-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderSection from "../../components/Hero/HeroSliderSection";
 import dataSmall from "../../data/Slider/small-business-data.json";

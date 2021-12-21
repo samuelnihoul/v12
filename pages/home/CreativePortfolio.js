@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataCreative from "../../data/Slider/creative-portfolio-data.json";
 import dataPortfolio from "../../data/Portfolio/portfolio-masonry.json";
 import HeaderOne from "../../components/Header/HeaderOne";

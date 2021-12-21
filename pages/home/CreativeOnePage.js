@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataCreative from "../../data/Slider/creative-one-page-data.json";
 const serviceOneImg = "/images/onepage-bg-left.jpg";
 import HeaderTwo from "../../components/Header/HeaderTwo";

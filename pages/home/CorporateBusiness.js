@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataCorporate from "../../data/Slider/corporate-business-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderSingle from "../../components/Hero/HeroSliderSingle";

@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import dataNav from "../../data/Navbar/nav-gym-fitness.json";
 import dataSlider from "../../data/Slider/gym-fitness-data.json";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 const image = "/images/about-video-gym-img.jpg";
 import HeaderSix from "../../components/Header/HeaderSix";
 import GymFitnessSlider from "../../components/Hero/GymFitnessSlider";

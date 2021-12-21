@@ -12,8 +12,8 @@ const ServiceSimple = () => (
     <HeaderOne type={undefined} />
     <PageTitleService title="Service Simple" tagline="Ideas that soar" />
     <WhoWeAreEight />
-    <TestimonialsOne title="Testimonials" tagline="Happy clients" />
-    <ClientsBrand />
+    <TestimonialsOne title="Testimonials" tagline="Happy clients" font={undefined} />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import FsLightbox from "fslightbox-react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataNav from "../../data/Navbar/nav-music-data.json";
 import dataSlider from "../../data/Slider/music-data.json";
 import HeaderFive from "../../components/Header/HeaderFive";

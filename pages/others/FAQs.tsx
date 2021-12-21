@@ -14,7 +14,7 @@ const FAQs = () => (
       <div className="container">
         <div className="row">
           <div className="col-sm-8">
-            <AccordionsComponent type="color" data={dataAccordion} />
+            <AccordionsComponent type="color" data={dataAccordion} classAppend={undefined} items={undefined} />
           </div>
           <div className="col-sm-4">
             <form className="search-form" method="get">

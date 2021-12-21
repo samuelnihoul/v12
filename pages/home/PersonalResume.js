@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import useBodyClass from "../../helpers/useBodyClass";
 import HeaderFour from "../../components/Header/HeaderFour";
 import HeroSliderOne from "../../components/Hero/HeroSliderOne";

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLax } from "../../helpers/use-lax";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderSection from "../../components/Hero/HeroSliderSection";
 import WhoWeAreOne from "../../components/WhoWeAre/WhoWeAreOne";

@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataSlider from "../../data/Slider/photography-data.json";
 import dataPortfolio from "../../data/Portfolio/portfolio-photography-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";

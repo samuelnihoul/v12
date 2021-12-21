@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import dataArchitecture from "../../data/Slider/architecture-data.json";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import HeaderThree from "../../components/Header/HeaderThree";
 import ArchitectureSlider from "../../components/Hero/ArchitectureSlider";
 import AboutArchitecture from "../../components/AboutUs/AboutArchitecture";

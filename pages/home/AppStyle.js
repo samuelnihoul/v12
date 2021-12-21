@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import FsLightbox from "fslightbox-react";
 import AOS from "aos";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataNav from "../../data/Navbar/nav-appstyle-data.json";
 import HeaderSeven from "../../components/Header/HeaderSeven";
 import ParallaxAppStyle from "../../components/HeroParallax/ParallaxAppStyle";

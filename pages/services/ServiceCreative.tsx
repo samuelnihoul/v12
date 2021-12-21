@@ -14,8 +14,8 @@ const ServiceCreative = () => (
     <PageTitleService title="Service Creative" tagline="Ideas that soar" />
     <WhoWeAreNine />
     <PriceTables />
-    <TestimonialsOne title="Testimonials" tagline="Happy clients" />
-    <ClientsBrand />
+    <TestimonialsOne title="Testimonials" tagline="Happy clients" font={undefined} />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

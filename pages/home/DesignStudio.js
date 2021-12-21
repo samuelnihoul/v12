@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import HeroSliderParallax from "../../components/Hero/HeroSliderParallax";
 import WhoStudioOne from "../../components/WhoWeAre/DesignStudio/WhoStudioOne";

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataNav from "../../data/Navbar/nav-restaurant-data.json";
 import dataRestaurant from "../../data/Slider/restaurant-data.json";
 import HeaderFive from "../../components/Header/HeaderFive";

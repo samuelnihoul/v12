@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "./../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
 import dataSlider from "../../data/Slider/construction-data.json";
 import HeaderOne from "../../components/Header/HeaderOne";
 import ConstructionSlider from "../../components/Hero/Construction/ConstructionSlider";
