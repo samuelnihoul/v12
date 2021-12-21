@@ -1,14 +1,14 @@
 import React from "react";
 import { Animate } from "react-move";
-interface props {
+/* interface props {
   repeat: boolean,
   duration: number,
   valueStart: number,
   valueEnd: number,
   easingFunction: Function
 
-}
-class AnimatedProgressProvider extends React.Component<props> {
+} */
+class AnimatedProgressProvider extends React.Component {
   interval = undefined;
   /* repeat=undefined;
   duration=undefined;

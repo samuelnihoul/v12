@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Accordions/AccordionStudio.js", "pages/portfolio/SinglePortfolio.js"  ],
+, "components/Accordions/AccordionStudio.js", "pages/portfolio/SinglePortfolio.js", "helpers/useBodyClass.js", "helpers/use-lax.js", "helpers/AnimatedProgressProvider.tsx", "helpers/ScrollToTop.js", "helpers/GetWindowSize.js", "pages/blog/BlogSidebarRight.js", "pages/blog/BlogSidebar.js", "pages/blog/BlogSidebarLeft.js", "pages/blog/BlogGrid.js", "pages/blog/BlogMasonry.js", "pages/blog/BlogCarousel.js", "pages/contact/ContactSimple.js", "helpers/useWindowResizeListener.js" ],
   "exclude": [
     "node_modules"
   ]
