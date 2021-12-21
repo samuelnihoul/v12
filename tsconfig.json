@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Accordions/AccordionStudio.js", "pages/portfolio/SinglePortfolio.js"  ],
   "exclude": [
     "node_modules"
   ]
