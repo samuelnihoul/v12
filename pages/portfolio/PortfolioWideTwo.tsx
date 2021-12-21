@@ -11,9 +11,9 @@ const PortfolioWideTwo = () => (
     <HeaderOne type={undefined} />
     <PageTitlePortfolio title="Wide 2 Columns" tagline="Our Recent Works" />
     <section className="pt-100 pt-100">
-      <Portfolio filter="true" columns="2" layout="wide" />
+      <Portfolio filter="true" columns="2" layout="wide" space={undefined} items={undefined} classAppend={undefined} children={undefined} />
     </section>
-    <ClientsBrand />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

@@ -26,7 +26,7 @@ const SinglePortfolio = () => {
   return (
     <Loader>
       <HeaderOne type={undefined} />
-      <PageTitlePortfolio title="Single Portfolio" />
+      <PageTitlePortfolio title="Single Portfolio" tagline={undefined} />
       <section className="pt-100 pt-100">
         <div className="container">
           <div className="row">

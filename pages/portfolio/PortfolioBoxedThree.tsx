@@ -11,9 +11,9 @@ const PortfolioBoxedThree = () => (
     <HeaderOne type={undefined} />
     <PageTitlePortfolio title="Boxed 3 Columns" tagline="Our Recent Works" />
     <section className="pt-100 pt-100">
-      <Portfolio filter="true" columns="3" layout="box" />
+      <Portfolio filter="true" columns="3" layout="box" space={undefined} items={undefined} classAppend={undefined} children={undefined} />
     </section>
-    <ClientsBrand />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

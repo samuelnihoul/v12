@@ -14,9 +14,9 @@ const PortfolioBoxedSpaceThree = () => (
       tagline="Our Recent Works"
     />
     <section className="pt-100 pt-100">
-      <Portfolio filter="true" columns="3" layout="box" space="true" />
+      <Portfolio filter="true" columns="3" layout="box" space="true" items={undefined} classAppend={undefined} children={undefined} />
     </section>
-    <ClientsBrand />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );
