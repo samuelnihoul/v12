@@ -51,7 +51,7 @@ const BlogItemGrid = ({
                 <img
                   key={i}
                   className="img-fluid"
-                  src={"assets/images/" + slide}
+                  src={"../../public/assets/images/" + slide}
                   alt=""
                 />
               ))}
@@ -61,7 +61,7 @@ const BlogItemGrid = ({
           <div className="post-img">
             <img
               className="img-fluid"
-              src={"assets/images/" + image}
+              src={"../../public/assets/images/" + image}
               alt=""
             />
             {type === "video" ? (

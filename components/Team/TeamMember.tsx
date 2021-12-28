@@ -14,7 +14,7 @@ const TeamMember = ({ name, role, image, social, delay, removePadding }) => {
     >
       <div className="team-member-container gallery-image-hover">
         <img
-          src={"assets/images/" + image}
+          src={"../../public/assets/images/" + image}
           className="img-fluid"
           alt={image}
         />

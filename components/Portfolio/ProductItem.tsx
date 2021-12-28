@@ -9,7 +9,7 @@ const ProductItem = ({ image, links, openLightbox, space, title, category, group
     }
   >
     <div className="product-wrap">
-      <img src={"assets/images/" + image} alt="" />
+      <img src={"../../public/assets/images/" + image} alt="" />
       <div className="product-caption">
         <div className="product-description text-center">
           <div className="product-description-wrap">

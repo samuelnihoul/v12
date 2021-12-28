@@ -16,7 +16,7 @@ const PortfolioPhotography = () => (
                 <div className="portfolio">
                   <div className="product-wrap">
                     <img
-                      src={"assets/images/" + item.image}
+                      src={"../../public/assets/images/" + item.image}
                       alt=""
                     />
                     <div className="product-caption">

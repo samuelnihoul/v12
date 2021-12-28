@@ -19,7 +19,7 @@ const GalleryConstruction = () => (
                 <div className="portfolio photo-gallery">
                   <div className="dark-overlay"></div>
                   <img
-                    src={"/assets/images/" + item.image}
+                    src={"../../public/assets/images/" + item.image}
                     alt=""
                   />
                   <div className="portfolio-wrap">

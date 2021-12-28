@@ -33,7 +33,7 @@ const HeroSliderCombined = ({ data, font }) => (
                 <div
                   className="slide-img"
                   style={{
-                    background: `url(${require("/assets/images/" +
+                    background: `url(${require("../../public/assets/images/" +
                       slide.image)}) center center / cover scroll no-repeat`,
                   }}
                 ></div>
@@ -87,20 +87,20 @@ const HeroSliderCombined = ({ data, font }) => (
                     <video autoPlay loop className="fillWidth">
                       {slide.videoMp4 && (
                         <source
-                          src={"assets/images/" + slide.videoMp4}
+                          src={"../../public/assets/images/" + slide.videoMp4}
                           type="video/mp4"
                         />
                       )}
                       {slide.videoWeb && (
                         <source
-                          src={"assets/images/" + slide.videoWeb}
+                          src={"../../public/assets/images/" + slide.videoWeb}
                           type="video/webm"
                         />
                       )}
                     </video>
                     <div className="poster hidden">
                       <img
-                        src={"assets/images/" + slide.videoImage}
+                        src={"../../public/assets/images/" + slide.videoImage}
                         alt="video-img"
                       />
                     </div>

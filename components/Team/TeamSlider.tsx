@@ -18,7 +18,7 @@ const TeamSlider = () => {
           key={member.id}
         >
           <img
-            src={"assets/images/" + member.image}
+            src={"../../public/assets/images/" + member.image}
             className="img-fluid"
             alt="team-01"
           />

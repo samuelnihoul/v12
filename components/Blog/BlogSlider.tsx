@@ -52,7 +52,7 @@ const BlogSlider = () => {
                   <div className="post-img">
                     <img
                       className="img-fluid"
-                      src={"/assets/images/" + post.image}
+                      src={"../../public/assets/images/" + post.image}
                       alt=""
                     />
                   </div>

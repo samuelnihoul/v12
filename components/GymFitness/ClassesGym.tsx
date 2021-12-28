@@ -39,7 +39,7 @@ const classNameesGym = (props, ref) => {
                   <div className="portfolio gallery-image-hover">
                     <div className="dark-overlay"></div>
                     <img
-                      src={"assets/images/" + item.image}
+                      src={"../../public/assets/images/" + item.image}
                       alt=""
                     />
                     <div className="portfolio-wrap">
@@ -67,7 +67,7 @@ const classNameesGym = (props, ref) => {
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={"/assets/images/" + photo}
+                mainSrc={"../../public/assets/images/" + photo}
                 onCloseRequest={() => closeLightbox()}
               />
             )}

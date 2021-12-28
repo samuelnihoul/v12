@@ -32,7 +32,7 @@ const GalleryArchitecture = ({ title, tagline }, ref) => {
                   <div className="portfolio photo-gallery">
                     <div className="dark-overlay"></div>
                     <img
-                      src={"assets/images/" + item.image}
+                      src={"../../public/assets/images/" + item.image}
                       alt=""
                     />
                     <div className="portfolio-wrap">
@@ -40,7 +40,7 @@ const GalleryArchitecture = ({ title, tagline }, ref) => {
                         <li>
                           <a
                             className="alpha-lightbox"
-                            href={"assets/images/" + item.link}
+                            href={"../../public/assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
                             <i className="icofont-search-1 font-40px"></i>
@@ -49,7 +49,7 @@ const GalleryArchitecture = ({ title, tagline }, ref) => {
                       </ul>
                       {isOpen && (
                         <Lightbox
-                          mainSrc={"/assets/images/" + photo}
+                          mainSrc={"../../public/assets/images/" + photo}
                           onCloseRequest={() => closeLightbox()}
                         />
                       )}

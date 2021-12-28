@@ -1,5 +1,5 @@
 import React from "react";
-const img = "/assets/images/single-img.png";
+const img = "../../public/assets/images/single-img.png";
 import dataAccordion from "../../../data/Accordion/accordion-studio-data.json";
 import AccordionStudio from "../../Accordions/AccordionStudio";
 // import ReactWOW from "react-wow";

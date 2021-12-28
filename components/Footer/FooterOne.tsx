@@ -1,7 +1,7 @@
 import React from "react";
 const logoFootr = "/images/D21.png";
 import FooterCopyright from "./FooterCopyright";
-const logoFooter = "/assets/images/D21.png"
+const logoFooter = "../../public/assets/images/D21.png"
 const FooterOne = () => (
   <>
     <footer className="footer" id="footer-fixed">

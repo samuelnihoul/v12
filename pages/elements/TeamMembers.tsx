@@ -18,7 +18,7 @@ const TeamMembers = () => (
               <div className="member text-center">
                 <div className="team-member-container">
                   <img
-                    src={"assets/images/" + member.image}
+                    src={"../../public/assets/images/" + member.image}
                     className="img-fluid"
                     alt="team-01"
                   />
@@ -56,7 +56,7 @@ const TeamMembers = () => (
               <div className="member text-center">
                 <div className="team-member-container">
                   <img
-                    src={"assets/images/" + member.image}
+                    src={"../../public/assets/images/" + member.image}
                     className="img-fluid"
                     alt="team-01"
                   />
@@ -94,7 +94,7 @@ const TeamMembers = () => (
               <div className="member text-center mt-o">
                 <div className="team-member-container">
                   <img
-                    src={"assets/images/" + member.image}
+                    src={"../../public/assets/images/" + member.image}
                     className="img-fluid"
                     alt="team-01"
                   />
@@ -132,7 +132,7 @@ const TeamMembers = () => (
               <div className="member text-center mt-o">
                 <div className="team-member-container">
                   <img
-                    src={"assets/images/" + member.image}
+                    src={"../../public/assets/images/" + member.image}
                     className="img-fluid"
                     alt="team-01"
                   />

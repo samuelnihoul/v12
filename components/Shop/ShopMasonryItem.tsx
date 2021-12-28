@@ -5,7 +5,7 @@ const ShopMasonryItem = ({ image, title, currency, price, oldPrice }) => (
     <div className="product">
       <div className="product-wrap">
         <img
-          src={"assets/images/" + image}
+          src={"../../public/assets/images/" + image}
           className="img-fluid"
           alt="team-01"
         />

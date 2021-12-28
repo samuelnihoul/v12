@@ -13,7 +13,7 @@ const BlogItemMasonry = ({ id, image, title, published, excerpt, link, slides, t
         <div className="post-img">
           <img
             className="img-fluid"
-            src={"assets/images/" + image}
+            src={"../../public/assets/images/" + image}
             alt=""
           />
         </div>

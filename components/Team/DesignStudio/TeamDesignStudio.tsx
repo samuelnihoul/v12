@@ -18,7 +18,7 @@ const TeamDesignStudio = () => (
           <div className="col-md-3 col-sm-6 col-xs-12" key={member.id}>
             <div className="team-member-container">
               <img
-                src={"/assets/images/" + member.image}
+                src={"../../public/assets/images/" + member.image}
                 className="img-fluid rounded-circle"
                 alt={member.name}
               />

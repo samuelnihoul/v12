@@ -40,7 +40,7 @@ const EventsMusic = (props, ref) => {
                     <div className="dark-overlay"></div>
                     <img
                       src={
-                        require("/assets/images/" + item.image)
+                        require("../../../public/assets/images/" + item.image)
                       }
                       alt=""
                     />
@@ -49,7 +49,7 @@ const EventsMusic = (props, ref) => {
                         <li>
                           <a
                             className="alpha-lightbox"
-                            href={"assets/images/" + item.link}
+                            href={"../../public/assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
                             <i className="icofont-plus, font-40px"></i>
@@ -63,7 +63,7 @@ const EventsMusic = (props, ref) => {
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={"/assets/images/" + photo}
+                mainSrc={"../../public/assets/images/" + photo}
                 onCloseRequest={() => closeLightbox()}
               />
             )}

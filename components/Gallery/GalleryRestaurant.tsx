@@ -28,7 +28,7 @@ const GalleryRestaurant = (props, ref) => {
                   <div className="portfolio photo-gallery">
                     <div className="dark-overlay"></div>
                     <img
-                      src={"assets/images/" + item.image}
+                      src={"../../public/assets/images/" + item.image}
                       alt=""
                     />
                     <div className="portfolio-wrap">
@@ -36,7 +36,7 @@ const GalleryRestaurant = (props, ref) => {
                         <li>
                           <a
                             className="alpha-lightbox"
-                            href={"assets/images/" + item.link}
+                            href={"../../public/assets/images/" + item.link}
                             onClick={(e) => openLightbox(e, item.image)}
                           >
                             <i className="icofont-search-1 font-40px"></i>
@@ -46,7 +46,7 @@ const GalleryRestaurant = (props, ref) => {
                       {isOpen && (
                         <Lightbox
                           mainSrc={
-                            require("/assets/images/" + photo)
+                            require("../../public/assets/images/" + photo)
                           }
                           onCloseRequest={() => closeLightbox()}
                         />

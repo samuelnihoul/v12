@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 
-const imgWave = "/assets/images/slides/wave-2.svg";
+const imgWave = "../../public/assets/images/slides/wave-2.svg";
 
 const TestimonialsApp = ({ toggler, setToggler, children }) => (
   <section

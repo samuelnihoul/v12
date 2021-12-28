@@ -14,7 +14,7 @@ const HeroSliderCreative = ({ data }) => (
               <div
                 className="slide-img"
                 style={{
-                  background: `url(${require("/assets/images/" +
+                  background: `url(${require("../../public/assets/images/" +
                     data.image)}) center center / cover scroll no-repeat`,
                 }}
               ></div>
