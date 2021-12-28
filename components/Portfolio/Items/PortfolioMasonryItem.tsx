@@ -8,7 +8,7 @@ const PortfolioMasonryItem = ({ title, category, image, links }) => (
     {/* <ReactWOW animation="fadeIn"> */}
     <div className="portfolio gallery-image-hover portfolio-masonry-item">
       <div className="dark-overlay"></div>
-      <img src={require("..//assets/images/" + image)} alt="" />
+      <img src={"/assets/images/" + image} alt="" />
       <div className="portfolio-wrap">
         <div className="portfolio-description">
           <h3 className="portfolio-title">{title}</h3>

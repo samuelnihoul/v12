@@ -51,7 +51,7 @@ const PortfolioStudio = () => {
                     <div className="work-item-thumbnail">
                       <a href={process.env.PUBLIC_URL}>
                         <img
-                          src={require("..//assets/images/" + item.image)}
+                          src={"/assets/images/" + item.image}
                           alt={item.title}
                         />
                       </a>

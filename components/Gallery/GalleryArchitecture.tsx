@@ -49,7 +49,7 @@ const GalleryArchitecture = ({ title, tagline }, ref) => {
                       </ul>
                       {isOpen && (
                         <Lightbox
-                          mainSrc={require("/assets/images/" + photo)}
+                          mainSrc={"/assets/images/" + photo}
                           onCloseRequest={() => closeLightbox()}
                         />
                       )}

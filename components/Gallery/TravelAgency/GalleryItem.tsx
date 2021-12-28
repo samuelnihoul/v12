@@ -5,7 +5,7 @@ const GalleryItem = ({ image, link, openLightbox }) => (
   <li className="portfolio-item gutter-space">
     <div className="portfolio photo-gallery">
       <div className="dark-overlay"></div>
-      <img src={require("..//assets/images/" + image)} alt="" />
+      <img src={"/assets/images/" + image} alt="" />
       <div className="portfolio-wrap">
         <ul className="portfolio-details">
           <li>

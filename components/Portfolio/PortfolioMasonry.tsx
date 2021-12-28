@@ -95,7 +95,7 @@ const PortoflioSix = ({ filter, layout, columns, data, type, classAppend, space 
             </ul>
             {isOpen && (
               <Lightbox
-                mainSrc={require("/assets/images/" + photo)}
+                mainSrc={"/assets/images/" + photo}
                 onCloseRequest={() => closeLightbox()}
               />
             )}
