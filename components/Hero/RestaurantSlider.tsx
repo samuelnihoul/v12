@@ -13,8 +13,8 @@ const RestaurantSlider = ({ data }, ref) => {
               <div
                 className="slide-img"
                 style={{
-                  background: `url(${require("../../public/assets/images/" +
-                    slide.image)}) center center / cover scroll no-repeat`,
+                  background: `url(${"../../public/assets/images/" +
+                    slide.image}) center center / cover scroll no-repeat`,
                 }}
               ></div>
               <div

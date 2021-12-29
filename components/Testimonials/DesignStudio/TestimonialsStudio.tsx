@@ -41,8 +41,8 @@ const TestimonialsStudio = () => {
                           <div className="image">
                             <img
                               className="img-fluid rounded-circle"
-                              src={require("../../../public/assets/images/" +
-                                testimonial.avatar)}
+                              src={"/assets/images/" +
+                                testimonial.avatar}
                               alt={testimonial.name}
                             />
                           </div>

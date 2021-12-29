@@ -30,7 +30,7 @@ const HeroVideo = ({ data }) => {
           />
           <div className="poster hidden">
             <img
-              src={"../../public/assets/images/" + data.image}
+              src={"/assets/images/" + data.image}
               alt="video-img"
             />
           </div>
