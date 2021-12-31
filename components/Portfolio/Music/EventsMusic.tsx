@@ -40,7 +40,7 @@ const EventsMusic = (props, ref) => {
                     <div className="dark-overlay"></div>
                     <img
                       src={
-                        require("../../../public/assets/images/" + item.image)
+                        "../../../public/assets/images/" + item.image
                       }
                       alt=""
                     />

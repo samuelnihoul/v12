@@ -46,7 +46,7 @@ const GalleryRestaurant = (props, ref) => {
                       {isOpen && (
                         <Lightbox
                           mainSrc={
-                            require("../../public/assets/images/" + photo)
+                            "../../public/assets/images/" + photo
                           }
                           onCloseRequest={() => closeLightbox()}
                         />
