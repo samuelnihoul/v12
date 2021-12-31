@@ -5,10 +5,10 @@ import Loader from "../../components/Loader/Loader";
 import HeaderOne from "../../components/Header/HeaderOne";
 import PageTitleBlog from "../../components/PageTitle/PageTitleBlog";
 import SidebarForBlog from "../../components/Sidebar/SidebarForBlog";
-
 import CommentsRespond from "../../components/Blog/CommentsRespond";
 
 const BlogStandard = ({ sidebar }) => {
+  if (typeof window !== "undefined"){
   const postId = new URLSearchParams(window.location.search).get("id");
   const post = dataBlog.find((post) => post.id === parseInt(postId));
   const featuredPost = dataBlog.find((post) => post.id === 1);
@@ -82,7 +82,8 @@ const BlogStandard = ({ sidebar }) => {
         </div>
       </section>
     </Loader >
-  );
+  );}
+  return null
 };
 
 export default BlogStandard;
