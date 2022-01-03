@@ -40,7 +40,7 @@ const DropdownMenu = () => {
             // onClick={(e) => handleHover(e)}
             key={i}
           >
-            <a href={dropdown.link} className="dropdown-toggle nav-link" data-toggle="dropdown">
+            <a href={dropdown.link} className=" nav-link" data-toggle="dropdown">
               {dropdown.title}
             </a>
             {dropdown.megaMenu ? (

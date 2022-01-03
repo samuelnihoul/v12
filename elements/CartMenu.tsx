@@ -31,7 +31,7 @@ const CartMenu = () => {
     <li className="dropdown">
       <a
         href="!#"
-        className="dropdown-toggle"
+        /* className="dropdown-toggle" */
         data-toggle="dropdown"
         onClick={handleHover}
       >

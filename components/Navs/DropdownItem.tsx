@@ -32,7 +32,7 @@ const DropdownItem = ({ item }) => {
           >
             <a
               //onClick={ (e) => handleOpen(e)}
-              className={"dropdown-item " + (val.subMenu ? "dropdown-toggle" : null)}>{val.title}</a>
+              className={"dropdown-item "/*  + (val.subMenu ? "dropdown-toggle" : null) */}>{val.title}</a>
           </Link>
           {val.subMenu ? <DropdownSubItem item={val.subMenu} /> : null}
         </li>
