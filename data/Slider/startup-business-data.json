@@ -9,13 +9,13 @@
     {
       "id": 1,
       "text": "go climate neutral",
-      "link": "/shop-masonry",
+      "link": "/shop",
       "type": "btn-dark btn-circle"
     },
     {
       "id": 2,
       "text": "get funded",
-      "link": "/contact-creative",
+      "link": "/contact",
       "type": "btn-dark btn-circle"
     }
   ]
