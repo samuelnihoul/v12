@@ -70,8 +70,8 @@ const HeaderOne = ({ type }) => {
             onClick={showMenu}
           >
             <i className="icofont-navigation-menu"></i>
-          </button><Link href='/'>
-          <MainLogo showMenu={showMenu} collapse={undefined} ></MainLogo></Link>
+          </button><a href='/'>
+          { <MainLogo showMenu={showMenu} collapse={undefined} ></MainLogo> }</a>
           <DropdownMenu />
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />
