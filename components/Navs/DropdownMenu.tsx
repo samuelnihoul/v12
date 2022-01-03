@@ -8,7 +8,7 @@ const DropdownMenu = () => {
 
   useWindowResizeListener();
 
-  const handleHover = (e) => {
+/*   const handleHover = (e) => {
     e.preventDefault();
     const width = window.innerWidth;
     if (width < 991) {
@@ -27,7 +27,7 @@ const DropdownMenu = () => {
         }
       }
     }
-  };
+  }; */
 
   return (
     <div className="collapse navbar-collapse" id="navbar-menu">

@@ -603,8 +603,18 @@ a.isDisabled:focus {
   .navbar .sub-menu:after {
     border-top: 6px solid transparent;
   }
+}/* 
+ul{
+  border:2px green solid;
 }
 li{
  list-style-type: none;
- text-decoration: none; 
+ text-decoration: none;
+ border: 3px red solid;
+} */
+a:link{
+  text-decoration: none;
+ /*  border: 3px black solid; */
+
 }
+
