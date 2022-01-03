@@ -29,18 +29,9 @@ const OurServicesTwo = ({ title, tagline }) => (
         </h4>
         <div data-aos={"fade-up"} data-aos-delay={300} data-aos-duration={1000}>
           <p className="mt-20">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
-            vulputate dolor. Nullam venenatis enim in quam euismod fringilla.
-            Donec in risus eget purus mattis varius. Nulla dapibus quis orci et
-            tincidunt. Phasellus in rhoncus quam. Fusce a est lacinia, ultricies
-            mi nec, rutrum dolor.
+          We are a CO2 offset marketplace: we help you find everything you need to participate in the global net-zero race. If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help.
           </p>
-          <p>
-            Donec vehicula cursus metus viverra aliquet. Nam vel malesuada diam.
-            Proin eleifend luctus mi, vel tincidunt sapien auctor nec. In quis
-            elit in mauris dignissim pharetra. Praesent efficitur dolor a quam
-            tristique ultricies.
-          </p>
+         
         </div>
         <p
           className="mt-30"
@@ -49,7 +40,7 @@ const OurServicesTwo = ({ title, tagline }) => (
           data-aos-duration={1000}
         >
           <a
-            href={`${process.env.PUBLIC_URL}/service-simple`}
+            href={`${process.env.PUBLIC_URL}/about`}
             className="btn btn-color btn-circle"
           >
             Read More

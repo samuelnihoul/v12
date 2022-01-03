@@ -28,8 +28,8 @@ const ContactFour = () => (
                 <i className="icofont-google-map font-50px white-icon"></i>
                 <h2>Office Address</h2>
                 <p>
-                  The PATH Toronto, <br />
-                  ON M5B 2H1, Canada
+                  14 La Blaye <br />
+                  22 150 Ploeuc-l'Hermitage <br />France
                 </p>
               </div>
             </div>
@@ -39,8 +39,8 @@ const ContactFour = () => (
               <div className="text-center white-color">
                 <i className="icofont-email font-50px white-icon"></i>
                 <h2>Email Us</h2>
-                <p className="mb-0">hello@scoda.com</p>
-                <p>jobs@scoda.com</p>
+                <p className="mb-0">contact@harmonia-eko.ooo</p>
+                
               </div>
             </div>
           </div>
@@ -49,8 +49,8 @@ const ContactFour = () => (
               <div className="text-center white-color">
                 <i className="icofont-iphone font-50px white-icon"></i>
                 <h2>Call Us</h2>
-                <p className="mb-0">(+1) 613 555-0105</p>
-                <p>(+1) 613 555-0105</p>
+                <p className="mb-0">+33 970 406 998</p>
+                
               </div>
             </div>
           </div>

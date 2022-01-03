@@ -21,11 +21,11 @@ const AboutUs = () => (
     <WhoWeAreSeven />
     
     <CounterOne type="wide" bg={undefined} />
-    <OurServicesThree
+{/*     <OurServicesThree
       title="About Us"
       tagline="Part of your success"
-    />
-    <OurTeamTwo title="MEET OUR TEAM" tagline="Together WE ARE STRONGER" children={undefined} />
+    /> */}
+ {/*    <OurTeamTwo title="MEET OUR TEAM" tagline="Together WE ARE STRONGER" children={undefined} /> */}
     <TestimonialsOne
       title="Testimonials"
       tagline="Happy clients" font={undefined} />

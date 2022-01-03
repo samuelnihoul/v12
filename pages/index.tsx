@@ -40,7 +40,7 @@ const StartupBusiness = () => {
         <HeadingSection title="Latest Projects" tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
       </Portfolio>
       <TestimonialsTwo title="Testimonials" tagline="Happy clients" />
-      <BlogSlider />
+      {/* <BlogSlider /> */}
       <FooterOne />
     </Loader>
   );
