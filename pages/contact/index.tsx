@@ -10,7 +10,7 @@ const ContactCreative = () => (
   <Loader>
     <HeaderOne type={undefined} />
     <PageTitleContact
-      title="Contact Creative"
+      title="Contact"
       tagline="Customer Support 24 Hours"
     />
     <ContactFour />

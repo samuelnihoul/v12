@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-
+import Link from 'next/link'
 import DropdownMenu from "../Navs/DropdownMenu";
 import SearchOverlay from "../../elements/SearchOverlay";
 import AttributeNav from "../Navs/AttributeNav";
@@ -70,8 +70,8 @@ const HeaderOne = ({ type }) => {
             onClick={showMenu}
           >
             <i className="icofont-navigation-menu"></i>
-          </button>
-          <MainLogo showMenu={showMenu} collapse={undefined} />
+          </button><Link href='/'>
+          <MainLogo showMenu={showMenu} collapse={undefined} ></MainLogo></Link>
           <DropdownMenu />
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />

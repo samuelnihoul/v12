@@ -8,7 +8,7 @@ import FooterOne from "../../components/Footer/FooterOne";
 const ShopMasonry = () => (
   <Loader>
     <HeaderOne type={undefined} />
-    <PageTitleShop title="Shop Masonry" tagline={undefined} />
+    <PageTitleShop title="Projects" tagline={undefined} />
     <ShopContent layout="masonry" pagination={undefined} />
     <FooterOne />
   </Loader>

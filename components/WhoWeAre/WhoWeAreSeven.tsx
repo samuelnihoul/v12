@@ -11,13 +11,11 @@ const WhoWeAreSeven = () => (
         <HeadingSection
           title="Who We Are"
           tagline="The world at your fingertips" classAppend={undefined} font={undefined}        >
-          We are a fully in-house digital agency focusing on branding,
-          marketing, web design and development with clients ranging from
-          start-ups. We pride ourselves on partnering with clients in order to
-          give the most transparent and educational experience.
+          We are a CO2 offset marketplace: we help you find everything you need to participate in the global net-zero race.
+          If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help.
         </HeadingSection>
       </div>
-      <div className="row mt-50">
+      {/* <div className="row mt-50">
         {aboutData.map((service, i) => {
           return (
             // <ReactWow
@@ -25,16 +23,17 @@ const WhoWeAreSeven = () => (
             //   animation="fadeTop"
             //   delay={`0.${i + 1}s`}
             // >
-            <div className="col-md-4 feature-box text-center radius-icon">
+            /*<div className="col-md-4 feature-box text-center radius-icon">
               <i className={`icofont-${service.icon} font-50px dark-icon`} />
               <h4 className="text-uppercase">{service.title}</h4>
               <p>{service.text}</p>
-            </div>
+            </div> 
             // </ReactWow>
           );
         })}
-      </div>
-    </div>
+      </div>*/ }
+    </div> 
+  
   </section>
 );
 

@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Landfill Methane",
     "image": "shop/single-product-01.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Rice Methane",
     "image": "shop/single-product-02.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Veganism Promotion",
     "image": "shop/single-product-03.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "Oil and Gas Production Methane Reduction",
     "image": "shop/single-product-04.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "Coal Mining Methane Reduction",
     "image": "shop/single-product-05.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "Wastewater Methane Reduction",
     "image": "shop/single-product-06.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "title": "Climate Migration Promotion",
     "image": "shop/single-product-07.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "title": "Arctic Methane",
     "image": "shop/single-product-08.jpeg",
-    "currency": "BNB",
+    "currency": "€",
     "price": "0.1",
     "oldprice": "NA"
   }

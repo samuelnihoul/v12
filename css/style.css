@@ -604,3 +604,7 @@ a.isDisabled:focus {
     border-top: 6px solid transparent;
   }
 }
+li{
+ list-style-type: none;
+ text-decoration: none; 
+}

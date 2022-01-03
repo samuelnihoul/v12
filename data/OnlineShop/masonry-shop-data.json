@@ -1,98 +1,66 @@
 [
   {
     "id": 1,
-    "title": "Grey T-Shirt",
-    "image": "shop/product-13.jpg",
-    "currency": "$",
-    "price": "85.99",
-    "oldprice": "104.99"
+    "title": "Landfill Methane",
+    "image": "shop/single-product-01.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 2,
-    "title": "Black Check Shirt",
-    "image": "shop/product-14.jpg",
-    "currency": "$",
-    "price": "59.99",
-    "oldprice": "79.99"
+    "title": "Rice Methane",
+    "image": "shop/single-product-02.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 3,
-    "title": "Navy Blue Plain",
-    "image": "shop/single-product-01.jpeg",
-    "currency": "$",
-    "price": "59.99",
-    "oldprice": "79.99"
+    "title": "Veganism Promotion",
+    "image": "shop/single-product-03.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 4,
-    "title": "Just Let Me Sleep",
-    "image": "shop/product-15.jpg",
-    "currency": "$",
-    "price": "195.99",
-    "oldprice": "230.99"
+    "title": "Oil and Gas Production Methane Reduction",
+    "image": "shop/single-product-04.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 5,
-    "title": "Indigo Denim Shirt",
-    "image": "shop/product-18.jpg",
-    "currency": "$",
-    "price": "220.95",
-    "oldprice": "250.95"
+    "title": "Coal Mining Methane Reduction",
+    "image": "shop/single-product-05.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 6,
-    "title": "Stone Grey Melange Plain",
-    "image": "shop/single-product-01.jpeg",
-    "currency": "$",
-    "price": "145.75",
-    "oldprice": "185.75"
+    "title": "Wastewater Methane Reduction",
+    "image": "shop/single-product-06.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 7,
-    "title": "Bomber Jacket",
-    "image": "shop/product-28.jpg",
-    "currency": "$",
-    "price": "80.95",
-    "oldprice": "90.95"
+    "title": "Climate Migration Promotion",
+    "image": "shop/single-product-07.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   },
   {
     "id": 8,
-    "title": "Red Half Sleeve T-shirt",
-    "image": "shop/single-product-01.jpeg",
-    "currency": "$",
-    "price": "66.00",
-    "oldprice": "77.00"
-  },
-  {
-    "id": 9,
-    "title": "Boston Blue Plain Vest",
-    "image": "shop/product-19.jpg",
-    "currency": "$",
-    "price": "19.65",
-    "oldprice": ""
-  },
-  {
-    "id": 10,
-    "title": "Blue Shirt",
-    "image": "shop/product-17.jpg",
-    "currency": "$",
-    "price": "160.00",
-    "oldprice": "180.00"
-  },
-  {
-    "id": 11,
-    "title": "T-Shirt Black Fair",
-    "image": "shop/product-11.jpg",
-    "currency": "$",
-    "price": "9.65",
-    "oldprice": ""
-  },
-  {
-    "id": 12,
-    "title": "Half Sleeve Purple T-shirt",
-    "image": "shop/product-12.jpg",
-    "currency": "$",
-    "price": "19.00",
-    "oldprice": ""
+    "title": "Arctic Methane",
+    "image": "shop/single-product-08.jpeg",
+    "currency": "€",
+    "price": "0.1",
+    "oldprice": "NA"
   }
 ]
