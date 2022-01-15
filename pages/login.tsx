@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Loader from "../../components/Loader/Loader";
-import HeaderOne from "../../components/Header/HeaderOne";
+import Loader from "../components/Loader/Loader";
+import HeaderOne from "../components/Header/HeaderOne";
 
 const Login = () => (
   <Loader>

@@ -1,15 +1,15 @@
 import React from "react";
-import Loader from "../../components/Loader/Loader";
-import HeaderOne from "../../components/Header/HeaderOne";
-import PageTitleAbout from "../../components/PageTitle/PageTitleAbout";
-import WhoWeAreSeven from "../../components/WhoWeAre/WhoWeAreSeven";
+import Loader from "../components/Loader/Loader";
+import HeaderOne from "../components/Header/HeaderOne";
+import PageTitleAbout from "../components/PageTitle/PageTitleAbout";
+import WhoWeAreSeven from "../components/WhoWeAre/WhoWeAreSeven";
 //import OurSkillsTwo from "../../components/OurSkills/OurSkillsTwo";
-import CounterOne from "../../components/Counters/CounterOne";
-import OurServicesThree from "../../components/OurServices/OurServicesThree";
-import OurTeamTwo from "../../components/Team/OurTeamTwo";
-import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
-import ClientsBrand from "../../components/ClientsBrand/ClientsBrand";
-import FooterOne from "../../components/Footer/FooterOne";
+import CounterOne from "../components/Counters/CounterOne";
+import OurServicesThree from "../components/OurServices/OurServicesThree";
+import OurTeamTwo from "../components/Team/OurTeamTwo";
+import TestimonialsOne from "../components/Testimonials/TestimonialsOne";
+import ClientsBrand from "../components/ClientsBrand/ClientsBrand";
+import FooterOne from "../components/Footer/FooterOne";
 
 const AboutUs = () => (
   <Loader>

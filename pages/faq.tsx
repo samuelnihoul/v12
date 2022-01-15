@@ -1,10 +1,10 @@
 import React from "react";
-import dataAccordion from "../../data/Accordion/accordion-faqs-data.json";
-import Loader from "../../components/Loader/Loader";
-import AccordionsComponent from "../../components/Accordions/AccordionsComponent";
-import HeaderOne from "../../components/Header/HeaderOne";
-import PageTitleWidget from "../../components/PageTitle/PageTitleWidget";
-import FooterOne from "../../components/Footer/FooterOne";
+import dataAccordion from "../data/Accordion/accordion-faqs-data.json";
+import Loader from "../components/Loader/Loader";
+import AccordionsComponent from "../components/Accordions/AccordionsComponent";
+import HeaderOne from "../components/Header/HeaderOne";
+import PageTitleWidget from "../components/PageTitle/PageTitleWidget";
+import FooterOne from "../components/Footer/FooterOne";
 
 const FAQs = () => (
   <Loader>
