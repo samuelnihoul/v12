@@ -6,6 +6,10 @@
   "video": "video/pines.mov",
   "image": "video/pines.png",
   "buttons": [
+    {"id": 2,
+      "text": "calculate a personal or corporate footprint",
+      "link": "https://www.carbonfootprint.com/calculator.aspx",
+      "type": "btn-dark btn-circle"},
     {
       "id": 1,
       "text": "go climate neutral",
@@ -13,15 +17,12 @@
       "type": "btn-dark btn-circle"
     },
     {
-      "id": 2,
-      "text": "get funded",
+      "id": 3,
+      "text": "fund your climate action",
       "link": "/contact",
       "type": "btn-dark btn-circle"
-    },
-    {"id": 3,
-      "text": "calculate your personal or corporate footprint",
-      "link": "https://www.carbonfootprint.com/calculator.aspx",
-      "type": "btn-dark btn-circle"}
+    }
+    
 
   ]
 }
