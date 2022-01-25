@@ -77,8 +77,8 @@ const FooterOne = () => (
                     </a>
                   </li>
                   <li>
-                    <i className="icofont icofont-iphone"></i>
-                    <a href="tel:441632960290">+33 970 406 998</a>
+                    <i className="icofont icofont-whatsapp"></i>
+                    <a href="https://wa.me/33782949579">+33 782 949 579</a>
                   </li>
                   <li>
                     <i className="icofont icofont-mail"></i>
