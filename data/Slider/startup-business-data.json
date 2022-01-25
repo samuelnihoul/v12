@@ -17,6 +17,11 @@
       "text": "get funded",
       "link": "/contact",
       "type": "btn-dark btn-circle"
-    }
+    },
+    {"id": 3,
+      "text": "calculate your personal or corporate footprint",
+      "link": "https://www.carbonfootprint.com/calculator.aspx",
+      "type": "btn-dark btn-circle"}
+
   ]
 }
