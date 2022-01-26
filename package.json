@@ -50,11 +50,9 @@
     "eject": "react-scripts eject",
     "dev": "next dev",
     "build": "CI=false && next build",
-    "lint":"next lint"
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    
-  },
+  "eslintConfig": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -68,6 +66,8 @@
     ]
   },
   "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.133",
     "eslint": "<8.0.0"
   }
 }
