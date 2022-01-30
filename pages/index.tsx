@@ -11,7 +11,6 @@ import OurServices from "../components/OurServices/OurServices";
 import CounterOne from "../components/Counters/CounterOne";
 import OurServicesTwo from "../components/OurServices/OurServicesTwo";
 import TestimonialsTwo from "../components/Testimonials/TestimonialsTwo";
-import BlogSlider from "../components/Blog/BlogSlider";
 import FooterOne from "../components/Footer/FooterOne";
 import Portfolio from "../components/Portfolio/Portfolio";
 import HeadingSection from "../components/HeadingSection/HeadingSection";
