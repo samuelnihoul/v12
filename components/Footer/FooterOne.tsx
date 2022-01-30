@@ -20,7 +20,8 @@ const FooterOne = () => (
                   </a>
                 </div>
                 <p>
-                  Your online carbon offset marketplace. For the peace of mind.
+                  Your online carbon offset marketplace.<br></br>
+                  For the peace of mind.
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "value": 30.78,
-    "title": "EUR Spent for Climate"
+    "title": "€ for Climate"
   },
   {
     "id": 2,
@@ -11,7 +11,7 @@
   },
   {
     "id": 3,
-    "value": 2,
+    "value": 0,
     "title": "Certificates Issued"
   },
   {
