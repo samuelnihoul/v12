@@ -73,7 +73,7 @@ const FooterOne = () => (
                   <li>
                     <i className="icofont icofont-google-map"></i>
                     <a href={process.env.PUBLIC_URL}>
-                      14 La Blaye, 22150 Ploeuc-l'Hermitage
+                      14 La Blaye, 22150 Ploeuc-l'Hermitage, France
                     </a>
                   </li>
                   <li>
