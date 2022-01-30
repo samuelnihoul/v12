@@ -8,7 +8,7 @@
   "buttons": [
     {"id": 2,
       "text": "calculate a personal or corporate footprint",
-      "link": "https://www.carbonfootprint.com/calculator.aspx",
+      "link": "https://footprint.wwf.org.uk/#/questionnaire",
       "type": "btn-dark btn-circle"},
     {
       "id": 1,
