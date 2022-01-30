@@ -40,7 +40,7 @@ const OurServicesTwo = ({ title, tagline }) => (
           data-aos-duration={1000}
         >
           <a
-            href={`${process.env.PUBLIC_URL}/about`}
+            href={`/about`}
             className="btn btn-color btn-circle"
           >
             Read More
