@@ -12,7 +12,7 @@ export default function reports() {
         height: "90vh",
       }}
     >
-      <h1 style={{ padding: "12vh" }}>No project reports to show yet</h1>
+      <h1 style={{ padding: "12vh" }}>No project report to show yet</h1>
     </div>
   );
 }
