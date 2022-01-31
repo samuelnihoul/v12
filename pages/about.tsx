@@ -26,13 +26,10 @@ const AboutUs = () => (
       tagline="Part of your success"
     /> */}
  {/*    <OurTeamTwo title="MEET OUR TEAM" tagline="Together WE ARE STRONGER" children={undefined} /> */}
-{/*    
     <TestimonialsOne
-      title="Testimonials" */}
-{/*  */}
-{/* 
-    //   tagline="Happy clients" font={undefined} />
-    // <ClientsBrand children={undefined} classAppend={undefined} /> */}
+      title="Testimonials"
+      tagline="Happy clients" font={undefined} />
+    <ClientsBrand children={undefined} classAppend={undefined} />
     <FooterOne />
   </Loader>
 );

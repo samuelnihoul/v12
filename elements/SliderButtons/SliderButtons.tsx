@@ -7,7 +7,6 @@ const SliderButtons = ({buttons}) => {
         key={button.id}
         href={button.link}
         className={"btn btn-animate " + (button.type ? button.type : "")}
-        target={button.id==2?'_blank':'_self'}
       >
         <span>
           {button.text}

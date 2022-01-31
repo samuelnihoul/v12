@@ -19,7 +19,7 @@ const FooterCopyright = () => (
         </div>
         <div className="col-md-6 col-xs-12">
           <div className="copy-right text-right">
-            © 2022 harmonia-eko. All rights reserved.
+            © 2021 harmonia-eko. All rights reserved.
           </div>
         </div>
       </div>

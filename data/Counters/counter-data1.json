@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "value": 30.78,
-    "title": "€ for Climate"
+    "value": 50,
+    "title": "USD Spent for Climate"
   },
   {
     "id": 2,
-    "value": 2,
+    "value": 0,
     "title": "Tonnes Offset"
   },
   {
     "id": 3,
-    "value": 0,
+    "value": 1,
     "title": "Certificates Issued"
   },
   {
     "id": 4,
-    "value": 3,
-    "title": "Projects (to be) funded"
+    "value": 11,
+    "title": "Projects"
   }
 ]

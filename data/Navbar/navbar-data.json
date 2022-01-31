@@ -2,23 +2,23 @@
     {
         "id": 1,
         "title": "shop",
-        "link": "https://shop.harmonia-eko.ooo",
+        "link": "/shop",
         "megaMenu": false,
         "colsTitle": [],
         "itemsPerCol": 0,
         "subMenu": [
-           
-        ]
-    },
-    {
-        "id": 1,
-        "title": "reports",
-        "link": "/reports",
-        "megaMenu": false,
-        "colsTitle": [],
-        "itemsPerCol": 0,
-        "subMenu": [
-           
+            {
+                "id": 1.1,
+                "title": "Shop",
+                "link": "/shop",
+                "subMenu": []
+            },
+            {
+                "id": 1.2,
+                "title": "Example product",
+                "link": "/shop/SingleProduct",
+                "subMenu": []
+            }
         ]
     },
     {
