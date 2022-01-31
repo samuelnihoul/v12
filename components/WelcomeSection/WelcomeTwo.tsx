@@ -2,7 +2,7 @@ import React from "react";
 import WelcomeSubsection from "./WelcomeSubsection";
 import WelcomeFeatures from "./WelcomeFeatures";
 import HeadingThree from "../../components/HeadingSection/HeadingThree";
-import OurSkillsOne from "../OurSkills/OurSkillsOne";
+// import OurSkillsOne from "../OurSkills/OurSkillsOne";
 const image = "/images/about-bg-left.jpg";
 import TeamSlider from "../Team/TeamSlider";
 
@@ -27,7 +27,7 @@ const WelcomeTwo = ({ toggler, handleToggler }) => (
           title="Our Skills"
           tagline="We develop big ideas that sell"
         >
-          <OurSkillsOne classAppend="cardo-font" font="cardo-font" />
+          {/* <OurSkillsOne classAppend="cardo-font" font="cardo-font" /> */}
         </HeadingThree>
         <div className="col-md-4 col-sm-12 team-member-wrapper">
           <div className="col-inner">
