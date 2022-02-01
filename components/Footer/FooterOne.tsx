@@ -20,7 +20,8 @@ const FooterOne = () => (
                   </a>
                 </div>
                 <p>
-                  We are your online carbon offset marketplace.
+                  Your online carbon offset marketplace.<br></br>
+                  For the peace of mind.
                 </p>
               </div>
             </div>
@@ -29,16 +30,16 @@ const FooterOne = () => (
                 <h5 className="widget-title">Work With Us</h5>
                 <ul>
                   <li>
-                    <a href="#!">Partnership</a>
+                    <a href="/contact">Partnership</a>
                   </li>
                   <li>
-                    <a href="#!">Internship</a>
+                    <a href="/contact">Internship</a>
                   </li>
                   <li>
-                    <a href="#!">Get Shares</a>
+                    <a href="/contact">Get Shares</a>
                   </li>
                   <li>
-                    <a href="#!">Cofounding</a>
+                    <a href="/contact">Cofounding</a>
                   </li>
 
                 </ul>
@@ -49,19 +50,19 @@ const FooterOne = () => (
                 <h5 className="widget-title">Useful Links</h5>
                 <ul>
                   <li>
-                    <a href={process.env.PUBLIC_URL}>About Us</a>
+                    <a href={process.env.PUBLIC_URL+'/about'}>About Us</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL}>Contact Us</a>
+                    <a href={process.env.PUBLIC_URL+'/contact'}>Contact Us</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL}>Our Services</a>
+                    <a href={process.env.PUBLIC_URL+'/about'}>Our Services</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL}>Terms &amp; Conditions</a>
+                    <a href={process.env.PUBLIC_URL+'/about'}>Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL}>Careers</a>
+                    <a href={process.env.PUBLIC_URL+'/contact'}>Careers</a>
                   </li>
                 </ul>
               </div>
@@ -73,12 +74,12 @@ const FooterOne = () => (
                   <li>
                     <i className="icofont icofont-google-map"></i>
                     <a href={process.env.PUBLIC_URL}>
-                      14 La Blaye, 22150 Ploeuc-l'Hermitage
+                      14 La Blaye, 22150 Ploeuc-l'Hermitage, France
                     </a>
                   </li>
                   <li>
-                    <i className="icofont icofont-iphone"></i>
-                    <a href="tel:441632960290">+33 970 406 998</a>
+                    <i className="icofont icofont-whatsapp"></i>
+                    <a href="https://wa.me/33782949579">+33 782 949 579</a>
                   </li>
                   <li>
                     <i className="icofont icofont-mail"></i>

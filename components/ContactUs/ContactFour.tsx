@@ -13,8 +13,8 @@ const ContactFour = () => (
           </div>
           <div className="col-about-left col-md-6 text-left">
             <h2>Get in Touch</h2>
-            <h4 className="text-uppercase">Find your brand's voice</h4>
-            <ContactFormSix />
+            <h4 className="text-uppercase">A step closer to your climate goals</h4>
+            {/* <ContactFormSix /> */}
           </div>
         </div>
       </div>

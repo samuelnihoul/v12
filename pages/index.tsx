@@ -35,10 +35,10 @@ const StartupBusiness = () => {
       />
       <CounterOne type="wide" bg={undefined} />
       <OurServicesTwo title="About Us" tagline="Part of the solution" />
-      <Portfolio columns="4" layout="wide" filter="true" space={null} classAppend={null} items={null}>
+      {/* <Portfolio columns="4" layout="wide" filter="true" space={null} classAppend={null} items={null}>
         <HeadingSection title="Latest Projects" tagline={undefined} classAppend={undefined} font={undefined} children={undefined} />
-      </Portfolio>
-      <TestimonialsTwo title="Testimonials" tagline="Happy clients" />
+      </Portfolio> */}
+      {/* <TestimonialsTwo title="Testimonials" tagline="Happy clients" /> */}
       {/* <BlogSlider /> */}
       <FooterOne />
     </Loader>

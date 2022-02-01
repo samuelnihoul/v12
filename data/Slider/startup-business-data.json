@@ -2,21 +2,27 @@
   "id": 1,
   "title": "carbon offset marketplace",
   "tagline": "harmonia-eko",
-  "text": "we cool down the planet. together.",
+  "text": "we cool down the planet. ",
   "video": "video/pines.mov",
   "image": "video/pines.png",
   "buttons": [
+    {"id": 2,
+      "text": "calculate your footprint",
+      "link": "https://footprint.wwf.org.uk/",
+      "type": "btn-dark btn-circle"},
     {
       "id": 1,
       "text": "go climate neutral",
-      "link": "/shop",
+      "link": "https://shop.harmonia-eko.ooo",
       "type": "btn-dark btn-circle"
     },
     {
-      "id": 2,
-      "text": "get funded",
+      "id": 3,
+      "text": "fund your climate action",
       "link": "/contact",
       "type": "btn-dark btn-circle"
     }
+    
+
   ]
 }
