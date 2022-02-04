@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '../public/icofont/icofont.min.css'
 import HeaderOne from "../components/Header/HeaderOne";
 import FooterOne from "../components/Footer/FooterOne";
-import firebase  from '../firebase/firebaseConfig'
+
 export default function App({ Component, pageProps }) {
  
   return (<>
