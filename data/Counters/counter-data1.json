@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "value": 30.78,
+    "value": 43,
     "title": "€ for Climate"
   },
   {
     "id": 2,
-    "value": 2,
+    "value": 3,
     "title": "Tonnes Offset"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "id": 4,
-    "value": 3,
+    "value": 2,
     "title": "Projects (to be) funded"
   }
 ]
