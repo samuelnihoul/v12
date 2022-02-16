@@ -15,7 +15,7 @@ const HeroVideo = ({ data }) => {
               {data.tagline}
             </h2>
             <h1>{/* <span style={{fontSize:30}}>The new era</span><br/> */}<span  className="white-color font-700" style={{background:'linear-gradient(to right, #194d38,#ffd700)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent'}}>{data.title}</span></h1>
-            <h3 className="white-color font-400 " >{data.text}<br></br><span style={{background:'linear-gradient(to right, #9140BF,#ffd700)', WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>Together.</span></h3>
+            <h3 className="white-color font-400 " >{data.text}<br></br><b style={{background:'linear-gradient(to right, #9140BF,#ffd700)', WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>Together.</b></h3>
             <p className="text-center mt-30">
               <SliderButtons buttons={data.buttons} />
             </p>
