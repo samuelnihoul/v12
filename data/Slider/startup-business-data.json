@@ -7,7 +7,7 @@
   "image": "video/pines.png",
   "buttons": [
     {"id": 2,
-      "text": "calculate your footprint",
+      "text": "calculate your footprint ↗️",
       "link": "https://footprint.wwf.org.uk/",
       "type": "btn-dark btn-circle"},
     {
