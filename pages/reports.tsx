@@ -3,7 +3,10 @@ import {getStorage, ref,getDownloadURL} from 'firebase/storage'
 import bg from "../public/assets/images/reports.jpeg";
 import { getTokenSourceMapRange } from "typescript";
 import fb from '../firebase/firebaseConfig'
-import {Card, CardMedia} from '@mui/material'
+import { Card, CardMedia } from '@mui/material'
+
+import HeaderOne from '../components/Header/HeaderOne';
+import Loader from "../components/Loader/Loader"
 const storage=getStorage(fb)
 export default function reports() {
   const img = bg;
@@ -11,7 +14,8 @@ export default function reports() {
  //function callback (url){ppf22=url}
   useEffect(()=> {getDownloadURL(ref(storage,'Permaculture Pal - Feb 2022 Report.pdf')).then((url)=>{sppf22(url)})})
  
-  return (
+  return (<Loader>
+    <HeaderOne type={undefined} />
     <div
       style={{
         textAlign: "center",
@@ -19,7 +23,8 @@ export default function reports() {
         backgroundImage: "/assets/images/reports.jpeg",
         backgroundColor: "lightgray",
         height: "90vh",
-        alignItems:'center'
+        alignItems: 'center',
+        paddingTop:'10vh'
       
       }}
     >
@@ -27,6 +32,6 @@ export default function reports() {
       <CardMedia/>
       <a href={ppf22} >Permaculture Pal - Feb 2022</a></Card>
       
-    </div>
+    </div></Loader>
   );
 }
