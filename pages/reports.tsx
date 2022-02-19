@@ -21,7 +21,7 @@ export default function reports() {
         textAlign: "center",
         color: "white",
         backgroundImage: "/assets/images/reports.jpeg",
-        backgroundColor: "lightgray",
+        backgroundColor: "lightgreen",
         height: "90vh",
         alignItems: 'center',
         paddingTop:'10vh'
@@ -29,7 +29,7 @@ export default function reports() {
       }}
     >
     <Card sx={{maxWidth:300}}>
-      <CardMedia/>
+      <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
       <a href={ppf22} >Permaculture Pal - Feb 2022</a></Card>
       
     </div></Loader>
