@@ -12,13 +12,13 @@
       "type": "btn-dark btn-circle"},
     {
       "id": 1,
-      "text": "go climate neutral",
+      "text": "offset (and get an exclusive NFT)",
       "link": "https://shop.harmonia-eko.ooo",
       "type": "btn-dark btn-circle"
     },
     {
       "id": 3,
-      "text": "fund your climate action",
+      "text": "fund your project",
       "link": "/contact",
       "type": "btn-dark btn-circle"
     }
