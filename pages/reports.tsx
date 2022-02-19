@@ -21,7 +21,7 @@ export default function reports() {
         textAlign: "center",
         color: "white",
         backgroundImage: "/assets/images/reports.jpeg",
-        backgroundColor: "lightgreen",
+        backgroundColor: "#f1e5ac",
         height: "90vh",
         alignItems: 'center',
         paddingTop:'10vh'
