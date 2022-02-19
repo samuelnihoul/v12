@@ -24,6 +24,7 @@ const StartupBusiness = () => {
     <Loader>
       <HeaderOne type={undefined} />
       <HeroVideo data={dataStartup} />
+     
       <Welcome title="What We Do" tagline="The way we work is harmonious">
         We are a CO2e offset marketplace. This is the one stop shop for all planet healers and nature stakeholders (everybody?).<br /><br />Buy and sell offsets with peace: get certified with ease and funded with grace.
       </Welcome>
