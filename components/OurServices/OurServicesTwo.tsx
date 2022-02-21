@@ -1,5 +1,5 @@
 import React from "react";
-const serviceImg = "/images/startup-bg-right.jpg.jpeg";
+const serviceImg = "/assets/images/startup-bg-right.jpg.jpeg";
 
 const OurServicesTwo = ({ title, tagline }) => (
   <section className="white-bg">
