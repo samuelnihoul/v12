@@ -16,5 +16,10 @@
     "icon": "safety",
     "title": "Safety & Reliability",
     "text": "We are not afraid to welcome mild geo-engineering but work hard to ensure quality and safety of what we sell."
+  },
+  {"id":4,
+  "icon":"atom",
+  "title":"Leveraging the Power of Carbon Equivalence",
+  "text":"Our base unit is CO2e, so we do not only with work with CO2 reduction but also with even more efficient ways to naturally cool down our planet."
   }
 ]
