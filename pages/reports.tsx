@@ -24,14 +24,16 @@ export default function reports() {
         backgroundColor: "#f1e5ac",
         height: "90vh",
         alignItems: 'center',
-        paddingTop:'10vh'
-      
+        paddingTop:'10vh',
+        paddingLeft:'30vw'
       }}
     >
-    <Card sx={{maxWidth:300}}>
+    <Card sx={{maxWidth:300,margin:10}}>
       <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
       <a href={ppf22} >Permaculture Pal - Feb 2022</a></Card>
-      
+      <Card sx={{maxWidth:300,margin:10}}>
+      <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
+      <a href={'https://charmindustrial.com/carbonmsa'} >Charm - Service Agreement</a></Card> 
     </div></Loader>
   );
 }
