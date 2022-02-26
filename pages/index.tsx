@@ -30,7 +30,7 @@ const StartupBusiness = () => {
       </Welcome>
       <OurServices
         title="Our Focus"
-        tagline="We help implement your ambitions of ecoharmony."
+        tagline="We help implementing your ambitions of ecoharmony."
         serviceImg={serviceOneImg}
         children={null}
       />

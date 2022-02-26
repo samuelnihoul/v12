@@ -3,7 +3,7 @@ import { JsxChild } from 'typescript';
 import HeadingSection from '../HeadingSection/HeadingSection';
 const Welcome = ({ title, tagline, children }) => (
   <section className="first-ico-box" id="about" style={{textAlign:'center'}}>
-    <h6 style={{textAlign: "center"}}>NFT Collection Q1 2022</h6>
+    <h6 style={{textAlign: "center"}}>NFT Collection Q1 2022 - Display yours on your digital handles!</h6>
     <img style={{paddingBottom: "3vh"}} src={"/assets/images/image17.png"}alt="NFTs">
               </img>
     
