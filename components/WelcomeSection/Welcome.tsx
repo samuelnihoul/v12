@@ -16,5 +16,4 @@ const Welcome = ({ title, tagline, children }) => (
     </div>
   </section>
 );
-
 export default Welcome;
