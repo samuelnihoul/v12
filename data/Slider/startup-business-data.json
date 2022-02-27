@@ -10,7 +10,11 @@
       "text": "📉 calculate your footprint ↗️",
       "link": "https://footprint.wwf.org.uk/",
       "type": "btn-dark btn-circle"},
-    {
+      {"id": 2,
+        "text": "📉 use my country average instead",
+        "link": "https://imgur.com/a/1J7XNXC",
+        "type": "btn-dark btn-circle"},
+      {
       "id": 1,
       "text": "🌳 offset and get an exclusive NFT",
       "link": "https://shop.harmonia-eko.ooo",
