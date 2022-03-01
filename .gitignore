@@ -19,3 +19,4 @@ cli/node_modules
 trash
 registry/node_modules
 tmp
+.next
