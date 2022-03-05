@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "../components/Loader/Loader";
 import dataStartup from "../data/Slider/startup-business-data.json";
-const serviceOneImg = "/assets/images/video/pines.png";
+const serviceOneImg = "/assets/images/man.jpg";
 import HeaderOne from "../components/Header/HeaderOne";
 import HeroVideo from "../components/Hero/HeroVideo";
 import Welcome from "../components/WelcomeSection/Welcome";
