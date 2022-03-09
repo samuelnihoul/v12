@@ -3,7 +3,7 @@
     "id": 3,
     "icon": "thermometer",
     "title": "Climate Justice & Restorationism",
-    "text": "We will base our customer advice and project policies on climate justice and damage reversal through emphasis on the notion of 'historical emissions'."
+    "text": "We will base our customer advice and project policies on climate justice and damage reversal through emphasis on the notions of residual and historical emissions."
   },
   {
     "id": 2,
@@ -11,15 +11,15 @@
     "title": "User Reward",
     "text": "Rewards are meaningful as proof of gratitude and care, so we design quarterly eco-friendly artistic NFT certificates for our users."
   },
+  {"id":4,
+  "icon":"atom",
+  "title":"Leveraging the Power of Carbon Equivalence",
+  "text":"Our base unit is CO2e, so we do not only with work with CO2 reduction, but also with more efficient ways to naturally cool down our planet."
+  },
   {
     "id": 1,
     "icon": "safety",
     "title": "Safety & Reliability",
     "text": "We are not afraid to welcome mild geo-engineering but work hard to ensure quality and safety of what we sell."
-  },
-  {"id":4,
-  "icon":"atom",
-  "title":"Leveraging the Power of Carbon Equivalence",
-  "text":"Our base unit is CO2e, so we do not only with work with CO2 reduction but also with even more efficient ways to naturally cool down our planet."
   }
 ]

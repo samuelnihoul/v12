@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "title": "shop",
-        "link": "https://shop.harmonia-eko.ooo",
+        "title": "Karbon Basar",
+        "link": "https://karbonbasar.harmonia-eko.ooo",
         "megaMenu": false,
         "colsTitle": [],
         "itemsPerCol": 0,
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 5,
         "title": "reports",
         "link": "/reports",
         "megaMenu": false,
@@ -34,6 +34,14 @@
         "id": 3,
         "title": "contact",
         "link": "/contact",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    },{
+        "id": 4,
+        "title": "faq",
+        "link": "/faq",
         "megaMenu": false,
         "colsTitle": [],
         "itemsPerCol": 0,

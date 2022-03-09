@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "../components/Loader/Loader";
 import dataStartup from "../data/Slider/startup-business-data.json";
-const serviceOneImg = "/assets/images/video/pines.png";
+const serviceOneImg = "/assets/images/man.jpg";
 import HeaderOne from "../components/Header/HeaderOne";
 import HeroVideo from "../components/Hero/HeroVideo";
 import Welcome from "../components/WelcomeSection/Welcome";
@@ -30,7 +30,7 @@ const StartupBusiness = () => {
       </Welcome>
       <OurServices
         title="Our Focus"
-        tagline="We help implement your ambitions of ecoharmony."
+        tagline="We help implementing your ambitions of ecoharmony."
         serviceImg={serviceOneImg}
         children={null}
       />

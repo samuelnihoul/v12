@@ -9,7 +9,7 @@ import FooterOne from "../components/Footer/FooterOne";
 const FAQs = () => (
   <Loader>
     <HeaderOne type={undefined} />
-    <PageTitleWidget title="FAQs" />
+    <PageTitleWidget title="FAQ" />
     <section>
       <div className="container">
         <div className="row">

@@ -1,7 +1,7 @@
 {
   "id": 1,
-  "title": "harmonia-eko",
-  "tagline": "The Carbon Offset Marketplace for the Harmony Era",
+  "title": "Karbon Basar",
+  "tagline": "Introducing the Carbon Offset Marketplace by harmonia-eko",
   "text": "We cool down the planet. ",
   "video": "video/pines.mov",
   "image": "video/pines.png",
@@ -10,10 +10,14 @@
       "text": "📉 calculate your footprint ↗️",
       "link": "https://footprint.wwf.org.uk/",
       "type": "btn-dark btn-circle"},
-    {
+      {"id": 2,
+        "text": "📉 use my country average instead",
+        "link": "https://imgur.com/a/1J7XNXC",
+        "type": "btn-dark btn-circle"},
+      {
       "id": 1,
       "text": "🌳 offset and get an exclusive NFT",
-      "link": "https://shop.harmonia-eko.ooo",
+      "link": "https://karbonbasar.harmonia-eko.ooo",
       "type": "btn-dark btn-circle"
     },
     {
