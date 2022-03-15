@@ -1,37 +1,9 @@
 [
   {
-    "id": 1,
-    "icon": "facebook",
-    "portfolio": 1,
-    "footer": 1,
-    "link": "http://facebook.com/harmonia_eko"
-  },
-  {
-    "id": 2,
-    "icon": "youtube",
-    "portfolio": 0,
-    "footer": 1,
-    "link": "http://youtube.com/harmonia_eko"
-  },
-  {
-    "id": 3,
-    "icon": "twitter",
-    "portfolio": 1,
-    "footer": 1,
-    "link": "http://twitter.com/harmonia_eko"
-  },
-  {
-    "id": 4,
-    "icon": "instagram",
-    "portfolio": 0,
-    "footer": 1,
-    "link": "http://instagram.com/harmonia_eko"
-  },
-  {
     "id": 5,
     "icon": "linkedin",
     "portfolio": 1,
     "footer": 1,
-    "link": "http://instagram.com/harmonia_eko"
+    "link": "http://linkedin.com/company/harmonia-eko"
   }
 ]
