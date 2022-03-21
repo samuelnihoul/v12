@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "value": 43,
-    "title": "€ for Climate"
+    "value": 225,
+    "title": "ħ for Climate"
   },
   {
     "id": 2,
@@ -12,11 +12,11 @@
   {
     "id": 3,
     "value": 1,
-    "title": "Certificates Issued"
+    "title": "NFT issued"
   },
   {
     "id": 4,
     "value": 3,
-    "title": "Projects listed"
+    "title": "Projects Listed"
   }
 ]
