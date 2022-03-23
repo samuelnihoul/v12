@@ -10,9 +10,13 @@ import Loader from "../components/Loader/Loader"
 const storage=getStorage(fb)
 export default function reports() {
   const img = bg;
-  const [ppf22,sppf22]=useState('')
+  const [ppf22, sppf22] = useState('')
+  const [ppm22,sppm22]=useState('')
  //function callback (url){ppf22=url}
-  useEffect(()=> {getDownloadURL(ref(storage,'Permaculture Pal - Feb 2022 Report.pdf')).then((url)=>{sppf22(url)})})
+  useEffect(() => {
+    getDownloadURL(ref(storage, 'Permaculture Pal - Feb 2022 Report.pdf')).then((url) => { sppf22(url) })
+    getDownloadURL(ref(storage,'Permaculture Pal - ma 2022 Report.pdf')).then((url)=>{sppm22(url)})
+  })
  
   return (<Loader>
     <HeaderOne type={undefined} />
@@ -30,7 +34,10 @@ export default function reports() {
     >
     <Card sx={{maxWidth:300,margin:10}}>
       <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
-      <a href={ppf22} >Permaculture Pal - Feb 2022</a></Card>
+        <a href={ppf22} >Permaculture Pal - Feb 2022</a></Card>
+        <Card sx={{maxWidth:300,margin:10}}>
+      <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
+      <a href={ppf22} >Permaculture Pal - March 2022</a></Card>
       <Card sx={{maxWidth:300,margin:10}}>
       <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
       <a href={'https://charmindustrial.com/carbonmsa'} >Charm - Service Agreement</a></Card> 
