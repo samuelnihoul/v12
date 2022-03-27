@@ -11,7 +11,7 @@ const ContactCreative = () => (
     <HeaderOne type={undefined} />
     <PageTitleContact
       title="Contact"
-      tagline="Customer Support 24 Hours"
+      tagline="Customer Support 27 Hours"
     />
     <ContactFour />
     {/* <ClientsBrand children={undefined} classAppend={undefined} /> */}
