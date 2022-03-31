@@ -44,7 +44,7 @@ export default function reports() {
       <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
         <a href={'https://charmindustrial.com/carbonmsa'} >Charm - Service Agreement</a></Card> 
         <Card sx={{maxWidth:300,margin:10}}>
-      <CardMedia><img src='/assets/images/reports.jpeg'></img></CardMedia>
+      <CardMedia><img src='/assets/images/ProjectManagement/jason-blackeye-KUgDg__TMGk-unsplash.jpg'></img></CardMedia>
         <a href={r3} >Green Elec Affiliate Marketing (GEAM) by harmonia-eko - Methodology and Initial Report</a></Card>
     </div></Loader>
   );
