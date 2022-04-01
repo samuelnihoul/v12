@@ -44,7 +44,7 @@ export default function reports() {
         <a href={'https://charmindustrial.com/carbonmsa'} >Charm - Service Agreement</a></Card> 
         <Card sx={{maxWidth:300,margin:10}}>
       <CardMedia><img src='/assets/images/ProjectManagement/jason-blackeye-KUgDg__TMGk-unsplash.jpg'></img></CardMedia>
-        <a href={'https://community.inkdrop.app/note/45ed65f64d9bb11c13d62986c89f3ddf/note:qK2gc0QLn'} >Green Elec Affiliate Marketing (GEAM) by harmonia-eko - Methodology and Initial Report</a></Card>
+        <a href={'https://community.inkdrop.app/note/45ed65f64d9bb11c13d62986c89f3ddf/note:qK2gc0QLn'} >Green Elec Affiliate Marketing (GEAM) by harmonia-eko - Methodology</a></Card>
     </div></Loader>
   );
 }
