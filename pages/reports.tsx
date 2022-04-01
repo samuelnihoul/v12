@@ -17,7 +17,6 @@ export default function reports() {
   useEffect(() => {
     getDownloadURL(ref(storage, 'Permaculture Pal - Feb 2022 Report.pdf')).then((url) => { sppf22(url) })
     getDownloadURL(ref(storage, 'Permaculture Pal - ma 2022 Report.pdf')).then((url) => { sppm22(url) })
-    getDownloadURL(ref(storage,'Green Elec Affiliate Marketing (GEAM) by harmonia-eko Methodology and Initial Report.pdf')).then((url)=>{sr3(url)})
   })
  
   return (<Loader>
@@ -45,7 +44,7 @@ export default function reports() {
         <a href={'https://charmindustrial.com/carbonmsa'} >Charm - Service Agreement</a></Card> 
         <Card sx={{maxWidth:300,margin:10}}>
       <CardMedia><img src='/assets/images/ProjectManagement/jason-blackeye-KUgDg__TMGk-unsplash.jpg'></img></CardMedia>
-        <a href={r3} >Green Elec Affiliate Marketing (GEAM) by harmonia-eko - Methodology and Initial Report</a></Card>
+        <a href={'https://community.inkdrop.app/note/45ed65f64d9bb11c13d62986c89f3ddf/note:qK2gc0QLn'} >Green Elec Affiliate Marketing (GEAM) by harmonia-eko - Methodology and Initial Report</a></Card>
     </div></Loader>
   );
 }
