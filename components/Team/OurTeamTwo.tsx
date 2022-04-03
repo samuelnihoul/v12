@@ -5,11 +5,11 @@ import TeamMember from './TeamMember';
 
 const OurTeamTwo = ({ title, tagline, children }) => (
   <section className="white-bg" id="team" >
-    <div className="container">
+    <div className="container" >
       <div className="row">
         <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
-      <div className="row mt-50">
+      <div className="row mt-50" >
         {teamData.map((member, i) => (
           <TeamMember
             key={member.id}

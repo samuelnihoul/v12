@@ -25,7 +25,7 @@ const AboutUs = () => (
       title="About Us"
       tagline="Part of your success"
     /> */}
- {/*    <OurTeamTwo title="MEET OUR TEAM" tagline="Together WE ARE STRONGER" children={undefined} /> */}
+   <OurTeamTwo title="MEET OUR TEAM" tagline="Together WE ARE STRONGER" children={undefined} /> 
 {/*    
     <TestimonialsOne
       title="Testimonials" */}

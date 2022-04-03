@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Randy Bell",
         "role": "UI/UX Designer",
-        "image": "team/team-01.jpg",
+        "image": "team/yo.png",
         "social": [
             {
                 "id": 1,
@@ -26,7 +26,7 @@
         "id": 2,
         "name": "Alice Andrews",
         "role": "Photographers",
-        "image": "team/team-02.jpg",
+        "image": "team/ma.jpg",
         "social": [
             {
                 "id": 1,
@@ -49,35 +49,12 @@
         "id": 3,
         "name": "Nicholas Hart",
         "role": "Web Developer",
-        "image": "team/team-03.jpg",
+        "image": "team/mirr.jpg",
         "social": [
             {
                 "id": 1,
                 "icon": "facebook",
                 "link": "!#"
-            },
-            {
-                "id": 2,
-                "icon": "twitter",
-                "link": "!#"
-            },
-            {
-                "id": 3,
-                "icon": "youtube",
-                "link": "!#"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Grace Ross",
-        "role": "CEO / Founder",
-        "image": "team/team-04.jpg",
-        "social": [
-            {
-                "id": 1,
-                "icon": "facebook",
-                "link": "graceross"
             },
             {
                 "id": 2,
