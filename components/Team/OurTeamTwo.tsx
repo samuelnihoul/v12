@@ -9,7 +9,7 @@ const OurTeamTwo = ({ title, tagline, children }) => (
       <div className="row">
         <HeadingSection title={title} tagline={tagline} classAppend={undefined} font={undefined} children={undefined} />
       </div>
-      <div className="row mt-50" >
+      <div className="row">
         {teamData.map((member, i) => (
           <TeamMember
             key={member.id}

@@ -1,70 +1,39 @@
 [
     {
         "id": 1,
-        "name": "Randy Bell",
-        "role": "UI/UX Designer",
+        "name": "Yosr Dammak",
+        "role": "CMO",
         "image": "team/yo.png",
         "social": [
             {
                 "id": 1,
-                "icon": "facebook",
-                "link": "!#"
-            },
-            {
-                "id": 2,
-                "icon": "twitter",
-                "link": "!#"
-            },
-            {
-                "id": 3,
-                "icon": "youtube",
-                "link": "!#"
-            }
-        ]
+                "icon": "linkedin",
+                "link": "https://linkedin.com/in/yosrdammak"
+            }]
     },
     {
         "id": 2,
-        "name": "Alice Andrews",
-        "role": "Photographers",
+        "name": "Mattes Thölke",
+        "role": "CEO",
         "image": "team/ma.jpg",
         "social": [
             {
                 "id": 1,
-                "icon": "facebook",
-                "link": "!#"
-            },
-            {
-                "id": 2,
-                "icon": "twitter",
-                "link": "!#"
-            },
-            {
-                "id": 3,
-                "icon": "youtube",
-                "link": "!#"
+                "icon": "linkedin",
+                "link": "https://linkedin.com/in/mattesthoelke"
             }
         ]
     },
     {
         "id": 3,
-        "name": "Nicholas Hart",
-        "role": "Web Developer",
+        "name": "Samuel Nihoul",
+        "role": "Project Manager",
         "image": "team/mirr.jpg",
         "social": [
             {
                 "id": 1,
-                "icon": "facebook",
-                "link": "!#"
-            },
-            {
-                "id": 2,
-                "icon": "twitter",
-                "link": "!#"
-            },
-            {
-                "id": 3,
-                "icon": "youtube",
-                "link": "!#"
+                "icon": "linkedin",
+                "link": "https://linkedin.com/in/samuelnihoul"
             }
         ]
     }
