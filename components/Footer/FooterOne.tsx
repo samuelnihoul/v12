@@ -30,13 +30,13 @@ const FooterOne = () => (
                 <h5 className="widget-title">Work With Us</h5>
                 <ul>
                   <li>
-                    <a href="/contact">Partnership</a>
+                    <a href="mailto:mattes@harmonia-eko.ooo?subject=Partnership">Partnership</a>
                   </li>
                   <li>
-                    <a href="/contact">Internship</a>
+                    <a href="mailto:mattes@harmonia-eko.ooo?subject=Internship">Internship</a>
                   </li>
                   <li>
-                    <a href="/contact">Get Shares</a>
+                      <a href="mailto:mattes@harmonia-eko.ooo?subject=Get Shares">Get Shares</a>
                   </li>
                  
 
@@ -57,7 +57,7 @@ const FooterOne = () => (
                     <a href={process.env.PUBLIC_URL+'/about'}>Our Services</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL+'/about'}>Terms &amp; Conditions</a>
+                    <a href={'mailto:mattes@harmonia-eko.ooo?subject=Terms and Conditions'}>Terms &amp; Conditions</a>
                   </li>
                   <li>
                     <a href={process.env.PUBLIC_URL+'/contact'}>Careers</a>
