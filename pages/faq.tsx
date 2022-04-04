@@ -38,7 +38,7 @@ const FAQs = () => (
                   We're friendly and available to chat. Reach out to us anytime
                   and we'll happily answer your questions.
                 </p>
-                <a href="!#" className="btn btn-outline-white btn-square mt-10">
+                <a href="mailto:contact@harmonia-eko.ooo" className="btn btn-outline-white btn-square mt-10">
                   Contact Us
                 </a>
               </div>
