@@ -1,7 +1,7 @@
 import React from "react";
 const logoFootr = "/images/D21.png";
 import FooterCopyright from "./FooterCopyright";
-const logoFooter = "../../public/assets/images/D21.png"
+const logoFooter = "/assets/images/D21.png"
 const FooterOne = () => (
   <>
     <footer className="footer" id="footer-fixed">
@@ -20,8 +20,8 @@ const FooterOne = () => (
                   </a>
                 </div>
                 <p>
-                  Your online carbon offset marketplace.<br></br>
-                  For the peace of mind.
+                  Pioneering in environmental services.<br></br>
+                  For the harmony era.
                 </p>
               </div>
             </div>
