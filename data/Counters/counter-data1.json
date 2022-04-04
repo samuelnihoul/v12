@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "value": 43,
-    "title": "€ for Climate"
+    "value": 0,
+    "title": "ħ for Climate"
   },
   {
     "id": 2,
-    "value": 3,
-    "title": "Tonnes Offset"
+    "value": 0,
+    "title": "Metric Tons Offset"
   },
   {
     "id": 3,
-    "value": 1,
-    "title": "Certificates Issued"
+    "value": 0,
+    "title": "NFT issued"
   },
   {
     "id": 4,
-    "value": 3,
-    "title": "Projects listed"
+    "value": 4,
+    "title": "Projects Listed"
   }
 ]

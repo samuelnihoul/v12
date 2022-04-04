@@ -1,18 +1,18 @@
 {
   "id": 1,
   "title": "Karbon Basar",
-  "tagline": "Introducing the Carbon Offset Marketplace by harmonia-eko",
+  "tagline": "Introducing the Carbon Offset Marketplace by harmonia-eko:",
   "text": "We cool down the planet. ",
   "video": "video/pines.mov",
   "image": "video/pines.png",
   "buttons": [
     {"id": 2,
-      "text": "📉 calculate your footprint ↗️",
+      "text": "📉 calculate my footprint ↗️",
       "link": "https://footprint.wwf.org.uk/",
       "type": "btn-dark btn-circle"},
       {"id": 2,
         "text": "📉 use my country average instead",
-        "link": "https://imgur.com/a/1J7XNXC",
+        "link": "https://imgur.com/a/ZsaAhKh",
         "type": "btn-dark btn-circle"},
       {
       "id": 1,
@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "text": "💵 fund your project",
+      "text": "💵 fund my project",
       "link": "/contact",
       "type": "btn-dark btn-circle"
     }

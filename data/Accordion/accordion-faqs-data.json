@@ -2,21 +2,26 @@
   {
     "id": 1,
     "title": "How can I display my NFT certificate online?",
-    "text": "You will get two versions. One stamped with the mention 'harmonia-eko', the other without. All your certificate informations will be visible in the NFT metadata (and thus in your wallet and our html embed, WiP).You can download and use the images freely. They are yours."
+    "text": "In addition to your NFT, you will get a PNG image with your NFT ID and the mention 'Karbon Basar', download and display freely!"
   },
   {
     "id": 2,
     "title": "Do your NFTs have rarity traits or anything I should know?",
-    "text": "No, but such a system will be rolled out progressively. HOWEVER, each NFT is only available for ONE month only, you get one per purchase. Also, special NFTs will be offered during promotion events. Stay tuned."
+    "text": "No, but such a system may be rolled out progressively. HOWEVER, each NFT is only available for ONE month only, you get one per purchase. Also, special NFTs will be offered during promotion events. Stay tuned."
   },
   {
-    "id": 3,
-    "title": "How can I sell my NFT to art lovers and collectors?",
-    "text": "If you plan to sell it or if you are a collector yourself, you should choose the option 'without certificate metadata' upon purchase. To sell it, you can use marketplaces such as https://solanart.io or https://solsea.io."
+    "id":3,
+    "title":"What is ħ?",
+    "text":"ħ (HBAR) is the currency we use to support our NFTs. It is based on the carbon negative Hedera Distributed Ledger (DL) network."
   },
+{
+ "id":5,
+ "title":"Why are you a for profit company?",
+ "text":"We want to generate momentum towards ever more eficient climate action and towards eco-harmony (hence our name)."
+},
   {
     "id": 4,
-    "title": "What are the marketplace fees?",
+    "title": "What are Karbon Basar's fees?",
     "text": "All prices include a 4% fee for the payment processors and harmonia-eko."
   }
 ]

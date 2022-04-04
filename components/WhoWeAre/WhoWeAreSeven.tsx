@@ -11,7 +11,7 @@ const WhoWeAreSeven = () => (
         <HeadingSection
           title="Who We Are"
           tagline="The world at your fingertips" classAppend={undefined} font={undefined}        >
-          We are an innovation-driving Environmental, Social and Governance (ESG) services company. Our flagship service is our carbon offset marketplace Karbon Basar. With an ever growing number of climate-friendly and innovative features, it aims to play a key part in bringing the world to a net-zero carbon well before 2050 (2030?). 
+          We are an innovation-driving environmental services company. Our flagship service is our carbon offset marketplace Karbon Basar. With an ever growing number of climate-friendly and innovative features, it aims to play a key part in bringing the world to a net-zero carbon well before 2050 (2030?). 
         </HeadingSection>
       </div>
       {/* <div className="row mt-50">

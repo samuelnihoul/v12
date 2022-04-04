@@ -10,7 +10,8 @@ const firebaseConfig = {
   projectId: "hypnotic-trees-328016",
   storageBucket: "hypnotic-trees-328016.appspot.com",
   messagingSenderId: "761017450319",
-  appId: "1:761017450319:web:8d4cc1f42e977d0b8c0f3a"
+  appId: "1:761017450319:web:8d4cc1f42e977d0b8c0f3a",
+  measurementId: "G-RFBEGZHSQT"
 };
 
 // Initialize Firebase
