@@ -38,9 +38,7 @@ const FooterOne = () => (
                   <li>
                     <a href="/contact">Get Shares</a>
                   </li>
-                  <li>
-                    <a href="/contact">Cofounding</a>
-                  </li>
+                 
 
                 </ul>
               </div>
