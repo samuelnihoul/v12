@@ -9,8 +9,10 @@ import ReactGA from "react-ga";
 
 
 export default function App({ Component, pageProps }) {
-  ReactGA.initialize("G-RFBEGZHSQT");
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  useEffect(()=>{
+    ReactGA.initialize("G-RFBEGZHSQT");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
   return (<>
   <Component className="App" {...pageProps} /></>)
 }
