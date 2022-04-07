@@ -72,7 +72,7 @@ const FooterOne = () => (
                   <li>
                     <i className="icofont icofont-google-map"></i>
                     <a href={"https://www.bing.com/maps?osid=8a3cc31e-843a-4784-a1b9-84bf0898b4da&cp=48.869899~2.301931&lvl=16&v=2&sV=2&form=S00027"}>
-                      60 rue François Premier, 75008 Paris, FR
+                      14 La Blaye, 22150 Ploeuc l'Hermitage, FR
                     </a>
                   </li>
                   <li>
