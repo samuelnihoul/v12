@@ -1,27 +1,34 @@
 [
   {
     "id": 1,
-    "title": "How can I display my NFT certificate online?",
-    "text": "In addition to your NFT, you will get a PNG image with your NFT ID and the mention 'Karbon Basar', download and display freely!"
+    "title": "What is a carbon offset ?",
+    "text": "The terms carbon offset and carbon offset credit (or simply “offset credit”) are used interchangeably, though they can mean slightly different things. A carbon offset broadly refers to a reduction in GHG emissions – or an increase in carbon storage (e.g., through land restoration or the planting of trees) – that is used to compensate for emissions that occur elsewhere."
   },
   {
     "id": 2,
-    "title": "Do your NFTs have rarity traits or anything I should know?",
-    "text": "No, but such a system may be rolled out progressively. HOWEVER, each NFT is only available for ONE month only, you get one per purchase. Also, special NFTs will be offered during promotion events. Stay tuned."
+    "title": "Why carbon offsetting is important ?",
+    "text": "Carbon offsetting is important because it allows people to make a positive contribution to the environment when their emissions can't be avoided. In addition, the increased funding these causes receive can change lives, bringing economic, social and health improvements to whole communities."
   },
   {
     "id":3,
-    "title":"What is ħ?",
-    "text":"ħ (HBAR) is the currency we use to support our NFTs. It is based on the carbon negative Hedera Distributed Ledger (DL) network."
+    "title":"What are offset Carbon marketplace?",
+    "The Offsets Marketplace is a listing of Climate Action Reserve Account Holders that buy, sell, or retire carbon offset credits issued by the Reserve and that develop carbon offset projects."
   },
-{
- "id":5,
- "title":"Why are you a for profit company?",
- "text":"We want to generate momentum towards ever more eficient climate action and towards eco-harmony (hence our name)."
-},
+
+
   {
     "id": 4,
-    "title": "What are Karbon Basar's fees?",
-    "text": "All prices include a 4% fee for the payment processors and harmonia-eko."
-  }
+    "title": " How harmonia-eko can help you ?",
+    "text": "We are a web carbon offset marketplace : we help you find everything you need to participate in the global net-zero race. If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help."
+  },
+  {
+ "id":5,
+ "title":"  How can I display my NFT certificate online?",
+ "text":"Harmonia-edo will send you your NFT in a PNG image with your NFT ID and the mention 'Karbon Basar',  you can download and display freely ."
+},
+    {
+ "id":6,
+ "title":"   How are carbon offsets traded?",
+ "text":"Carbon offset trading is facilitated by brokers, intermediaries and some exchange trading. For non-compliance offsets the bespoke nature of the projects, lack of defined market and the relatively low value of the product means over-the-counter trading is more popular."
+},
 ]

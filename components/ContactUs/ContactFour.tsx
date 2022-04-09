@@ -28,8 +28,8 @@ const ContactFour = () => (
                 <i className="icofont-google-map font-50px white-icon"></i>
                 <h2>Office Address</h2>
                 <p>
-                  60 rue François 1er <br />
-                  75008 Paris <br />FR
+                  14 La Blaye <br />
+                  22150 Ploeuc l'Hermitage <br />FR
                 </p>
               </div>
             </div>
