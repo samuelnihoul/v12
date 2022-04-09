@@ -13,7 +13,7 @@
   
     {
         "id": 2,
-        "title": "about",
+        "title": "📖",
         "link": "/about",
         "megaMenu": false,
         "colsTitle": [],
@@ -22,7 +22,7 @@
     },
     {
         "id": 3,
-        "title": "contact",
+        "title": "✉️",
         "link": "/contact",
         "megaMenu": false,
         "colsTitle": [],
@@ -30,7 +30,7 @@
         "subMenu": []
     },{
         "id": 4,
-        "title": "faq",
+        "title": "❓",
         "link": "/faq",
         "megaMenu": false,
         "colsTitle": [],

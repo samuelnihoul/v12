@@ -5,7 +5,8 @@ import SearchOverlay from "../../elements/SearchOverlay";
 import AttributeNav from "../Navs/AttributeNav";
 import MainLogo from "../MainLogo";
 import CartSearchTop from "../Navs/CartSearchTop";
-
+import { Client } from '@hashgraph/sdk'
+import PairButton from "../PairButton";
 const HeaderOne = ({ type }) => {
   const [show, setShow] = useState(false);
   const [fixed, setFixed] = useState(false);
@@ -75,6 +76,7 @@ const HeaderOne = ({ type }) => {
           <DropdownMenu />
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />
+            <PairButton></PairButton>
           </AttributeNav>
         </div>
       </nav>
