@@ -12,7 +12,7 @@
   {
     "id":3,
     "title":"What are offset Carbon marketplace?",
-    "The Offsets Marketplace is a listing of Climate Action Reserve Account Holders that buy, sell, or retire carbon offset credits issued by the Reserve and that develop carbon offset projects."
+    "text":"The Offsets Marketplace is a listing of Climate Action Reserve Account Holders that buy, sell, or retire carbon offset credits issued by the Reserve and that develop carbon offset projects."
   },
 
 
@@ -30,5 +30,5 @@
  "id":6,
  "title":"   How are carbon offsets traded?",
  "text":"Carbon offset trading is facilitated by brokers, intermediaries and some exchange trading. For non-compliance offsets the bespoke nature of the projects, lack of defined market and the relatively low value of the product means over-the-counter trading is more popular."
-},
+}
 ]
