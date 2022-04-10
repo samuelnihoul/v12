@@ -7,6 +7,7 @@ import MainLogo from "../MainLogo";
 import CartSearchTop from "../Navs/CartSearchTop";
 import { Client } from '@hashgraph/sdk'
 import PairButton from "../PairButton";
+import { pair , init} from "../../helpers/hashconnect";
 const HeaderOne = ({ type }) => {
   const [show, setShow] = useState(false);
   const [fixed, setFixed] = useState(false);
@@ -76,7 +77,7 @@ const HeaderOne = ({ type }) => {
           <DropdownMenu />
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />
-            <PairButton></PairButton>
+            <PairButton ></PairButton>
           </AttributeNav>
         </div>
       </nav>
