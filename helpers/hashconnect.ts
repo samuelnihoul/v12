@@ -23,8 +23,12 @@ let topic
 // function findWallet() {
 //    return hashconnect.findLocalWallets()
 // }
+async function setConnected(a:boolean){
+    sessionStorage.setItem('connectetd',a?'true':'false')
+}
 async function pair() {
     hashconnect.connectToLocalWallet(await connectToNodNPairingString())
+    setConnected(true)
 }
 
 export {init, pair,connectToNodNPairingString}
