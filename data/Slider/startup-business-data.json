@@ -1,7 +1,7 @@
 {
   "id": 1,
   "title": "Karbon Basar",
-  "tagline": "Introducing the Carbon Offset Marketplace by harmonia-eko:",
+  "tagline": "The NFT Carbon Offset Marketplace by harmonia-eko:",
   "text": "We cool down the planet. ",
   "video": "video/pines.mov",
   "image": "video/pines.png",
@@ -16,13 +16,13 @@
         "type": "btn-dark btn-circle"},
       {
       "id": 1,
-      "text": "🌳 offset and get an exclusive NFT",
+      "text": "🌳 arty NFT offsets 🖼️",
       "link": "https://karbonbasar.harmonia-eko.ooo",
       "type": "btn-dark btn-circle"
     },
     {
       "id": 3,
-      "text": "💵 fund my project",
+      "text": "💵 sell offsets 🌳",
       "link": "/contact",
       "type": "btn-dark btn-circle"
     }
