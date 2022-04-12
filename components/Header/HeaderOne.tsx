@@ -78,6 +78,8 @@ const HeaderOne = ({ type }) => {
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />
             <PairButton ></PairButton>
+            
+            
           </AttributeNav>
         </div>
       </nav>

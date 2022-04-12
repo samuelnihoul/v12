@@ -8,13 +8,13 @@ let appMetadata: HashConnectTypes.AppMetadata = {
 }
 async function init() {
     let initData
-    localStorage.getItem('toxen')?initData = await hashconnect.init(appMetadata):initData;
+    localStorage.getItem('toxen')?null:initData = await hashconnect.init(appMetadata);
     console.log('init')
     let privateKey = initData.privKey; 
     localStorage.setItem('toxen',privateKey)
 }
 async function connectToNodNPairingString() {
-    console.log(hashconnect)
+    
     let state = await hashconnect.connect();
 let topic
     localStorage.getItem('toxen') ? topic = state.topic + localStorage.setItem('topi', topic) : topic
@@ -27,7 +27,10 @@ async function setConnected(a:boolean){
     sessionStorage.setItem('connectetd',a?'true':'false')
 }
 async function pair() {
-    hashconnect.connectToLocalWallet(await connectToNodNPairingString())
+    hashconnect.foundExtensionEvent.once((walletMetadata)=>{sessionStorage.setItem('theDudeHasHashpack','true')})
+    hashconnect.findLocalWallets()
+    sessionStorage.getItem('e')?
+    hashconnect.connectToLocalWallet(await connectToNodNPairingString()):null
     setConnected(true)
 }
 
