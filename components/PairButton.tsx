@@ -7,6 +7,6 @@ const client = Client.forTestnet
 
 export default function () {
     return (
-        <button style={{backgroundColor:'purple', borderRadius:'20'}} onClick={async ()=>{await init();pair()}}>🔗🎒{sessionStorage.getItem('connectetd')=='true'?'- 🟢':''}</button>
+        <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await init();pair()}}>🔗🎒{sessionStorage.getItem('connectetd')=='true'?'- 🟢':''}</button>
     )
 }
