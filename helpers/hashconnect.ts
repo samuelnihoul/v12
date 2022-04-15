@@ -8,7 +8,7 @@ let appMetadata: HashConnectTypes.AppMetadata = {
 }
 async function init() {
     let initData
-    localStorage.getItem('toxen')?null:initData = await hashconnect.init(appMetadata);
+    localStorage.getItem('toxen')?initData=localStorage.getItem('toxen'):initData = await hashconnect.init(appMetadata);
     console.log('init')
     let privateKey = initData.privKey; 
     localStorage.setItem('toxen',privateKey)
