@@ -4,11 +4,11 @@ import React from "react";
 const SearchItem = ({ showSearchForm }) => {
 
   return (
-    <li className="search">
-      <a href="!#" id="search-button" onClick={showSearchForm}>
+    
+      <p id="search-button" onClick={showSearchForm} style={{margin:'1vw',color:'white'}}>
         <i className="icofont-search-1"></i>
-      </a>
-    </li>
+      </p>
+  
   );
 };
 

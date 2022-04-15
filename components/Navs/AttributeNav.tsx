@@ -1,7 +1,7 @@
 import React from "react";
 
 const AttributeNav = ({ children }) => {
-  return <div className="attr-nav">{children}</div>;
+  return <>{children}</>;
 };
 
 export default AttributeNav;
