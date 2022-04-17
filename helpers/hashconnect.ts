@@ -30,7 +30,7 @@ async function setConnected(a:boolean){
 async function pair() {
     hashconnect.foundExtensionEvent.once((walletMetadata)=>{sessionStorage.setItem('theDudeHasHashpack','true')})
     hashconnect.findLocalWallets()
-    sessionStorage.getItem('theDudeHasHashpack')? hashconnect.connectToLocalWallet(await connectToNodNPairingString().then((e)=>{setConnected(true);return e})):''
+    sessionStorage.getItem('theDudeHasHashpack')? hashconnect.connectToLocalWallet(await connectToNodNPairingString().then((e)=>{setConnected(true);return e})):alert('Please install the Hashpack browser extension 😊')
    
     
 }
