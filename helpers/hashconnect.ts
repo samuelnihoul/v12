@@ -8,8 +8,9 @@ let appMetadata: HashConnectTypes.AppMetadata = {
 }
 async function init() {
     let initData
-    localStorage.getItem('toxen')?initData=localStorage.getItem('toxen'):initData = await hashconnect.init(appMetadata);
-    console.log('init')
+    //maybe here it automatically becomes 'undefined' when queried, if non existinng
+    localStorage.getItem('toxen')?localStorage.getItem('toxen')!=='undefined'?initData=localStorage.getItem('toxen'):initData = await hashconnect.init(appMetadata):'';
+    //console.log('init')
     let privateKey = initData.privKey; 
     localStorage.setItem('toxen',privateKey)
 }
@@ -17,7 +18,7 @@ async function connectToNodNPairingString() {
     
     let state = await hashconnect.connect();
 let topic
-    localStorage.getItem('toxen') ? topic = state.topic + localStorage.setItem('topi', topic) : topic
+    localStorage.getItem('topi') ? topic = state.topic + localStorage.setItem('topi', topic) : topic
     return hashconnect.generatePairingString(state, "testnet", false);//tihs is the pairing string
 }
 // function findWallet() {
@@ -29,9 +30,9 @@ async function setConnected(a:boolean){
 async function pair() {
     hashconnect.foundExtensionEvent.once((walletMetadata)=>{sessionStorage.setItem('theDudeHasHashpack','true')})
     hashconnect.findLocalWallets()
-    sessionStorage.getItem('e')?
-    hashconnect.connectToLocalWallet(await connectToNodNPairingString()):null
-    setConnected(true)
+    sessionStorage.getItem('theDudeHasHashpack')? hashconnect.connectToLocalWallet(await connectToNodNPairingString().then((e)=>{setConnected(true);return e})):''
+   
+    
 }
 
 export {init, pair,connectToNodNPairingString}
