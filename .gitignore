@@ -8,3 +8,4 @@ app/yarn.lock
 app/node_modules
 app/package.JSON
 app/yarn.lock
+.next
