@@ -8,7 +8,7 @@ export default function () {
 
 // !! this line is a duplicate and unsure what will be the effects
     const hashconnect: HashConnect=new HashConnect(true);
-    const [status,setStatus]= useState( "Initializing");
+    const [status,setStatus]= useState( "Click me");
     const a:HashConnectTypes.WalletMetadata[]=new Array(0)
     const [availableExtensions,sae] = useState(a)
 
@@ -58,7 +58,7 @@ export default function () {
             await hashconnect.init(appMetadata, saveData.privateKey);
             await hashconnect.connect(saveData.topic, saveData.pairedWalletData!);
 
-setStatus('Paired');
+            setStatus('Paired');
         }
 
         setUpEvents();
@@ -172,6 +172,6 @@ setStatus('Paired');
 
     
         return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();connectToExtension()}}>🔗🎒{status}</button>
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status}</button>
         )
     }
