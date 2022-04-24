@@ -2,7 +2,7 @@ import { ButtonLayoutDisplay, ButtonMaker, DialogInitializer, DialogLayoutDispla
 import { Transaction, TransactionReceipt } from '@hashgraph/sdk';
 import { HashConnect, HashConnectTypes, MessageTypes } from 'hashconnect';
 import { useState } from 'react';
-import { ResultModalComponent } from '../components/result-modal/result-modal.component';
+import  AlertDialog  from '../components/hashDialog';
 
 
 
@@ -151,20 +151,23 @@ setStatus('Paired');
     }
 
     function showResultOverlay(data: any) {
-            const dialogPopup = new DialogInitializer(ResultModalComponent);
+return (AlertDialog(data))
+
+
+            // const dialogPopup = new DialogInitializer(ResultModalComponent);
     
-            dialogPopup.setCustomData({ data: data });
+            // dialogPopup.setCustomData({ data: data });
             
-            dialogPopup.setConfig({
-                width: '500px',
-                layoutType: DialogLayoutDisplay.NONE
-            });
+            // dialogPopup.setConfig({
+            //     width: '500px',
+            //     layoutType: DialogLayoutDisplay.NONE
+            // });
     
-            dialogPopup.setButtons([
-                new ButtonMaker('Done', 'send', ButtonLayoutDisplay.SUCCESS)
-            ]);
+            // dialogPopup.setButtons([
+            //     new ButtonMaker('Done', 'send', ButtonLayoutDisplay.SUCCESS)
+            // ]);
     
-            dialogPopup.openDialog$().subscribe(resp => { });
+            // dialogPopup.openDialog$().subscribe(resp => { });
     }
 
     export {showResultOverlay,clearPairings,requestAccountInfo,sendTransaction,connectToExtension,initHashconnect,status,availableExtensions }

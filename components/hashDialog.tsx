@@ -6,7 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
-export default function AlertDialog(data) {
+export default function AlertDialog(data:object) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -33,8 +33,7 @@ export default function AlertDialog(data) {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+           {JSON.stringify(data)}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
