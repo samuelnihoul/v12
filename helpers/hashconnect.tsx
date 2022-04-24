@@ -3,7 +3,7 @@ import { Transaction, TransactionReceipt } from '@hashgraph/sdk';
 import { HashConnect, HashConnectTypes, MessageTypes } from 'hashconnect';
 import { useState } from 'react';
 import  AlertDialog  from '../components/hashDialog';
-
+export default function () {
 
 
 // !! this line is a duplicate and unsure what will be the effects
@@ -151,7 +151,7 @@ setStatus('Paired');
     }
 
     function showResultOverlay(data: any) {
-return (AlertDialog(data))
+        return (AlertDialog(data))
 
 
             // const dialogPopup = new DialogInitializer(ResultModalComponent);
@@ -170,4 +170,8 @@ return (AlertDialog(data))
             // dialogPopup.openDialog$().subscribe(resp => { });
     }
 
-    export {showResultOverlay,clearPairings,requestAccountInfo,sendTransaction,connectToExtension,initHashconnect,status,availableExtensions }
+    
+        return (
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();connectToExtension()}}>🔗🎒{status?'- 🟢':''}</button>
+        )
+    }
