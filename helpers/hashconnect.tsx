@@ -8,7 +8,7 @@ export default function () {
 
 // !! this line is a duplicate and unsure what will be the effects
     const hashconnect: HashConnect=new HashConnect(true);
-    const [status,setStatus]= useState( "Click me");
+    const [status,setStatus]= useState( "");
     const a:HashConnectTypes.WalletMetadata[]=new Array(0)
     const [availableExtensions,sae] = useState(a)
 
