@@ -172,6 +172,6 @@ setStatus('Paired');
 
     
         return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();connectToExtension()}}>🔗🎒{status?'- 🟢':''}</button>
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();connectToExtension()}}>🔗🎒{status}</button>
         )
     }
