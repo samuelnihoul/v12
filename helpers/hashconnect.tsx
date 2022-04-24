@@ -47,7 +47,7 @@ export default function () {
             saveData.topic = state.topic;
             
             //generate a pairing string, which you can display and generate a QR code from
-            saveData.pairingString = hashconnect.generatePairingString(state, "testnet", true);
+            saveData.pairingString = hashconnect.generatePairingString(state, "mainnet", true);
             
             //find any supported local wallets
             hashconnect.findLocalWallets();
@@ -169,8 +169,6 @@ export default function () {
     
             // dialogPopup.openDialog$().subscribe(resp => { });
     }
-
-    
         return (
             <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status}</button>
         )
