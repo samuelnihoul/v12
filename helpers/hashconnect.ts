@@ -67,7 +67,7 @@ setStatus('Paired');
     function setUpEvents() {
 
         hashconnect.foundExtensionEvent.on((data) => {
-            availableExtensions.push(data);
+            sae(s=>{s.push(data);return s});
             console.log("Found extension", data);
         })
 
@@ -89,24 +89,19 @@ setStatus('Paired');
 
             data.accountIds.forEach(id => {
                 if(saveData.pairedAccounts.indexOf(id) == -1)
-                    ssd(s=>{let t=s;t.pairedAccounts.push(id);return t});
+                    ssd(s=>{s.pairedAccounts.push(id);return s});
             })
 
             saveDataInLocalstorage();
         });
-
-
         hashconnect.transactionEvent.on((data) => {
             //this will not be common to be used in a dapp
             console.log("transaction event callback");
         });
     }
-
     async function connectToExtension() {
         hashconnect.connectToLocalWallet(saveData.pairingString);
     }
-
-
     async function sendTransaction(trans: Uint8Array, acctToSign: string, return_trans: boolean = false) {
         const transaction: MessageTypes.Transaction = {
             topic: saveData.topic,
@@ -120,7 +115,6 @@ setStatus('Paired');
 
         return await hashconnect.sendTransaction(saveData.topic, transaction)
     }
-
     async function requestAccountInfo() {
         let request:MessageTypes.AdditionalAccountRequest = {
             topic: saveData.topic,
@@ -173,4 +167,4 @@ setStatus('Paired');
             dialogPopup.openDialog$().subscribe(resp => { });
     }
 
-    export {showResultOverlay,clearPairings,requestAccountInfo,sendTransaction,connectToExtension,initHashconnect,status}
+    export {showResultOverlay,clearPairings,requestAccountInfo,sendTransaction,connectToExtension,initHashconnect,status,availableExtensions }
