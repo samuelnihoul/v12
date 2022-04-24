@@ -1,5 +1,5 @@
 import { ButtonLayoutDisplay, ButtonMaker, DialogInitializer, DialogLayoutDisplay } from '@costlydeveloper/ngx-awesome-popup';
-import { Transaction, TransactionReceipt } from '@hashgraph/sdk';
+import { Transaction, TransactionReceipt, Wallet } from '@hashgraph/sdk';
 import {HashConnect,HashConnectTypes,MessageTypes} from 'hashconnect'
 import { useState } from 'react';
 import  AlertDialog  from '../components/hashDialog';
@@ -170,6 +170,6 @@ export default function () {
             // dialogPopup.openDialog$().subscribe(resp => { });
     }
         return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status}</button>
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status + 'as'+'guest'}</button>
         )
     }
