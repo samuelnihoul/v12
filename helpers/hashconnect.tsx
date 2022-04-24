@@ -11,6 +11,7 @@ export default function () {
     const [status,setStatus]= useState( "");
     const a:HashConnectTypes.WalletMetadata[]=new Array(0)
     const [availableExtensions,sae] = useState(a)
+    const [pk, spk]=useState('guest')
 
     const [saveData,ssd] /* {
         topic: string;
@@ -52,13 +53,13 @@ export default function () {
             //find any supported local wallets
             hashconnect.findLocalWallets();
 
-            setStatus( "Connected");
+            setStatus( "connected");
         }
         else {
             await hashconnect.init(appMetadata, saveData.privateKey);
             await hashconnect.connect(saveData.topic, saveData.pairedWalletData!);
 
-            setStatus('Paired');
+            setStatus('paired');
         }
 
         setUpEvents();
@@ -69,6 +70,7 @@ export default function () {
         hashconnect.foundExtensionEvent.on((data) => {
             sae(s=>{s.push(data);return s});
             console.log("Found extension", data);
+            console.log(data.publicKey)
         })
 
 
@@ -83,7 +85,7 @@ export default function () {
 
         hashconnect.pairingEvent.on((data) => {
             console.log("Paired with wallet", data);
-            setStatus ("Paired");
+            setStatus ("paired");
 
             saveData.pairedWalletData = data.metadata;
 
@@ -146,7 +148,7 @@ export default function () {
     function clearPairings() {
         saveData.pairedAccounts = [];
         saveData.pairedWalletData = undefined;
-        setStatus('Connected')
+        setStatus('connected')
         localStorage.removeItem("hashconnectData");
     }
 
@@ -170,6 +172,6 @@ export default function () {
             // dialogPopup.openDialog$().subscribe(resp => { });
     }
         return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status + 'as'+'guest'}</button>
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status + ' as '+pk}</button>
         )
     }
