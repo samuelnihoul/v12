@@ -3,6 +3,7 @@
   "version": "12.1",
   "private": true,
   "dependencies": {
+    "@costlydeveloper/ngx-awesome-popup": "^3.1.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@hashgraph/sdk": "^2.12.1",
