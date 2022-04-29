@@ -172,6 +172,6 @@ export default function () {
             // dialogPopup.openDialog$().subscribe(resp => { });
     }
         return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status + ' as '+pk}</button>
+            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{await initHashconnect();saveDataInLocalstorage();connectToExtension()}}>🔗🎒{status + ' '+pk}</button>
         )
     }
