@@ -6,8 +6,7 @@ import AttributeNav from "../Navs/AttributeNav";
 import MainLogo from "../MainLogo";
 import CartSearchTop from "../Navs/CartSearchTop";
 import { Client } from '@hashgraph/sdk'
-import PairButton from "../PairButton";
-import { pair , init} from "../../helpers/hashconnect";
+import PairButton from "../../helpers/hashconnect";
 const HeaderOne = ({ type }) => {
   const [show, setShow] = useState(false);
   const [fixed, setFixed] = useState(false);
