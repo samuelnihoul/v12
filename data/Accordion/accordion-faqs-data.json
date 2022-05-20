@@ -1,34 +1,24 @@
-[
-  {
+[{
     "id": 1,
-    "title": "What is a carbon offset ?",
-    "text": "The terms carbon offset and carbon offset credit (or simply “offset credit”) are used interchangeably, though they can mean slightly different things. A carbon offset broadly refers to a reduction in GHG emissions – or an increase in carbon storage (e.g., through land restoration or the planting of trees) – that is used to compensate for emissions that occur elsewhere."
+    "title": "What is a carbon offset?",
+    "text": "The terms carbon offset and carbon offset credit (or simply “offset credit”) are used interchangeably, though they can mean slightly different things. A carbon offset broadly refers to a reduction in greenhouse gases emissions – or an increase in carbon storage (e.g., through land restoration or the planting of trees) – that is used to compensate for emissions that occur elsewhere."
   },
+
   {
     "id": 2,
-    "title": "Why carbon offsetting is important ?",
+    "title": "Why is carbon offsetting important?",
     "text": "Carbon offsetting is important because it allows people to make a positive contribution to the environment when their emissions can't be avoided. In addition, the increased funding these causes receive can change lives, bringing economic, social and health improvements to whole communities."
-  },
-  {
-    "id":3,
-    "title":"What are offset Carbon marketplace?",
-    "text":"The Offsets Marketplace is a listing of Climate Action Reserve Account Holders that buy, sell, or retire carbon offset credits issued by the Reserve and that develop carbon offset projects."
   },
 
 
   {
     "id": 4,
-    "title": " How harmonia-eko can help you ?",
-    "text": "We are a web carbon offset marketplace : we help you find everything you need to participate in the global net-zero race. If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help."
+    "title": "How can harmonia-eko help you?",
+    "text": "We are a web3 carbon offset marketplace : we help you find everything you need to participate in the global net-zero race. If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help."
   },
   {
- "id":5,
- "title":"  How can I display my NFT certificate online?",
- "text":"Harmonia-edo will send you your NFT in a PNG image with your NFT ID and the mention 'Karbon Basar',  you can download and display freely ."
-},
-    {
- "id":6,
- "title":"   How are carbon offsets traded?",
- "text":"Carbon offset trading is facilitated by brokers, intermediaries and some exchange trading. For non-compliance offsets the bespoke nature of the projects, lack of defined market and the relatively low value of the product means over-the-counter trading is more popular."
-}
+    "id": 5,
+    "title": "How can I display my NFT certificate online?",
+    "text": "In addition to your NFT, harmonia-eko will send your certificate in a PNG image with your NFT ID and the mention 'Karbon Basar',  you can download and display freely. You can also use Hedera apps to display your NFT."
+  }
 ]
