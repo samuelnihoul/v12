@@ -1,4 +1,17 @@
-[{
+[
+
+
+  {
+    "id": 8,
+    "title": "What is ħ?",
+    "text": "ħ (HBAR) is the currency we use to support our NFTs. It is based on the carbon negative Hedera Distributed Ledger (DL) network."
+  },
+  {
+    "id": 9,
+    "title": "Do your NFTs have rarity traits or anything I should know?",
+    "text": "No, but such a system may be rolled out progressively. HOWEVER, each NFT is only available for ONE month only, you get one per purchase. Also, special NFTs will be offered during promotion events. Stay tuned."
+  },
+  {
     "id": 1,
     "title": "What is a carbon offset?",
     "text": "The terms carbon offset and carbon offset credit (or simply “offset credit”) are used interchangeably, though they can mean slightly different things. A carbon offset broadly refers to a reduction in greenhouse gases emissions – or an increase in carbon storage (e.g., through land restoration or the planting of trees) – that is used to compensate for emissions that occur elsewhere."
@@ -28,7 +41,7 @@
   },
 
   {
-    "id": 6,
+    "id": 7,
     "title": "Are you a for profit company?",
     "text": "Yes, we sell our own offsets and provide services such as consulting."
   }
