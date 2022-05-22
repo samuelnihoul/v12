@@ -172,6 +172,6 @@ export default function () {
         // dialogPopup.openDialog$().subscribe(resp => { });
     }
     return (
-        <button style={{ backgroundColor: 'purple', borderRadius: 10 }} onClick={async () => { alert('This button may not work as expected yet'); await initHashconnect(); await saveDataInLocalstorage(); await connectToExtension() }}>🔗🎒{status + ' ' + pk}</button>
+        <button style={{ backgroundColor: 'purple', borderRadius: 10 }} onClick={async () => { alert('This button may not work as expected yet.'); await initHashconnect(); await saveDataInLocalstorage(); await connectToExtension() }}>🔗🎒{status + ' ' + pk}</button>
     )
 }
