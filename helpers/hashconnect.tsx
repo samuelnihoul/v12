@@ -1,19 +1,19 @@
 import { ButtonLayoutDisplay, ButtonMaker, DialogInitializer, DialogLayoutDisplay } from '@costlydeveloper/ngx-awesome-popup';
 import { Transaction, TransactionReceipt, Wallet } from '@hashgraph/sdk';
-import {HashConnect,HashConnectTypes,MessageTypes} from 'hashconnect'
+import { HashConnect, HashConnectTypes, MessageTypes } from 'hashconnect'
 import { useState } from 'react';
-import  AlertDialog  from '../components/hashDialog';
+import AlertDialog from '../components/hashDialog';
 export default function () {
 
 
-// !! this line is a duplicate and unsure what will be the effects
-    const hashconnect: HashConnect=new HashConnect(true);
-    const [status,setStatus]= useState( "");
-    const a:HashConnectTypes.WalletMetadata[]=new Array(0)
-    const [availableExtensions,sae] = useState(a)
-    const [pk, spk]=useState('guest')
+    // !! this line is a duplicate and unsure what will be the effects
+    const hashconnect: HashConnect = new HashConnect(true);
+    const [status, setStatus] = useState("");
+    const a: HashConnectTypes.WalletMetadata[] = new Array(0)
+    const [availableExtensions, sae] = useState(a)
+    const [pk, spk] = useState('guest')
 
-    const [saveData,ssd] /* {
+    const [saveData, ssd] /* {
         topic: string;
         pairingString: string;
         privateKey?: string;
@@ -27,7 +27,7 @@ export default function () {
         pairedAccounts: []
     })
 
-     const appMetadata: HashConnectTypes.AppMetadata = {
+    const appMetadata: HashConnectTypes.AppMetadata = {
         name: "dApp Example",
         description: "An example hedera dApp",
         icon: "https://www.hashpack.app/img/logo.svg"
@@ -37,7 +37,7 @@ export default function () {
         //create the hashconnect instance
         const hashconnect = new HashConnect(true);
 
-        if(!loadLocalData()){
+        if (!loadLocalData()) {
             //first init, store the private key in localstorage
             let initData = await hashconnect.init(appMetadata);
             saveData.privateKey = initData.privKey;
@@ -46,14 +46,14 @@ export default function () {
             const state = await hashconnect.connect();
             console.log("Received state", state);
             saveData.topic = state.topic;
-            
+
             //generate a pairing string, which you can display and generate a QR code from
             saveData.pairingString = hashconnect.generatePairingString(state, "mainnet", true);
-            
+
             //find any supported local wallets
             hashconnect.findLocalWallets();
 
-            setStatus( "connected");
+            setStatus("connected");
         }
         else {
             await hashconnect.init(appMetadata, saveData.privateKey);
@@ -68,7 +68,7 @@ export default function () {
     function setUpEvents() {
 
         hashconnect.foundExtensionEvent.on((data) => {
-            sae(s=>{s.push(data);return s});
+            sae(s => { s.push(data); return s });
             console.log("Found extension", data);
             console.log(data.publicKey)
         })
@@ -76,7 +76,7 @@ export default function () {
 
         // hashconnect.additionalAccountResponseEvent.on((data) => {
         //     console.log("Received account info", data);
-            
+
         //     data.accountIds.forEach(id => {
         //         if(saveData.pairedAccounts.indexOf(id) == -1)
         //             saveData.pairedAccounts.push(id);
@@ -85,13 +85,13 @@ export default function () {
 
         hashconnect.pairingEvent.on((data) => {
             console.log("Paired with wallet", data);
-            setStatus ("paired");
+            setStatus("paired");
 
             saveData.pairedWalletData = data.metadata;
 
             data.accountIds.forEach(id => {
-                if(saveData.pairedAccounts.indexOf(id) == -1)
-                    ssd(s=>{s.pairedAccounts.push(id);return s});
+                if (saveData.pairedAccounts.indexOf(id) == -1)
+                    ssd(s => { s.pairedAccounts.push(id); return s });
             })
 
             saveDataInLocalstorage();
@@ -108,7 +108,7 @@ export default function () {
         const transaction: MessageTypes.Transaction = {
             topic: saveData.topic,
             byteArray: trans,
-            
+
             metadata: {
                 accountToSign: acctToSign,
                 returnTransaction: return_trans
@@ -118,26 +118,26 @@ export default function () {
         return await hashconnect.sendTransaction(saveData.topic, transaction)
     }
     async function requestAccountInfo() {
-        let request:MessageTypes.AdditionalAccountRequest = {
+        let request: MessageTypes.AdditionalAccountRequest = {
             topic: saveData.topic,
             network: "mainnet",
             multiAccount: true
-        } 
+        }
 
         await hashconnect.requestAdditionalAccounts(saveData.topic, request);
     }
 
     function saveDataInLocalstorage() {
         let data = JSON.stringify(saveData);
-        
+
         localStorage.setItem("hashconnectData", data);
     }
 
-    function loadLocalData() :boolean {
+    function loadLocalData(): boolean {
         let foundData = localStorage.getItem("hashconnectData");
 
-        if(foundData){
-            ssd ( JSON.parse(foundData));
+        if (foundData) {
+            ssd(JSON.parse(foundData));
             console.log("Found local data", saveData)
             return true;
         }
@@ -156,22 +156,22 @@ export default function () {
         return (AlertDialog(data))
 
 
-            // const dialogPopup = new DialogInitializer(ResultModalComponent);
-    
-            // dialogPopup.setCustomData({ data: data });
-            
-            // dialogPopup.setConfig({
-            //     width: '500px',
-            //     layoutType: DialogLayoutDisplay.NONE
-            // });
-    
-            // dialogPopup.setButtons([
-            //     new ButtonMaker('Done', 'send', ButtonLayoutDisplay.SUCCESS)
-            // ]);
-    
-            // dialogPopup.openDialog$().subscribe(resp => { });
+        // const dialogPopup = new DialogInitializer(ResultModalComponent);
+
+        // dialogPopup.setCustomData({ data: data });
+
+        // dialogPopup.setConfig({
+        //     width: '500px',
+        //     layoutType: DialogLayoutDisplay.NONE
+        // });
+
+        // dialogPopup.setButtons([
+        //     new ButtonMaker('Done', 'send', ButtonLayoutDisplay.SUCCESS)
+        // ]);
+
+        // dialogPopup.openDialog$().subscribe(resp => { });
     }
-        return (
-            <button style={{backgroundColor:'purple', borderRadius:10}} onClick={async ()=>{alert('this button may not work as expected yet');await initHashconnect();await saveDataInLocalstorage();await connectToExtension()}}>🔗🎒{status + ' '+pk}</button>
-        )
-    }
+    return (
+        <button style={{ backgroundColor: 'purple', borderRadius: 10 }} onClick={async () => { alert('This button may not work as expected yet'); await initHashconnect(); await saveDataInLocalstorage(); await connectToExtension() }}>🔗🎒{status + ' ' + pk}</button>
+    )
+}
