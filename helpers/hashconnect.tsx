@@ -196,7 +196,7 @@ export default function () {
     <button
       style={{ backgroundColor: "purple", borderRadius: 10 }}
       onClick={async () => {
-        // alert("This button may not work      as expected yet.");
+        alert("This button may not work      as expected yet.");
         await initHashconnect();
 
         await saveDataInLocalstorage();
