@@ -39,8 +39,9 @@ export default function () {
   async function initHashconnect() {
     //create the hashconnect instance
     const hashconnect = new HashConnect(true);
-
+    console.log('init hashconnect')
     if (!loadLocalData()) {
+      console.log('no local data')
       //first init, store the private key in localstorage
       let initData = await hashconnect.init(appMetadata);
       saveData.privateKey = initData.privKey;
@@ -59,6 +60,7 @@ export default function () {
 
       //find any supported local wallets
       hashconnect.findLocalWallets();
+      console.log('just ran findlocalWallets')
 
       setStatus("connected");
     } else {
@@ -72,6 +74,7 @@ export default function () {
   }
 
   function setUpEvents() {
+    console.log('setUpEvents');
     hashconnect.foundExtensionEvent.on((data) => {
       sae((s) => {
         s.push(data);
@@ -105,7 +108,7 @@ export default function () {
 
 
       });
-
+      console.log('pairing event fired')
       saveDataInLocalstorage();
 
 
@@ -117,6 +120,7 @@ export default function () {
     });
   }
   async function connectToExtension() {
+    console.log('connectToExtension')
     hashconnect.connectToLocalWallet(saveData.pairingString);
   }
   async function sendTransaction(
@@ -147,6 +151,7 @@ export default function () {
   }
 
   function saveDataInLocalstorage() {
+    console.log("saveDataInLocalstorage")
     let data = JSON.stringify(saveData);
 
     localStorage.setItem("hashconnectData", data);
@@ -193,6 +198,7 @@ export default function () {
       onClick={async () => {
         // alert("This button may not work      as expected yet.");
         await initHashconnect();
+
         await saveDataInLocalstorage();
 
 
