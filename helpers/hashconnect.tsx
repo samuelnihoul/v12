@@ -191,13 +191,13 @@ export default function () {
     <button
       style={{ backgroundColor: "purple", borderRadius: 10 }}
       onClick={async () => {
-        alert("This button may not work as expected yet. Your pairing string is " + saveData.pairingString.toString());
         await initHashconnect();
         await saveDataInLocalstorage();
 
 
 
         await connectToExtension();
+        alert("This button may not work as expected yet. Your pairing string is " + saveData.pairingString);
       }}
     >
       🔗🎒{status + " " + pk}
