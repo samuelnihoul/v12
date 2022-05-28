@@ -29,9 +29,11 @@ const OurServicesTwo = ({ title, tagline }) => (
         </h4>
         <div data-aos={"fade-up"} data-aos-delay={300} data-aos-duration={1000}>
           <p className="mt-20">
-          We are a web3 carbon offset marketplace: we help you find everything you need to participate in the global net-zero race. If you want to fund your efforts by selling carbon offsets, we are here to help. If you want to get climate neutral at an affordable price, we are here to help.
+            We are a web3 carbon offset marketplace: we help you find everything you need to participate in the global net-zero race.
+            <br></br><br />If you want to fund your efforts by selling carbon offsets, we are here to help.
+            <br />If you want to get climate neutral at an affordable price, we are here to help.
           </p>
-         
+
         </div>
         <p
           className="mt-30"
