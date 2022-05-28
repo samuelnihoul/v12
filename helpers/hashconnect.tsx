@@ -197,7 +197,7 @@ export default function () {
 
 
         await connectToExtension();
-        alert("This button may not work as expected yet. Your pairing string is " + saveData.pairingString);
+        alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
       🔗🎒{status + " " + pk}
