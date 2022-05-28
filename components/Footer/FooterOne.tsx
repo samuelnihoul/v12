@@ -27,47 +27,44 @@ const FooterOne = () => (
             </div>
             <div className="col-sm-6 col-md-2">
               <div className="widget widget-links">
-                <h5 className="widget-title">Work With Us</h5>
+                <h5 className="widget-title">External Resources</h5>
                 <ul>
                   <li>
-                    <a href="mailto:mattes@harmonia-eko.ooo?subject=Partnership">Partnership</a>
+                    <a href={"https://www.offsetguide.org/"}>More on carbon offsetting</a>
                   </li>
                   <li>
-                    <a href="mailto:mattes@harmonia-eko.ooo?subject=Internship">Internship</a>
+                    <a href={'hedera.com'}>More on the carbon negative currency Hedera</a>
                   </li>
-                  <li>
-                      <a href="mailto:mattes@harmonia-eko.ooo?subject=Get Shares">Get Shares</a>
-                  </li>
-                 
-
+                  <li><a href='footprint.wwf.org.uk'>Carbon footprint calculator</a></li>
+                  <li><a href='https://scholar.google.com/citations?hl=en&user=KcViJEYAAAAJ&view_op=list_works&sortby=pubdate'>Leading climate risk & mitigation researcher who inspires us</a></li>
                 </ul>
               </div>
             </div>
             <div className="col-sm-6 col-md-2">
               <div className="widget widget-links">
-                <h5 className="widget-title">Useful Links</h5>
+                <h5 className="widget-title">Internal Links</h5>
                 <ul>
                   <li>
-                    <a href={process.env.PUBLIC_URL+'/about'}>About Us</a>
+                    <a href={process.env.PUBLIC_URL + '/about'}>About Us</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL+'/contact'}>Contact Us</a>
+                    <a href={process.env.PUBLIC_URL + '/contact'}>Contact Us</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL+'/about'}>Our Services</a>
+                    <a href={process.env.PUBLIC_URL + '/about'}>Our Services</a>
                   </li>
                   <li>
                     <a href={'mailto:mattes@harmonia-eko.ooo?subject=Terms and Conditions'}>Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href={process.env.PUBLIC_URL+'/contact'}>Careers</a>
+                    <a href={process.env.PUBLIC_URL + '/contact'}>Careers</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-sm-6 col-md-4">
               <div className="widget widget-text widget-links">
-                <h5 className="widget-title">Contact Us</h5>
+                <h5 className="widget-title">💌</h5>
                 <ul>
                   <li>
                     <i className="icofont icofont-google-map"></i>
