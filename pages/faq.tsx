@@ -15,7 +15,22 @@ const FAQs = () => (
         <div className="row">
           <div className="col-sm-8">
             <AccordionsComponent type="color" data={dataAccordion} classAppend={undefined} items={undefined} />
+            <div className="col-sm-15" style={{ marginTop: '3rem' }}>
+
+              <h5 className="widget-title">External Resources</h5>
+              <ul>
+                <li>More on carbon offsetting:
+                  <a href={"https://www.offsetguide.org/"}> offsetguide.org</a>
+                </li>
+                <li>More on the carbon negative currency Hedera:
+                  <a href={'hedera.com'}> hedera.com</a>
+                </li>
+                <li>Carbon footprint calculator:<a href='footprint.wwf.org.uk'> footprint.wwf.org.uk</a></li>
+                <li>Leading climate risk and mitigation researcher who inspires us<a href='https://scholar.google.com/citations?hl=en&user=KcViJEYAAAAJ&view_op=list_works&sortby=pubdate'> Delton Chen</a></li>
+              </ul>
+            </div>
           </div>
+
           <div className="col-sm-4">
             <form className="search-form" method="get">
               <input
