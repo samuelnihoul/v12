@@ -201,7 +201,7 @@ export default function () {
         alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
-      🔗🎒{status + " " + pk}
+      🔗Hashpack Wallet{status + " " + pk}
     </button>
   );
 }
