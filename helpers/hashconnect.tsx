@@ -43,19 +43,21 @@ export default function () {
     if (!loadLocalData()) {
       //first init, store the private key in localstorage
       let initData = await hashconnect.init(appMetadata);
-      saveData.privateKey = initData.privKey;
+      ssd(data => { data.privateKey = initData.privKey; return data });
 
       //then connect, storing the new topic in localstorage
       const state = await hashconnect.connect();
       console.log("Received state", state);
-      saveData.topic = state.topic;
+      ssd(data => { data.topic = state.topic; return data })
 
       //generate a pairing string, which you can display and generate a QR code from
-      saveData.pairingString = hashconnect.generatePairingString(
-        state,
-        "mainnet",
-        true
-      );
+      ssd(data => {
+        data.pairingString = hashconnect.generatePairingString(
+          state,
+          "mainnet",
+          true
+        ); return data
+      })
 
       //find any supported local wallets
       hashconnect.findLocalWallets();
@@ -94,7 +96,7 @@ export default function () {
       console.log("Paired with wallet", data);
       setStatus("paired");
 
-      saveData.pairedWalletData = data.metadata;
+      ssd(d => { d.pairedWalletData = data.metadata; return d });
 
       data.accountIds.forEach((id) => {
         if (saveData.pairedAccounts.indexOf(id) == -1)
@@ -163,8 +165,7 @@ export default function () {
   }
 
   function clearPairings() {
-    saveData.pairedAccounts = [];
-    saveData.pairedWalletData = undefined;
+    ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
     setStatus("connected");
     localStorage.removeItem("hashconnectData");
   }
