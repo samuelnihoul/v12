@@ -194,14 +194,11 @@ export default function () {
       onClick={async () => {
         await initHashconnect();
         await saveDataInLocalstorage();
-
-
-
         await connectToExtension();
         alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
-      🔗Hashpack Wallet{status + " " + pk}
+      🔗 Hashpack Wallet{status + " | " + pk}
     </button>
   );
 }
