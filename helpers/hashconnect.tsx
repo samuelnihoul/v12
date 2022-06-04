@@ -11,7 +11,7 @@ import AlertDialog from "../components/hashDialog";
 export default function () {
   // !! this line is a duplicate and unsure what will be the effects
   const hashconnect: HashConnect = new HashConnect(true);
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("disconnected");
   const a: HashConnectTypes.WalletMetadata[] = new Array(0);
   const [availableExtensions, sae] = useState(a);
   const [pk, spk] = useState("guest");
