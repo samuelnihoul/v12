@@ -195,7 +195,7 @@ export default function () {
         await initHashconnect();
         await saveDataInLocalstorage();
         await connectToExtension();
-        spk("✅")
+        //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
