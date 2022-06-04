@@ -38,7 +38,7 @@ export default function () {
 
   async function initHashconnect() {
     //create the hashconnect instance
-    const hashconnect = new HashConnect(true);
+    //const hashconnect = new HashConnect(true);
 
     if (!loadLocalData()) {
       //first init, store the private key in localstorage
