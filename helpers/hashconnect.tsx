@@ -107,7 +107,7 @@ export default function () {
 
 
       });
-
+      spk(saveData.pairedAccounts[0].id);
       saveDataInLocalstorage();
 
 
@@ -199,7 +199,7 @@ export default function () {
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
-      🔗 Hashpack Wallet{" | " + status + " | " + pk}
+      🔗 Hashpack wallet{" | " + status + " | " + pk}
     </button>
   );
 }
