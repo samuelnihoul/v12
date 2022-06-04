@@ -166,7 +166,7 @@ export default function () {
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
-    setStatus("connected");
+    setStatus("disconnected");
     localStorage.removeItem("hashconnectData");
   }
 
@@ -199,7 +199,7 @@ export default function () {
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
       }}
     >
-      🔗 Hashpack Wallet{status + " | " + pk}
+      🔗 Hashpack Wallet{" | " + status + " | " + pk}
     </button>
   );
 }
