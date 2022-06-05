@@ -161,11 +161,11 @@ export default function () {
         ssd(JSON.parse(foundData));
         console.log("Found local data", saveData, foundData);
 
-        spk(saveData.pairedAccounts[0] || 'guest')
 
       }
       await initHashconnect();
       await saveDataInLocalstorage();
+      spk(saveData.pairedAccounts[0] || 'guest')
     }
     init();
   }, [])
