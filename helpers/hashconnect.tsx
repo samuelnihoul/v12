@@ -200,7 +200,7 @@ export default function () {
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
 
-        setTimeout(() => spk(saveData.pairedAccounts[-1]), 30000)
+        setTimeout(() => spk(saveData.pairedAccounts[0]), 30000)
       }}
     >
       🔗 Hashpack wallet{" | " + status + " | " + pk}
