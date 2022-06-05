@@ -202,11 +202,11 @@ export default function () {
         await connectToExtension();
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
-
-        setTimeout(() => spk(saveData.pairedAccounts[0]), 1)
-        setTimeout(() => spk(saveData.pairedAccounts[0]), 10000)
-        setTimeout(() => spk(saveData.pairedAccounts[0]), 20000)
-        setTimeout(() => spk(saveData.pairedAccounts[0]), 30000)
+        //this thing will cause issue in case of multiple connected accounts but idk how one can connect multiple accounts
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 1)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 10000)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 20000)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'timed out'), 30000)
 
 
       }}
