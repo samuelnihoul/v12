@@ -65,9 +65,9 @@ export default function () {
       setStatus("connected");
     } else {
       await hashconnect.init(appMetadata, saveData.privateKey);
-      await hashconnect.connect(saveData.topic, saveData.pairedWalletData!);
+      await hashconnect.connect(saveData.topic, saveData.pairedWalletData);
 
-      setStatus("✅");
+      setStatus("paired");
     }
 
     setUpEvents();
@@ -153,8 +153,8 @@ export default function () {
 
     localStorage.setItem("hashconnectData", data);
   }
-  useEffect(
-    function loadLocalData(): void {
+  useEffect(() => {
+    async () => {
       let foundData = localStorage.getItem("hashconnectData");
 
       if (foundData) {
@@ -164,7 +164,10 @@ export default function () {
         spk(saveData.pairedAccounts[0] || 'guest')
 
       }
-    }, [status])
+      await initHashconnect();
+      await saveDataInLocalstorage();
+    }
+  }, [status])
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
@@ -194,8 +197,7 @@ export default function () {
     <button
       style={{ backgroundColor: "purple", borderRadius: 10 }}
       onClick={async () => {
-        await initHashconnect();
-        await saveDataInLocalstorage();
+
         await connectToExtension();
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
