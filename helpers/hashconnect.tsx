@@ -167,6 +167,7 @@ export default function () {
       await initHashconnect();
       await saveDataInLocalstorage();
     }
+    init;
   }, [])
 
   function clearPairings() {
