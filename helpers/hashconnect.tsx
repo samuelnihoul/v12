@@ -6,7 +6,7 @@ import {
 } from "@costlydeveloper/ngx-awesome-popup";
 import { Transaction, TransactionReceipt, Wallet } from "@hashgraph/sdk";
 import { HashConnect, HashConnectTypes, MessageTypes } from "hashconnect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AlertDialog from "../components/hashDialog";
 export default function () {
   // !! this line is a duplicate and unsure what will be the effects
@@ -40,7 +40,7 @@ export default function () {
     //create the hashconnect instance
     //const hashconnect = new HashConnect(true);
     localStorage.removeItem("hashconnectData");
-    if (!loadLocalData()) {
+    if (!saveData.topic) {
       //first init, store the private key in localstorage
       let initData = await hashconnect.init(appMetadata);
       ssd(data => { data.privateKey = initData.privKey; return data });
@@ -67,7 +67,7 @@ export default function () {
       await hashconnect.init(appMetadata, saveData.privateKey);
       await hashconnect.connect(saveData.topic, saveData.pairedWalletData!);
 
-      setStatus("paired");
+      setStatus("✅");
     }
 
     setUpEvents();
@@ -153,17 +153,18 @@ export default function () {
 
     localStorage.setItem("hashconnectData", data);
   }
+  useEffect(
+    function loadLocalData(): void {
+      let foundData = localStorage.getItem("hashconnectData");
 
-  function loadLocalData(): boolean {
-    let foundData = localStorage.getItem("hashconnectData");
+      if (foundData) {
+        ssd(JSON.parse(foundData));
+        console.log("Found local data", saveData);
 
-    if (foundData) {
-      ssd(JSON.parse(foundData));
-      console.log("Found local data", saveData);
-      spk(saveData.pairedAccounts[0] || 'guest')
-      return true;
-    } else return false;
-  }
+        spk(saveData.pairedAccounts[0] || 'guest')
+
+      }
+    }, [])
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
@@ -199,7 +200,7 @@ export default function () {
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
 
-        setTimeout(() => spk(saveData.pairedAccounts[0]), 30000)
+        setTimeout(() => spk(saveData.pairedAccounts[-1]), 30000)
       }}
     >
       🔗 Hashpack wallet{" | " + status + " | " + pk}
