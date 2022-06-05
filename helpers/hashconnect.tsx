@@ -198,7 +198,8 @@ export default function () {
         await connectToExtension();
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
-        spk(saveData.pairedAccounts[0]);
+
+        setTimeout(() => spk(saveData.pairedAccounts[0]), 10000)
       }}
     >
       🔗 Hashpack wallet{" | " + status + " | " + pk}
