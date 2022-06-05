@@ -14,21 +14,21 @@ export default function () {
   const [status, setStatus] = useState("disconnected");
   const a: HashConnectTypes.WalletMetadata[] = new Array(0);
   const [availableExtensions, sae] = useState(a);
-  const [pk, spk] = useState("guest");
-
   const [saveData, ssd] /* {
-        topic: string;
-        pairingString: string;
-        privateKey?: string;
-        pairedWalletData?: HashConnectTypes.WalletMetadata;
-        pairedAccounts: string[];
-    }  */ = useState({
+    
+    topic: string;
+    pairingString: string;
+    privateKey?: string;
+    pairedWalletData?: HashConnectTypes.WalletMetadata;
+    pairedAccounts: string[];
+  }  */ = useState({
     topic: "",
     pairingString: "",
     privateKey: undefined,
     pairedWalletData: undefined,
     pairedAccounts: [],
   });
+  const [pk, spk] = useState(saveData.pairedAccounts[0]);
 
   const appMetadata: HashConnectTypes.AppMetadata = {
     name: "dApp Example",
@@ -107,7 +107,7 @@ export default function () {
 
 
       });
-      spk(saveData.pairedAccounts[0].id);
+
       saveDataInLocalstorage();
 
 
@@ -197,6 +197,7 @@ export default function () {
         await connectToExtension();
         //spk("✅")
         //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
+        spk(saveData.pairedAccounts[0]);
       }}
     >
       🔗 Hashpack wallet{" | " + status + " | " + pk}
