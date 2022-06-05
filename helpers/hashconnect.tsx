@@ -62,7 +62,7 @@ export default function () {
       //find any supported local wallets
       hashconnect.findLocalWallets();
 
-      setStatus("connected");
+      setStatus("ready for pairing");
     } else {
       await hashconnect.init(appMetadata, saveData.privateKey);
       await hashconnect.connect(saveData.topic, saveData.pairedWalletData);
