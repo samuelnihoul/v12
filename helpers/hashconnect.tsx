@@ -159,12 +159,12 @@ export default function () {
 
       if (foundData) {
         ssd(JSON.parse(foundData));
-        console.log("Found local data", saveData);
+        console.log("Found local data", saveData, foundData);
 
         spk(saveData.pairedAccounts[0] || 'guest')
 
       }
-    }, [])
+    }, [status])
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
