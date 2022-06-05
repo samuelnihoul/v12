@@ -154,7 +154,7 @@ export default function () {
     localStorage.setItem("hashconnectData", data);
   }
   useEffect(() => {
-    async () => {
+    async function init() {
       let foundData = localStorage.getItem("hashconnectData");
 
       if (foundData) {
