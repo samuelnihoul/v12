@@ -28,7 +28,7 @@ export default function () {
     pairedWalletData: undefined,
     pairedAccounts: [],
   });
-  const [pk, spk] = useState(saveData.pairedAccounts[0]);
+  const [pk, spk] = useState(saveData.pairedAccounts[0] || 'guest');
 
   const appMetadata: HashConnectTypes.AppMetadata = {
     name: "dApp Example",
