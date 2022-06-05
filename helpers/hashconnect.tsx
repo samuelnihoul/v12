@@ -167,7 +167,7 @@ export default function () {
       await initHashconnect();
       await saveDataInLocalstorage();
     }
-  }, [status])
+  }, [])
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
