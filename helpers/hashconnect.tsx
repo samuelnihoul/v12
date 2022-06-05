@@ -28,7 +28,7 @@ export default function () {
     pairedWalletData: undefined,
     pairedAccounts: [],
   });
-  const [pk, spk] = useState(saveData.pairedAccounts[0] || 'guest');
+  const [pk, spk] = useState('guest');
 
   const appMetadata: HashConnectTypes.AppMetadata = {
     name: "dApp Example",
@@ -160,6 +160,7 @@ export default function () {
     if (foundData) {
       ssd(JSON.parse(foundData));
       console.log("Found local data", saveData);
+      spk(saveData.pairedAccounts[0] || 'guest')
       return true;
     } else return false;
   }
