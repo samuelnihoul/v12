@@ -6,29 +6,29 @@ import {
 } from "@costlydeveloper/ngx-awesome-popup";
 import { Transaction, TransactionReceipt, Wallet } from "@hashgraph/sdk";
 import { HashConnect, HashConnectTypes, MessageTypes } from "hashconnect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AlertDialog from "../components/hashDialog";
 export default function () {
   // !! this line is a duplicate and unsure what will be the effects
   const hashconnect: HashConnect = new HashConnect(true);
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("disconnected");
   const a: HashConnectTypes.WalletMetadata[] = new Array(0);
   const [availableExtensions, sae] = useState(a);
-  const [pk, spk] = useState("guest");
-
   const [saveData, ssd] /* {
-        topic: string;
-        pairingString: string;
-        privateKey?: string;
-        pairedWalletData?: HashConnectTypes.WalletMetadata;
-        pairedAccounts: string[];
-    }  */ = useState({
+    
+    topic: string;
+    pairingString: string;
+    privateKey?: string;
+    pairedWalletData?: HashConnectTypes.WalletMetadata;
+    pairedAccounts: string[];
+  }  */ = useState({
     topic: "",
     pairingString: "",
     privateKey: undefined,
     pairedWalletData: undefined,
     pairedAccounts: [],
   });
+  const [pk, spk] = useState('guest');
 
   const appMetadata: HashConnectTypes.AppMetadata = {
     name: "dApp Example",
@@ -38,9 +38,9 @@ export default function () {
 
   async function initHashconnect() {
     //create the hashconnect instance
-    const hashconnect = new HashConnect(true);
-
-    if (!loadLocalData()) {
+    //const hashconnect = new HashConnect(true);
+    localStorage.removeItem("hashconnectData");
+    if (!saveData.topic) {
       //first init, store the private key in localstorage
       let initData = await hashconnect.init(appMetadata);
       ssd(data => { data.privateKey = initData.privKey; return data });
@@ -62,10 +62,10 @@ export default function () {
       //find any supported local wallets
       hashconnect.findLocalWallets();
 
-      setStatus("connected");
+      setStatus("ready for pairing");
     } else {
       await hashconnect.init(appMetadata, saveData.privateKey);
-      await hashconnect.connect(saveData.topic, saveData.pairedWalletData!);
+      await hashconnect.connect(saveData.topic, saveData.pairedWalletData);
 
       setStatus("paired");
     }
@@ -153,20 +153,26 @@ export default function () {
 
     localStorage.setItem("hashconnectData", data);
   }
+  useEffect(() => {
+    async function init() {
+      let foundData = localStorage.getItem("hashconnectData");
 
-  function loadLocalData(): boolean {
-    let foundData = localStorage.getItem("hashconnectData");
+      if (foundData) {
+        ssd(JSON.parse(foundData));
+        console.log("Found local data", saveData, foundData);
 
-    if (foundData) {
-      ssd(JSON.parse(foundData));
-      console.log("Found local data", saveData);
-      return true;
-    } else return false;
-  }
+
+      }
+      await initHashconnect();
+      await saveDataInLocalstorage();
+      spk(saveData.pairedAccounts[0] || 'guest')
+    }
+    init();
+  }, [])
 
   function clearPairings() {
     ssd(d => { d.pairedAccounts = []; d.pairedWalletData = undefined; return d })
-    setStatus("connected");
+    setStatus("disconnected");
     localStorage.removeItem("hashconnectData");
   }
 
@@ -192,13 +198,20 @@ export default function () {
     <button
       style={{ backgroundColor: "purple", borderRadius: 10 }}
       onClick={async () => {
-        await initHashconnect();
-        await saveDataInLocalstorage();
+
         await connectToExtension();
-        alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
+        //spk("✅")
+        //alert("This button may not work as expected yet. Your pairing string is \"" + saveData.pairingString + "\"");
+        //this thing will cause issue in case of multiple connected accounts but idk how one can connect multiple accounts
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 1)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 10000)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'pending'), 20000)
+        setTimeout(() => spk(saveData.pairedAccounts[0] || 'timed out'), 30000)
+
+
       }}
     >
-      🔗 Hashpack Wallet{status + " | " + pk}
+      🔗 Hashpack wallet{" | " + status + " | " + pk}
     </button>
   );
 }

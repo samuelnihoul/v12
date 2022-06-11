@@ -36,7 +36,7 @@ const FooterOne = () => (
                     <a href={'hedera.com'}>More on the carbon negative currency Hedera</a>
                   </li>
                   <li><a href='footprint.wwf.org.uk'>Carbon footprint calculator</a></li>
-                  <li><a href='https://scholar.google.com/citations?hl=en&user=KcViJEYAAAAJ&view_op=list_works&sortby=pubdate'>Leading climate risk & mitigation researcher inspiring us</a></li>
+                  {/* <li><a href='https://scholar.google.com/citations?hl=en&user=KcViJEYAAAAJ&view_op=list_works&sortby=pubdate'>Leading climate risk & mitigation researcher inspiring us</a></li> */}
                 </ul>
               </div>
             </div>
