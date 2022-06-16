@@ -7,7 +7,7 @@ const ServicesConstruction = () => (
     <div className="container">
       <div className="row">
         <div className="col-md-8 section-heading">
-          <h2 className="text-uppercase white-color">Construction</h2>
+          <h2 className="text-uppercase white-color">Our Services</h2>
           <hr className="text-center yellow-bg" />
         </div>
       </div>

@@ -10,7 +10,15 @@
            
         ]
     },
-  
+   {
+        "id": 2,
+        "title": "🐕‍🦺 Services",
+        "link": "/services",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    },
     {
         "id": 2,
         "title": "📖 About",
@@ -20,6 +28,7 @@
         "itemsPerCol": 0,
         "subMenu": []
     },
+    
     {
         "id": 3,
         "title": "✉️ Contact",
