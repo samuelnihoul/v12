@@ -30,7 +30,7 @@
         "subMenu": []
     },{
         "id": 4,
-        "title": "❓",
+        "title": "❓ FAQ",
         "link": "/faq",
         "megaMenu": false,
         "colsTitle": [],
