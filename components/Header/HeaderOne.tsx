@@ -11,7 +11,7 @@ const HeaderOne = ({ type }) => {
   const [show, setShow] = useState(false);
   const [fixed, setFixed] = useState(false);
   const [collapse, setCollapse] = useState(false);
-
+const [color,setColor]=useState('#ffd700')
   const showMenu = () => {
     setCollapse(!collapse);
     const menu = document.getElementById("navbar-menu");
@@ -23,6 +23,7 @@ const HeaderOne = ({ type }) => {
       setFixed(true);
     } else {
       setFixed(false);
+      setColor('9140bf')
     }
   }, []);
 
@@ -76,7 +77,7 @@ const HeaderOne = ({ type }) => {
           <DropdownMenu />
           <AttributeNav>
             <CartSearchTop showSearchForm={showSearchForm} />
-            <PairButton ></PairButton>
+            <PairButton color={color} ></PairButton>
             
             
           </AttributeNav>

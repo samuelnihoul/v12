@@ -8,7 +8,7 @@ import { Transaction, TransactionReceipt, Wallet } from "@hashgraph/sdk";
 import { HashConnect, HashConnectTypes, MessageTypes } from "hashconnect";
 import { useEffect, useState } from "react";
 import AlertDialog from "../components/hashDialog";
-export default function Hashbutton () {
+export default function Hashbutton ({color}) {
   // !! this line is a duplicate and unsure what will be the effects
   const hashconnect: HashConnect = new HashConnect(true);
   const [status, setStatus] = useState("disconnected");
@@ -62,7 +62,7 @@ export default function Hashbutton () {
       //find any supported local wallets
       hashconnect.findLocalWallets();
 
-      setStatus("ready for pairing");
+      setStatus("click to pair");
     } else {
       await hashconnect.init(appMetadata, saveData.privateKey);
       await hashconnect.connect(saveData.topic, saveData.pairedWalletData);
@@ -196,7 +196,7 @@ export default function Hashbutton () {
   }
   return (
     <button
-      style={{ backgroundColor: "purple", borderRadius: 10,color:'white' }}
+      style={{ backgroundColor: '9140bf', borderRadius: 10,color:'white'}}
       onClick={async () => {
 
         await connectToExtension();
