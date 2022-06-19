@@ -8,7 +8,7 @@ import { Transaction, TransactionReceipt, Wallet } from "@hashgraph/sdk";
 import { HashConnect, HashConnectTypes, MessageTypes } from "hashconnect";
 import { useEffect, useState } from "react";
 import AlertDialog from "../components/hashDialog";
-export default function () {
+export default function Hashbutton () {
   // !! this line is a duplicate and unsure what will be the effects
   const hashconnect: HashConnect = new HashConnect(true);
   const [status, setStatus] = useState("disconnected");
@@ -196,7 +196,7 @@ export default function () {
   }
   return (
     <button
-      style={{ backgroundColor: "purple", borderRadius: 10 }}
+      style={{ backgroundColor: "purple", borderRadius: 10,color:'white' }}
       onClick={async () => {
 
         await connectToExtension();
