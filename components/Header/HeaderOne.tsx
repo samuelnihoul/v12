@@ -23,7 +23,7 @@ const [color,setColor]=useState('#ffd700')
       setFixed(true);
     } else {
       setFixed(false);
-      setColor('9140bf')
+      setColor('#9140bf')
     }
   }, []);
 

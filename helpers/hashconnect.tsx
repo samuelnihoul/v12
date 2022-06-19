@@ -196,7 +196,7 @@ export default function Hashbutton ({color}) {
   }
   return (
     <button
-      style={{ backgroundColor: '9140bf', borderRadius: 10,color:'white'}}
+      style={{ backgroundColor: '#9140bf', borderRadius: 10,color:'white'}}
       onClick={async () => {
 
         await connectToExtension();
