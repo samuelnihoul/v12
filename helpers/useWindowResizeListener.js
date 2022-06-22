@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
 function useWindowResizeListener() {
+  if (typeof window !== 'undefined') {
+  // You now have access to `window`
+
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
   function onResize() {
@@ -31,7 +34,7 @@ function useWindowResizeListener() {
   return {
     width,
     height,
-  };
+  };}
 }
 
 export default useWindowResizeListener;
