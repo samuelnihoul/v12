@@ -7,11 +7,68 @@ export default function News() {
 
     return (<>
         <HeaderOne type={undefined} />
-        <div style={{ textAlign: 'center', padding: '10rem 10rem 10rem 10rem' }}><h2 style={{ paddingBottom: '2rem' }}>Europe Temperature Anomalies</h2>
+        <div style={{ textAlign: 'center', padding: '10rem 10rem 10rem 10rem'} }
+        className='row-flex'>
+            <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat1_t2anom_1-day.png'>
+            </img>
+            </div>
+         <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
             <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat2_t2anom_1-day.png'>
 
             </img>
-        </div>
+            </div>
+            
+             <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat3_t2anom_1-day.png'>
+
+            </img>
+            </div>
+            </div>
+   <div style={{ textAlign: 'center', padding: '10rem 10rem 10rem 10rem'} }
+        className='row-flex'>
+            <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat1_t2anom_1-day.png'>
+            </img>
+            </div>
+         <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat2_t2anom_1-day.png'>
+
+            </img>
+            </div>
+            
+             <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat3_t2anom_1-day.png'>
+
+            </img>
+            </div>
+            </div> <div style={{ textAlign: 'center', padding: '10rem 10rem 10rem 10rem'} }
+        className='row-flex'>
+            <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat1_t2anom_1-day.png'>
+            </img>
+            </div>
+         <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat2_t2anom_1-day.png'>
+
+            </img>
+            </div>
+            
+             <div style={{display:'flex',flexDirection:'column'}}><h2 style={{ paddingBottom: '2rem' }}></h2>
+            
+            <img src='https://climatereanalyzer.org/wx_frames/gfs/ds/gfs_nh-sat3_t2anom_1-day.png'>
+
+            </img>
+            </div>
+            </div>
         <FooterOne />
     </>
 

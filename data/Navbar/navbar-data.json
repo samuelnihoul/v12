@@ -19,6 +19,15 @@
         "itemsPerCol": 0,
         "subMenu": []
     },
+{
+        "id": 12,
+        "title": "News",
+        "link": "/news",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    },
     {
         "id": 2,
         "title": "📖 About",
