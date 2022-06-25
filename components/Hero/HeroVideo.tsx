@@ -2,6 +2,7 @@ import React from "react";
 import useWindowSize from "../../helpers/GetWindowSize";
 import SliderButtons from "../../elements/SliderButtons/SliderButtons";
 import { fontSize } from "@mui/system";
+import Image from 'next/image'
 
 const HeroVideo = ({ data }) => {
   const size = useWindowSize();
@@ -26,6 +27,7 @@ const HeroVideo = ({ data }) => {
               </h3>
             <p className="text-center mt-30">
               <SliderButtons buttons={data.buttons} />
+              <img src={'/assets/images/Neon Green Futuristic Twitch Banner.png'} style={{marginTop:'2rem'}}></img>
             </p>
           </div>
         </div>
