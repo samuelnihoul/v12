@@ -27,7 +27,7 @@ const HeroVideo = ({ data }) => {
               </h3>
             <p className="text-center mt-30">
               <SliderButtons buttons={data.buttons} />
-              <img src={'/assets/images/Neon Green Futuristic Twitch Banner.png'} style={{marginTop:'2rem'}}></img>
+              <img src={'/assets/images/Neon Green Futuristic Twitch Banner.png'} style={{marginTop:'2rem', borderBlockStyle:'unset', borderRadius:50}}></img>
             </p>
           </div>
         </div>
