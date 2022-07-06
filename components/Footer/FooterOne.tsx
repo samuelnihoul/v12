@@ -22,6 +22,8 @@ const FooterOne = () => (
                 <p>
                   Pioneering in environmental services.<br></br>
                   For the harmony era.
+
+                  "Being carbon neutral is infinitely more powerful than 'no plane + no meat'", math
                 </p>
               </div>
             </div>
