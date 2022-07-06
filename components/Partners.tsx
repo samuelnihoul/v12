@@ -7,7 +7,7 @@ export default function (){
 
     return(<>
        <h2 style={{textAlign:'center'}}>Our Partners</h2> 
-        <div style={{display:'flex',flexDirection:'row', textAlign:'center'}}>
+        <div style={{display:'flex',flexDirection:'row', textAlign:'center',justifyContent:'center'}}>
         <Image src={im1}></Image>
         <Image src={xyzhostels}></Image>
         
