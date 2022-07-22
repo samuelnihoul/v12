@@ -1,29 +1,16 @@
 [
     {
         "id": 1,
-        "name": "Yosr Dammak",
-        "role": "CMO",
-        "image": "team/yo.png",
+        "name": "Abderahmane Boussa",
+        "role": "Web Developer",
+        "image": "team/bous.png",
         "social": [
             {
                 "id": 1,
                 "icon": "linkedin",
-                "link": "https://linkedin.com/in/yosrdammak"
+                "link": "https://linkedin.com/in/abderahmaneboussa"
             }]
-    },
-    {
-        "id": 2,
-        "name": "Mattes Thölke",
-        "role": "CEO",
-        "image": "team/ma.jpg",
-        "social": [
-            {
-                "id": 1,
-                "icon": "linkedin",
-                "link": "https://linkedin.com/in/mattesthoelke"
-            }
-        ]
-    },
+    }
     {
         "id": 3,
         "name": "Samuel Nihoul",
