@@ -12,7 +12,7 @@ const HeroVideo = ({ data }) => {
       <div className="hero-text-wrap overlay-bg">
         <div className="hero-text white-color">
           <div className="container text-center">
-            <h2 className="white-color font-400 letter-spacing-5" style={{ fontSize: 40 ,marginTop:'6vh'}}>
+            <h2 className="white-color font-400 letter-spacing-5" style={{ fontSize: 40 ,marginTop:'7vh'}}>
               {data.tagline}
             </h2>
             <h1>
