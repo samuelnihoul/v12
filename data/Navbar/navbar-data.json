@@ -19,6 +19,15 @@
         "itemsPerCol": 0,
         "subMenu": []
     },
+    {
+        "id": 55,
+        "title": "Karbon Moneta",
+        "link": "https://karbonmoneta.harmonia-eko.ooo",
+        "megaMenu": false,
+        "colsTitle": [],
+        "itemsPerCol": 0,
+        "subMenu": []
+    },
 {
         "id": 12,
         "title": "News",
