@@ -33,7 +33,7 @@ const CounterOne = ({ bg, type }) => {
               >
                 <VisibilitySensor onChange={viewChangeHandler} delayedCall>
                 {/* I don't know why `counter.decimals` is not working */}
-                  <CountUp decimals={1} end={viewed ? counter.value : 0} />
+                  <CountUp decimals={counter.decimals} end={viewed ? counter.value : 0} />
                   
 
                 </VisibilitySensor>
