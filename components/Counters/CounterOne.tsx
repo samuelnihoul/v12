@@ -32,7 +32,9 @@ const CounterOne = ({ bg, type }) => {
                 }
               >
                 <VisibilitySensor onChange={viewChangeHandler} delayedCall>
-                  <CountUp end={viewed ?counter.title=='Tons Offset'?counter.value+0.1: counter.value : 0} />
+                  <CountUp decimals={counter.decimals} end={viewed ? counter.value : 0} />
+                  
+
                 </VisibilitySensor>
               </h2>
               <h3 className={bg === "white-bg" ? "dark-color" : ""}>

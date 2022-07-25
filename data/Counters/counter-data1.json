@@ -2,21 +2,25 @@
   {
     "id": 1,
     "value": 30,
-    "title": "ħ for Climate"
+    "title": "ħ for Climate",
+    "decimals":0
   },
   {
     "id": 2,
     "value": 0.1,
-    "title": "Tons Offset"
+    "title": "Tons Offset",
+    "decimals":1
   },
   {
     "id": 3,
     "value": 1,
-    "title": "NFTs issued"
+    "title": "NFTs issued",
+    "decimals":0
   },
   {
     "id": 4,
     "value": 4,
-    "title": "Projects Listed"
+    "title": "Projects Listed",
+    "decimals":0
   }
 ]
